@@ -1,0 +1,17 @@
+# Bygger nettstedet på nytt hver morgen, slik at nye ting fra Raindrop kommer med.
+# Krever hemmeligheten NETLIFY_BUILD_HOOK (Netlify → Site configuration → Build hooks).
+name: Daglig bygg
+on:
+  schedule:
+    - cron: "0 5 * * *" # kl. 06/07 norsk tid
+  workflow_dispatch: # kan også startes manuelt fra GitHub
+jobs:
+  bygg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start bygg hos Netlify
+        env:
+          HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "NETLIFY_BUILD_HOOK mangler"; exit 1; fi
+          curl -fsS -X POST -d '{}' "$HOOK"
