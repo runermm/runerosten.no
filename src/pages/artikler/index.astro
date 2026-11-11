@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import { getArtikler } from '../../lib';
+const artikler = await getArtikler();
+---
+<Base title="Artikler" description="Alle artikler av Rune Røsten.">
+  <div class="wrap">
+    <h1>Artikler</h1>
+    <PostList items={artikler.map((a) => ({
+      href: `/artikler/${a.id}/`, title: a.data.title, description: a.data.description, date: a.data.date,
+    }))} />
+  </div>
+</Base>

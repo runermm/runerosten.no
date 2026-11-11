@@ -1,0 +1,45 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Rating from '../../components/Rating.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
+import { getAnmeldelser, formatDate } from '../../lib';
+
+export async function getStaticPaths() {
+  const anmeldelser = await getAnmeldelser();
+  return anmeldelser.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+---
+<Base title={`${d.title} av ${d.bookAuthor}`} description={d.description} type="article">
+  <article class="wrap">
+    <p class="meta">
+      Bokanmeldelse · <time datetime={d.date.toISOString()}>{formatDate(d.date)}</time>
+      {d.draft && <> · <strong>UTKAST</strong></>}
+    </p>
+    <h1>{d.title}</h1>
+    <p class="lead">{d.description}</p>
+
+    <dl class="facts">
+      <div><dt>Forfatter</dt><dd>{d.bookAuthor}</dd></div>
+      {d.published && <div><dt>Utgitt</dt><dd>{d.published}</dd></div>}
+      {d.publisher && <div><dt>Forlag</dt><dd>{d.publisher}</dd></div>}
+      {d.genre && <div><dt>Sjanger</dt><dd>{d.genre}</dd></div>}
+      <div><dt>Terningkast</dt><dd><Rating value={d.rating} /> {d.rating}</dd></div>
+    </dl>
+
+    <div class="prose"><Content /></div>
+    <NewsletterForm />
+  </article>
+</Base>
+<style>
+  .facts {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1rem;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 1rem 1.25rem; margin: 1.5rem 0 2rem;
+  }
+  dt { font-family: var(--sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  dd { margin: 0; display: flex; align-items: center; gap: 0.4rem; }
+</style>

@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import PostList from '../components/PostList.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import LeselisteCard from '../components/LeselisteCard.astro';
+import { getArtikler, getAnmeldelser, getLeseliste } from '../lib';
+
+const artikler = (await getArtikler()).slice(0, 5);
+const anmeldelser = (await getAnmeldelser()).slice(0, 5);
+const leseliste = (await getLeseliste()).slice(0, 3);
+---
+<Base>
+  <div class="wrap">
+    <h1>Hei, jeg er Rune.</h1>
+    <p class="lead">Her skriver jeg artikler og anmelder bøker jeg har lest. Meld deg på nyhetsbrevet, så får du nye tekster rett i innboksen.</p>
+
+    <div class="section-head"><h2>Siste artikler</h2><a href="/artikler/">Alle artikler →</a></div>
+    <PostList items={artikler.map((a) => ({
+      href: `/artikler/${a.id}/`, title: a.data.title, description: a.data.description, date: a.data.date,
+    }))} />
+
+    <div class="section-head"><h2>Siste bokanmeldelser</h2><a href="/anmeldelser/">Alle anmeldelser →</a></div>
+    <PostList items={anmeldelser.map((b) => ({
+      href: `/anmeldelser/${b.id}/`, title: b.data.title, byline: b.data.bookAuthor,
+      description: b.data.description, date: b.data.date, rating: b.data.rating,
+    }))} />
+
+    {leseliste.length > 0 && (
+      <>
+        <div class="section-head"><h2>Fra leselisten</h2><a href="/leseliste/">Hele leselisten →</a></div>
+        <div class="stack">{leseliste.map((item) => <LeselisteCard item={item} />)}</div>
+      </>
+    )}
+
+    <NewsletterForm />
+  </div>
+</Base>
+
+<style>
+  .stack { display: grid; gap: 1rem; margin-top: 1.25rem; }
+</style>

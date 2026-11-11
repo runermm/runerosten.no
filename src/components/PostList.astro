@@ -1,0 +1,42 @@
+---
+import { formatDate } from '../lib';
+import Rating from './Rating.astro';
+
+interface Item {
+  href: string;
+  title: string;
+  description: string;
+  date: Date;
+  byline?: string;
+  rating?: number;
+}
+interface Props { items: Item[] }
+const { items } = Astro.props;
+---
+{items.length === 0 ? (
+  <p class="meta">Ingenting her ennå.</p>
+) : (
+  <ul class="list">
+    {items.map((item) => (
+      <li>
+        <a href={item.href} class="title">{item.title}</a>
+        {item.byline && <span class="byline"> av {item.byline}</span>}
+        <p class="desc">{item.description}</p>
+        <div class="meta row">
+          <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>
+          {item.rating && <Rating value={item.rating} size={20} />}
+        </div>
+      </li>
+    ))}
+  </ul>
+)}
+<style>
+  .list { list-style: none; padding: 0; margin: 0; }
+  li { padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
+  li:last-child { border-bottom: 0; }
+  .title { font-size: 1.3rem; font-weight: 600; color: var(--text); text-decoration: none; }
+  .title:hover { color: var(--accent); }
+  .byline { color: var(--muted); font-style: italic; }
+  .desc { margin: 0.3rem 0 0.4rem; }
+  .row { display: flex; gap: 0.75rem; align-items: center; }
+</style>

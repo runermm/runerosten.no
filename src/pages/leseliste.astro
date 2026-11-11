@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import LeselisteCard from '../components/LeselisteCard.astro';
+import { getLeseliste } from '../lib';
+
+const items = await getLeseliste();
+const counts = {
+  alle: items.length,
+  artikkel: items.filter((i) => i.type === 'artikkel').length,
+  bok: items.filter((i) => i.type === 'bok').length,
+};
+---
+<Base title="Leseliste" description="Artikler og bøker jeg anbefaler.">
+  <div class="wide">
+    <header class="intro">
+      <h1>Leseliste</h1>
+      <p class="lead">Artikler og bøker som har gjort inntrykk, med et par ord om hvorfor.</p>
+    </header>
+
+    <div class="filters" role="group" aria-label="Filtrer leselisten">
+      <button type="button" data-filter="alle" aria-pressed="true">Alle <span>{counts.alle}</span></button>
+      <button type="button" data-filter="artikkel" aria-pressed="false">Artikler <span>{counts.artikkel}</span></button>
+      <button type="button" data-filter="bok" aria-pressed="false">Bøker <span>{counts.bok}</span></button>
+    </div>
+
+    {items.length === 0 ? (
+      <p class="meta">Leselisten er tom foreløpig.</p>
+    ) : (
+      <div class="grid">
+        {items.map((item) => <LeselisteCard item={item} />)}
+      </div>
+    )}
+  </div>
+</Base>
+
+<style>
+  .intro { max-width: var(--measure); }
+  .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0 2rem; }
+  .filters button {
+    font-family: var(--sans); font-size: 0.9rem; cursor: pointer;
+    padding: 0.4rem 0.95rem; border-radius: 999px;
+    border: 1px solid var(--border); background: transparent; color: var(--text);
+  }
+  .filters button span { color: var(--muted); margin-left: 0.25rem; }
+  .filters button[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .filters button[aria-pressed='true'] span { color: inherit; opacity: 0.8; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: 1.25rem; }
+  .grid :global([hidden]) { display: none; }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filters button');
+  const cards = document.querySelectorAll<HTMLElement>('.grid [data-type]');
+  buttons.forEach((btn) =>
+    btn.addEventListener('click', () => {
+      const f = btn.dataset.filter;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      cards.forEach((c) => (c.hidden = f !== 'alle' && c.dataset.type !== f));
+    }),
+  );
+</script>

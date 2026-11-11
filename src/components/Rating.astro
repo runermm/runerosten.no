@@ -1,0 +1,22 @@
+---
+// Terningkast 1–6, vist som en terning.
+interface Props { value: number; size?: number }
+const { value, size = 28 } = Astro.props;
+const pips: Record<number, [number, number][]> = {
+  1: [[2, 2]],
+  2: [[1, 1], [3, 3]],
+  3: [[1, 1], [2, 2], [3, 3]],
+  4: [[1, 1], [3, 1], [1, 3], [3, 3]],
+  5: [[1, 1], [3, 1], [2, 2], [1, 3], [3, 3]],
+  6: [[1, 1], [3, 1], [1, 2], [3, 2], [1, 3], [3, 3]],
+};
+---
+<span class="die" title={`Terningkast ${value}`}>
+  <svg width={size} height={size} viewBox="0 0 40 40" role="img" aria-label={`Terningkast ${value}`}>
+    <rect x="1.5" y="1.5" width="37" height="37" rx="7" fill="none" stroke="currentColor" stroke-width="2" />
+    {pips[value].map(([x, y]) => <circle cx={x * 10} cy={y * 10} r="3.4" fill="currentColor" />)}
+  </svg>
+</span>
+<style>
+  .die { color: var(--accent); display: inline-flex; vertical-align: middle; }
+</style>

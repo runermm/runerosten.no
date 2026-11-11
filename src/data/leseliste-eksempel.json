@@ -1,0 +1,44 @@
+[
+  {
+    "id": "eksempel-1",
+    "type": "artikkel",
+    "title": "Eksempel: En lang artikkel som er verdt tiden din",
+    "url": "https://example.com/artikkel-1",
+    "source": "eksempel.no",
+    "note": "Her skriver du én eller to setninger om hvorfor artikkelen er verdt å lese. Notatet fra Raindrop havner her.",
+    "date": "2026-11-11T09:00:00.000Z",
+    "tags": ["ledelse"]
+  },
+  {
+    "id": "eksempel-2",
+    "type": "bok",
+    "title": "Sult",
+    "author": "Knut Hamsun",
+    "url": "https://bokelskere.no/",
+    "source": "bokelskere.no",
+    "note": "Eksempel på en bok i leselisten. Lagre bokens side i Raindrop med taggen «bok».",
+    "date": "2026-11-10T09:00:00.000Z",
+    "tags": ["klassiker"]
+  },
+  {
+    "id": "eksempel-3",
+    "type": "artikkel",
+    "title": "Eksempel: Et essay om lesing og oppmerksomhet",
+    "url": "https://example.com/artikkel-2",
+    "source": "eksempel.com",
+    "note": "Artikler uten bilde får et typografisk kort i stedet.",
+    "date": "2026-11-08T09:00:00.000Z",
+    "tags": []
+  },
+  {
+    "id": "eksempel-4",
+    "type": "bok",
+    "title": "Eksempelbok uten omslag",
+    "author": "Ukjent forfatter",
+    "url": "https://bokelskere.no/",
+    "source": "bokelskere.no",
+    "note": "Bøker uten omslagsbilde får et tegnet omslag med tittel og forfatter.",
+    "date": "2026-11-05T09:00:00.000Z",
+    "tags": []
+  }
+]
