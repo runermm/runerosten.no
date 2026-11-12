@@ -3,6 +3,8 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Rating from '../../components/Rating.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
+import BookCover from '../../components/BookCover.astro';
+import { boker } from '../../bokhylle';
 import { getAnmeldelser, formatDate } from '../../lib';
 
 export async function getStaticPaths() {
@@ -12,6 +14,9 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
+// Omslaget hentes fra bokhyllen hvis boken finnes der.
+const norm = (t: string) => t.toLowerCase().trim();
+const bok = boker.find((b) => norm(b.title) === norm(d.title));
 ---
 <Base title={`${d.title} av ${d.bookAuthor}`} description={d.description} type="article">
   <article class="wrap">
@@ -22,24 +27,31 @@ const d = entry.data;
     <h1>{d.title}</h1>
     <p class="lead">{d.description}</p>
 
+    <div class:list={['facts-wrap', { 'has-cover': bok?.cover }]}>
+    {bok?.cover && <div class="cover"><BookCover bok={bok} width={480} /></div>}
     <dl class="facts">
       <div><dt>Forfatter</dt><dd>{d.bookAuthor}</dd></div>
       {d.published && <div><dt>Utgitt</dt><dd>{d.published}</dd></div>}
       {d.publisher && <div><dt>Forlag</dt><dd>{d.publisher}</dd></div>}
       {d.genre && <div><dt>Sjanger</dt><dd>{d.genre}</dd></div>}
-      <div><dt>Terningkast</dt><dd><Rating value={d.rating} /> {d.rating}</dd></div>
+      {d.rating && <div><dt>Terningkast</dt><dd><Rating value={d.rating} /> {d.rating}</dd></div>}
     </dl>
+    </div>
 
     <div class="prose"><Content /></div>
+    {d.bokelskere && <p class="meta">Også publisert på <a href={d.bokelskere} target="_blank" rel="noopener">bokelskere.no</a>.</p>}
     <NewsletterForm />
   </article>
 </Base>
 <style>
+  .facts-wrap { margin: 1.5rem 0 2rem; }
+  .facts-wrap.has-cover { display: grid; grid-template-columns: 8rem 1fr; gap: 1.25rem; align-items: start; }
   .facts {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1rem;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1rem; align-content: start;
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-    padding: 1rem 1.25rem; margin: 1.5rem 0 2rem;
+    padding: 1rem 1.25rem; margin: 0;
   }
+  @media (max-width: 30rem) { .facts-wrap.has-cover { grid-template-columns: 6rem 1fr; } }
   dt { font-family: var(--sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
   dd { margin: 0; display: flex; align-items: center; gap: 0.4rem; }
 </style>

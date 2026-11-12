@@ -23,9 +23,10 @@ const anmeldelser = defineCollection({
     published: z.number().int().optional(), // utgivelsesår
     publisher: z.string().optional(),
     genre: z.string().optional(),
-    rating: z.number().int().min(1).max(6), // terningkast
+    rating: z.number().int().min(1).max(6).optional(), // terningkast (valgfritt)
     description: z.string(),
     date: z.coerce.date(), // når anmeldelsen ble publisert
+    bokelskere: z.string().url().optional(), // lenke til omtalen på bokelskere.no
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),

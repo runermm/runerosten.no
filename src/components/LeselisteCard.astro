@@ -40,7 +40,7 @@ const hue = hues[[...item.title].reduce((n, c) => n + c.charCodeAt(0), 0) % hues
     <p class="foot">
       <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>
       {item.review && (
-        <a href={item.review.href} class="review"><Rating value={item.review.rating} size={18} /> Les anmeldelsen</a>
+        <a href={item.review.href} class="review">{item.review.rating && <Rating value={item.review.rating} size={18} />} Les anmeldelsen</a>
       )}
     </p>
   </div>
