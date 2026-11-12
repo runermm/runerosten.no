@@ -1,0 +1,47 @@
+{
+  "_info": "Album som vises under «På repeat». Rekkefølgen her er rekkefølgen på siden. Legg gjerne til et kort notat i \"note\".",
+  "albums": [
+    {
+      "id": "570330370",
+      "title": "FUDGE",
+      "artist": "Michael Kiwanuka",
+      "cover": "https://resources.tidal.com/images/04c7e9e8/44ff/4c92/9166/18e918ca2932/640x640.jpg",
+      "note": ""
+    },
+    {
+      "id": "574483701",
+      "title": "Continuum II",
+      "artist": "Víkingur Ólafsson",
+      "cover": "https://resources.tidal.com/images/20f5c9b0/7ef4/485b/b3eb/c80262a6a01d/640x640.jpg",
+      "note": ""
+    },
+    {
+      "id": "574500452",
+      "title": "I Thought We Were the Same",
+      "artist": "Ane Brun",
+      "cover": "https://resources.tidal.com/images/ee9bbaf8/0bd0/459a/8bc6/0b1b322ee5ce/640x640.jpg",
+      "note": ""
+    },
+    {
+      "id": "528098710",
+      "title": "AMUSED BY A MUSE / SALT WATER BLUES",
+      "artist": "Unnveig Aas",
+      "cover": "https://resources.tidal.com/images/a7b61439/0878/4928/9694/5c077f2ff195/640x640.jpg",
+      "note": ""
+    },
+    {
+      "id": "522031948",
+      "title": "it starts",
+      "artist": "Ofer Pelz",
+      "cover": "https://resources.tidal.com/images/d58f7ebc/faef/482d/ac51/7dac1a02a5cc/640x640.jpg",
+      "note": ""
+    },
+    {
+      "id": "558415957",
+      "title": "Layers Naked",
+      "artist": "Fabrizio Paterlini, LoopArc",
+      "cover": "https://resources.tidal.com/images/96ee11e1/7ec6/4c03/8548/46b04e383147/640x640.jpg",
+      "note": ""
+    }
+  ]
+}

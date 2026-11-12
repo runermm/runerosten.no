@@ -1,0 +1,62 @@
+---
+// «På repeat»: album fra Tidal (src/data/musikk.json). Klikk på et omslag for å spille av.
+import data from '../data/musikk.json';
+interface Props { limit?: number }
+const { limit = 6 } = Astro.props;
+const albums = data.albums.slice(0, limit);
+---
+<section class="repeat" data-repeat>
+  <ul class="albums">
+    {albums.map((a) => (
+      <li>
+        <button type="button" class="album" data-id={a.id} aria-label={`Spill ${a.title} av ${a.artist}`}>
+          <img src={a.cover.replace('640x640', '320x320')} alt="" loading="lazy" width="320" height="320" />
+          <span class="play" aria-hidden="true">▶</span>
+        </button>
+        <a class="t" href={`https://tidal.com/album/${a.id}`} target="_blank" rel="noopener">{a.title}</a>
+        <span class="a">{a.artist}</span>
+        {a.note && <span class="n">{a.note}</span>}
+      </li>
+    ))}
+  </ul>
+  <div class="player" hidden></div>
+</section>
+
+<style>
+  .albums { list-style: none; padding: 0; margin: 1.25rem 0 0; display: grid; gap: 1.1rem; grid-template-columns: repeat(3, 1fr); }
+  @media (min-width: 40rem) { .albums { grid-template-columns: repeat(6, 1fr); } }
+  .album { position: relative; display: block; width: 100%; padding: 0; border: 0; cursor: pointer; background: none;
+    border-radius: 6px; overflow: hidden; box-shadow: 0 10px 22px -12px rgb(0 0 0 / 0.55); }
+  .album img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; transition: transform 0.25s ease; }
+  .album:hover img, .album[aria-pressed='true'] img { transform: scale(1.04); }
+  .play { position: absolute; inset: auto 0.45rem 0.45rem auto; width: 2rem; height: 2rem; border-radius: 50%;
+    display: grid; place-items: center; font-size: 0.8rem; padding-left: 0.15rem;
+    background: rgb(0 0 0 / 0.6); color: #fff; opacity: 0; transition: opacity 0.2s ease; }
+  .album:hover .play, .album:focus-visible .play, .album[aria-pressed='true'] .play { opacity: 1; }
+  .album[aria-pressed='true'] { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .t { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 0.5rem;
+    font-size: 0.82rem; font-weight: 600; line-height: 1.3; color: var(--text); text-decoration: none; }
+  .t:hover { color: var(--accent); }
+  .a, .n { display: block; font-family: var(--sans); font-size: 0.72rem; color: var(--muted); }
+  .n { font-style: italic; margin-top: 0.2rem; }
+  .player { margin-top: 1.25rem; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+  .player :global(iframe) { display: block; width: 100%; height: 300px; border: 0; }
+</style>
+
+<script>
+  // Spilleren lastes først når noen klikker, så siden holdes lett.
+  document.querySelectorAll<HTMLElement>('[data-repeat]').forEach((root) => {
+    const player = root.querySelector<HTMLElement>('.player')!;
+    const buttons = root.querySelectorAll<HTMLButtonElement>('.album');
+    buttons.forEach((btn) =>
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-pressed') === 'true';
+        buttons.forEach((b) => b.setAttribute('aria-pressed', 'false'));
+        if (open) { player.hidden = true; player.innerHTML = ''; return; }
+        btn.setAttribute('aria-pressed', 'true');
+        player.innerHTML = `<iframe src="https://embed.tidal.com/albums/${btn.dataset.id}" allow="encrypted-media; fullscreen; clipboard-write https://embed.tidal.com; web-share" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox" title="Tidal-spiller"></iframe>`;
+        player.hidden = false;
+      }),
+    );
+  });
+</script>
