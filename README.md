@@ -76,7 +76,10 @@ Leselisten på /leseliste/ hentes fra Raindrop-samlingen «Leseliste» hver gang
 
 ## Publisere
 
-Nettstedet bygges til statiske filer med `npm run build` (havner i `dist/`). Gratis hosting:
+Nettstedet publiseres på GitHub Pages med GitHub Actions (`.github/workflows/publiser.yml`):
 
-- **Netlify** eller **Cloudflare Pages**: koble til GitHub-repoet, byggkommando `npm run build`, mappe `dist`.
-- Pek domenet runerosten.no til hostingtjenesten i DNS-innstillingene hos domeneleverandøren.
+- Hver opplasting til `main` bygger og publiserer siden.
+- Hver morgen bygges den på nytt, så leselisten fra Raindrop holdes oppdatert.
+- Raindrop-nøkkelen ligger som hemmelighet i repoet: Settings → Secrets and variables → Actions → `RAINDROP_TOKEN`.
+- Domenet: `public/CNAME` inneholder `runerosten.no`. Hos Domeneshop peker runerosten.no (A-pekere) til GitHub Pages
+  (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153) og www (CNAME) til `runermm.github.io`.

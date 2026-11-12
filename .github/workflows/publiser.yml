@@ -1,0 +1,46 @@
+# Bygger runerosten.no og publiserer på GitHub Pages.
+# Kjører ved hver opplasting til main, hver morgen (så nye ting fra Raindrop kommer med),
+# og kan startes manuelt fra GitHub (Actions → Publiser → Run workflow).
+name: Publiser
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 5 * * *" # kl. 06/07 norsk tid
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  bygg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          RAINDROP_TOKEN: ${{ secrets.RAINDROP_TOKEN }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  publiser:
+    needs: bygg
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
