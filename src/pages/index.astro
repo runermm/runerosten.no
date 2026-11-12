@@ -18,16 +18,24 @@ const naa = leserNa(6);
     <h1>Hei, jeg er Rune.</h1>
     <p class="lead">Her skriver jeg artikler og anmelder bøker jeg har lest. Meld deg på nyhetsbrevet, så får du nye tekster rett i innboksen.</p>
 
-    <div class="section-head"><h2>Siste artikler</h2><a href="/artikler/">Alle artikler →</a></div>
-    <PostList items={artikler.map((a) => ({
-      href: `/artikler/${a.id}/`, title: a.data.title, description: a.data.description, date: a.data.date,
-    }))} />
+    {artikler.length > 0 && (
+      <>
+      <div class="section-head"><h2>Siste artikler</h2><a href="/artikler/">Alle artikler →</a></div>
+      <PostList items={artikler.map((a) => ({
+        href: `/artikler/${a.id}/`, title: a.data.title, description: a.data.description, date: a.data.date,
+      }))} />
+      </>
+    )}
 
-    <div class="section-head"><h2>Siste bokanmeldelser</h2><a href="/anmeldelser/">Alle anmeldelser →</a></div>
-    <PostList items={anmeldelser.map((b) => ({
-      href: `/anmeldelser/${b.id}/`, title: b.data.title, byline: b.data.bookAuthor,
-      description: b.data.description, date: b.data.date, rating: b.data.rating,
-    }))} />
+    {anmeldelser.length > 0 && (
+      <>
+      <div class="section-head"><h2>Siste bokanmeldelser</h2><a href="/anmeldelser/">Alle anmeldelser →</a></div>
+      <PostList items={anmeldelser.map((b) => ({
+        href: `/anmeldelser/${b.id}/`, title: b.data.title, byline: b.data.bookAuthor,
+        description: b.data.description, date: b.data.date, rating: b.data.rating,
+      }))} />
+      </>
+    )}
 
     {naa.length > 0 && (
       <>
