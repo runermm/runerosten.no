@@ -1,10 +1,56 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const karriere = [
+  { år: '2023–2026', rolle: 'Strategidirektør', sted: 'Aschehoug', tekst: 'Strategi, forretningsutvikling og digital transformasjon, med vekt på kunstig intelligens. Styremedlem i Allvit og Bokbasen, styreleder i Fabel.' },
+  { år: '2011–2023', rolle: 'Leder, Schibsted Ventures Norge', sted: 'Schibsted', tekst: 'Var med på å etablere og ledet et av landets fremste corporate venture-miljøer. Investerte i Tibber, Firi, Dintero, Homely, FundingPartner og mange flere.' },
+  { år: '2007–2010', rolle: 'Daglig leder', sted: 'Nettby', tekst: 'Norges største sosiale nettverk, med nær en million medlemmer – før Facebook tok over.' },
+  { år: '1997–2007', rolle: 'Utviklingssjef, deretter redaktør og daglig leder', sted: 'Dagbladet.no', tekst: 'Fra underskudd til tosifret millionoverskudd, og «Årets nettavis» i 2007.' },
+  { år: '1995–1997', rolle: 'Internettpionér', sted: 'Origo og Sol.no', tekst: 'Med på å lansere noen av landets første internettportaler.' },
+];
 ---
-<Base title="Om" description="Om Rune Røsten.">
-  <div class="wrap prose">
+<Base title="Om" description="Rune Røsten skriver om kunstig intelligens, teknologi, medier og bøker.">
+  <article class="wrap">
     <h1>Om meg</h1>
-    <p class="lead">Skriv noen ord om deg selv her.</p>
-    <p>Denne siden ligger i <code>src/pages/om.astro</code>.</p>
-  </div>
+    <p class="lead">Jeg har jobbet med internett i Norge siden det var nytt – som redaktør, leder, investor og strateg. Her skriver jeg om det jeg har lært, og om det jeg leser.</p>
+
+    <div class="prose">
+      <blockquote>«Yrkesveien til mannen som sitter foran meg er som en komprimert idéhistorie over internetts utvikling.»<br /><span class="meta">— Morgenbladet</span></blockquote>
+
+      <p>Karrieren min startet på Origo og Sol.no i internettets første år. Siden har jeg ledet Dagbladet.no og Nettby, bygget opp Schibsted Ventures i Norge, og de siste årene vært strategidirektør i Aschehoug, med ansvar for hvordan et av landets eldste forlagshus skal møte kunstig intelligens.</p>
+
+      <p>Bakgrunnen min er medievitenskap og filosofi fra NTNU og Universitetet i Oslo. Den kombinasjonen preger nok mye av det jeg skriver: Jeg er opptatt av hvordan teknologien virker, men like mye av hva den gjør med oss.</p>
+
+      <h2>Kort om veien hit</h2>
+    </div>
+
+    <ol class="timeline">
+      {karriere.map((k) => (
+        <li>
+          <span class="year">{k.år}</span>
+          <div>
+            <strong>{k.rolle}</strong> <span class="where">· {k.sted}</span>
+            <p>{k.tekst}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+
+    <div class="prose">
+      <p>Jeg holder jevnlig foredrag om kunstig intelligens, gründerskap og teknologiens kulturelle konsekvenser, senest på NHH Executive. Når jeg ikke leser eller skriver, er jeg ofte å finne på sykkelen, både i skogen og på landeveien.</p>
+
+      <p>Jeg er åpen for lederroller, styreverv og rådgivningsoppdrag, særlig der kapital, teknologiskift og gründerskap står øverst på agendaen.</p>
+    </div>
+  </article>
 </Base>
+
+<style>
+  .timeline { list-style: none; padding: 0; margin: 1rem 0 2.5rem; border-left: 2px solid var(--border); }
+  .timeline li { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; padding: 0 0 1.4rem 1.25rem; position: relative; }
+  .timeline li::before { content: ''; position: absolute; left: -0.42rem; top: 0.55rem; width: 0.7rem; height: 0.7rem;
+    border-radius: 50%; background: var(--accent); }
+  .year { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); padding-top: 0.2rem; }
+  .where { color: var(--muted); }
+  .timeline p { margin: 0.2rem 0 0; font-size: 1rem; line-height: 1.55; }
+  @media (max-width: 30rem) { .timeline li { grid-template-columns: 1fr; gap: 0.1rem; } }
+</style>
