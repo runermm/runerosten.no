@@ -18,18 +18,19 @@ const d = entry.data;
 const norm = (t: string) => t.toLowerCase().trim();
 const bok = boker.find((b) => norm(b.title) === norm(d.title));
 ---
-<Base title={`${d.title} av ${d.bookAuthor}`} description={d.description} type="article">
+<Base title={d.headline ? `${d.headline} – ${d.title} av ${d.bookAuthor}` : `${d.title} av ${d.bookAuthor}`} description={d.description} type="article">
   <article class="wrap">
     <p class="meta">
       Bokanmeldelse · <time datetime={d.date.toISOString()}>{formatDate(d.date)}</time>
       {d.draft && <> · <strong>UTKAST</strong></>}
     </p>
-    <h1>{d.title}</h1>
+    <h1>{d.headline ?? d.title}</h1>
     <p class="lead">{d.description}</p>
 
     <div class:list={['facts-wrap', { 'has-cover': bok?.cover }]}>
     {bok?.cover && <div class="cover"><BookCover bok={bok} width={480} /></div>}
     <dl class="facts">
+      {d.headline && <div><dt>Bok</dt><dd><em>{d.title}</em></dd></div>}
       <div><dt>Forfatter</dt><dd>{d.bookAuthor}</dd></div>
       {d.published && <div><dt>Utgitt</dt><dd>{d.published}</dd></div>}
       {d.publisher && <div><dt>Forlag</dt><dd>{d.publisher}</dd></div>}

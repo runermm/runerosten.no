@@ -20,7 +20,7 @@ const { items } = Astro.props;
     {items.map((item) => (
       <li>
         <a href={item.href} class="title">{item.title}</a>
-        {item.byline && <span class="byline"> av {item.byline}</span>}
+        {item.byline && <span class="byline"> {item.byline}</span>}
         <p class="desc">{item.description}</p>
         <div class="meta row">
           <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>

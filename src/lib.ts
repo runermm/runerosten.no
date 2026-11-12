@@ -1,5 +1,11 @@
 import { getCollection } from 'astro:content';
 
+// Overskrift og undertekst for en anmeldelse i lister.
+export const reviewListTitle = (d: { title: string; headline?: string; bookAuthor: string }) => ({
+  title: d.headline ?? d.title,
+  byline: d.headline ? `${d.title} av ${d.bookAuthor}` : `av ${d.bookAuthor}`,
+});
+
 export const formatDate = (d: Date) =>
   d.toLocaleDateString('nb-NO', { day: 'numeric', month: 'long', year: 'numeric' });
 

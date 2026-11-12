@@ -10,7 +10,7 @@ export async function GET(context) {
     link: `/artikler/${a.id}/`,
   }));
   const anmeldelser = (await getAnmeldelser()).map((b) => ({
-    title: `${b.data.title} av ${b.data.bookAuthor}${b.data.rating ? ` (terningkast ${b.data.rating})` : ''}`,
+    title: `${b.data.headline ? `${b.data.headline} (${b.data.title} av ${b.data.bookAuthor})` : `${b.data.title} av ${b.data.bookAuthor}`}${b.data.rating ? ` (terningkast ${b.data.rating})` : ''}`,
     description: b.data.description,
     pubDate: b.data.date,
     link: `/anmeldelser/${b.id}/`,

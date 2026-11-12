@@ -1,14 +1,13 @@
 ---
 title: The AGI Chronicles
+headline: Hva KI-fans ønsker seg til jul
 bookAuthor: Kevin Roose
 genre: Sakprosa
-description: En velskrevet, pedagogisk og innsiktsfull bok om kunstig intelligens, skrevet av en dreven journalist tett på miljøet.
+description: En velskrevet, pedagogisk og innsiktsfull bok om kunstig intelligens, skrevet av en dreven journalist tett på miljøet. En bok selv ikke den fremste språkmodellen kunne skrevet bedre. Det er hva Kevin Roose leverer med The AGI Chronicles.
 date: 2026-11-03
 tags: [ki, teknologi]
 bokelskere: https://bokelskere.no/bokomtaler/400192
 ---
-
-HVA KI-FANS ØNSKER SEG TIL JUL: En velskrevet, pedagogisk og innsiktsfull bok om kunstig intelligens, skrevet av en dreven journalist tett på miljøet. En bok selv ikke den fremste språkmodellen kunne skrevet bedre. Det er hva Kevin Roose leverer med The AGI Chronicles.
 
 Han følger utviklingen og rivaliseringen innen KI fra 2017, da OpenAIs ledende KI-forsker Ilya Sutskever oppsøker kollegaen Alec Radford og ber ham kikke på en forskningsartikkel som Google nylig har gitt ut: «Attention Is All You Need».
 

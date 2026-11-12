@@ -19,6 +19,7 @@ const anmeldelser = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/anmeldelser' }),
   schema: z.object({
     title: z.string(), // bokens tittel
+    headline: z.string().optional(), // egen overskrift for anmeldelsen
     bookAuthor: z.string(),
     published: z.number().int().optional(), // utgivelsesår
     publisher: z.string().optional(),
