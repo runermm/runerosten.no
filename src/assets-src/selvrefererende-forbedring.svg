@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <!-- Illustrasjon til «Selvrefererende forbedring»: to blyanter tegner sløyfen de selv er en del av;
+       en tredje blyant kommer inn utenfra rammen. Laget for runerosten.no. -->
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#e2d9cc" />
+    </pattern>
+    <!-- Blyant som peker mot høyre, spissen i (262, 0) -->
+    <g id="pencil">
+      <rect x="0" y="-17" width="30" height="34" rx="6" fill="#d9a29a" />
+      <rect x="28" y="-17" width="22" height="34" fill="#b9b2a8" />
+      <line x1="34" y1="-17" x2="34" y2="17" stroke="#9c958b" stroke-width="2" />
+      <line x1="44" y1="-17" x2="44" y2="17" stroke="#9c958b" stroke-width="2" />
+      <rect x="50" y="-17" width="160" height="34" fill="#e3b04b" />
+      <rect x="50" y="-17" width="160" height="11" fill="#eec36a" />
+      <rect x="50" y="6" width="160" height="11" fill="#c9952f" />
+      <polygon points="210,-17 252,-3 252,3 210,17" fill="#ecd5b2" />
+      <polygon points="246,-5 264,0 246,5" fill="#2a2522" />
+    </g>
+    <clipPath id="frame"><rect x="60" y="60" width="1080" height="630" rx="6" /></clipPath>
+  </defs>
+
+  <!-- Papir -->
+  <rect width="1200" height="750" fill="#f3ede3" />
+  <rect x="60" y="60" width="1080" height="630" rx="6" fill="#fbf8f3" />
+  <rect x="60" y="60" width="1080" height="630" rx="6" fill="url(#dots)" />
+
+  <g clip-path="url(#frame)">
+    <!-- Venstre løkke: løs skisse -->
+    <path d="M600 375 C 520 250, 330 240, 300 375 C 280 500, 500 510, 600 375"
+          fill="none" stroke="#a39a90" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" />
+    <path d="M598 378 C 515 258, 338 236, 304 372 C 286 492, 505 516, 602 372"
+          fill="none" stroke="#c8beb2" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+    <!-- Høyre løkke: ferdig blekk -->
+    <path d="M600 375 C 680 250, 870 240, 900 375 C 920 500, 700 510, 600 375"
+          fill="none" stroke="#7a2e1f" stroke-width="7" stroke-linecap="round" />
+
+    <!-- Blyant A tegner blekket (øverst til høyre) -->
+    <use href="#pencil" transform="translate(770 277) rotate(52) translate(-262 0)" />
+    <!-- Blyant B skisserer (nederst til venstre) -->
+    <use href="#pencil" transform="translate(445 469) rotate(-128) translate(-262 0)" />
+
+    <!-- Små streker ved spissene -->
+    <path d="M758 284 l-10 6 M754 276 l-12 2" stroke="#7a2e1f" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M456 462 l9 -7 M460 470 l11 -1" stroke="#a39a90" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Den store blyanten kommer inn utenfra rammen -->
+  <use href="#pencil" transform="translate(965 560) rotate(-142) scale(1.9) translate(-262 0)" />
+  <circle cx="965" cy="560" r="5" fill="#2a2522" opacity="0.15" />
+
+  <!-- Ramme -->
+  <rect x="60" y="60" width="1080" height="630" rx="6" fill="none" stroke="#2a2522" stroke-width="2" opacity="0.25" />
+</svg>

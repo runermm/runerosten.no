@@ -3,6 +3,9 @@ title: Selvrefererende forbedring
 description: KI-gjennombrudd skjer når systemet refererer til seg selv på nye måter. Nå leder Claude over en fjerdedel av arbeidet med sin egen utvikling.
 date: 2026-11-05
 tags: [ki]
+image: /bilder/artikler/selvreferanse.png
+imageAlt: Et nettleservindu med denne artikkelen, der illustrasjonen viser det samme vinduet med den samme artikkelen, om og om igjen, stadig mindre, til det ender i en liten rødbrun kjerne. Under står Runes beskjed til Claude – «lag en illustrasjon av din egen selvreferanse».
+imageCredit: Illustrasjon laget av Claude – KI-modellen artikkelen handler om, på et nettsted Claude har bygget, som her tegner seg selv tegne seg selv.
 ---
 
 I M.C. Eschers «Tegnende hender» tegner to hender hverandre. Den ene tegner den andre, som tegner den første. Tegningen er et av eksemplene i Douglas Hofstadters Gödel, Escher, Bach, en bok Demis Hassabis leste som tenåring, ifølge [The AGI Chronicles](/anmeldelser/the-agi-chronicles/), som jeg skrev om sist. Selvreferanse, systemer som bruker seg selv som råmateriale, er et bilde som passer påfallende godt på utviklingen.

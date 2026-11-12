@@ -11,6 +11,9 @@ const artikler = defineCollection({
     updated: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
     linkedin: z.string().url().optional(), // lenke til originalinnlegget
+    image: z.string().optional(), // bilde øverst, f.eks. /bilder/artikler/navn.png
+    imageAlt: z.string().optional(),
+    imageCredit: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });
