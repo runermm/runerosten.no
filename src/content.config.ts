@@ -30,6 +30,7 @@ const anmeldelser = defineCollection({
     description: z.string(),
     date: z.coerce.date(), // når anmeldelsen ble publisert
     bokelskere: z.string().url().optional(), // lenke til omtalen på bokelskere.no
+    linkedin: z.string().url().optional(), // lenke til originalinnlegget på LinkedIn
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),

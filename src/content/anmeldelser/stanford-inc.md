@@ -1,5 +1,8 @@
 ---
-title: "Stanford Inc"
+title: How to Rule the World
+headline: Stanford Inc
+bookAuthor: Theo Baker
+genre: Sakprosa
 description: "Med noteringen av SpaceX har børsen blitt enda mer konsentrert rundt et fåtall Silicon Valley-selskaper. De syv største teknologigigantene utgjør nå over 30 prosent av hele S&P 500 og er til sammen verdt over 21 000 milliarder dollar, altså 10-11 oljefond. Hvordan er det mulig at så mange dominerende selskaper kan springe ut av et så lite hjørne av verden?"
 date: 2026-06-15
 tags: []

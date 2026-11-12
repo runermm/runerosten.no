@@ -5,3 +5,9 @@
 
 [build.environment]
   NODE_VERSION = "24"
+
+# Stanford Inc ble flyttet fra artikler til bokanmeldelser.
+[[redirects]]
+  from = "/artikler/stanford-inc/"
+  to = "/anmeldelser/stanford-inc/"
+  status = 301

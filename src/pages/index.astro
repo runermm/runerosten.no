@@ -12,7 +12,8 @@ import { getArtikler, getAnmeldelser, getLeseliste, reviewListTitle, reviewImage
 const artikler = (await getArtikler()).slice(0, 3);
 // Hele teksten til de tre nyeste, så «Les mer» kan utvide på forsiden.
 const innhold = await Promise.all(artikler.map((a) => render(a)));
-const anmeldelser = (await getAnmeldelser()).slice(0, 5);
+const anmeldelser = (await getAnmeldelser()).slice(0, 3);
+const anmInnhold = await Promise.all(anmeldelser.map((b) => render(b)));
 const leseliste = (await getLeseliste()).slice(0, 3);
 const naa = leserNa(6);
 ---
@@ -34,10 +35,11 @@ const naa = leserNa(6);
     {anmeldelser.length > 0 && (
       <>
       <div class="section-head"><h2>Siste bokanmeldelser</h2><a href="/anmeldelser/">Alle anmeldelser →</a></div>
-      <PostList items={anmeldelser.map((b) => ({
+      <PostList items={anmeldelser.map((b, i) => ({
         href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data), image: reviewImage(b.data),
         description: b.data.description, date: b.data.date, rating: b.data.rating,
-      }))} readMore />
+        Content: anmInnhold[i].Content,
+      }))} />
       </>
     )}
 
