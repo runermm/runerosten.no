@@ -3,18 +3,25 @@
  "fetched": "2026-11-12",
  "books": [
   {
+   "title": "The Art of Organizing Thoughts",
+   "author": "Shigehiko Toyama",
+   "status": "leser",
+   "cover": "https://static.bokelskere.no/assets/0a/0abed97f792d40a3d58a6940b3413589.jpg",
+   "order": 0
+  },
+  {
    "title": "The AGI Chronicles",
    "author": "Kevin Roose",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c5/c5c451f8324454aeca9b07e93f8afcd3.jpg",
-   "order": 0
+   "order": 1
   },
   {
    "title": "Situasjon og konstellasjon",
    "author": "Hartmut Rosa",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2e/2eb5936a659ea30db63a23121104a35f.jpg",
-   "order": 1
+   "order": 2
   },
   {
    "title": "Makt og marked",
@@ -22,7 +29,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1c/1c597ba5a165a79cfc70ad37472f4b05.jpg",
    "year": 2026,
-   "order": 2
+   "order": 3
   },
   {
    "title": "Eit spor til endes",
@@ -30,7 +37,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/8d/8d956425847338b9a534cc4587752cba.jpg",
    "year": 2026,
-   "order": 3
+   "order": 4
   },
   {
    "title": "Prophecy",
@@ -38,7 +45,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/cf/cf5018c67b7d9bd2e16f3d56b5618331.jpg",
    "year": 2026,
-   "order": 4
+   "order": 5
   },
   {
    "title": "Å våkne med Wittgenstein",
@@ -46,7 +53,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/4d/4d0dfa1ff3cd6b43b5d4a8fe321e4269.jpg",
    "year": 2026,
-   "order": 5
+   "order": 6
   },
   {
    "title": "How to Rule the World",
@@ -54,7 +61,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c1/c1b6810da92430cf898c49bec27fde0a.jpg",
    "year": 2026,
-   "order": 6
+   "order": 7
   },
   {
    "title": "Den ungarske nasjonens sikkerhet",
@@ -62,7 +69,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/8b/8b64f11c2cf0c759056132ee625231a1.jpg",
    "year": 2026,
-   "order": 7
+   "order": 8
   },
   {
    "title": "London Falling",
@@ -70,7 +77,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3f/3f63a4ca9b289f8bc31211863afd633c.jpg",
    "year": 2026,
-   "order": 8
+   "order": 9
   },
   {
    "title": "The Story of Stories",
@@ -78,7 +85,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/68/682fd53c1d20b3b4419792971e2155f1.webp",
    "year": 2026,
-   "order": 9
+   "order": 10
   },
   {
    "title": "Gruppetto",
@@ -86,14 +93,14 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bf/bffa2b1bc35a894607e9acd466111bf3.png",
    "year": 2026,
-   "order": 10
+   "order": 11
   },
   {
    "title": "Project Maven",
    "author": "Katrina Manson",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a6/a64c440c772c7bb412669965c35fdde8.jpg",
-   "order": 11
+   "order": 12
   },
   {
    "title": "Innen året er omme",
@@ -101,7 +108,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/31/311bf06c78e77e78a6bee90c7d057142.jpg",
    "year": 2026,
-   "order": 12
+   "order": 13
   },
   {
    "title": "Folk som hater lokalhistorie",
@@ -109,7 +116,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ee/ee830d703d9d378aa22332e09dd2b6ec.jpg",
    "year": 2026,
-   "order": 13
+   "order": 14
   },
   {
    "title": "The Code",
@@ -117,7 +124,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e2/e256cbb87dc4ffa3412ddbb06cafa5ff.jpg",
    "year": 2026,
-   "order": 14
+   "order": 15
   },
   {
    "title": "Gilded Rage",
@@ -125,7 +132,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/fc/fc3ed11d5af18758930587672030b382.jpg",
    "year": 2026,
-   "order": 15
+   "order": 16
   },
   {
    "title": "Muskism",
@@ -133,7 +140,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/91/91a388f8735ebde03e2e73b9c3829d0b.jpg",
    "year": 2026,
-   "order": 16
+   "order": 17
   },
   {
    "title": "Lesekrise",
@@ -141,7 +148,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d7/d7db95afcc5cd2991b8e4d8688a56cdb.jpg",
    "year": 2026,
-   "order": 17
+   "order": 18
   },
   {
    "title": "Dinosaurøyeblikkene",
@@ -149,7 +156,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e2/e23e79e7ed332ddab96beda0e8b8fa7c.jpg",
    "year": 2026,
-   "order": 18
+   "order": 19
   },
   {
    "title": "Medier",
@@ -157,7 +164,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/48/4842432925014f8a2fb8cfc052c0fc66.jpg",
    "year": 2026,
-   "order": 19
+   "order": 20
   },
   {
    "title": "How Progress Ends",
@@ -165,7 +172,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b6/b6f567bf03abeb47ec189a19c9701fae.png",
    "year": 2025,
-   "order": 20
+   "order": 21
   },
   {
    "title": "Jakobsbøkene, eller Den store reisen over syv grenser, gjennom fem språk og tre store religioner, ikke medregnet de små",
@@ -173,7 +180,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b1/b1512ae01de8e45b2d836e7b0fa54ff7.jpg",
    "year": 2025,
-   "order": 21
+   "order": 22
   },
   {
    "title": "Stillhet i støyens tid",
@@ -181,7 +188,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1b/1bc5b43d5c9cb9ce9e5a78a34fe2d8f7.jpg",
    "year": 2025,
-   "order": 22
+   "order": 23
   },
   {
    "title": "Drayton and Mackenzie",
@@ -189,7 +196,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b9/b950be4213725d2c6d367b808f25c34e.jpg",
    "year": 2025,
-   "order": 23
+   "order": 24
   },
   {
    "title": "Empire of AI",
@@ -197,7 +204,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/4e/4ebd2b367b532819a24d30f038fc2df4.jpg",
    "year": 2025,
-   "order": 24
+   "order": 25
   },
   {
    "title": "Og forresten heter jeg Leah",
@@ -206,7 +213,7 @@
    "cover": "https://static.bokelskere.no/assets/46/46172c48fb8c38f27063ae433c88db6c.jpg",
    "year": 2025,
    "favorite": true,
-   "order": 25
+   "order": 26
   },
   {
    "title": "Rovdyrenes tid",
@@ -214,7 +221,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b4/b4e45c1145817b3437c1ee7587aa3261.jpg",
    "year": 2025,
-   "order": 26
+   "order": 27
   },
   {
    "title": "Förbannelsen",
@@ -222,7 +229,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/91/910c6f8b0a30d253cfa11896d0f17bc1.jpg",
    "year": 2025,
-   "order": 27
+   "order": 28
   },
   {
    "title": "Doggerland",
@@ -230,7 +237,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3f/3ffd76142d14dd413e5878574bade397.jpg",
    "year": 2025,
-   "order": 28
+   "order": 29
   },
   {
    "title": "Drepende sensommerdager",
@@ -238,7 +245,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/10/1061dadd9eb8ed12aceb7fc7ca05554f.jpg",
    "year": 2025,
-   "order": 29
+   "order": 30
   },
   {
    "title": "The Light Eaters",
@@ -246,7 +253,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ee/eebefd44482563d5db5d74cba5b24508.jpg",
    "year": 2025,
-   "order": 30
+   "order": 31
   },
   {
    "title": "Buddenbrooks",
@@ -254,7 +261,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f1/f1e61921d2eecd32774ea64f1dc65bb1.jpg",
    "year": 2025,
-   "order": 31
+   "order": 32
   },
   {
    "title": "Hermeneutikerens håndbok til kjærligheten",
@@ -262,7 +269,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/78/7829d6e0b28b04f9bbd0888fa5201875.jpg",
    "year": 2025,
-   "order": 32
+   "order": 33
   },
   {
    "title": "Blomstret og brent",
@@ -270,7 +277,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/df/df48c1deb448bccd9ddb56aafa65abc7.jpg",
    "year": 2025,
-   "order": 33
+   "order": 34
   },
   {
    "title": "Apple in China",
@@ -278,7 +285,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bc/bc8e087fe95f58101f3a5c2a99b5edf4.jpg",
    "year": 2025,
-   "order": 34
+   "order": 35
   },
   {
    "title": "Guden over skogene",
@@ -286,7 +293,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bb/bbae0ca37f9a7cdf320cb6f943779867.jpg",
    "year": 2025,
-   "order": 35
+   "order": 36
   },
   {
    "title": "The Thinking Machine",
@@ -294,7 +301,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b4/b4a338edde9b36848e1528c9a98820a3.png",
    "year": 2025,
-   "order": 36
+   "order": 37
   },
   {
    "title": "These Strange New Minds",
@@ -302,7 +309,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f0/f06886afea3be094bbd4aa1f6bf966ac.jpg",
    "year": 2025,
-   "order": 37
+   "order": 38
   },
   {
    "title": "Siste utvei for en engel",
@@ -310,7 +317,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/39/395c69f118d0b7b39cefcfaaf9c57e54.jpg",
    "year": 2025,
-   "order": 38
+   "order": 39
   },
   {
    "title": "Brannen",
@@ -318,7 +325,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ae/aed74474cfc335a6a1d449eceb7484be.jpg",
    "year": 2025,
-   "order": 39
+   "order": 40
   },
   {
    "title": "Døden i Venezia",
@@ -326,7 +333,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/0b/0ba96c4444563d6fa901291de564f605.jpg",
    "year": 2025,
-   "order": 40
+   "order": 41
   },
   {
    "title": "Gittersee",
@@ -334,7 +341,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e1/e1e3eb42370c4c526c4e8d65e4909433.jpg",
    "year": 2025,
-   "order": 41
+   "order": 42
   },
   {
    "title": "Snø",
@@ -342,7 +349,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e7/e79f439e24d8207ec6393861efd1896c.jpg",
    "year": 2025,
-   "order": 42
+   "order": 43
   },
   {
    "title": "Familien Schönwald",
@@ -350,7 +357,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/6a/6aad2131906184b88dcab8fa93ca876f.jpg",
    "year": 2025,
-   "order": 43
+   "order": 44
   },
   {
    "title": "Sykkelrytteren",
@@ -358,7 +365,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b7/b7a58da190707be5bd1575c365e7fd6e.jpg",
    "year": 2025,
-   "order": 44
+   "order": 45
   },
   {
    "title": "Ordene, eller Ewa Lisas forsøk på å skrive en selvbiografi",
@@ -366,13 +373,13 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2a/2aaf4268f443742c9817a2ae7556b485.jpg",
    "year": 2024,
-   "order": 45
+   "order": 46
   },
   {
    "title": "To Hell on a Bike",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/07/07a9a68b5dfb6ea09e3dd2176159f029.jpg",
-   "order": 46
+   "order": 47
   },
   {
    "title": "The Four",
@@ -380,14 +387,14 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c3/c3ecde0b2b70e8393cf6038d820be0cd.jpg",
    "year": 2018,
-   "order": 47
+   "order": 48
   },
   {
    "title": "Ekteskapet mellom himmel og helvete",
    "author": "William Blake",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/87/8782e984a229e9f79c8986b7db166f6a.jpg",
-   "order": 48
+   "order": 49
   },
   {
    "title": "Yrke forfatter",
@@ -395,7 +402,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/4f/4f1fa8106698db87313b46161829d0fb.jpg",
    "year": 2022,
-   "order": 49
+   "order": 50
   },
   {
    "title": "På touren",
@@ -403,7 +410,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/9a/9a0ae395a751b81141e7bafb186d5b20.jpg",
    "year": 2022,
-   "order": 50
+   "order": 51
   },
   {
    "title": "Jävla karlar",
@@ -411,14 +418,14 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/48/48e5e0933c71c897fd6ad6dd417babb9.jpg",
    "year": 2024,
-   "order": 51
+   "order": 52
   },
   {
    "title": "Stand out of our Light",
    "author": "James Williams",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/9a/9ab6d802a263722ea0f8d451810b7ce7.jpg",
-   "order": 52
+   "order": 53
   },
   {
    "title": "Co-Intelligence",
@@ -426,7 +433,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/16/169143b7c20571f5f5e2e4c9e07cee12.jpg",
    "year": 2024,
-   "order": 53
+   "order": 54
   },
   {
    "title": "Krakk",
@@ -434,7 +441,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bb/bb992a8a31f9c58442894b0f531f37e1.jpg",
    "year": 2024,
-   "order": 54
+   "order": 55
   },
   {
    "title": "AI Snake Oil",
@@ -442,7 +449,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/6b/6bc6823965adddb11c08ab92b95f6796.jpg",
    "year": 2024,
-   "order": 55
+   "order": 56
   },
   {
    "title": "Hyperpolitik",
@@ -450,7 +457,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/67/6730fb034aedee8b00fec90027b7a422.jpg",
    "year": 2024,
-   "order": 56
+   "order": 57
   },
   {
    "title": "Den store Gatsby",
@@ -458,7 +465,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b5/b5bf9ed6bee2d691a542e7e0d3bb30b4.jpg",
    "year": 2024,
-   "order": 57
+   "order": 58
   },
   {
    "title": "A Thousand Brains",
@@ -466,7 +473,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/77/773c08577f64d5b1017bea3043e6b623.jpg",
    "year": 2024,
-   "order": 58
+   "order": 59
   },
   {
    "title": "Nexus",
@@ -474,7 +481,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/68/680fa0113c0c8282c3533bea93906528.jpg",
    "year": 2024,
-   "order": 59
+   "order": 60
   },
   {
    "title": "The Safekeep",
@@ -482,7 +489,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2f/2f81d87c1e55c8b2df0d5e25865ba09d.jpg",
    "year": 2024,
-   "order": 60
+   "order": 61
   },
   {
    "title": "Genius Makers",
@@ -490,7 +497,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d7/d7fec315e0c814faf8647380a90ff1e2.jpg",
    "year": 2024,
-   "order": 61
+   "order": 62
   },
   {
    "title": "Supremacy",
@@ -498,7 +505,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/98/980d8e71c0b703a04fef331f5c12bd30.jpg",
    "year": 2024,
-   "order": 62
+   "order": 63
   },
   {
    "title": "Arbeidarhjerte",
@@ -506,7 +513,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e8/e83181f57cff45340c13b87102865c99.jpg",
    "year": 2024,
-   "order": 63
+   "order": 64
   },
   {
    "title": "Jeg elsker Dickens",
@@ -514,7 +521,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/51/51c17075a34848a798a2adc43b0df0c7.jpg",
    "year": 2024,
-   "order": 64
+   "order": 65
   },
   {
    "title": "The Singularity",
@@ -522,7 +529,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f9/f9b8f659618033ec93e347c3030efa4c.jpg",
    "year": 2024,
-   "order": 65
+   "order": 66
   },
   {
    "title": "The Shortcut",
@@ -530,7 +537,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/0f/0f371f24ddd8ac78debdd1a34fed59c3.jpg",
    "year": 2024,
-   "order": 66
+   "order": 67
   },
   {
    "title": "Roman 1987",
@@ -538,7 +545,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f0/f0896c3acd0c261d380de87594c2ca6f.jpg",
    "year": 2024,
-   "order": 67
+   "order": 68
   },
   {
    "title": "Krystallpalasset",
@@ -546,7 +553,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ea/ead88d5873144b24034584dd83818b89.jpg",
    "year": 2024,
-   "order": 68
+   "order": 69
   },
   {
    "title": "Giro d'Italia 1949",
@@ -554,7 +561,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/44/4437351e1683d45e900a21e9a64e7b03.jpg",
    "year": 2024,
-   "order": 69
+   "order": 70
   },
   {
    "title": "Kongen av Os",
@@ -562,7 +569,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/23/2343af4c360ab55f0faceaf5ee36ed8b.jpg",
    "year": 2024,
-   "order": 70
+   "order": 71
   },
   {
    "title": "Far",
@@ -570,7 +577,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a1/a1858e39cd55a352aa2af53df0515bc0.jpg",
    "year": 2024,
-   "order": 71
+   "order": 72
   },
   {
    "title": "Et tilfluktssted i tiden",
@@ -578,7 +585,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f7/f724c3769899e4539da1343472250ded.jpg",
    "year": 2024,
-   "order": 72
+   "order": 73
   },
   {
    "title": "Akselerasjon og resonans",
@@ -586,7 +593,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e2/e2c050c4afe4a83ff9ab32a2b6fe8d19.jpg",
    "year": 2024,
-   "order": 73
+   "order": 74
   },
   {
    "title": "Den stora kreditfesten",
@@ -594,7 +601,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3b/3b76c46c73160176828b9b79851b266a.jpg",
    "year": 2024,
-   "order": 74
+   "order": 75
   },
   {
    "title": "ICH BIN EIN BIBLIOTHEKAR!",
@@ -602,7 +609,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/56/56fc13398a13c4aa251c303a23676120.png",
    "year": 2024,
-   "order": 75
+   "order": 76
   },
   {
    "title": "Tante Ulrikkes vei",
@@ -610,7 +617,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1c/1ce93dd81ee822d564fdaf7f9685bcf5.jpg",
    "year": 2018,
-   "order": 76
+   "order": 77
   },
   {
    "title": "Ultimate Skiing",
@@ -618,21 +625,21 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/53/53fdbb6f1d6707e311b957a4c2fdf4d8.jpg",
    "year": 2019,
-   "order": 77
+   "order": 78
   },
   {
    "title": "Singulariteternes samfund",
    "author": "Andreas Reckwitz",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c3/c318be29020fe8756339f4e1c3bbe951.jpg",
-   "order": 78
+   "order": 79
   },
   {
    "title": "Mine imaginære ryttere",
    "author": "Olivier Haralambon",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e4/e4a7f513a69d95b51e16605d031f223e.jpg",
-   "order": 79
+   "order": 80
   },
   {
    "title": "Senmoderniteten i krise",
@@ -640,7 +647,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ea/ea0bd7c0a29c2f1428bfcdeced7a78cc.png",
    "year": 2022,
-   "order": 80
+   "order": 81
   },
   {
    "title": "Fremmedgørelse og acceleration",
@@ -648,7 +655,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/01/01a5637375c7b1d263434ce445be8a66.jpg",
    "year": 2023,
-   "order": 81
+   "order": 82
   },
   {
    "title": "Swanns kjærleik",
@@ -656,7 +663,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/0e/0e6627785bd041febe984108c6c46708.jpg",
    "year": 2023,
-   "order": 82
+   "order": 83
   },
   {
    "title": "The Coming Wave",
@@ -664,7 +671,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/6e/6e29750d10753e6608ea338254512208.jpg",
    "year": 2023,
-   "order": 83
+   "order": 84
   },
   {
    "title": "Faen, faen, faen",
@@ -672,7 +679,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/74/741442d8847e2218861b2b334360d68f.jpg",
    "year": 2023,
-   "order": 84
+   "order": 85
   },
   {
    "title": "Knekk ChatGPT-koden",
@@ -680,7 +687,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/18/18c562d46bec1def4ba5de464c254fcb.jpg",
    "year": 2023,
-   "order": 85
+   "order": 86
   },
   {
    "title": "Vertebrae",
@@ -688,7 +695,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e3/e36f1e011387ca6e9a5c2d585de8f6ba.jpg",
    "year": 2023,
-   "order": 86
+   "order": 87
   },
   {
    "title": "Da vi var yngre",
@@ -696,7 +703,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/11/1115aa7cc26ce4bd169cd7f8751576ae.jpg",
    "year": 2023,
-   "order": 87
+   "order": 88
   },
   {
    "title": "Den dagen Nils Vik døde",
@@ -704,7 +711,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e6/e64dce13e0129f8963f789a81d0d13e7.jpg",
    "year": 2023,
-   "order": 88
+   "order": 89
   },
   {
    "title": "Raudt støv",
@@ -712,7 +719,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/53/53b2fbc54eeb0f09944e2d9ac53ffdd7.jpg",
    "year": 2023,
-   "order": 89
+   "order": 90
   },
   {
    "title": "Vi skulle fortalt hverandre alt",
@@ -720,7 +727,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/41/41dd2613c00ac65d17cc3175f13dbd63.jpg",
    "year": 2023,
-   "order": 90
+   "order": 91
   },
   {
    "title": "The Experience Machine",
@@ -728,7 +735,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3b/3b8be3b5673c38d607b54f9bfa5a1b94.jpg",
    "year": 2023,
-   "order": 91
+   "order": 92
   },
   {
    "title": "Stein og skygge",
@@ -736,7 +743,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/92/926f2892634bcaa1959fd9a3ab5598e1.jpg",
    "year": 2023,
-   "order": 92
+   "order": 93
   },
   {
    "title": "Merking",
@@ -744,7 +751,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f0/f0e9c672145960e6f2fb17ce10189f7e.jpg",
    "year": 2023,
-   "order": 93
+   "order": 94
   },
   {
    "title": "Lyst",
@@ -752,7 +759,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2a/2a46d8a194ecbdd703dcba1d2275e48f.jpg",
    "year": 2023,
-   "order": 94
+   "order": 95
   },
   {
    "title": "Maskiner som tenker",
@@ -760,7 +767,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a0/a09ee89457dca67c1bcf9b39df9fc32a.jpg",
    "year": 2023,
-   "order": 95
+   "order": 96
   },
   {
    "title": "Fatal hengivenhet",
@@ -768,7 +775,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/21/2114dc416f6e1e85310314269db1b140.jpg",
    "year": 2023,
-   "order": 96
+   "order": 97
   },
   {
    "title": "Det store grønne teltet",
@@ -776,7 +783,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/0a/0a9923e0d84fe10fe489ccfea2b41367.jpg",
    "year": 2023,
-   "order": 97
+   "order": 98
   },
   {
    "title": "Tomás Nevinson",
@@ -784,7 +791,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1c/1c12379b1068f83eca2aa3969d381e45.jpg",
    "year": 2023,
-   "order": 98
+   "order": 99
   },
   {
    "title": "Då Ivan Iljitsj døydde",
@@ -792,7 +799,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/86/86b844168e6020adf93fb07075dfd763.jpg",
    "year": 2023,
-   "order": 99
+   "order": 100
   },
   {
    "title": "Forandre seg",
@@ -800,7 +807,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/5f/5f75f661d498d6d3cbc321565bc699a5.jpg",
    "year": 2023,
-   "order": 100
+   "order": 101
   },
   {
    "title": "Singletrack Mind",
@@ -808,7 +815,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bc/bcf2eaff56f94a0b5bcd01442d7bb117.jpg",
    "year": 2023,
-   "order": 101
+   "order": 102
   },
   {
    "title": "The Guest Lecture",
@@ -816,7 +823,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2e/2efa137491718bd660b172616fa7e074.jpg",
    "year": 2023,
-   "order": 102
+   "order": 103
   },
   {
    "title": "Wanting",
@@ -824,7 +831,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d4/d4b87dfb9c0bd8262a4ffd0fd0d0e464.jpg",
    "year": 2023,
-   "order": 103
+   "order": 104
   },
   {
    "title": "Stolen focus",
@@ -832,7 +839,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/9c/9cfbeedd189539cfd759000dcda04ca2.jpg",
    "year": 2023,
-   "order": 104
+   "order": 105
   },
   {
    "title": "Det tomme toget",
@@ -840,7 +847,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a8/a8a287e20baddec8643fa1b3a926d207.jpg",
    "year": 2023,
-   "order": 105
+   "order": 106
   },
   {
    "title": "A Waiter in Paris",
@@ -848,7 +855,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b1/b1448c425593332a9a14eb8c4c85c2ff.png",
    "year": 2023,
-   "order": 106
+   "order": 107
   },
   {
    "title": "Detaljerna",
@@ -856,7 +863,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/5c/5c6277381f8b58911ee003f949d923d2.jpg",
    "year": 2022,
-   "order": 107
+   "order": 108
   },
   {
    "title": "Chip War",
@@ -864,7 +871,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/91/914eeaa4302de3174eacd43d9117335b.jpg",
    "year": 2022,
-   "order": 108
+   "order": 109
   },
   {
    "title": "Magnificent Rebels",
@@ -872,7 +879,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/4c/4cf743edb479833c4e2d009310071bcc.jpg",
    "year": 2022,
-   "order": 109
+   "order": 110
   },
   {
    "title": "Destined for War",
@@ -880,7 +887,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ee/ee11e237003b140939524cfaf2667d08.jpg",
    "year": 2022,
-   "order": 110
+   "order": 111
   },
   {
    "title": "Nights of Plague",
@@ -888,7 +895,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a9/a941e34ae3ae5c74616ad8ae50164b89.jpg",
    "year": 2022,
-   "order": 111
+   "order": 112
   },
   {
    "title": "Om utregning av romfang",
@@ -896,7 +903,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/15/15f8dba673c32ac998032e0fab644afc.jpg",
    "year": 2022,
-   "order": 112
+   "order": 113
   },
   {
    "title": "Homo appiens",
@@ -904,7 +911,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/9b/9b96dba6d0871ad06b081803ed229bca.jpg",
    "year": 2022,
-   "order": 113
+   "order": 114
   },
   {
    "title": "Det vi så",
@@ -912,7 +919,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/8a/8a535bc6cf0d7466bf5a08eabd30d33c.jpg",
    "year": 2022,
-   "order": 114
+   "order": 115
   },
   {
    "title": "I går",
@@ -920,7 +927,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/62/629f9451f8b40e93bf3835564504e989.jpg",
    "year": 2022,
-   "order": 115
+   "order": 116
   },
   {
    "title": "Tenk om igjen",
@@ -928,7 +935,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ac/ace279800f95a84037064bdd223a3911.jpg",
    "year": 2022,
-   "order": 116
+   "order": 117
   },
   {
    "title": "Tour de France bag kulisserne",
@@ -936,7 +943,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b2/b24d2fadb28446fdfc7291dd0d317af1.jpg",
    "year": 2022,
-   "order": 117
+   "order": 118
   },
   {
    "title": "Kairos.",
@@ -944,7 +951,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/52/52b060a79e0aa7f3a4d30e74788e5d5e.jpg",
    "year": 2022,
-   "order": 118
+   "order": 119
   },
   {
    "title": "The man who solved the market",
@@ -952,7 +959,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/67/6702d4e449f3f753a4907a273a8360ab.jpg",
    "year": 2022,
-   "order": 119
+   "order": 120
   },
   {
    "title": "Én svale gjør ingen sommer",
@@ -960,7 +967,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/db/db71a813048907aed185a2b42b62f5e2.jpg",
    "year": 2022,
-   "order": 120
+   "order": 121
   },
   {
    "title": "Anomalien",
@@ -968,7 +975,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/14/1434aad1a3b67e8bdcb0224e4da6d135.jpg",
    "year": 2022,
-   "order": 121
+   "order": 122
   },
   {
    "title": "Teknologiens filosofi",
@@ -976,7 +983,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/61/61f8185d56e66943ac9f75468ff854ac.jpg",
    "year": 2022,
-   "order": 122
+   "order": 123
   },
   {
    "title": "Nesten sanne historier om Rune Lisbeth Berg",
@@ -984,7 +991,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c0/c0ada1839c2bbcb18db5e15c4519e682.jpg",
    "year": 2022,
-   "order": 123
+   "order": 124
   },
   {
    "title": "En opritsjniks dag",
@@ -992,7 +999,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f1/f1ae8f2c5533329f9e35aeb4fb1a4b49.jpg",
    "year": 2022,
-   "order": 124
+   "order": 125
   },
   {
    "title": "Mordet på Henrik Ibsen",
@@ -1000,7 +1007,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d3/d3b2dfec85b885848501288d64152308.jpg",
    "year": 2022,
-   "order": 125
+   "order": 126
   },
   {
    "title": "Fyrstene av Finntjern",
@@ -1008,7 +1015,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2a/2a17a3eedc3588b40e5e0a18395eac47.jpg",
    "year": 2022,
-   "order": 126
+   "order": 127
   },
   {
    "title": "The Power Law",
@@ -1016,7 +1023,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e7/e7cefc3df08c2090eeb5ec4994042849.png",
    "year": 2022,
-   "order": 127
+   "order": 128
   },
   {
    "title": "Helgoland",
@@ -1024,7 +1031,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/94/940b506e79227d52f22d30301c161b66.jpg",
    "year": 2022,
-   "order": 128
+   "order": 129
   },
   {
    "title": "Det ukontrollerbare",
@@ -1032,7 +1039,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/31/314a69cdc656067124c82525183a2fe6.jpg",
    "year": 2022,
-   "order": 129
+   "order": 130
   },
   {
    "title": "When we cease to understand the world",
@@ -1040,7 +1047,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/fc/fca070ab6ca58c4701fa2f88c37ace2d.jpg",
    "year": 2022,
-   "order": 130
+   "order": 131
   },
   {
    "title": "Resten av dagen",
@@ -1048,7 +1055,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ef/efd9716fc85fa6980b3135315c1d8a12.jpg",
    "year": 2022,
-   "order": 131
+   "order": 132
   },
   {
    "title": "Løpa varg",
@@ -1056,7 +1063,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ab/ab5990bce256575f8ba9dfce75271151.jpg",
    "year": 2022,
-   "order": 132
+   "order": 133
   },
   {
    "title": "Trillions",
@@ -1064,7 +1071,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/74/749b7cef50be2c152ca5b22d46fec238.jpg",
    "year": 2021,
-   "order": 133
+   "order": 134
   },
   {
    "title": "Store Kongensgade 23",
@@ -1072,7 +1079,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3a/3a6e2e247008c32802a6dcd214ea7c3d.png",
    "year": 2021,
-   "order": 134
+   "order": 135
   },
   {
    "title": "Om dyr og syn",
@@ -1080,7 +1087,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/66/66dd6ee47501d793a5987aaed1ee0f63.jpg",
    "year": 2021,
-   "order": 135
+   "order": 136
   },
   {
    "title": "4000 uker",
@@ -1088,7 +1095,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f2/f2a8a460d510b741c3bf67df50005694.jpg",
    "year": 2021,
-   "order": 136
+   "order": 137
   },
   {
    "title": "Der fire veier møtes",
@@ -1096,7 +1103,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f9/f953e7783826ad32ce8d92ca2911b38f.jpg",
    "year": 2021,
-   "order": 137
+   "order": 138
   },
   {
    "title": "Solaris",
@@ -1104,7 +1111,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/74/7467ce12b5a79797ee5505b8b4c0a215.jpg",
    "year": 2021,
-   "order": 138
+   "order": 139
   },
   {
    "title": "Liv",
@@ -1112,7 +1119,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/cf/cffcbb7a54b22e8b924ded3adddff514.jpg",
    "year": 2021,
-   "order": 139
+   "order": 140
   },
   {
    "title": "Tre ringer",
@@ -1120,7 +1127,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d5/d5b2b92e3507da2bfbe35a5b268783f5.jpg",
    "year": 2021,
-   "order": 140
+   "order": 141
   },
   {
    "title": "Illusionernes undergang",
@@ -1128,7 +1135,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/17/174ea5c2590a9345f6fa27a3bae7f15b.jpg",
    "year": 2021,
-   "order": 141
+   "order": 142
   },
   {
    "title": "Det åttende livet (til Brilka)",
@@ -1136,7 +1143,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3f/3ffdf4786cfc3e51ff39740d832acad9.jpg",
    "year": 2021,
-   "order": 142
+   "order": 143
   },
   {
    "title": "Gjenferdet av Alexander Wolf",
@@ -1144,7 +1151,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3f/3f5b9f8505952e006c304681041169e4.jpg",
    "year": 2021,
-   "order": 143
+   "order": 144
   },
   {
    "title": "Ekko",
@@ -1152,7 +1159,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/23/238a8280f02cb528f511f288935a43de.jpg",
    "year": 2021,
-   "order": 144
+   "order": 145
   },
   {
    "title": "Opfindelsen af naturen",
@@ -1160,7 +1167,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/75/750daf3348f05523ab1c17032614969f.png",
    "year": 2021,
-   "order": 145
+   "order": 146
   },
   {
    "title": "Baron Wenckheim vender hjem",
@@ -1168,7 +1175,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c7/c7e0c986b353e495f0656f146d266881.jpg",
    "year": 2021,
-   "order": 146
+   "order": 147
   },
   {
    "title": "Seiobo der nede",
@@ -1176,14 +1183,14 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/9f/9fb7c22bbffb8f179ce54a00a402350c.jpg",
    "year": 2021,
-   "order": 147
+   "order": 148
   },
   {
    "title": "Eventyrlig evolusjon",
    "author": "Hanna Nyborg Støstad",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/aa/aac56bcc975478b5dab74c6278d12ae3.jpg",
-   "order": 148
+   "order": 149
   },
   {
    "title": "Ruter dame",
@@ -1191,7 +1198,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c5/c51bdc8934764d7ddb2e6bdbc2ffcb89.jpg",
    "year": 2021,
-   "order": 149
+   "order": 150
   },
   {
    "title": "Samlade verk",
@@ -1199,14 +1206,14 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/49/496b12f68dac9a9592eb26b1a091abe6.jpg",
    "year": 2021,
-   "order": 150
+   "order": 151
   },
   {
    "title": "Brønnøya",
    "author": "Stein Sørensen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1e/1ef07d6a309bc93035f946ec38d5210d.jpg",
-   "order": 151
+   "order": 152
   },
   {
    "title": "Jeg vil våkne til verden",
@@ -1214,7 +1221,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/21/211b011932b0ed3599128dd45093bfb3.jpg",
    "year": 2020,
-   "order": 152
+   "order": 153
   },
   {
    "title": "Head Hand Heart",
@@ -1222,7 +1229,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ee/eed751df71372e691d3810269a1448a7.jpg",
    "year": 2020,
-   "order": 153
+   "order": 154
   },
   {
    "title": "Hva jeg snakker om når jeg snakker om løping",
@@ -1230,7 +1237,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/44/44b1eb2f7229c144b7d2b8998163a876.jpg",
    "year": 2020,
-   "order": 154
+   "order": 155
   },
   {
    "title": "Forhandle med virkeligheten",
@@ -1238,7 +1245,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/35/35ef2b45a05eea45018f87edae7fc8c5.jpg",
    "year": 2020,
-   "order": 155
+   "order": 156
   },
   {
    "title": "Dear Reader",
@@ -1246,7 +1253,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/83/83a4d8d4401d4873f4a34630d96f92a8.jpg",
    "year": 2020,
-   "order": 156
+   "order": 157
   },
   {
    "title": "Morgenstjernen",
@@ -1254,7 +1261,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f2/f2a082aa1136e50bc57b46de0cfcf7f7.jpg",
    "year": 2020,
-   "order": 157
+   "order": 158
   },
   {
    "title": "På naturens skuldre",
@@ -1262,7 +1269,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/5b/5be0d20d5c66f4429d1843b9f79d42eb.jpg",
    "year": 2020,
-   "order": 158
+   "order": 159
   },
   {
    "title": "Tollak til Ingeborg",
@@ -1270,7 +1277,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/13/1320e0874d123a288910cded99ff2f18.jpg",
    "year": 2020,
-   "order": 159
+   "order": 160
   },
   {
    "title": "Gul bok",
@@ -1278,7 +1285,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/4e/4e6ef1af8ec64e5fe0267eaf956e93b0.jpg",
    "year": 2020,
-   "order": 160
+   "order": 161
   },
   {
    "title": "Det store spillet",
@@ -1286,7 +1293,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/44/4470ea7514c78dcc2d78b6e463aa3a11.jpg",
    "year": 2020,
-   "order": 161
+   "order": 162
   },
   {
    "title": "Need for the Bike",
@@ -1294,7 +1301,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/03/031d2dc3319b25f330187c55a5651c24.jpg",
    "year": 2020,
-   "order": 162
+   "order": 163
   },
   {
    "title": "Felâtun bey og Râkim efendi",
@@ -1302,7 +1309,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/7a/7a15561a4cd5e786af038e1151c451e6.jpg",
    "year": 2020,
-   "order": 163
+   "order": 164
   },
   {
    "title": "Radetzkymarch",
@@ -1310,7 +1317,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/93/937dd696c1cbc680decd1c25e4dce5fc.jpg",
    "year": 2020,
-   "order": 164
+   "order": 165
   },
   {
    "title": "Pesten",
@@ -1318,7 +1325,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/32/326df07d3f3396f36a985d29eac92af0.jpg",
    "year": 2020,
-   "order": 165
+   "order": 166
   },
   {
    "title": "Efter Europa",
@@ -1326,7 +1333,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/51/51828343e6fdc378e028477cce611c59.jpg",
    "year": 2020,
-   "order": 166
+   "order": 167
   },
   {
    "title": "The Light that Failed",
@@ -1334,7 +1341,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/84/84efa3fe73cb78753d4b126ea9d3e4dd.jpg",
    "year": 2020,
-   "order": 167
+   "order": 168
   },
   {
    "title": "Alle dagers ende",
@@ -1342,7 +1349,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/84/84a6e83d7e2d727b14fad7fdea3eb80d.jpg",
    "year": 2020,
-   "order": 168
+   "order": 169
   },
   {
    "title": "The Meritocracy Trap",
@@ -1350,7 +1357,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/12/129d4e77b0d5beb0c360d7ff40dcd4fe.jpg",
    "year": 2020,
-   "order": 169
+   "order": 170
   },
   {
    "title": "Hjernen er stjernen",
@@ -1358,7 +1365,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b3/b3ba65acf590949f81e74e2beaa224f0.jpg",
    "year": 2020,
-   "order": 170
+   "order": 171
   },
   {
    "title": "Verden på vippepunktet",
@@ -1366,7 +1373,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/77/777e38e00c90c252533ecdb625b0679e.jpg",
    "year": 2020,
-   "order": 171
+   "order": 172
   },
   {
    "title": "Cox, eller Tidens gang",
@@ -1374,7 +1381,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/0c/0cf8a5f571515cbf56665e73d0b437cc.jpg",
    "year": 2020,
-   "order": 172
+   "order": 173
   },
   {
    "title": "Hjemsøkelse",
@@ -1382,7 +1389,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/49/49e26211bbaff4a2d61188126631c7a2.jpg",
    "year": 2020,
-   "order": 173
+   "order": 174
   },
   {
    "title": "In Praise of the Bicycle",
@@ -1390,7 +1397,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d8/d8957a969027ea5f5abe4ace4630b40c.jpg",
    "year": 2020,
-   "order": 174
+   "order": 175
   },
   {
    "title": "Romutvidelser",
@@ -1398,7 +1405,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f4/f40a4c074adac395873f5bc7dff6f72d.jpg",
    "year": 2020,
-   "order": 175
+   "order": 176
   },
   {
    "title": "Fridtjof Hansens dagbok",
@@ -1406,7 +1413,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/9f/9f4efaec36abb14efac14d6393b4352a.jpg",
    "year": 2020,
-   "order": 176
+   "order": 177
   },
   {
    "title": "Bernie Sanders og det nye USA",
@@ -1414,7 +1421,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/05/059667ffd64d46939b8e8ed01f5bdf2c.jpg",
    "year": 2020,
-   "order": 177
+   "order": 178
   },
   {
    "title": "Vi er fem",
@@ -1422,7 +1429,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/6a/6ab31c890fa3023b12e78fb3e1f04c60.jpg",
    "year": 2020,
-   "order": 178
+   "order": 179
   },
   {
    "title": "Identitet",
@@ -1430,7 +1437,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/56/56fe53d75dcbe4d02eedabc473590788.jpg",
    "year": 2020,
-   "order": 179
+   "order": 180
   },
   {
    "title": "Før plogen din over de dødes knokler",
@@ -1438,7 +1445,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/57/579890bc5c2917c6a48cc3367dd0156b.jpg",
    "year": 2019,
-   "order": 180
+   "order": 181
   },
   {
    "title": "Dine geniale gener",
@@ -1446,7 +1453,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ef/ef6607d8814bfaf63d22a8fce261b9e4.jpg",
    "year": 2019,
-   "order": 181
+   "order": 182
   },
   {
    "title": "AF STJERNESTØV ER DU KOMMET",
@@ -1454,7 +1461,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bd/bdb4bba5b26eb9016196a73f085b259c.jpg",
    "year": 2019,
-   "order": 182
+   "order": 183
   },
   {
    "title": "De fattiges krig",
@@ -1462,7 +1469,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2f/2ff6b777e3228b5d7f2fb42457f993ce.jpg",
    "year": 2019,
-   "order": 183
+   "order": 184
   },
   {
    "title": "Dagsordenen",
@@ -1470,7 +1477,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/13/13822cfd63db694d92d02fd6a031f0ce.jpg",
    "year": 2019,
-   "order": 184
+   "order": 185
   },
   {
    "title": "Det stille alvoret",
@@ -1478,7 +1485,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1b/1b9af79a96e388c5eceb0c41abb4661f.jpg",
    "year": 2019,
-   "order": 185
+   "order": 186
   },
   {
    "title": "Full spredning",
@@ -1486,7 +1493,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/94/94b16733e0fdf911c3cfa0d2bd29d1cf.jpg",
    "year": 2019,
-   "order": 186
+   "order": 187
   },
   {
    "title": "A gentleman in Moscow",
@@ -1494,7 +1501,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b4/b4e08d2982f8768b9104eb2ffe0cc1bf.jpg",
    "year": 2019,
-   "order": 187
+   "order": 188
   },
   {
    "title": "Ikkje tenk på det",
@@ -1502,7 +1509,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b4/b4021841eb85d85c2734fb0a6249a67e.jpg",
    "year": 2019,
-   "order": 188
+   "order": 189
   },
   {
    "title": "Dei sju dørene",
@@ -1510,7 +1517,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f6/f6275e0b1060c04881eb974c101da314.jpg",
    "year": 2019,
-   "order": 189
+   "order": 190
   },
   {
    "title": "Tredje, og siste, roman om Bjørn Hansen",
@@ -1518,7 +1525,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e9/e9e7a418e2771b220a35e35e05e859d0.jpg",
    "year": 2019,
-   "order": 190
+   "order": 191
   },
   {
    "title": "Due og drone",
@@ -1526,7 +1533,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/8a/8a155c8e59c9daaf0eb9ec7963334d3b.jpg",
    "year": 2019,
-   "order": 191
+   "order": 192
   },
   {
    "title": "Lavterskeltilbud",
@@ -1534,7 +1541,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e7/e79dd777b1bb07bd6062f52bf238b896.jpg",
    "year": 2019,
-   "order": 192
+   "order": 193
   },
   {
    "title": "The value of everything",
@@ -1542,7 +1549,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/89/895c0ef4e97bc78056478ca7be55d914.jpg",
    "year": 2019,
-   "order": 193
+   "order": 194
   },
   {
    "title": "Sjakknovelle",
@@ -1550,7 +1557,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/64/64f96ba6d320dbc54844a5f8a7f884cc.jpg",
    "year": 2019,
-   "order": 194
+   "order": 195
   },
   {
    "title": "Eilert Sundt-tilstanden",
@@ -1558,7 +1565,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/64/644a4a7a64fc3a150a6dabf6603a2c17.jpg",
    "year": 2019,
-   "order": 195
+   "order": 196
   },
   {
    "title": "The Death of Marco Pantani",
@@ -1566,7 +1573,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a7/a7a703da6a96de6d4d64b9f220768ff1.jpg",
    "year": 2019,
-   "order": 196
+   "order": 197
   },
   {
    "title": "Tour dø France",
@@ -1574,7 +1581,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/52/523d1c88393dc565796bf0b7d44fe6bc.jpg",
    "year": 2019,
-   "order": 197
+   "order": 198
   },
   {
    "title": "Landevejens galejslaver",
@@ -1582,7 +1589,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e5/e531cf06d53a58b15d6340c8239dcf90.jpg",
    "year": 2019,
-   "order": 198
+   "order": 199
   },
   {
    "title": "Naturfilosofi",
@@ -1590,7 +1597,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f1/f182413166fbb17bde93679edf105d10.jpg",
    "year": 2019,
-   "order": 199
+   "order": 200
   },
   {
    "title": "Selvgjort er velgjort",
@@ -1598,7 +1605,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/7b/7b9c8ada620d8c31f30081d4433d97fa.jpg",
    "year": 2019,
-   "order": 200
+   "order": 201
   },
   {
    "title": "Hello World",
@@ -1606,7 +1613,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c6/c68044341717bd8681985dd4190ea178.jpg",
    "year": 2019,
-   "order": 201
+   "order": 202
   },
   {
    "title": "Utopia for realists",
@@ -1614,7 +1621,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/10/1071b1c732c1e20f24f53307b144ca26.jpg",
    "year": 2019,
-   "order": 202
+   "order": 203
   },
   {
    "title": "Smilefjes. Tommel opp. Regnbue.",
@@ -1622,7 +1629,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ae/ae9dc1a78e9f80dbd1e75eeddaf590c5.jpg",
    "year": 2019,
-   "order": 203
+   "order": 204
   },
   {
    "title": "Vi var unge og ubekymrede",
@@ -1630,7 +1637,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/68/68ccb53461b4670c9cf84b8e8b75a1bb.jpg",
    "year": 2019,
-   "order": 204
+   "order": 205
   },
   {
    "title": "Brev til ein ung diktar",
@@ -1638,7 +1645,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/41/41798b37c9f21add918a85e7607bbe03.jpg",
    "year": 2019,
-   "order": 205
+   "order": 206
   },
   {
    "title": "Faster",
@@ -1646,7 +1653,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/53/53dd76d5a02e39db916c3e0f8ebaad37.jpg",
    "year": 2019,
-   "order": 206
+   "order": 207
   },
   {
    "title": "The Race Against the Stasi",
@@ -1654,7 +1661,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/44/44c0b058c850ef0b19d3ea1a9ac83b4f.jpg",
    "year": 2019,
-   "order": 207
+   "order": 208
   },
   {
    "title": "Rytteren og hans skygge",
@@ -1662,7 +1669,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/35/35f30a1c24f8471b60339dadd19b3839.jpg",
    "year": 2019,
-   "order": 208
+   "order": 209
   },
   {
    "title": "Serotonin",
@@ -1670,7 +1677,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/35/359286f4c65fd7052677f09f03cb3bc9.jpg",
    "year": 2019,
-   "order": 209
+   "order": 210
   },
   {
    "title": "Koke bjørn",
@@ -1678,7 +1685,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ea/eacf72d1cba59fc65929e40434cc8b1a.jpg",
    "year": 2019,
-   "order": 210
+   "order": 211
   },
   {
    "title": "Når jeg drikker",
@@ -1686,7 +1693,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3a/3a4fdaaee642f9964997ffb47e49ea81.jpg",
    "year": 2019,
-   "order": 211
+   "order": 212
   },
   {
    "title": "Informasjonen",
@@ -1694,7 +1701,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/6a/6a4fb5a857045346d61e4a8c3354ea39.jpg",
    "year": 2019,
-   "order": 212
+   "order": 213
   },
   {
    "title": "Oppdateringer",
@@ -1702,7 +1709,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/0c/0c22be5db6546bae4b25464d83076562.jpg",
    "year": 2018,
-   "order": 213
+   "order": 214
   },
   {
    "title": "Monumentene",
@@ -1710,7 +1717,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d2/d21782c975f571a065d66cf09128d60d.jpg",
    "year": 2018,
-   "order": 214
+   "order": 215
   },
   {
    "title": "Dagbøkene",
@@ -1718,7 +1725,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/85/8552fe6921958149443bbc0993255473.jpg",
    "year": 2019,
-   "order": 215
+   "order": 216
   },
   {
    "title": "Når landet mørknar",
@@ -1726,7 +1733,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/6d/6dcb9a06fe7d206e3adfee0135178ace.jpg",
    "year": 2019,
-   "order": 216
+   "order": 217
   },
   {
    "title": "Hard er mitt lands lov",
@@ -1734,7 +1741,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ef/efe0556caf360ff9072874cc479458df.jpg",
    "year": 2018,
-   "order": 217
+   "order": 218
   },
   {
    "title": "Outline",
@@ -1742,7 +1749,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/9b/9b44cac47185dc151aed2d9d35ceba40.jpg",
    "year": 2018,
-   "order": 218
+   "order": 219
   },
   {
    "title": "Kunstig intelligens",
@@ -1750,7 +1757,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ff/ffc240adea91d66209b225f300603500.jpg",
    "year": 2018,
-   "order": 219
+   "order": 220
   },
   {
    "title": "Berta Isla (Spanish Edition)",
@@ -1758,7 +1765,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/36/36a8f8c6d6656393a20958cd5d2bdd89.jpg",
    "year": 2018,
-   "order": 220
+   "order": 221
   },
   {
    "title": "Jeg tror fortsatt Proust tar feil om oss",
@@ -1766,7 +1773,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b7/b7bfdfaba7c227781b468568a79a9f61.jpg",
    "year": 2018,
-   "order": 221
+   "order": 222
   },
   {
    "title": "Sportshjerte",
@@ -1774,7 +1781,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/5d/5d4434c18dc5ce2a96b60a116cba1e2e.jpg",
    "year": 2018,
-   "order": 222
+   "order": 223
   },
   {
    "title": "Å sykle",
@@ -1782,7 +1789,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d8/d8bc72cd0ba965b848d868b3901e3a01.jpg",
    "year": 2018,
-   "order": 223
+   "order": 224
   },
   {
    "title": "Nullingen av Paul Abel",
@@ -1790,7 +1797,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/8b/8bfd98ccade43e39c0d490e30cc81754.jpg",
    "year": 2018,
-   "order": 224
+   "order": 225
   },
   {
    "title": "Hjemløsheten",
@@ -1798,7 +1805,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/14/141e0ceca30afc5ae74799f795191ed9.jpg",
    "year": 2018,
-   "order": 225
+   "order": 226
   },
   {
    "title": "Gratis og uforpliktande verdivurdering",
@@ -1806,21 +1813,21 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/57/57af413fd7b7c4bc139889e92f672037.jpg",
    "year": 2018,
-   "order": 226
+   "order": 227
   },
   {
    "title": "Anqueil - helt alene",
    "author": "Paul Fournel",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d8/d83b67a779853ab38675758b7adc7c7c.png",
-   "order": 227
+   "order": 228
   },
   {
    "title": "Forsøk på å bevege seg med mørkets hastighet",
    "author": "Terje Holtet Larsen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/61/619412813e18d91e56ceae036a9d2933.jpg",
-   "order": 228
+   "order": 229
   },
   {
    "title": "Kapitalismens historie",
@@ -1828,7 +1835,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/51/5180195f4bafbd3e3ca6c03724b1bd78.jpg",
    "year": 2018,
-   "order": 229
+   "order": 230
   },
   {
    "title": "Rastløs",
@@ -1836,7 +1843,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/cc/cc9a68f552180d9479cd979ef63a4306.jpg",
    "year": 2018,
-   "order": 230
+   "order": 231
   },
   {
    "title": "Donau",
@@ -1844,14 +1851,14 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e9/e9dadf17732cbdabdba3a38a3a3a2c09.jpg",
    "year": 2018,
-   "order": 231
+   "order": 232
   },
   {
    "title": "Rant 1",
    "author": "Jon Refsdal Moe",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a7/a724d6ed4519ca8aba095b126dd1a9f2.jpg",
-   "order": 232
+   "order": 233
   },
   {
    "title": "Operasjon sjølvdisiplin",
@@ -1859,7 +1866,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/8e/8e3648c30f67a1d78b94e9b6017bc2f7.jpg",
    "year": 2018,
-   "order": 233
+   "order": 234
   },
   {
    "title": "En odyssé",
@@ -1867,7 +1874,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/72/72559c2143fa1b9af54d77ecaa952b68.jpg",
    "year": 2018,
-   "order": 234
+   "order": 235
   },
   {
    "title": "Oppdateringer 2",
@@ -1875,7 +1882,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f6/f6393dfe5b75b0c15db11549c91b964a.jpg",
    "year": 2018,
-   "order": 235
+   "order": 236
   },
   {
    "title": "Nei og atter nei",
@@ -1883,7 +1890,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/69/692b0513163c2dff230df83b7fb4e9b1.jpg",
    "year": 2018,
-   "order": 236
+   "order": 237
   },
   {
    "title": "Ellers kjent som menneskets lodd ; Sex på hotell : boksingel",
@@ -1891,7 +1898,7 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f6/f6bfdc18aa4c788dec6a87f3319f6b69.jpg",
    "year": 2018,
-   "order": 237
+   "order": 238
   },
   {
    "title": "Vestlandet",
@@ -1899,812 +1906,812 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/53/5328269f083f088228152f7ffd7214ad.jpg",
    "year": 2018,
-   "order": 238
+   "order": 239
   },
   {
    "title": "The Business Blockchain",
    "author": "William Mougayar",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2d/2de23e6fc3d6e3db03ff1223f204c0f6.jpg",
-   "order": 239
+   "order": 240
   },
   {
    "title": "The Age of Cryptocurrency",
    "author": "Paul Vigna",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d9/d98dc99d7b45c58b9cd8d21ef58869a9.jpg",
-   "order": 240
+   "order": 241
   },
   {
    "title": "Doktor Faustus",
    "author": "Thomas Mann",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/06/06bac1e6a65d7d18ea5c27c43219d168.jpg",
-   "order": 241
+   "order": 242
   },
   {
    "title": "71 bakker du må sykle i Norge",
    "author": "Geir Stian Ulstein",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d8/d83794b18af3a123c91febc01376c1e4.jpg",
-   "order": 242
+   "order": 243
   },
   {
    "title": "Alibaba's World",
    "author": "Porter Erisman",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ec/ec3551717b4ed9c348c9a227c95673f3.jpg",
-   "order": 243
+   "order": 244
   },
   {
    "title": "To Begin at the Beginning (Cahiers)",
    "author": "Javier Marías",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e6/e62384219ee4d84ce59fda1b5b750d33.jpg",
-   "order": 244
+   "order": 245
   },
   {
    "title": "Det egoistiske genet",
    "author": "Richard Dawkins",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/76/76dc8d39dfb7701a39956847db57ea73.jpg",
-   "order": 245
+   "order": 246
   },
   {
    "title": "Berge",
    "author": "Jan Kjærstad",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/14/14dd25514a0adb09e580263a60608431.jpg",
-   "order": 246
+   "order": 247
   },
   {
    "title": "A Crack in Creation",
    "author": "Jennifer A. Doudna",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ab/ab791461dafba1a7c3579c28e3caede2.jpg",
-   "order": 247
+   "order": 248
   },
   {
    "title": "Ingen vitner for vitnet",
    "author": "Christian Refsum",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/27/279e1027a42db6491117564dcdf2eccc.jpg",
-   "order": 248
+   "order": 249
   },
   {
    "title": "Fotturar i Norge",
    "author": "Gaute M. Sortland",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c3/c32df4f6ec96d603499f86a5e7de73d1.jpg",
-   "order": 249
+   "order": 250
   },
   {
    "title": "Sjakknovelle",
    "author": "Stefan Zweig",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c4/c46895349e0cec42e29c7ac01af903ba.jpg",
-   "order": 250
+   "order": 251
   },
   {
    "title": "Verden av i går",
    "author": "Stefan Zweig",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e7/e779297a41eb36af104d43977f307193.jpg",
-   "order": 251
+   "order": 252
   },
   {
    "title": "Kvinnen med rødt hår",
    "author": "Orhan Pamuk",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/03/0357769bd853219e8370d1309892f553.jpg",
-   "order": 252
+   "order": 253
   },
   {
    "title": "The Second Machine Age",
    "author": "Erik Brynjolfsson",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/50/505bb1791302e0b7b14b8490965cd60d.jpg",
-   "order": 253
+   "order": 254
   },
   {
    "title": "Humans Need Not Apply",
    "author": "Jerry Kaplan",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/83/8381fdd8198a08b9cb92d72c7598a1fc.jpg",
-   "order": 254
+   "order": 255
   },
   {
    "title": "The rise of the robots",
    "author": "Martin Ford",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/5e/5e65ddac489eb1d7658501c362e2a154.jpg",
-   "order": 255
+   "order": 256
   },
   {
    "title": "Leseren",
    "author": "Alf van der Hagen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/61/61461547169395ffea42f7c8957c7333.jpg",
-   "order": 256
+   "order": 257
   },
   {
    "title": "Angiveren",
    "author": "Terje Holtet Larsen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b6/b6dbd695a2e69f8161129a6c80f0a0b5.jpg",
-   "order": 257
+   "order": 258
   },
   {
    "title": "Trolldomsfjellet",
    "author": "Thomas Mann",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2b/2b056a10be96cdacceed64d709716038.jpg",
-   "order": 258
+   "order": 259
   },
   {
    "title": "Thus Bad Begins",
    "author": "Javier Marias",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/08/08f0328da110292dd328ac79ac12cb0d.jpg",
-   "order": 259
+   "order": 260
   },
   {
    "title": "Da postmodernismen kom til Norge",
    "author": "Bjarne Riiser Gundersen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/15/15f94ccfd31932fd68e448cc1cd9e7a2.jpg",
-   "order": 260
+   "order": 261
   },
   {
    "title": "Eneste",
    "author": "Silje Aanes Fagerlund",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bf/bf6ab469347380437b22b01a677a9040.jpg",
-   "order": 261
+   "order": 262
   },
   {
    "title": "Kjærlighet mellom intelligente menn",
    "author": "Terje Holtet Larsen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1a/1a0d18c70da526d33251af7d92bcd39a.jpg",
-   "order": 262
+   "order": 263
   },
   {
    "title": "Why Information Grows",
    "author": "Cesar Hidalgo",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/eb/ebb5fa3f023e50631e90002c13d95bd9.jpg",
-   "order": 263
+   "order": 264
   },
   {
    "title": "Du er ikke død før jeg slutter å elske deg",
    "author": "Didrik Morits Hallstrøm",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/5e/5e4c184ab979baba11e77327d7f0c02a.jpg",
-   "order": 264
+   "order": 265
   },
   {
    "title": "Anstendighet og revolt",
    "author": "Espen Hammer",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/76/769d07510d19a105883734135eb30eee.jpg",
-   "order": 265
+   "order": 266
   },
   {
    "title": "Romaner",
    "author": "Bård Torgersen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/34/349f2b40a17489073466a6d7e910714f.jpg",
-   "order": 266
+   "order": 267
   },
   {
    "title": "Grandiosa",
    "author": "Olav Løkken Reisop",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/aa/aafe24d3d9f8d2a627a6c597882b2381.jpg",
-   "order": 267
+   "order": 268
   },
   {
    "title": "Det friksjonsfrie samfunn",
    "author": "Arne Krokan",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ca/ca394fc79e4d053f6eef37b1e5cc2e4f.jpg",
-   "order": 268
+   "order": 269
   },
   {
    "title": "Eclipse i mai",
    "author": "Gert Nygårdshaug",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/78/78df4e9dae1ebdd14102630e6bde79a6.jpg",
-   "order": 269
+   "order": 270
   },
   {
    "title": "A strangeness in my mind",
    "author": "Orhan Pamuk",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/04/04190663baf8cba90544a990d93d47b7.jpg",
-   "order": 270
+   "order": 271
   },
   {
    "title": "Samleren",
    "author": "Audun Mortensen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/90/90bc97365ad56ac151c7028aab2c20f9.jpg",
-   "order": 271
+   "order": 272
   },
   {
    "title": "Også det uforsonlige finnes",
    "author": "Anne Helene Guddal",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/af/af965bb67aefdc0d0cff9def5757b40a.jpg",
-   "order": 272
+   "order": 273
   },
   {
    "title": "Dag Solstad",
    "author": "Alf van der Hagen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bf/bf3a1c1daa370b20367cd733030197ef.jpg",
-   "order": 273
+   "order": 274
   },
   {
    "title": "To Save Everything, Click Here",
    "author": "Evgeny Morozov",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d9/d92bcf4f095accdee6a3bd55e8d0b57e.jpg",
-   "order": 274
+   "order": 275
   },
   {
    "title": "2666",
    "author": "Roberto Bolaño",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1f/1feb9db3f5a5b269b08218864b252fac.jpg",
-   "order": 275
+   "order": 276
   },
   {
    "title": "Drømmenes fjell",
    "author": "Geir Stian Ulstein",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ab/ab6bc5378aaaf78ff8f60769ee7d7a14.jpg",
-   "order": 276
+   "order": 277
   },
   {
    "title": "Growth Hacker Marketing",
    "author": "Ryan Holiday",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/86/86187c2cf1b45bb61316bb3fda25e0cc.jpg",
-   "order": 277
+   "order": 278
   },
   {
    "title": "The Everything Store",
    "author": "Brad Stone",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/6b/6bdefad16c757d4f41b452034c014518.jpg",
-   "order": 278
+   "order": 279
   },
   {
    "title": "The Circle",
    "author": "Dave Eggers",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/36/3663703f048548d4d006fb3b073dfa7a.jpg",
-   "order": 279
+   "order": 280
   },
   {
    "title": "Tyskland stiger frem",
    "author": "Sten Inge Jørgensen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/5f/5fc38fa3ec8e455c40f9923b71a2f61f.jpg",
-   "order": 280
+   "order": 281
   },
   {
    "title": "Ensomheten i Lydia Ernemans liv",
    "author": "Rune Christiansen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/57/575efb450d0f72ecb26619f2d937a88c.jpg",
-   "order": 281
+   "order": 282
   },
   {
    "title": "Your Face Tomorrow 3",
    "author": "Javier Marias",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b0/b0ab9ca2a8ebc848a107a135a5f4ce89.jpg",
-   "order": 282
+   "order": 283
   },
   {
    "title": "Å skrive",
    "author": "Marguerite Duras",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/75/7526f7e02c5bd84dafde6f6e72060dba.jpg",
-   "order": 283
+   "order": 284
   },
   {
    "title": "Your Face Tomorrow 2",
    "author": "Javier Marias",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a2/a20bc4bf2287c882c3646bad0cd17a57.jpg",
-   "order": 284
+   "order": 285
   },
   {
    "title": "Jeg tror bestemor lå med Frank Zappa",
    "author": "Tine J. Sir",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/08/087341209707d7f728f4d9b0afdc8471.jpg",
-   "order": 285
+   "order": 286
   },
   {
    "title": "Undis Brekke",
    "author": "Gunnhild Øyehaug",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/77/775bcd61b2b2a44a848b3375ab3d57b0.jpg",
-   "order": 286
+   "order": 287
   },
   {
    "title": "Mitt privatliv",
    "author": "Tomas Espedal",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/4b/4bec7c9e9c9df89c58b734bebbc44219.jpg",
-   "order": 287
+   "order": 288
   },
   {
    "title": "Sannheten om Harry Quebert-saken",
    "author": "Joël Dicker",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/92/920ff54d3fd7e2b868ee203ddeed8fd8.jpg",
-   "order": 288
+   "order": 289
   },
   {
    "title": "Syklisten",
    "author": "Aksel Selmer",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3a/3a1211af9929c280e7f185d3c3b6a367.jpg",
-   "order": 289
+   "order": 290
   },
   {
    "title": "De svarte skiltene",
    "author": "Lars Mørch Finborud",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/76/76413569a3883cbef891e1aba27e1369.jpg",
-   "order": 290
+   "order": 291
   },
   {
    "title": "Magdalenafjorden",
    "author": "Kjartan Fløgstad",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a7/a73eef27a7ccb38aab35e067ac412d81.jpg",
-   "order": 291
+   "order": 292
   },
   {
    "title": "Your Face Tomorrow",
    "author": "Javier Marias",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/37/37eb4d503fccafe72c723b18876baa91.jpg",
-   "order": 292
+   "order": 293
   },
   {
    "title": "En ren besettelse",
    "author": "Geoff Dyer",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2d/2db77b1788df4fe4a31230a8c4a5b104.jpg",
-   "order": 293
+   "order": 294
   },
   {
    "title": "Null",
    "author": "Gine Cornelia Pedersen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/fc/fcc9e4256c77e09e0a8662ae42023dfc.jpg",
-   "order": 294
+   "order": 295
   },
   {
    "title": "Dom Casmurro",
    "author": "Joaquim Maria Machado de Assis",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/0d/0d7b445c141cc094e1e69816ad24aa19.jpg",
-   "order": 295
+   "order": 296
   },
   {
    "title": "Thinking, fast and slow",
    "author": "Daniel Kahneman",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/25/25aa4df8d9d5be755136db4a8a6c80a2.jpg",
-   "order": 296
+   "order": 297
   },
   {
    "title": "Granta. Nr. 1 2013",
    "author": "Trude Rønnestad",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/8f/8f799d5c11cca9b83b06283305d52daf.jpg",
-   "order": 297
+   "order": 298
   },
   {
    "title": "Vinternoveller",
    "author": "Ingvild H. Rishøi",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b0/b0da687867fac89326463777b9f8cd66.jpg",
-   "order": 298
+   "order": 299
   },
   {
    "title": "Det feige hjerte",
    "author": "Javier Marías",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c1/c12d28ba4582e2b5ed8b14009f09a810.png",
-   "order": 299
+   "order": 300
   },
   {
    "title": "Fugletribunalet",
    "author": "Agnes Ravatn",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a0/a0c98a02970e89e8948a70830e8b9ed6.jpg",
-   "order": 300
+   "order": 301
   },
   {
    "title": "Hver morgen kryper jeg opp fra havet",
    "author": "Frøydis Sollid Simonsen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3d/3d11a4f483dea733a0270824c9d4c28b.jpg",
-   "order": 301
+   "order": 302
   },
   {
    "title": "Bomvokteren",
    "author": "Aksel Selmer",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1a/1a50655191909d842b487185fd236ada.jpg",
-   "order": 302
+   "order": 303
   },
   {
    "title": "Kloge hænder",
    "author": "Mattias Tesfaye",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b0/b01b1956e51ed1bb609085f685c60a88.jpg",
-   "order": 303
+   "order": 304
   },
   {
    "title": "Oxford",
    "author": "Javier Marias",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/80/8046e26672fa3d4efed30bc59c49589b.jpg",
-   "order": 304
+   "order": 305
   },
   {
    "title": "Collini-saken",
    "author": "Ferdinand von Schirach",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/68/68f835dcf17181250027e139b5d51797.jpg",
-   "order": 305
+   "order": 306
   },
   {
    "title": "Akilles",
    "author": "Kristian Klausen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/42/423afca41f8fe507143d1d310f3dbaa0.jpg",
-   "order": 306
+   "order": 307
   },
   {
    "title": "Sammenhengen",
    "author": "Leonardo Sciascia",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/8d/8d6acbf8c93b2a9a14852ea413001cbd.jpg",
-   "order": 307
+   "order": 308
   },
   {
    "title": "Bergeners",
    "author": "Tomas Espedal",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/fd/fd85556a8278eb00cb1f35dd2cd20b04.jpg",
-   "order": 308
+   "order": 309
   },
   {
    "title": "Globus",
    "author": "Kristian Klausen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/92/927a5b685309184abcbf87f3e46f5004.jpg",
-   "order": 309
+   "order": 310
   },
   {
    "title": "Mitt liv var et hett bibliotek",
    "author": "Kristian Klausen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/3e/3e3c77a437a62065a2d2adfd7d1a7740.jpg",
-   "order": 310
+   "order": 311
   },
   {
    "title": "Røff guide til Tour de France 2013",
    "author": "Johan Kaggestad",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c1/c146200b1b43f66c412802e58943ba2a.jpg",
-   "order": 311
+   "order": 312
   },
   {
    "title": "27 519 tegn med mellomrom",
    "author": "Audun Mortensen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/09/09c805e2b12aaac3c24482a4cffa92c7.jpg",
-   "order": 312
+   "order": 313
   },
   {
    "title": "Plan D",
    "author": "Simon Urban",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/28/282ac6d28581b1dd17c066c7726e1de6.jpg",
-   "order": 313
+   "order": 314
   },
   {
    "title": "Det skjulte rittet",
    "author": "Tyler Hamilton",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/97/9719b602b01dcb65ca88126b012dc2c2.jpg",
-   "order": 314
+   "order": 315
   },
   {
    "title": "Skyld",
    "author": "Ferdinand von Schirach",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b2/b26943755c97018d82fa9951e927822a.jpg",
-   "order": 315
+   "order": 316
   },
   {
    "title": "David Mahlers tid",
    "author": "Daniel Kehlmann",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/ed/ede909b0e110fd2a8e38062da0d0978e.jpg",
-   "order": 316
+   "order": 317
   },
   {
    "title": "Løsøre",
    "author": "Ole Robert Sunde",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bb/bbde175dd329e1de1d7f2809a2edda63.jpg",
-   "order": 317
+   "order": 318
   },
   {
    "title": "Som fra mange ulike verdener",
    "author": "Audun Lindholm",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/5e/5e53554ec5c939a5d7c02a0a24c59911.jpg",
-   "order": 318
+   "order": 319
   },
   {
    "title": "Oppmålingen av verden",
    "author": "Daniel Kehlmann",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/76/76e24c9a310ee3a0efa09ec118694bc0.jpg",
-   "order": 319
+   "order": 320
   },
   {
    "title": "Selvomsorg",
    "author": "Ole Robert Sunde",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e4/e4a656c8c823fbbdb173776be1f9a1bf.jpg",
-   "order": 320
+   "order": 321
   },
   {
    "title": "Serena",
    "author": "Ian McEwan",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/54/54bdc71e3ca47333c1fb3c354a283e1b.jpg",
-   "order": 321
+   "order": 322
   },
   {
    "title": "Kalypso",
    "author": "Ole Robert Sunde",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/4f/4f5beaddfb8f29974a8ff6cb900fde42.jpg",
-   "order": 322
+   "order": 323
   },
   {
    "title": "På fest hos litteraturen",
    "author": "Tore Renberg",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/4f/4f83412b05dda634b922a28045ae8796.jpg",
-   "order": 323
+   "order": 324
   },
   {
    "title": "Krigen var min families historie",
    "author": "Ole Robert Sunde",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/27/277f1802c7e38882824689152c6db858.jpg",
-   "order": 324
+   "order": 325
   },
   {
    "title": "Forelskelsene",
    "author": "Javier Marías",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e0/e0a599da66783077b3b41aa387949041.jpg",
-   "order": 325
+   "order": 326
   },
   {
    "title": "Om kunsten å lese og skrive",
    "author": "Olof Lagercrantz",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b3/b383b75227491d1cf701e44111cd3ce7.jpg",
-   "order": 326
+   "order": 327
   },
   {
    "title": "Blissard",
    "author": "Johan Harstad",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/33/333331b167afe15965a8d7b75fc87c4d.jpg",
-   "order": 327
+   "order": 328
   },
   {
    "title": "Alberto Caeiros poesi",
    "author": "Fernando Pessoa",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d7/d7c3a067091871e9afa750e02772e0ca.jpg",
-   "order": 328
+   "order": 329
   },
   {
    "title": "Stille natt",
    "author": "Ragnar Hovland",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/37/3785ebacb5d7a65207ad7d5b5bbe8096.jpg",
-   "order": 329
+   "order": 330
   },
   {
    "title": "Monstermenneske",
    "author": "Kjersti Annesdatter Skomsvold",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/73/73635cc3a9b10f7569593afdbacd250b.jpg",
-   "order": 330
+   "order": 331
   },
   {
    "title": "Uglens dag",
    "author": "Leonardo Sciascia",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/76/7624006668745de5d4ef96f3c9e7504d.jpg",
-   "order": 331
+   "order": 332
   },
   {
    "title": "Biografi ; Dagbok : (epitafer) ; Brev : (et forsøk)",
    "author": "Tomas Espedal",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/92/920055134348ce8cab07dd49d4b5b864.jpg",
-   "order": 332
+   "order": 333
   },
   {
    "title": "Dagbok",
    "author": "Tomas Espedal",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/1f/1f69acceca2fcb069574a6df42caa8d0.jpg",
-   "order": 333
+   "order": 334
   },
   {
    "title": "Brev",
    "author": "Tomas Espedal",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/0a/0a39f9d2fe5bb8d36b26642cdf936d20.jpg",
-   "order": 334
+   "order": 335
   },
   {
    "title": "Historien om fru Berg",
    "author": "Ingvild H. Rishøi",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c7/c7f8c4df84c5ecbd6fd25ef186b855c1.jpg",
-   "order": 335
+   "order": 336
   },
   {
    "title": "Dirty things",
    "author": "Stig Sæterbakken",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bf/bfbc878ea25099683bed8b6de0f15c57.jpg",
-   "order": 336
+   "order": 337
   },
   {
    "title": "Kartet og terrenget",
    "author": "Michel Houellebecq",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/74/7447777d093044ac5ef69bfd756f334e.jpg",
-   "order": 337
+   "order": 338
   },
   {
    "title": "Herr Cevdet og sønnene hans",
    "author": "Orhan Pamuk",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/2e/2edb2f4b0ceb63d608468cf7acfa1197.jpg",
-   "order": 338
+   "order": 339
   },
   {
    "title": "Om å skrive",
    "author": "Hans Olav Brenner",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/32/327245afd00e4c1b43f077844143a628.jpg",
-   "order": 339
+   "order": 340
   },
   {
    "title": "Ond natur, eller Med Elvis i Mexico",
    "author": "Javier Marías",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/13/13151e45cbc5a50e3cac8f13c970131f.jpg",
-   "order": 340
+   "order": 341
   },
   {
    "title": "Imot naturen",
    "author": "Tomas Espedal",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/26/26832bc5fe78be621342ff748518de6e.jpg",
-   "order": 341
+   "order": 342
   },
   {
    "title": "Normans område",
    "author": "Jan Kjærstad",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/72/724e0316a82693d8c958152b974b6e1a.jpg",
-   "order": 342
+   "order": 343
   },
   {
    "title": "Imot kunsten",
    "author": "Tomas Espedal",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b6/b66e9bdbeb9bb419e282108502e26c5c.jpg",
-   "order": 343
+   "order": 344
   },
   {
    "title": "Gå, (eller Kunsten å leve et vilt og poetisk liv)",
    "author": "Tomas Espedal",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/30/3074df44de316d4322c69c16043dc00c.jpg",
-   "order": 344
+   "order": 345
   },
   {
    "title": "Menneskefluene",
    "author": "Hans Olav Lahlum",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/48/48bce04d4db0bf53d9756cee88ba3175.jpg",
-   "order": 345
+   "order": 346
   },
   {
    "title": "Gjennom natten",
    "author": "Stig Sæterbakken",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/fe/fe0575871a59a3178476f05919c0bf1d.jpg",
-   "order": 346
+   "order": 347
   },
   {
    "title": "Jo fortere jeg går, jo mindre er jeg",
    "author": "Kjersti Annesdatter Skomsvold",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/bd/bda6c5c0701f37d46cca4316c8c7386e.jpg",
-   "order": 347
+   "order": 348
   },
   {
    "title": "Enmannsorkester",
    "author": "Eivind Buene",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/6e/6e900394a311c6a0f733290cab41e9ac.jpg",
-   "order": 348
+   "order": 349
   },
   {
    "title": "Det tause huset",
    "author": "Orhan Pamuk",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/7b/7bf43d82fc5dd550d42632762f8158d0.jpg",
-   "order": 349
-  },
-  {
-   "title": "Min kamp",
-   "author": "Karl Ove Knausgård",
-   "status": "lest",
-   "cover": "https://static.bokelskere.no/assets/5b/5ba70dcec3ddc59e2b6aeeebe358e94e.jpg",
    "order": 350
   },
   {
    "title": "Min kamp",
    "author": "Karl Ove Knausgård",
    "status": "lest",
-   "cover": "https://static.bokelskere.no/assets/3d/3d4d86f758a93ad53a089e92e4e45722.jpg",
+   "cover": "https://static.bokelskere.no/assets/5b/5ba70dcec3ddc59e2b6aeeebe358e94e.jpg",
    "order": 351
   },
   {
    "title": "Min kamp",
    "author": "Karl Ove Knausgård",
    "status": "lest",
-   "cover": "https://static.bokelskere.no/assets/88/88f32898fb97a2149e0e704a5a40eafd.jpg",
+   "cover": "https://static.bokelskere.no/assets/3d/3d4d86f758a93ad53a089e92e4e45722.jpg",
    "order": 352
+  },
+  {
+   "title": "Min kamp",
+   "author": "Karl Ove Knausgård",
+   "status": "lest",
+   "cover": "https://static.bokelskere.no/assets/88/88f32898fb97a2149e0e704a5a40eafd.jpg",
+   "order": 353
   },
   {
    "title": "Satellittmenneskene",
    "author": "Hans Olav Lahlum",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/97/972f7f2f19236cb8f0e276bf9d3916a3.jpg",
-   "order": 353
+   "order": 354
   },
   {
    "title": "Tårnet",
@@ -2712,84 +2719,84 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/58/58b92521967681f290cfb1c506356379.jpg",
    "year": 2011,
-   "order": 354
+   "order": 355
   },
   {
    "title": "The Imperfectionists",
    "author": "Tom Rachman",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e7/e70521f408e66e701201437f7314cee5.jpg",
-   "order": 355
+   "order": 356
   },
   {
    "title": "Kodane",
    "author": "Olav R. Øyehaug",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/5d/5d212c4ac21b83af4117eab2715c4366.jpg",
-   "order": 356
+   "order": 357
   },
   {
    "title": "Cash",
    "author": "Jens Lapidus",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/de/de558b48be6bb9d8d43cbeff1b2ffb5b.jpg",
-   "order": 357
+   "order": 358
   },
   {
    "title": "Alt under kontroll",
    "author": "Jan Grue",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/86/8684e008d1930fe586faa336ce69db7c.jpg",
-   "order": 358
+   "order": 359
   },
   {
    "title": "Hvordan snakke om bøker du ikke har lest?",
    "author": "Pierre Bayard",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/fd/fd6a6a4b465fb374fda2dfb7520200f4.jpg",
-   "order": 359
+   "order": 360
   },
   {
    "title": "Grense Jakobselv",
    "author": "Kjartan Fløgstad",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/85/8566017e124dd05c0c31b48d96ec4834.jpg",
-   "order": 360
+   "order": 361
   },
   {
    "title": "Politi og røver",
    "author": "Kjetil Stensvik Østli",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/20/202ba698914d8b68116953488e057fea.jpg",
-   "order": 361
+   "order": 362
   },
   {
    "title": "Mastering Mountain Bike Skills",
    "author": "Brian Lopes",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/a4/a427487f656dd73a8f2be3b16dba94bd.jpg",
-   "order": 362
+   "order": 363
   },
   {
    "title": "På vegne av venner",
    "author": "Kristopher Schau",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/03/038a996d6ef004c80830b7d86332145f.jpg",
-   "order": 363
-  },
-  {
-   "title": "Blekingegadebanden",
-   "author": "Peter Øvig Knudsen",
-   "status": "lest",
-   "cover": "https://static.bokelskere.no/assets/d1/d1af54bf1c24fdba9feb9e33ba2722f1.jpg",
    "order": 364
   },
   {
    "title": "Blekingegadebanden",
    "author": "Peter Øvig Knudsen",
    "status": "lest",
-   "cover": "https://static.bokelskere.no/assets/da/daa5dd780991731115c48535d7171365.jpg",
+   "cover": "https://static.bokelskere.no/assets/d1/d1af54bf1c24fdba9feb9e33ba2722f1.jpg",
    "order": 365
+  },
+  {
+   "title": "Blekingegadebanden",
+   "author": "Peter Øvig Knudsen",
+   "status": "lest",
+   "cover": "https://static.bokelskere.no/assets/da/daa5dd780991731115c48535d7171365.jpg",
+   "order": 366
   },
   {
    "title": "På sykkel i Oslo",
@@ -2797,77 +2804,77 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/0e/0e04f4f39c7d37336a3be05daffc7574.jpg",
    "year": 2005,
-   "order": 366
+   "order": 367
   },
   {
    "title": "På sykkel i fjellet",
    "author": "Øyvind Wold",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/c6/c6cc90f7f5b4cefffcaf073f954cf902.jpg",
-   "order": 367
+   "order": 368
   },
   {
    "title": "Rødsonen",
    "author": "Gert Nygårdshaug",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/21/214ae499bd467225f789d18ed2bb2c09.jpg",
-   "order": 368
+   "order": 369
   },
   {
    "title": "Himmelblomsttreet",
    "author": "Gert Nygårdshaug",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/f4/f4161186a2aa20fceeb3a281191945d3.jpg",
-   "order": 369
+   "order": 370
   },
   {
    "title": "Mengele Zoo",
    "author": "Gert Nygårdshaug",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b5/b55e94f4eba7a8e3db1d0fcacf2ece6a.jpg",
-   "order": 370
+   "order": 371
   },
   {
    "title": "Jean-Paul Sartre",
    "author": "Dag Østerberg",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/e1/e16f8f95020611df90d97df140406a93.jpg",
-   "order": 371
+   "order": 372
   },
   {
    "title": "Sex, død og ekteskap",
    "author": "Jon Øystein Flink",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/d8/d883ed3ceb43f69dac5aac565b220d8f.jpg",
-   "order": 372
+   "order": 373
   },
   {
    "title": "Kloden dreier stille rundt",
    "author": "Jan Kjærstad",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/01/01e14a1268e272a056d52025061de9a4.jpg",
-   "order": 373
+   "order": 374
   },
   {
    "title": "Naiv. Super",
    "author": "Erlend Loe",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/aa/aaa085944052638e6052e05cb748342f.jpg",
-   "order": 374
+   "order": 375
   },
   {
    "title": "Svart bok",
    "author": "Orhan Pamuk",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/b1/b1f0c94e227e13f7f4765583a263bf78.jpg",
-   "order": 375
+   "order": 376
   },
   {
    "title": "Mitt navn er Karmosin",
    "author": "Orhan Pamuk",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/6e/6e956699f49a4fadff504819caa0d385.jpg",
-   "order": 376
+   "order": 377
   },
   {
    "title": "The Museum of Innocence",
@@ -2875,70 +2882,70 @@
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/4a/4abe0862c9f9431194ad758c0356fbb8.jpg",
    "year": 2009,
-   "order": 377
+   "order": 378
   },
   {
    "title": "Alle forteller meg hvor bra jeg er i tilfelle jeg blir det",
    "author": "Audun Mortensen",
    "status": "lest",
    "cover": "https://static.bokelskere.no/assets/35/357ae26d4a1a6d1cc3ff64744a7be849.jpg",
-   "order": 378
+   "order": 379
   },
   {
    "title": "A Fabulous Debt",
    "author": "Robin Wigglesworth",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d6/d63d44d65a1061ebe8240cc72faa6920.jpg",
-   "order": 379
+   "order": 380
   },
   {
    "title": "Borgen",
    "author": "Erlend O. Nødtvedt",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/39/396c932910db07d3dab07c93bc055655.jpg",
-   "order": 380
+   "order": 381
   },
   {
    "title": "Klen tröst",
    "author": "Ia Genberg",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/3c/3cc82f3bd12fc02d25c93d22bea0c821.jpg",
-   "order": 381
+   "order": 382
   },
   {
    "title": "The Rulers",
    "author": "Cecilia Rikap",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/89/89297455366232ad02c1c70700f56a45.png",
-   "order": 382
+   "order": 383
   },
   {
    "title": "Incorruptible",
    "author": "Eric Ries",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ae/ae53f2c1bd69df09d747b99863d55eba.png",
-   "order": 383
+   "order": 384
   },
   {
    "title": "Vemodsfysikk",
    "author": "Georgi Gospodinov",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/14/14633b215bd458c05f78d3564cd12c04.jpg",
-   "order": 384
+   "order": 385
   },
   {
    "title": "I Am Not a Robot",
    "author": "Joanna Stern",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f4/f4574b27c436e0511a271e765e641397.png",
-   "order": 385
+   "order": 386
   },
   {
    "title": "Salt/Land",
    "author": "Fredrik Parelius",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/db/dbdccf7b1baeb2a90ad27943697bf1ca.jpg",
-   "order": 386
+   "order": 387
   },
   {
    "title": "Empusion",
@@ -2946,21 +2953,21 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e7/e7368e77798e1c07cb92488a4ebab732.jpg",
    "year": 2026,
-   "order": 387
+   "order": 388
   },
   {
    "title": "The Idea Machine",
    "author": "Joel J. Miller",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/55/55b36667335b417346b75f404884c55e.jpg",
-   "order": 388
+   "order": 389
   },
   {
    "title": "Hageselskapet",
    "author": "Katherine Mansfield",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/3c/3c4c02522151b642415a4aac18e3b41e.jpg",
-   "order": 389
+   "order": 390
   },
   {
    "title": "Transcription",
@@ -2968,35 +2975,35 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/15/15b70c82ad84410d7c6e899a077a6edb.jpg",
    "year": 2026,
-   "order": 390
+   "order": 391
   },
   {
    "title": "All kunst er økologisk",
    "author": "Timothy Morton",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/87/872d0159d763210f9c1be1582759e386.jpg",
-   "order": 391
+   "order": 392
   },
   {
    "title": "Passasjeverket I",
    "author": "Walter Benjamin",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ad/ad3b085b24b059a66c75887a8a16373c.jpg",
-   "order": 392
+   "order": 393
   },
   {
    "title": "Seksti kilo solskinn",
    "author": "Hallgrímur Helgason",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/22/2272c322e4482b9f94d87b5b47828a07.jpg",
-   "order": 393
+   "order": 394
   },
   {
    "title": "Stormfulle høgder",
    "author": "Emily Brontë",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f0/f0723863c62f0f8625d3ecb023d43d59.jpg",
-   "order": 394
+   "order": 395
   },
   {
    "title": "Lázár",
@@ -3004,14 +3011,14 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/83/83d4da4b03561ec354948f64a6391a49.jpg",
    "year": 2026,
-   "order": 395
+   "order": 396
   },
   {
    "title": "Jeppedalen",
    "author": "Olav Løkken Reisop",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0e/0eb764be755b58cb6388d0264b5df720.jpg",
-   "order": 396
+   "order": 397
   },
   {
    "title": "Everything Evolves",
@@ -3019,7 +3026,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/7a/7ac1840700d1f6ed3fa4d257b56b6d30.jpg",
    "year": 2025,
-   "order": 397
+   "order": 398
   },
   {
    "title": "Kjøtt",
@@ -3027,14 +3034,14 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c9/c9d369f81c7c4152e616d3eaadafbd51.jpg",
    "year": 2025,
-   "order": 398
+   "order": 399
   },
   {
    "title": "A Culture of Growth",
    "author": "Joel Mokyr",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c2/c2dcfd99b2bd092d8c24a81e71e5f2e1.png",
-   "order": 399
+   "order": 400
   },
   {
    "title": "Jeg var lenge død",
@@ -3042,7 +3049,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e2/e2f7810d345d1aaf4e6c84f8f4ea16ff.jpg",
    "year": 2025,
-   "order": 400
+   "order": 401
   },
   {
    "title": "Enshittification",
@@ -3050,28 +3057,28 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/a6/a6243aa7d3dbc4d6803664c22a8577df.jpg",
    "year": 2025,
-   "order": 401
+   "order": 402
   },
   {
    "title": "Narrative Economics",
    "author": "Robert J. Shiller",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/de/de7d98754fe3b3c8de46f28748b0691a.jpg",
-   "order": 402
+   "order": 403
   },
   {
    "title": "Plantenes liv",
    "author": "Emanuele Coccia",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/b6/b6a0481d932c838c8d4bac0af4e27077.jpg",
-   "order": 403
+   "order": 404
   },
   {
    "title": "Kampen om kunsten",
    "author": "Mariken Lauvstad",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/7f/7f78d3abdf86e95d11cceebfed7d1510.jpg",
-   "order": 404
+   "order": 405
   },
   {
    "title": "Det är läsaren som skriver boken",
@@ -3079,70 +3086,70 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ba/baf5fbb83a9b2a7cce754bd4bfc8f835.jpg",
    "year": 2025,
-   "order": 405
+   "order": 406
   },
   {
    "title": "Tosker jeg har elsket",
    "author": "Gina Tandberg",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/51/519564a795a6319d7903c03c29b06d95.jpg",
-   "order": 406
+   "order": 407
   },
   {
    "title": "Ruby baby",
    "author": "April Alexandersdottir",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d3/d38bcc306bd11fa8faeaec859cbe99d3.jpg",
-   "order": 407
+   "order": 408
   },
   {
    "title": "Urbanstraße",
    "author": "Gina Tandberg",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/4b/4b804e0d14cd4de15685433deec2cee1.jpg",
-   "order": 408
+   "order": 409
   },
   {
    "title": "The Money Trap",
    "author": "Alok Sama",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/26/26e2116690fb3040059842a9c2d41ce0.jpg",
-   "order": 409
+   "order": 410
   },
   {
    "title": "Forstyrret",
    "author": "Mikkel Boris",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/59/59153a06164e587006aac0d68b1bc62c.jpg",
-   "order": 410
+   "order": 411
   },
   {
    "title": "Unge titanar",
    "author": "Nescio",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/53/53641fabb3776c261831908c0d7d7377.jpg",
-   "order": 411
+   "order": 412
   },
   {
    "title": "Besatt",
    "author": "Aksel Kielland",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/3a/3afdc99b05571c6e44b35213a597ecdd.jpg",
-   "order": 412
+   "order": 413
   },
   {
    "title": "En lykkelig slutt",
    "author": "Anne Louise Morseth",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/3b/3b7eae132eae46cf61f2911342fe39f4.jpg",
-   "order": 413
+   "order": 414
   },
   {
    "title": "År og dag",
    "author": "Joakim Kjørsvik",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/81/81ae17f972d388fcc3e51adce1e6217e.jpg",
-   "order": 414
+   "order": 415
   },
   {
    "title": "How AI Thinks",
@@ -3150,63 +3157,63 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/24/2443272f96bdfcbf039dcb72ca9bc7f0.jpg",
    "year": 2025,
-   "order": 415
+   "order": 416
   },
   {
    "title": "Bach for barn",
    "author": "Helen Garner",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/cd/cde055746a3d044b704aefa7e5a16a1d.jpg",
-   "order": 416
+   "order": 417
   },
   {
    "title": "Jordbane",
    "author": "Samantha Harvey",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/54/5497a91932070d66c8a0611679cded26.jpg",
-   "order": 417
+   "order": 418
   },
   {
    "title": "The Weirdest People in the World",
    "author": "Joseph Henrich",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/82/8235c1495eb21c418b1d35134b17dd62.jpg",
-   "order": 418
+   "order": 419
   },
   {
    "title": "Human Compatible",
    "author": "Stuart Russell",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fc/fc1fbc0505e489e588978e4be7d0546c.jpg",
-   "order": 419
+   "order": 420
   },
   {
    "title": "Large Language Models: A Deep Dive",
    "author": "Sarah Sorensen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/84/84ba2140db453a54effe1b8e6e333b79.jpg",
-   "order": 420
+   "order": 421
   },
   {
    "title": "The Upstairs Delicatessen",
    "author": "Dwight Garner",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/17/17f0cd7f6f51f971a2644676fcf284d1.jpg",
-   "order": 421
+   "order": 422
   },
   {
    "title": "Mens det ennå er for sent",
    "author": "Tomas Espedal",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/3f/3f1ce0c8ddc75e158eb5fa7583d87118.jpg",
-   "order": 422
+   "order": 423
   },
   {
    "title": "M",
    "author": "Antonio Scurati",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/56/56fecc005bd1e63b8816f871bbcf786e.jpg",
-   "order": 423
+   "order": 424
   },
   {
    "title": "The Rider from Hell",
@@ -3214,28 +3221,28 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fa/fa9069fc3de2c7c577533a0b1d0ac2a1.jpg",
    "year": 2025,
-   "order": 424
+   "order": 425
   },
   {
    "title": "Et jentebarn",
    "author": "Martin Tilrem",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ef/efa454bf84991fa8d722a1f382ac793c.jpg",
-   "order": 425
+   "order": 426
   },
   {
    "title": "Tua",
    "author": "Annika Norlin",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ea/ea255178453a4b9e5828ad4a92c9e11b.jpg",
-   "order": 426
+   "order": 427
   },
   {
    "title": "Why Greatness Cannot Be Planned",
    "author": "Joel Lehman",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/25/25dbc31f502ac5d68d9e6a602925c112.jpg",
-   "order": 427
+   "order": 428
   },
   {
    "title": "Montevideo",
@@ -3243,70 +3250,70 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f8/f8490cffb3e80ce4c5ef0d299f4a5077.jpg",
    "year": 2025,
-   "order": 428
+   "order": 429
   },
   {
    "title": "Verden og meg selv",
    "author": "Kenneth Moe",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/39/3946539234fa57ac2e4d9476d7147d10.jpg",
-   "order": 429
+   "order": 430
   },
   {
    "title": "More and More and More",
    "author": "Jean-Baptiste Fressoz",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/56/56dc4e489ffe218d584e59be19d75130.jpg",
-   "order": 430
+   "order": 431
   },
   {
    "title": "The Rigor of Angels",
    "author": "William Egginton",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/1c/1c976c7d71244575606ee8c6f92e4900.jpg",
-   "order": 431
+   "order": 432
   },
   {
    "title": "Solenoid",
    "author": "Mircea Cărtărescu",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/9a/9a51dd3195629482f644db254ccc7bab.jpg",
-   "order": 432
+   "order": 433
   },
   {
    "title": "Dyrking av sydlige vekster etter Mitsjurins metode",
    "author": "Weronika Murek",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/95/9586b467656a906c495c7922020d6721.jpg",
-   "order": 433
+   "order": 434
   },
   {
    "title": "For en ny radikal opplysningstid",
    "author": "Marina Garcés",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/74/74885ec7575895a911acaa4352ccffe3.jpg",
-   "order": 434
+   "order": 435
   },
   {
    "title": "Det umistelige",
    "author": "Thomas Hylland Eriksen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/34/34c7573c206107ecbaf1f8479f32909a.jpg",
-   "order": 435
+   "order": 436
   },
   {
    "title": "Under brosteinen, stranden!",
    "author": "Johan Harstad",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e5/e569736006a414357846804c839f7dd1.jpg",
-   "order": 436
+   "order": 437
   },
   {
    "title": "The Atomic Human",
    "author": "Neil D. Lawrence",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/a0/a04e516d42fb3b0819778bd25577f3be.jpg",
-   "order": 437
+   "order": 438
   },
   {
    "title": "Berlin",
@@ -3314,21 +3321,21 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/26/26ab5c929d6684b97fd63b364b9260ea.jpg",
    "year": 2024,
-   "order": 438
+   "order": 439
   },
   {
    "title": "Hyttebok",
    "author": "Ole-Petter Arneberg",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/1e/1e509a218f15847d3e218510a79e9243.jpg",
-   "order": 439
+   "order": 440
   },
   {
    "title": "The Shortcut",
    "author": "Nello Cristianini",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/15/15f3c1ecf5772a2a99c564d52d713ed5.jpg",
-   "order": 440
+   "order": 441
   },
   {
    "title": "I seneste laget",
@@ -3336,21 +3343,21 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/85/858eee9ddf1bcb8a6a4ef9a33b92ba45.jpg",
    "year": 2024,
-   "order": 441
+   "order": 442
   },
   {
    "title": "Code Dependent",
    "author": "Madhumita Murgia",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/15/15f3c1ecf5772a2a99c564d52d713ed5.jpg",
-   "order": 442
+   "order": 443
   },
   {
    "title": "Sju galningar",
    "author": "Roberto Arlt",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/62/624fd89558008468c2baa08363996f6b.jpg",
-   "order": 443
+   "order": 444
   },
   {
    "title": "Overdragelsen",
@@ -3358,189 +3365,189 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/33/3333558551396b3224950ac4963c112a.jpg",
    "year": 2024,
-   "order": 444
+   "order": 445
   },
   {
    "title": "Bartleby og Co.",
    "author": "Enrique Vila-Matas",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ff/ff4737f935df7a6ea0ad89246300f828.jpg",
-   "order": 445
+   "order": 446
   },
   {
    "title": "Teknologi",
    "author": "Lars Nyre",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/56/5644e481e01a511f8c1dd3b3e4e733cc.jpg",
-   "order": 446
+   "order": 447
   },
   {
    "title": "Hegel",
    "author": "Sigurd Hverven",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ca/cad89f9506106da6269a59fb3d5c6bab.jpg",
-   "order": 447
+   "order": 448
   },
   {
    "title": "Fremmedgjøring",
    "author": "Rahel Jaeggi",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/1c/1c31da4138d620cbb7de8c0d8d05ff83.jpg",
-   "order": 448
+   "order": 449
   },
   {
    "title": "Naturlig roman",
    "author": "Georgi Gospodinov",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fb/fb87e64e1b685f7f134fc97a36137635.jpg",
-   "order": 449
+   "order": 450
   },
   {
    "title": "The Geek Way",
    "author": "Andrew McAfee",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/9c/9c01d90fa5a941d1fda6ef1c77f29883.jpg",
-   "order": 450
+   "order": 451
   },
   {
    "title": "The Master Builder",
    "author": "Martinez Arias Alfonso",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f9/f9ac28134ae346ac7427f91b8a023310.jpg",
-   "order": 451
+   "order": 452
   },
   {
    "title": "Stikk i strid",
    "author": "Frank Rossavik",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/bc/bc202ea49ba1080290ee2f2ad4e2880d.jpg",
-   "order": 452
+   "order": 453
   },
   {
    "title": "Vit magi",
    "author": "Lothar Müller",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e6/e6451f1eb31f2a9a7651e5b1b8da2c89.jpg",
-   "order": 453
+   "order": 454
   },
   {
    "title": "Berlin Alexanderplatz",
    "author": "Alfred Döblin",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f4/f4bd9af11479ad1a57dbe7f506d5a37d.jpg",
-   "order": 454
+   "order": 455
   },
   {
    "title": "Kritikerens spøkelse",
    "author": "Eirik Vassenden",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/25/25b4b7a5a8b0218adf98ef98e9519518.jpg",
-   "order": 455
+   "order": 456
   },
   {
    "title": "Skogen",
    "author": "Anne Sverdrup-Thygeson",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/45/45815371be283ede14b0763050dd17dd.jpg",
-   "order": 456
+   "order": 457
   },
   {
    "title": "Bokens folk",
    "author": "Joel Halldorf",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/1f/1ff28ea28033b2b8abcfdde44f7aa1aa.jpg",
-   "order": 457
+   "order": 458
   },
   {
    "title": "Power and Progress",
    "author": "Daron Acemoglu",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/bf/bf398efb0740b47fb390d778ca847d19.jpg",
-   "order": 458
+   "order": 459
   },
   {
    "title": "Trilogien om Tue",
    "author": "Thomas Korsgaard",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/4c/4cf1714343a9f8ff695d7c85bf435bf7.jpg",
-   "order": 459
+   "order": 460
   },
   {
    "title": "Herscht 07769",
    "author": "László Krasznahorkai",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/1d/1de2283f30b541afdc03e00ea2a5ef90.jpg",
-   "order": 460
+   "order": 461
   },
   {
    "title": "Jorden rundt på 80 trær",
    "author": "Jonathan Drori",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/28/28c1d6baa87c99bc7dca2d7db519d6d6.jpg",
-   "order": 461
+   "order": 462
   },
   {
    "title": "Kanelbutikkane og andre forteljingar",
    "author": "Bruno Schulz",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/95/957a55fdf2ad89fba7f387e93a1c83a5.jpg",
-   "order": 462
+   "order": 463
   },
   {
    "title": "Skriverholmen",
    "author": "Olav Løkken Reisop",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/34/3408cc490e08dc77247c169046c28ff2.jpg",
-   "order": 463
+   "order": 464
   },
   {
    "title": "Saturns ringer",
    "author": "W.G. Sebald",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/a1/a17a5f6bc0f403c180e4f2bb413b3da6.jpg",
-   "order": 464
+   "order": 465
   },
   {
    "title": "Faust",
    "author": "Ivan Turgenjev",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/b6/b677a216aeeb51974b7a306b9cb57706.jpg",
-   "order": 465
+   "order": 466
   },
   {
    "title": "Historien med eller uten kropp?",
    "author": "Espen Stueland",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/b6/b61b4c6b201038b48e3c772f6756c6be.jpg",
-   "order": 466
+   "order": 467
   },
   {
    "title": "Mimesis",
    "author": "Erich Auerbach",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/56/561a80f2297ed757949e82c84eafe0bd.jpg",
-   "order": 467
+   "order": 468
   },
   {
    "title": "Syndebukken",
    "author": "René Girard",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/bb/bbb44fc0c27fe27d8bd5caed8d89024e.jpg",
-   "order": 468
+   "order": 469
   },
   {
    "title": "Bjørnholt vgs",
    "author": "Sarah Zahid",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/44/44a278aa6f3d09d7dbcc92d8d119e2d5.jpg",
-   "order": 469
+   "order": 470
   },
   {
    "title": "Ville verdier",
    "author": "Sigurd Hverven",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ac/ac2b14efeffe2ad2f7e9b1c5135cc41b.jpg",
-   "order": 470
+   "order": 471
   },
   {
    "title": "Almakolender",
@@ -3548,315 +3555,315 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/4b/4ba7ffb584d47833dea7eab2ec488682.jpg",
    "year": 2023,
-   "order": 471
+   "order": 472
   },
   {
    "title": "Weimar essays",
    "author": "Siegfried Kracauer",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/18/185beb3de314f41c2d8349f20ed11f0f.jpg",
-   "order": 472
+   "order": 473
   },
   {
    "title": "Seriøs observering",
    "author": "James Wood",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ed/ed1219a82056c1475791dfe213b583eb.jpg",
-   "order": 473
+   "order": 474
   },
   {
    "title": "Arven etter Aldus",
    "author": "Øyvin Rannem",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/46/46f074005506779f7676570e6b0c6c99.jpg",
-   "order": 474
+   "order": 475
   },
   {
    "title": "Til minne om minnet",
    "author": "Marija Michajlovna Stepanova",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/a6/a6f3d85e5a56d49539fe7ff6ed84c16f.jpg",
-   "order": 475
+   "order": 476
   },
   {
    "title": "Torso",
    "author": "Bente Christensen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/52/5243a613b2439a687f3aaa8323162951.jpg",
-   "order": 476
+   "order": 477
   },
   {
    "title": "Making sense",
    "author": "Sam Harris",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f1/f1a57f7dde19dd55bded2de10bcc74cb.jpg",
-   "order": 477
+   "order": 478
   },
   {
    "title": "Dunning-Kruger-effekten",
    "author": "Andrés Stoopendaal",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d3/d317ef90f06e9d5110fcda3f0d924239.jpg",
-   "order": 478
+   "order": 479
   },
   {
    "title": "Moskoviaden",
    "author": "Jurij Andrukhovytsj",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ff/ff069242d83efe41b5c0f32ba2746cf3.jpg",
-   "order": 479
+   "order": 480
   },
   {
    "title": "Economics of Good and Evil",
    "author": "Tomas Sedlacek",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/59/5919ec26c9ce8035c6449ee49214816f.jpg",
-   "order": 480
+   "order": 481
   },
   {
    "title": "Økonomisk tenkning",
    "author": "Tone Smith",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fd/fd153165ce16077e2e88bfbbe42ad76c.jpg",
-   "order": 481
+   "order": 482
   },
   {
    "title": "The journey of humanity",
    "author": "Oded Galor",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/7b/7b893ab7887cc0d24a9317155d145c20.jpg",
-   "order": 482
+   "order": 483
   },
   {
    "title": "Langsom marmor",
    "author": "Ole Robert Sunde",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/9f/9f84bdc6b88803a5fb2f261e334aec3e.jpg",
-   "order": 483
+   "order": 484
   },
   {
    "title": "Emily forever",
    "author": "Maria Navarro Skaranger",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/50/50d3d0e04bcf06f2672237bd5fea5e89.jpg",
-   "order": 484
+   "order": 485
   },
   {
    "title": "Verdenslitteraturens filologi",
    "author": "Erich Auerbach",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/24/24c5162d1d4fe1bff90dcc5813245e72.jpg",
-   "order": 485
+   "order": 486
   },
   {
    "title": "Prosessen",
    "author": "Franz Kafka",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/73/73959bc0b2467912ff3c01aae41ef0d9.jpg",
-   "order": 486
+   "order": 487
   },
   {
    "title": "Tilintetgjøre",
    "author": "Michel Houellebecq",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/25/25b9c0a70ac633bdf923dd6a482e9d86.jpg",
-   "order": 487
+   "order": 488
   },
   {
    "title": "Bedre beslutninger",
    "author": "Jan-Ole Hesselberg",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ac/ac505d7e97fc68b822d2500b05421229.jpg",
-   "order": 488
+   "order": 489
   },
   {
    "title": "Evigheten i et siv",
    "author": "Irene Vallejo",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fc/fc8a75c091820080969d0411f588ff96.jpg",
-   "order": 489
+   "order": 490
   },
   {
    "title": "Schizothemia",
    "author": "Hans Petter Blad",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0a/0a3692df8c2ffe695e98b3e78d2ac946.jpg",
-   "order": 490
+   "order": 491
   },
   {
    "title": "Resonans",
    "author": "Hartmut Rosa",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/8e/8e9efe4df0021fd263d03dde22604df4.jpg",
-   "order": 491
+   "order": 492
   },
   {
    "title": "Artikler om litteratur 2015-2021",
    "author": "Dag Solstad",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/6f/6fc860011b7bd30f9a349ac39da4dec2.jpg",
-   "order": 492
+   "order": 493
   },
   {
    "title": "Vestlandsvegar",
    "author": "Halvor Folger√∏",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d0/d0acf6b6252dc87053a58115a95e0eb2.jpg",
-   "order": 493
+   "order": 494
   },
   {
    "title": "Henrik Ibsen",
    "author": "Ivo de Figueiredo",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/31/31f7fb979e906b1dd199628dfd6da3bc.jpg",
-   "order": 494
+   "order": 495
   },
   {
    "title": "Everything and Less",
    "author": "Mark McGurl",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/3a/3a02063b88e49b12f4ac0392ba78de3e.jpg",
-   "order": 495
+   "order": 496
   },
   {
    "title": "Splinten i øyet",
    "author": "Frode Helmich Pedersen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/2f/2f55b0358fd63e2941b66e861bdf778a.jpg",
-   "order": 496
+   "order": 497
   },
   {
    "title": "The Code of Capital",
    "author": "Katharina Pistor",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/2b/2b3f0e2304c21bbd58be02d0002fa353.jpg",
-   "order": 497
+   "order": 498
   },
   {
    "title": "Kunsten og døden",
    "author": "Kjetil Røed",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/19/19fb2b09ffaa8fc46fd9296c4bc687cc.jpg",
-   "order": 498
+   "order": 499
   },
   {
    "title": "Life Is Simple",
    "author": "Johnjoe McFadden",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/6f/6f3fb8adf091199c0aefaaa99e4c8483.jpg",
-   "order": 499
+   "order": 500
   },
   {
    "title": "Från Strindberg till Storytel",
    "author": "Julia Pennlert",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/58/580ff373d4db238c906b7ec39616dcdd.jpg",
-   "order": 500
+   "order": 501
   },
   {
    "title": "Litteraturens slut",
    "author": "Sven Anders Johansson",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e9/e904aa0fa6ba3a0dc7760a058949d337.jpg",
-   "order": 501
+   "order": 502
   },
   {
    "title": "Hjem til Reims",
    "author": "Didier Eribon",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/cc/cccf15f594b1396236c1ed4175b8cc5e.jpg",
-   "order": 502
+   "order": 503
   },
   {
    "title": "Uten aksent",
    "author": "Yōko Tawada",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/a3/a33d7840bc06a2b58abddec0230701f8.jpg",
-   "order": 503
+   "order": 504
   },
   {
    "title": "Lausgjengar",
    "author": "Fumiko Hayashi",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/b4/b408e4dfd0334de18e6f5e586a54bada.jpg",
-   "order": 504
+   "order": 505
   },
   {
    "title": "Vinduet. Nr. 1+2/2021",
    "author": "Maria Horvei",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/4c/4c4e519a9c0f47759a812aae3b2bf4e3.jpg",
-   "order": 505
+   "order": 506
   },
   {
    "title": "Den gode samtalen",
    "author": "Helge Svare",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/4f/4f15b32d01dd5459cd1ef6f4f7588315.jpg",
-   "order": 506
+   "order": 507
   },
   {
    "title": "Samfunnets konstitusjon",
    "author": "Tore Bakken",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c6/c65a902c954baca33e108488a9d9fa08.jpg",
-   "order": 507
+   "order": 508
   },
   {
    "title": "Til fyret",
    "author": "Virginia Woolf",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0a/0a8c055675f5b5bc57c2b7885ab06728.jpg",
-   "order": 508
+   "order": 509
   },
   {
    "title": "Skin in the game",
    "author": "Nassim Nicholas Taleb",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/5b/5bce7dbf5a24734464e6a1e8086ec4fe.jpg",
-   "order": 509
+   "order": 510
   },
   {
    "title": "Kjøpesenterlandet",
    "author": "Ronny Spaans",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/be/be040f7805a65614cb038174e2b004f3.jpg",
-   "order": 510
+   "order": 511
   },
   {
    "title": "Assistenten",
    "author": "Audun Mortensen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c4/c43bbd69ea910f0a9cbfd5a1fab6bf65.jpg",
-   "order": 511
+   "order": 512
   },
   {
    "title": "Modstandens melankoli",
    "author": "László Krasznahorkai",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/4d/4dbc9a190a9f1916bc306d6a3d8f54eb.jpg",
-   "order": 512
+   "order": 513
   },
   {
    "title": "Bortom allfarveg",
    "author": "Gunnar Garfors",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d6/d64c80588ea87ac709e027d73b9752bc.jpg",
-   "order": 513
+   "order": 514
   },
   {
    "title": "Kjøttets tid",
    "author": "Lina Wolff",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0d/0dddd547c8be4e1f160e714a2f0b3865.jpg",
-   "order": 514
+   "order": 515
   },
   {
    "title": "Brennmaneteffekten",
    "author": "Lene Liebe Delsett",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/bf/bf2ba68bb6ce54c394b4b89485de83dc.jpg",
-   "order": 515
+   "order": 516
   },
   {
    "title": "Der du kommer fra",
@@ -3864,21 +3871,21 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/da/da0c04026c947792eeaea948202141ee.jpg",
    "year": 2021,
-   "order": 516
+   "order": 517
   },
   {
    "title": "SPQR",
    "author": "Mary Beard",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fd/fd2d272d03fe36004610ce0fe7b2b7a6.jpg",
-   "order": 517
+   "order": 518
   },
   {
    "title": "Appenes planet",
    "author": "Thomas Hylland Eriksen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/93/93b1d277d93a6fcaee43afcebfe3f945.jpg",
-   "order": 518
+   "order": 519
   },
   {
    "title": "Range",
@@ -3886,7 +3893,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c2/c228188264d8cbb259c679f940fd932e.jpg",
    "year": 2021,
-   "order": 519
+   "order": 520
   },
   {
    "title": "Frykt og avsky i demokratiet",
@@ -3894,28 +3901,28 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/11/11fb22a7b569023c348de9b4ab5dde77.jpg",
    "year": 2021,
-   "order": 520
+   "order": 521
   },
   {
    "title": "The Asset Economy",
    "author": "Lisa Adkins",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/93/939f1d1ccd86cfdbbcb67e646f01aae9.jpg",
-   "order": 521
+   "order": 522
   },
   {
    "title": "Årene",
    "author": "Annie Ernaux",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0f/0f52aaceb4c52b47c93692fe3da60de3.jpg",
-   "order": 522
+   "order": 523
   },
   {
    "title": "Frankfurt",
    "author": "Thure Erik Lund",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/cf/cf05144da9fe357b588b8ec73c4dd843.jpg",
-   "order": 523
+   "order": 524
   },
   {
    "title": "Kjærlighetsfragmentet",
@@ -3923,7 +3930,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/42/42f78b2d988d080c7f73c41077df7d96.jpg",
    "year": 2020,
-   "order": 524
+   "order": 525
   },
   {
    "title": "The deficit myth",
@@ -3931,7 +3938,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/30/301c4141349fbd04714abf02a3a709bf.jpg",
    "year": 2020,
-   "order": 525
+   "order": 526
   },
   {
    "title": "Agora. Nr. 3-4 2020",
@@ -3939,7 +3946,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/9d/9d72294b6bab4c7c00d401d32e248e7d.jpg",
    "year": 2020,
-   "order": 526
+   "order": 527
   },
   {
    "title": "Ein, ingen og hundre tusen",
@@ -3947,7 +3954,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fb/fb5a7377731cde2958ee766c38e11964.jpg",
    "year": 2020,
-   "order": 527
+   "order": 528
   },
   {
    "title": "Stillheten",
@@ -3955,7 +3962,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/98/980e1249ad91af722abe1b8112b377ca.jpg",
    "year": 2020,
-   "order": 528
+   "order": 529
   },
   {
    "title": "I nærvær av Schopenhauer",
@@ -3963,7 +3970,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c7/c77df7e94084495901ecf139fd622a12.jpg",
    "year": 2020,
-   "order": 529
+   "order": 530
   },
   {
    "title": "Markedsvendingen",
@@ -3971,14 +3978,14 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0d/0d4b493b2798a9e0e831268299acf4c3.jpg",
    "year": 2020,
-   "order": 530
+   "order": 531
   },
   {
    "title": "Språk og erfaring",
    "author": "Karin Haugane",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/6d/6de8863c09bdab631174d9eb4d7ccf12.jpg",
-   "order": 531
+   "order": 532
   },
   {
    "title": "Etterlatt",
@@ -3986,7 +3993,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/48/48c13fe25466c0fc3b66368277f9b1fe.jpg",
    "year": 2020,
-   "order": 532
+   "order": 533
   },
   {
    "title": "Enrichment",
@@ -3994,7 +4001,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/81/81bf6812d2319d592ac43b61da0ec2ec.jpg",
    "year": 2020,
-   "order": 533
+   "order": 534
   },
   {
    "title": "Imot døden",
@@ -4002,63 +4009,63 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f6/f65a48ea87c37ad9308af6b4a17e3e19.jpg",
    "year": 2020,
-   "order": 534
+   "order": 535
   },
   {
    "title": "Jeg foreslår at vi våkner",
    "author": "Beate Grimsrud",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/4c/4cfa01b4b5be306904ef7b9a1e6cd1b3.jpg",
-   "order": 535
+   "order": 536
   },
   {
    "title": "Framtida er her nå",
    "author": "Ivan Krastev",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/36/3661593ba8f52e0c2f3e586a186eaebb.jpg",
-   "order": 536
+   "order": 537
   },
   {
    "title": "Brødrene Karamasov",
    "author": "Fjodor M. Dostojevskij",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ac/ac8a0da028edd69e7452eba8b24e9c50.jpg",
-   "order": 537
+   "order": 538
   },
   {
    "title": "Erdogan",
    "author": "Nilas Johnsen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/5b/5b5c566354955127ec729b11c712f09a.jpg",
-   "order": 538
+   "order": 539
   },
   {
    "title": "Myten om Sisyfos",
    "author": "Albert Camus",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c0/c060eed38315f59dc66dbb44189cd8ad.jpg",
-   "order": 539
+   "order": 540
   },
   {
    "title": "Vomtenker",
    "author": "Ole Robert Sunde",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/28/28c8c3a3061bd28467621d637715fa21.jpg",
-   "order": 540
+   "order": 541
   },
   {
    "title": "Retten og vrangen",
    "author": "Albert Camus",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/3a/3a0707394f93bb868a8a53bc88b31b35.jpg",
-   "order": 541
+   "order": 542
   },
   {
    "title": "Selvportrett ; Selvmord",
    "author": "Édouard Levé",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/27/27a6f831bd48d7421a76a990aa80763b.jpg",
-   "order": 542
+   "order": 543
   },
   {
    "title": "Går, gikk, har gått",
@@ -4066,7 +4073,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ea/eab3697ec7ee29667cc16e6360dea1c7.jpg",
    "year": 2020,
-   "order": 543
+   "order": 544
   },
   {
    "title": "Dama med hunden",
@@ -4074,7 +4081,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f3/f37c3320e499493ce616fb66f7d4e724.jpg",
    "year": 2020,
-   "order": 544
+   "order": 545
   },
   {
    "title": "Darwin i byen",
@@ -4082,21 +4089,21 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/1a/1acd2d9ef926b81e4a7e42bb1ea54fb8.jpg",
    "year": 2020,
-   "order": 545
+   "order": 546
   },
   {
    "title": "Søvngjengeramatøren",
    "author": "José Luiz Passos",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/48/48b4c1fc83d3f48489c89dd03db6e1fc.jpg",
-   "order": 546
+   "order": 547
   },
   {
    "title": "Straahlbox",
    "author": "Thure Erik Lund",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/49/49177d8bb3d74e1051c5b0fcaff3d4b1.jpg",
-   "order": 547
+   "order": 548
   },
   {
    "title": "Løperne",
@@ -4104,7 +4111,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/b8/b8dc7f9f1b51d087fb74070f93081c7b.jpg",
    "year": 2020,
-   "order": 548
+   "order": 549
   },
   {
    "title": "Lyden av et liv",
@@ -4112,14 +4119,14 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/3a/3a74c56fe672e250fa48fe1aae5e8d57.jpg",
    "year": 2019,
-   "order": 549
+   "order": 550
   },
   {
    "title": "Virkeligheten er ikke slik vi tror",
    "author": "Carlo Rovelli",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f4/f43e258078aca49c92b979fc41dae62b.jpg",
-   "order": 550
+   "order": 551
   },
   {
    "title": "The Road to Somewhere",
@@ -4127,7 +4134,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/8c/8c4583878ff5c5173d40e47aa0e218c6.jpg",
    "year": 2019,
-   "order": 551
+   "order": 552
   },
   {
    "title": "Jeg føler meg uvel",
@@ -4135,7 +4142,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c3/c30eb2aa565a781152411f7996fa59ed.jpg",
    "year": 2019,
-   "order": 552
+   "order": 553
   },
   {
    "title": "Fortellinger fra Odessa",
@@ -4143,21 +4150,21 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/45/4575ab6e1902253872b3099e03da278b.jpg",
    "year": 2019,
-   "order": 553
+   "order": 554
   },
   {
    "title": "De besatte",
    "author": "Elif Batuman",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/76/765af26954134720d25a829215462fdc.jpg",
-   "order": 554
+   "order": 555
   },
   {
    "title": "The Entrepreneurial State",
    "author": "Mariana Mazzucato",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/db/db4e0abe767fb533996ff1438be5fbff.jpg",
-   "order": 555
+   "order": 556
   },
   {
    "title": "Kunsten og livet",
@@ -4165,7 +4172,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/66/66ddb860d2ba0200f7889d0a594bc3d6.jpg",
    "year": 2019,
-   "order": 556
+   "order": 557
   },
   {
    "title": "Machines like me",
@@ -4173,28 +4180,28 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d9/d95039b684ed1f2e763fa88ddcc5c024.jpg",
    "year": 2019,
-   "order": 557
+   "order": 558
   },
   {
    "title": "Zettel",
    "author": "Ludwig Wittgenstein",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/05/05b9dbb97a2af1db113d11ba6962c47f.jpg",
-   "order": 558
+   "order": 559
   },
   {
    "title": "Elastic",
    "author": "Leonard Mlodinow",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/31/31327600ca96a439b9cc42ca510fb93c.jpg",
-   "order": 559
+   "order": 560
   },
   {
    "title": "Wien og Weimar",
    "author": "Sverre Dahl",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/15/15ae22e38e08cf39b0b9df0c37be8e7e.jpg",
-   "order": 560
+   "order": 561
   },
   {
    "title": "Hva er penger",
@@ -4202,7 +4209,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e2/e2d4ac939d0be681daca2c6186bf0c16.jpg",
    "year": 2019,
-   "order": 561
+   "order": 562
   },
   {
    "title": "Slik virker litteraturen",
@@ -4210,21 +4217,21 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ff/ff343ba3bfea6b2356ee9eadacb8137c.jpg",
    "year": 2019,
-   "order": 562
+   "order": 563
   },
   {
    "title": "Kosmos",
    "author": "Witold Gombrowicz",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/2a/2a25597cc9c3056dfd1237e7f9256e1c.jpg",
-   "order": 563
+   "order": 564
   },
   {
    "title": "The Writing Life",
    "author": "Annie Dillard",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/09/09c1f4c90ea978da2010a74953736754.jpg",
-   "order": 564
+   "order": 565
   },
   {
    "title": "Tenker hjernen?",
@@ -4232,7 +4239,7 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/dd/dd759d53d0666569ee4ce1d9cd7b38be.jpg",
    "year": 2019,
-   "order": 565
+   "order": 566
   },
   {
    "title": "The Demon in the Machine",
@@ -4240,77 +4247,77 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/6f/6f848b67fa24cc763d921ac0c2933976.jpg",
    "year": 2019,
-   "order": 566
+   "order": 567
   },
   {
    "title": "Architects of Intelligence",
    "author": "Martin Ford",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/59/5970fe3b83a49ec2691f5ae9974aefbd.jpg",
-   "order": 567
+   "order": 568
   },
   {
    "title": "Svartstilla",
    "author": "Susanne Skogstad",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ca/ca435a0637b728642d14e8070169ace9.jpg",
-   "order": 568
+   "order": 569
   },
   {
    "title": "Capital and Time",
    "author": "Martijn Konings",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/48/4890b3325300f0b88dd7c8f1788a1b75.jpg",
-   "order": 569
+   "order": 570
   },
   {
    "title": "Syv netter",
    "author": "Simon Strauss",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/9b/9b69e4c42dbb9b784abae46f5c2916f5.jpg",
-   "order": 570
+   "order": 571
   },
   {
    "title": "Kjent og fremmed",
    "author": "Teju Cole",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/b2/b2ac3a4f1658e83849dba9a31855f71d.jpg",
-   "order": 571
+   "order": 572
   },
   {
    "title": "Barnet",
    "author": "Kjersti Annesdatter Skomsvold",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c4/c4f1b1a6ec0c662892a9e6bce6ab8b12.jpg",
-   "order": 572
+   "order": 573
   },
   {
    "title": "Så mye hadde jeg",
    "author": "Trude Marstein",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/44/440856aae6af4f947b7c54b508195b3a.jpg",
-   "order": 573
+   "order": 574
   },
   {
    "title": "Fjellfolk",
    "author": "Ellen Emmerentze Jervell",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0a/0a0cc2c2e7c2a0e446c1b44137cc71a4.jpg",
-   "order": 574
+   "order": 575
   },
   {
    "title": "Instrumental",
    "author": "James Rhodes",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/80/80e2953533e762746204227026658e68.jpg",
-   "order": 575
+   "order": 576
   },
   {
    "title": "I Hate the Internet",
    "author": "Jarett Kobek",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/bf/bf7c72a58a5038d9d87e557e59b9e640.jpg",
-   "order": 576
+   "order": 577
   },
   {
    "title": "A Legacy of Spies",
@@ -4318,517 +4325,517 @@
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e1/e16b18ed5f457a2386ba68691e4e48cf.jpg",
    "year": 2018,
-   "order": 577
+   "order": 578
   },
   {
    "title": "Dikt",
    "author": "Erlend O. Nødtvedt",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e8/e837d75df82ec0be97d7340aa19a9c8b.jpg",
-   "order": 578
+   "order": 579
   },
   {
    "title": "Madame Bovary",
    "author": "Gustave Flaubert",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c9/c989a1159fbca71e1dd851d7673a829d.jpg",
-   "order": 579
+   "order": 580
   },
   {
    "title": "Digital Gold",
    "author": "Nathaniel Popper",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/cf/cfc1a7a0b588a094e78dcfe9a703618e.jpg",
-   "order": 580
+   "order": 581
   },
   {
    "title": "Irresistible",
    "author": "Adam Alter",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/81/813bd0bf6515c60ee808f776b32a5aee.jpg",
-   "order": 581
+   "order": 582
   },
   {
    "title": "Mastering Bitcoin",
    "author": "Andreas M. Antonopoulos",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ea/ea252e819b89b4ebb6c5f51fe4a7fff9.jpg",
-   "order": 582
+   "order": 583
   },
   {
    "title": "Radical Technologies",
    "author": "Adam Greenfield",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f0/f0fdfe3cbb7eacadcd6ed247cb6986db.jpg",
-   "order": 583
+   "order": 584
   },
   {
    "title": "Brev til en ung forfatter",
    "author": "Mario Vargas Llosa",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d9/d9358f1b0869bbbac0f666513e0da096.jpg",
-   "order": 584
+   "order": 585
   },
   {
    "title": "Penelope er syk",
    "author": "Ole Robert Sunde",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/21/21292053308ecccce528bd9b4ec900c9.jpg",
-   "order": 585
+   "order": 586
   },
   {
    "title": "Tre kvinner",
    "author": "Robert Musil",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/b2/b2a48a0edca7a9afc66c589ee736cb1e.jpg",
-   "order": 586
+   "order": 587
   },
   {
    "title": "Between Eternities",
    "author": "Margaret Jull Costa (translator) Javier MarÃ­as (author)",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/64/64062aa373ee51dd533dfedc7919c6dd.jpg",
-   "order": 587
+   "order": 588
   },
   {
    "title": "Teknologien endrer samfunnet",
    "author": "Asbjørn Rolstadås",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0c/0c090fd4bc9771cb86d1239ee9f42072.jpg",
-   "order": 588
+   "order": 589
   },
   {
    "title": "Fifty Inventions That Shaped the Modern Economy",
    "author": "Tim Harford",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/48/4875fba01b7fee4ca2ca82278cb192c1.jpg",
-   "order": 589
+   "order": 590
   },
   {
    "title": "Døden i Venezia og andre noveller",
    "author": "Thomas Mann",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e5/e53f6de3aa82175634dc4c2405efad23.jpg",
-   "order": 590
+   "order": 591
   },
   {
    "title": "Teorien om økonomisk utvikling",
    "author": "Joseph A. Schumpeter",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/bc/bc05a98274e52ce9b6e643c855189d1b.jpg",
-   "order": 591
+   "order": 592
   },
   {
    "title": "Adaptive Markets",
    "author": "Andrew W. Lo",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/7c/7c3a75537ac28dd96773c57cace52046.jpg",
-   "order": 592
+   "order": 593
   },
   {
    "title": "Homo Deus",
    "author": "Yuval Noah Harari",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/1c/1c149cd7e0d368077024338b0a2686fe.jpg",
-   "order": 593
+   "order": 594
   },
   {
    "title": "Higher Calling",
    "author": "Max Leonard",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e4/e45ba208889004ebab0b2b33334052f5.jpg",
-   "order": 594
+   "order": 595
   },
   {
    "title": "The Knowledge Illusion",
    "author": "Steven Sloman",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e6/e60acf249c1d2bd01d42d7b156d03f32.jpg",
-   "order": 595
+   "order": 596
   },
   {
    "title": "Stillitsen",
    "author": "Donna Tartt",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/17/177a01018fc0a6e4f78284247d3171f3.jpg",
-   "order": 596
+   "order": 597
   },
   {
    "title": "Thank you for being late",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e6/e68e3ff7e74eaa2a3778ee0db925faba.jpg",
-   "order": 597
+   "order": 598
   },
   {
    "title": "White Sands",
    "author": "Geoff Dyer",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/59/5977afbed1fdf84279912c1ee09053cf.jpg",
-   "order": 598
+   "order": 599
   },
   {
    "title": "Kan jeg bli med deg hjem",
    "author": "Marie Aubert",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c8/c8af38b5cef16eb087bf722be2dbfc75.jpg",
-   "order": 599
+   "order": 600
   },
   {
    "title": "The Master Algorithm",
    "author": "Pedro Domingos",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/2f/2f1319cfa644c1d45472e835751ccd79.jpg",
-   "order": 600
+   "order": 601
   },
   {
    "title": "The Black Box Society",
    "author": "Frank Pasquale",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/01/01f60cfa616a5a7d8d5f4a90efd7a5bd.jpg",
-   "order": 601
+   "order": 602
   },
   {
    "title": "Betzys sommer",
    "author": "Håvard Syvertsen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/2a/2aa41073811048bd91f5a0b532a3d5fd.jpg",
-   "order": 602
+   "order": 603
   },
   {
    "title": "Wittgensteins nevø ; Trær som faller ; Gamle mestere ; Havaristen",
    "author": "Thomas Bernhard",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fe/fe90f3836f1bb1a615e4a0b8cd6ed3d8.jpg",
-   "order": 603
+   "order": 604
   },
   {
    "title": "The Marvelous Clouds",
    "author": "John Durham Peters",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/01/016889de6d825bc3d57fc6cd316619b3.jpg",
-   "order": 604
+   "order": 605
   },
   {
    "title": "Om lesning",
    "author": "Marcel Proust",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c7/c7a9c4660c125aa43836496b61387708.jpg",
-   "order": 605
+   "order": 606
   },
   {
    "title": "Ville detektiver",
    "author": "Roberto Bolaño",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/16/16a815a0c467f78937873db112049271.jpg",
-   "order": 606
+   "order": 607
   },
   {
    "title": "Happiness",
    "author": "nplusone",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/75/75f3ff827f2b95102bef9ffc5215edc2.jpg",
-   "order": 607
+   "order": 608
   },
   {
    "title": "Torget",
    "author": "Victoria Durnak",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d0/d071a2546822c8fad498d516bd4523b3.jpg",
-   "order": 608
+   "order": 609
   },
   {
    "title": "Kvalmen",
    "author": "Jean-Paul Sartre",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/84/84dd911cf2934e9b2a27502f69f72814.jpg",
-   "order": 609
+   "order": 610
   },
   {
    "title": "Trans-Atlantyk",
    "author": "Witold Gombrowicz",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d5/d5ad61df4b8321ca4a85c50d5cbd3838.jpg",
-   "order": 610
+   "order": 611
   },
   {
    "title": "The Word Exchange",
    "author": "Alena Graedon",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e0/e0ca01deacafa2332d7f8a8d375535ef.jpg",
-   "order": 611
+   "order": 612
   },
   {
    "title": "Alle utlendinger har lukka gardiner",
    "author": "Maria Navarro Skaranger",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fc/fc4032b4d38162a0d3a0079aec6ec0cb.jpg",
-   "order": 612
+   "order": 613
   },
   {
    "title": "Bleeding Edge",
    "author": "Thomas Pynchon",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/7d/7d39e82472cc8bea1f3268e4a780d2bb.jpg",
-   "order": 613
+   "order": 614
   },
   {
    "title": "Den moderne verdens idéhistorie",
    "author": "Sven-Eric Liedman",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/7c/7c2cdf8c53d122b45e20123dc0171802.jpg",
-   "order": 614
+   "order": 615
   },
   {
    "title": "To the Cloud",
    "author": "Vincent Mosco",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/8b/8b561b7c7a89322e1e33feb9aadb20d9.jpg",
-   "order": 615
+   "order": 616
   },
   {
    "title": "Mord i oppgangen",
    "author": "Jon Øystein Flink",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e6/e6ce07ffc9802cded3837b1b9185b564.jpg",
-   "order": 616
+   "order": 617
   },
   {
    "title": "365 dager med Ludwig Wittgenstein",
    "author": "Gabriel Michael Vosgraff Moro",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/43/43fbc5745c82114950aa77812d0ca39a.jpg",
-   "order": 617
+   "order": 618
   },
   {
    "title": "Karakterer",
    "author": "Thomas Lundbo",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/2b/2bebeae7762e02ef15e8cef1fd00e45c.jpg",
-   "order": 618
+   "order": 619
   },
   {
    "title": "Krigen har intet kvinnelig ansikt",
    "author": "Svetlana Aleksandrovna Aleksievič",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/06/06cbc20c039a0c725f66c0812a81f358.jpg",
-   "order": 619
+   "order": 620
   },
   {
    "title": "Sjelens Amerika",
    "author": "Karl Ove Knausgård",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/4e/4ee7f9641d1bbe90498050ae97a07df7.jpg",
-   "order": 620
+   "order": 621
   },
   {
    "title": "Capital in the Twenty-First Century",
    "author": "Thomas Piketty",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/df/df573cf298ad1b988a5d501f2c07c2c6.jpg",
-   "order": 621
+   "order": 622
   },
   {
    "title": "Wait",
    "author": "Frank Partnoy",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/cc/cc7250d6008c8582bac467d062b3dadc.jpg",
-   "order": 622
+   "order": 623
   },
   {
    "title": "Dyr jeg har møtt",
    "author": "Audun Mortensen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/24/2460aa874844528de84fbe51a844d5e9.jpg",
-   "order": 623
+   "order": 624
   },
   {
    "title": "Massemenneske",
    "author": "Anders Malm",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/01/01d03d0d0654776edc2aa2334ef9a628.jpg",
-   "order": 624
+   "order": 625
   },
   {
    "title": "Shock Of The Old",
    "author": "David Edgerton",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/58/583b4c86cb3563f2a3ce4573eb52866d.jpg",
-   "order": 625
+   "order": 626
   },
   {
    "title": "Litt trist matematikk",
    "author": "Kjersti Annesdatter Skomsvold",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/82/827e6e1f87d23f8a614fff14b3096967.jpg",
-   "order": 626
+   "order": 627
   },
   {
    "title": "Nettverksøkonomi",
    "author": "Arne Krokan",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/4b/4b21ac433e0cb9154f3f87c09bdbffef.jpg",
-   "order": 627
+   "order": 628
   },
   {
    "title": "Essays",
    "author": "Michel de Montaigne",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0a/0a422035afd0f3a3539524347e2146a7.jpg",
-   "order": 628
+   "order": 629
   },
   {
    "title": "All That Is",
    "author": "James Salter",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ac/ac24b84784987f469d65558d5ab8699f.jpg",
-   "order": 629
+   "order": 630
   },
   {
    "title": "Han er her igjen",
    "author": "Timur Vermes",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/a2/a2b1c5ccd1fc07853a829a96b5cc13f8.jpg",
-   "order": 630
+   "order": 631
   },
   {
    "title": "Uroens bok",
    "author": "Fernando Pessoa",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/e9/e91229cb110192442ed1102e827ed020.jpg",
-   "order": 631
+   "order": 632
   },
   {
    "title": "All verdens småting ; Løsøre ; Selvomsorg",
    "author": "Ole Robert Sunde",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d4/d49ad8d2a08e3a8355a2df2107a7d8e3.jpg",
-   "order": 632
+   "order": 633
   },
   {
    "title": "Steinbygningen",
    "author": "Aslı Erdoğan",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/b7/b7d46d580089129c40f6f9852f24dafb.jpg",
-   "order": 633
+   "order": 634
   },
   {
    "title": "Den lange teksten historie",
    "author": "Ole Robert Sunde",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/7b/7bce58d8877ef69b24ecdb24cc2fedaf.webp",
-   "order": 634
+   "order": 635
   },
   {
    "title": "Ubestemt tid",
    "author": "Jan Grue",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c3/c334be7da049ac4b37da5ce97fff875e.jpg",
-   "order": 635
+   "order": 636
   },
   {
    "title": "Svar på brev frå Helga",
    "author": "Bergsveinn Birgisson",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/b6/b6871a9bddd209edbe41a4731f8231e9.jpg",
-   "order": 636
+   "order": 637
   },
   {
    "title": "The Radical Luhmann",
    "author": "Hans-Georg Moeller",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/63/636355f82e07622ec35223ee4f08d40f.jpg",
-   "order": 637
+   "order": 638
   },
   {
    "title": "Dagboken 1953-1958",
    "author": "Witold Gombrowicz",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/ae/ae971a815cbc90605080fb774477aa3c.jpg",
-   "order": 638
+   "order": 639
   },
   {
    "title": "Der jeg tenker er det alltid mørkt",
    "author": "Stig Sæterbakken",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f6/f6459250f4b744d81c845d4e73617c4d.jpg",
-   "order": 639
+   "order": 640
   },
   {
    "title": "Antifragile",
    "author": "Nissim Nicholas Taleb",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c7/c760318de64cd5761f39ae62aa2bd11a.jpg",
-   "order": 640
+   "order": 641
   },
   {
    "title": "I morgen under slaget tenk på meg",
    "author": "Javier Marías",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/fd/fd5a972c6b2cf2a7e1e4d3775c7b46b5.jpg",
-   "order": 641
+   "order": 642
   },
   {
    "title": "Kunsten og måten å nærme seg avdelingssjefen på for å be om lønnspålegg",
    "author": "Georges Perec",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/2d/2d66debdae6b46c898995b1323d73175.jpg",
-   "order": 642
+   "order": 643
   },
   {
    "title": "Goethe dauer",
    "author": "Thomas Bernhard",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/d4/d4ee004048588773f1bc933c16bb53ac.jpg",
-   "order": 643
+   "order": 644
   },
   {
    "title": "Jeg kunne vært et menneske",
    "author": "Cathrine Knudsen",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/c5/c5493d37d697c00994c5b25e02b53497.jpg",
-   "order": 644
+   "order": 645
   },
   {
    "title": "Blind",
    "author": "Lars Ove Seljestad",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/85/85e6b956efed0787a13ac783510fe85c.jpg",
-   "order": 645
+   "order": 646
   },
   {
    "title": "Gå",
    "author": "Thomas Bernhard",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/09/0921a9343dc896cc27390675c1d6331c.jpg",
-   "order": 646
+   "order": 647
   },
   {
    "title": "Min kamp",
    "author": "Karl Ove Knausgård",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/dd/dd055ef74e34060c25013903f6d1df34.jpg",
-   "order": 647
+   "order": 648
   },
   {
    "title": "Saganatt",
    "author": "Frode Grytten",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/9e/9e72ba02377ddfbd0fc82fe56d37bc54.jpg",
-   "order": 648
+   "order": 649
   },
   {
    "title": "Making the Social World",
    "author": "John Searle",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/0d/0d7d89df718595056bcaecdc1c862d9b.jpg",
-   "order": 649
+   "order": 650
   },
   {
    "title": "Byen",
    "author": "Peter Butenschøn",
    "status": "leser",
    "cover": "https://static.bokelskere.no/assets/f2/f2f7c5180e4c8244a4fa672bbce728e5.jpg",
-   "order": 650
+   "order": 651
   },
   {
    "title": "Sangen om storken og dromedaren",
@@ -4836,77 +4843,77 @@
    "status": "skal-lese",
    "cover": "https://static.bokelskere.no/assets/10/10caf82fcc89eafa109ef70dcc34dadb.jpg",
    "year": 2025,
-   "order": 651
+   "order": 652
   },
   {
    "title": "Spuria",
    "author": "Johan B. Mjønes",
    "status": "skal-lese",
    "cover": "https://static.bokelskere.no/assets/2c/2c48956af2efdb4d7e1ecb4491c7bd4f.jpg",
-   "order": 652
+   "order": 653
   },
   {
    "title": "Phishing for Phools",
    "author": "George A. Akerlof",
    "status": "skal-lese",
    "cover": "https://static.bokelskere.no/assets/72/727baa96e4862b08c2c5f5685d11b08e.jpg",
-   "order": 653
+   "order": 654
   },
   {
    "title": "Brás Cubas' posthume memoarer",
    "author": "Joaquim Maria Machado de Assis",
    "status": "skal-lese",
    "cover": "https://static.bokelskere.no/assets/8c/8c1a31293ccc2de3cc8ec3e636a6e0ac.jpg",
-   "order": 654
+   "order": 655
   },
   {
    "title": "Leksikon om lengsel",
    "author": "Hilde Østby",
    "status": "skal-lese",
    "cover": "https://static.bokelskere.no/assets/09/0924ace8a5c0422339315cfff7e6d4b3.jpg",
-   "order": 655
+   "order": 656
   },
   {
    "title": "Den mirakuløse mandarin",
    "author": "Aslı Erdoğan",
    "status": "skal-lese",
    "cover": "https://static.bokelskere.no/assets/8b/8be67357a59ace4bfa174dbadf816f6b.jpg",
-   "order": 656
+   "order": 657
   },
   {
    "title": "Djevelens time",
    "author": "Fernando Antonio Nogueira Pessoa",
    "status": "skal-lese",
    "cover": "https://static.bokelskere.no/assets/53/5347602644edfe54dab5f08d6410c54c.jpg",
-   "order": 657
+   "order": 658
   },
   {
    "title": "Livet bruksanvisning",
    "author": "Georges Perec",
    "status": "skal-lese",
    "cover": "https://static.bokelskere.no/assets/7b/7bfd6632f57357c762f5daeb4aa6a333.jpg",
-   "order": 658
+   "order": 659
   },
   {
    "title": "Voksenting",
    "author": "Maria Børja",
    "status": "skal-lese",
    "cover": "https://static.bokelskere.no/assets/33/33a9830ce71b49c5c5bc3a65f8f673f9.jpg",
-   "order": 659
+   "order": 660
   },
   {
    "title": "Thomas Mann",
    "author": "Hermann Kurzke",
    "status": "oppslagsverk",
    "cover": "https://static.bokelskere.no/assets/e1/e13598d32bcab12f899f7d2bd477de35.jpg",
-   "order": 660
+   "order": 661
   },
   {
    "title": "Stisykling i Norge",
    "author": "Kristoffer H. Kippernes",
    "status": "oppslagsverk",
    "cover": "https://static.bokelskere.no/assets/9f/9f65fb4a2064c9578a24fb7fb661ffac.jpg",
-   "order": 661
+   "order": 662
   }
  ]
 }
