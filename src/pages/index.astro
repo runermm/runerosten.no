@@ -32,17 +32,6 @@ const naa = leserNa(6);
       </>
     )}
 
-    {anmeldelser.length > 0 && (
-      <>
-      <div class="section-head"><h2>Siste bokanmeldelser</h2><a href="/anmeldelser/">Alle anmeldelser →</a></div>
-      <PostList items={anmeldelser.map((b, i) => ({
-        href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data), image: reviewImage(b.data),
-        description: b.data.description, date: b.data.date, rating: b.data.rating,
-        Content: anmInnhold[i].Content,
-      }))} />
-      </>
-    )}
-
     {naa.length > 0 && (
       <>
         <div class="section-head"><h2>Leser nå</h2><a href="/bokhylle/">Hele bokhyllen →</a></div>
@@ -54,6 +43,17 @@ const naa = leserNa(6);
             </li>
           ))}
         </ul>
+      </>
+    )}
+
+    {anmeldelser.length > 0 && (
+      <>
+      <div class="section-head"><h2>Siste bokanmeldelser</h2><a href="/anmeldelser/">Alle anmeldelser →</a></div>
+      <PostList items={anmeldelser.map((b, i) => ({
+        href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data), image: reviewImage(b.data),
+        description: b.data.description, date: b.data.date, rating: b.data.rating,
+        Content: anmInnhold[i].Content,
+      }))} />
       </>
     )}
 

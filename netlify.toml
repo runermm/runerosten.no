@@ -11,3 +11,8 @@
   from = "/artikler/stanford-inc/"
   to = "/anmeldelser/stanford-inc/"
   status = 301
+
+[[redirects]]
+  from = "/artikler/datakraft-vs-dommekraft/"
+  to = "/anmeldelser/datakraft-vs-dommekraft/"
+  status = 301

@@ -1,5 +1,8 @@
 ---
-title: "Datakraft vs. dømmekraft"
+title: Situasjon og konstellasjon
+headline: Datakraft vs. dømmekraft
+bookAuthor: Hartmut Rosa
+genre: Sakprosa
 description: "VAR-ifiseringen av samfunnet. Egypt jublet for 2–0 mot Argentina i VM, før VAR stilnet jubelen. Et presist bilde av hvor verden er på vei, mener sosiologen Hartmut Rosa. I sin nye bok tar han utgangspunkt i begrepsparet situasjon og konstellasjon for å forklare hva som skjer, hva vi vinner og hva vi risikerer."
 date: 2026-10-18
 tags: []
