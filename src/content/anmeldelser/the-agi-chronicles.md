@@ -7,6 +7,8 @@ description: En velskrevet, pedagogisk og innsiktsfull bok om kunstig intelligen
 date: 2026-11-03
 tags: [ki, teknologi]
 bokelskere: https://bokelskere.no/bokomtaler/400192
+image: /bilder/anmeldelser/the-agi-chronicles.jpg
+imageAlt: The AGI Chronicles av Kevin Roose, med et par lesebriller på omslaget
 ---
 
 Han følger utviklingen og rivaliseringen innen KI fra 2017, da OpenAIs ledende KI-forsker Ilya Sutskever oppsøker kollegaen Alec Radford og ber ham kikke på en forskningsartikkel som Google nylig har gitt ut: «Attention Is All You Need».

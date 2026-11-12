@@ -18,7 +18,7 @@ const d = entry.data;
 const norm = (t: string) => t.toLowerCase().trim();
 const bok = boker.find((b) => norm(b.title) === norm(d.title));
 ---
-<Base title={d.headline ? `${d.headline} – ${d.title} av ${d.bookAuthor}` : `${d.title} av ${d.bookAuthor}`} description={d.description} type="article">
+<Base title={d.headline ? `${d.headline} – ${d.title} av ${d.bookAuthor}` : `${d.title} av ${d.bookAuthor}`} description={d.description} type="article" image={d.image ?? bok?.cover}>
   <article class="wrap">
     <p class="meta">
       Bokanmeldelse · <time datetime={d.date.toISOString()}>{formatDate(d.date)}</time>
@@ -27,8 +27,14 @@ const bok = boker.find((b) => norm(b.title) === norm(d.title));
     <h1>{d.headline ?? d.title}</h1>
     <p class="lead">{d.description}</p>
 
-    <div class:list={['facts-wrap', { 'has-cover': bok?.cover }]}>
-    {bok?.cover && <div class="cover"><BookCover bok={bok} width={480} /></div>}
+    {d.image && (
+      <figure class="photo">
+        <img src={d.image} alt={d.imageAlt ?? `${d.title} av ${d.bookAuthor}`} />
+      </figure>
+    )}
+
+    <div class:list={['facts-wrap', { 'has-cover': !d.image && bok?.cover }]}>
+    {!d.image && bok?.cover && <div class="cover"><BookCover bok={bok} width={480} /></div>}
     <dl class="facts">
       {d.headline && <div><dt>Bok</dt><dd><em>{d.title}</em></dd></div>}
       <div><dt>Forfatter</dt><dd>{d.bookAuthor}</dd></div>
@@ -45,6 +51,9 @@ const bok = boker.find((b) => norm(b.title) === norm(d.title));
   </article>
 </Base>
 <style>
+  .photo { margin: 1.75rem 0 0; }
+  .photo img { display: block; max-width: 100%; max-height: 40rem; width: auto; height: auto; margin: 0 auto; border-radius: 10px;
+    box-shadow: 0 18px 40px -22px rgb(0 0 0 / 0.55); }
   .facts-wrap { margin: 1.5rem 0 2rem; }
   .facts-wrap.has-cover { display: grid; grid-template-columns: 8rem 1fr; gap: 1.25rem; align-items: start; }
   .facts {
