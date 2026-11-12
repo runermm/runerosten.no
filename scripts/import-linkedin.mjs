@@ -11,7 +11,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const MIN_TEGN = 400; // kortere innlegg (f.eks. deling uten egen tekst) hoppes over
+// Kortere innlegg (nyheter, stillingsannonser, delte lenker) hoppes over. Endre med --min=400.
+const MIN_TEGN = Number(process.argv.find((a) => a.startsWith('--min='))?.slice(6) ?? 1200);
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const OUT_DIR = process.env.LINKEDIN_OUT_DIR ?? path.join(ROOT, 'src/content/artikler');
 const IMG_DIR = process.env.LINKEDIN_IMG_DIR ?? path.join(ROOT, 'public/bilder/linkedin');
@@ -61,6 +62,10 @@ const yamlStr = (s) => JSON.stringify(s); // JSON-strenger er gyldig YAML
 
 // LinkedIn skriver hashtagger og omtaler i egne formater i eksporten.
 export function cleanLinkedInText(text) {
+  // Nyere eksporter pakker hver linje inn i anførselstegn: linje1"\n"linje2"\n""\n"linje3
+  if (/"\r?\n"/.test(text)) {
+    text = text.replace(/"\r?\n"/g, '\n').replace(/^"+|"+$/g, '');
+  }
   return text
     .replace(/\{hashtag\|\\?#\|([^}]+)\}/g, '#$1')
     .replace(/@\[([^\]]+)\]\(urn:li:[^)]+\)/g, '$1')
@@ -86,13 +91,32 @@ export function extractTags(text) {
   return { body, tags: [...tags] };
 }
 
-// Tittel: første setning (eller første linje), maks ~90 tegn.
+// «DATAKRAFT VS. DØMMEKRAFT» → «Datakraft vs. dømmekraft». Kjente forkortelser beholdes.
+const KEEP_UPPER = new Set(['KI', 'AI', 'VAR', 'NHH', 'USA', 'EU', 'IT', 'AGI', 'CEO', 'CTO']);
+export function sentenceCase(s) {
+  if (s !== s.toUpperCase()) return s; // bare titler i STORE BOKSTAVER endres
+  const out = s.toLowerCase().replace(/[\p{L}\p{N}]+/gu, (w) => (KEEP_UPPER.has(w.toUpperCase()) ? w.toUpperCase() : w));
+  return out.charAt(0).toUpperCase() + out.slice(1);
+}
+
+// Tittel: «TITTEL: resten» eller «Kort tittel: resten» (Runes vanlige stil), ellers første setning, maks ~90 tegn.
 // Blir tittelen hele første setning, fjernes den fra brødteksten så den ikke står to ganger.
 export function makeTitle(body) {
   const first = body.split('\n').find((l) => l.trim()) ?? '';
   const emoji = /^[\p{Extended_Pictographic}\p{Emoji_Presentation}️\s]+|[\p{Extended_Pictographic}\p{Emoji_Presentation}️\s]+$/gu;
   const clean = first.replace(emoji, '').trim();
-  const sentence = clean.match(/^(.+?[.!?:])(\s|$)/u)?.[1] ?? clean;
+  const colon = clean.match(/^([^:]{3,60}):\s+(.+)$/u);
+  const lettersOnly = clean.replace(/[^\p{L}]/gu, '');
+  if (lettersOnly && lettersOnly === lettersOnly.toUpperCase()) {
+    // Hele første linje i store bokstaver er tittelen.
+    return { title: sentenceCase(clean.replace(/[.:]$/, '').trim()), rest: body.slice(body.indexOf(first) + first.length).trim() };
+  }
+  if (colon) {
+    // Teksten før kolon er tittelen; resten av linja blir første avsnitt (ingressen).
+    return { title: sentenceCase(colon[1].trim()), rest: (colon[2] + body.slice(body.indexOf(first) + first.length)).trim() };
+  }
+  // Første setning; «vs.» og lignende avslutter ikke en setning.
+  const sentence = clean.match(/^(.+?(?<!\bvs|\bca|\bf\.eks|\bbl\.a)[.!?])(\s|$)/u)?.[1] ?? clean;
   let title = sentence;
   let complete = true;
   if (title.length > 90) {
@@ -101,7 +125,7 @@ export function makeTitle(body) {
     title = cut ?? title.slice(0, 90).replace(/\s+\S*$/, '') + ' …';
     complete = false;
   }
-  title = title.replace(/[.:]$/, '').trim();
+  title = sentenceCase(title.replace(/[.:]$/, '').trim());
   let rest = body;
   if (complete) {
     const start = body.indexOf(first);
@@ -167,6 +191,28 @@ const toIsoDate = (s) => {
   return isNaN(d) ? null : d.toISOString().slice(0, 10);
 };
 
+// Titler som allerede finnes på nettstedet (artikler og anmeldelsers overskrifter), så vi ikke importerer dobbelt.
+const norm = (s) => s.toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
+function existingTitles() {
+  const titles = new Set();
+  const dirs = [OUT_DIR, path.join(ROOT, 'src/content/anmeldelser')];
+  for (const dir of dirs) {
+    if (!fs.existsSync(dir)) continue;
+    for (const f of fs.readdirSync(dir).filter((f) => f.endsWith('.md'))) {
+      const fm = fs.readFileSync(path.join(dir, f), 'utf8').split('---')[1] ?? '';
+      for (const m of fm.matchAll(/^(?:title|headline):\s*"?(.+?)"?\s*$/gm)) titles.add(norm(m[1]));
+    }
+  }
+  return titles;
+}
+
+// Første avsnitt blir ingress (beskrivelse) og fjernes fra brødteksten, hvis det er passe kort.
+export function splitLead(text) {
+  const [first, ...rest] = text.split(/\n\s*\n/);
+  if (first && first.length <= 400 && rest.length) return { lead: first.replace(/\s+/g, ' ').trim(), body: rest.join('\n\n') };
+  return { lead: makeDescription(text), body: text };
+}
+
 function uniqueSlug(base, used) {
   let slug = base, n = 2;
   while (used.has(slug) || fs.existsSync(path.join(OUT_DIR, `${slug}.md`))) {
@@ -201,16 +247,19 @@ async function importShares(archive, used, stats) {
     return;
   }
   const rows = parseCsv(fs.readFileSync(file, 'utf8'));
-  console.log(`Innlegg: ${rows.length} i Shares.csv`);
+  const known = existingTitles();
+  console.log(`Innlegg: ${rows.length} i Shares.csv (tar med de på minst ${MIN_TEGN} tegn)`);
   for (const r of rows) {
     const raw = cleanLinkedInText(r.ShareCommentary ?? '');
     const date = toIsoDate(r.Date ?? '');
     if (raw.length < MIN_TEGN || !date) { stats.skipped++; continue; }
     const { body: noTags, tags } = extractTags(raw);
     const { title, rest } = makeTitle(noTags);
+    if (known.has(norm(title))) { stats.existing++; console.log(`  = finnes allerede: ${title}`); continue; }
     const { slug, exists } = uniqueSlug(slugify(title), used);
     if (exists) { stats.existing++; continue; }
-    let body = linkify(rest);
+    const { lead, body: restBody } = splitLead(rest);
+    let body = linkify(restBody);
     const media = (r.MediaUrl ?? '').trim();
     if (media) {
       const img = await downloadImage(media, slug);
@@ -218,7 +267,7 @@ async function importShares(archive, used, stats) {
     }
     const shared = (r.SharedUrl ?? '').trim();
     if (shared) body += `\n\nLenke: <${shared}>`;
-    writeArticle({ slug, title, description: makeDescription(rest), date, tags, linkedin: (r.ShareLink ?? '').trim() || undefined, body });
+    writeArticle({ slug, title, description: lead, date, tags, linkedin: (r.ShareLink ?? '').trim() || undefined, body });
     stats.created.push(slug);
   }
 }
