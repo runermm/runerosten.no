@@ -22,8 +22,8 @@ const { items } = Astro.props;
       <li class:list={{ 'has-image': item.image }}>
         <div class="text">
           <a href={item.href} class="title">{item.title}</a>
-          {item.byline && <span class="byline"> {item.byline}</span>}
           <p class="desc">{item.description}</p>
+          {item.byline && <p class="byline">{item.byline}</p>}
           <div class="meta row">
             <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>
             {item.rating && <Rating value={item.rating} size={20} />}
@@ -46,7 +46,7 @@ const { items } = Astro.props;
   .text { min-width: 0; }
   .title { font-size: 1.3rem; font-weight: 600; color: var(--text); text-decoration: none; }
   .title:hover { color: var(--accent); }
-  .byline { color: var(--muted); font-style: italic; }
+  .byline { margin: 0 0 0.25rem; color: var(--muted); font-style: italic; font-size: 1rem; }
   .desc { margin: 0.3rem 0 0.4rem; }
   .row { display: flex; gap: 0.75rem; align-items: center; }
   .thumb { display: block; width: 6rem; margin-top: 0.3rem; }
