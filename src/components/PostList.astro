@@ -10,15 +10,16 @@ interface Item {
   byline?: string;
   rating?: number;
   image?: string; // lite bilde til høyre
+  Content?: any; // hele teksten; gir «Les mer» som utvider på samme side
 }
-interface Props { items: Item[] }
-const { items } = Astro.props;
+interface Props { items: Item[]; readMore?: boolean }
+const { items, readMore = false } = Astro.props;
 ---
 {items.length === 0 ? (
   <p class="meta">Ingenting her ennå.</p>
 ) : (
   <ul class="list">
-    {items.map((item) => (
+    {items.map((item, i) => (
       <li class:list={{ 'has-image': item.image }}>
         <div class="text">
           <a href={item.href} class="title">{item.title}</a>
@@ -27,7 +28,23 @@ const { items } = Astro.props;
           <div class="meta row">
             <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>
             {item.rating && <Rating value={item.rating} size={20} />}
+            {item.Content ? (
+              <button type="button" class="more-btn" data-expand aria-expanded="false" aria-controls={`mer-${i}-${item.href}`}>
+                Les mer <span aria-hidden="true">↓</span>
+              </button>
+            ) : readMore && (
+              <a href={item.href} class="more-btn">Les mer <span aria-hidden="true">→</span></a>
+            )}
           </div>
+          {item.Content && (
+            <div class="expanded" id={`mer-${i}-${item.href}`} hidden>
+              <div class="prose"><item.Content /></div>
+              <p class="meta row">
+                <button type="button" class="more-btn" data-collapse>Vis mindre <span aria-hidden="true">↑</span></button>
+                <a href={item.href}>Åpne som egen side →</a>
+              </p>
+            </div>
+          )}
         </div>
         {item.image && (
           <a href={item.href} class="thumb" tabindex="-1" aria-hidden="true">
@@ -48,10 +65,37 @@ const { items } = Astro.props;
   .title:hover { color: var(--accent); }
   .byline { margin: 0 0 0.25rem; color: var(--muted); font-style: italic; font-size: 1rem; }
   .desc { margin: 0.3rem 0 0.4rem; }
-  .row { display: flex; gap: 0.75rem; align-items: center; }
+  .row { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; align-items: center; }
+  .more-btn {
+    font-family: var(--sans); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: none;
+  }
+  .more-btn:hover { text-decoration: underline; text-underline-offset: 0.25em; }
+  .expanded { margin-top: 1rem; padding-top: 0.25rem; border-top: 1px dashed var(--border); }
+  .expanded :global(.prose) { font-size: 1.1rem; }
   .thumb { display: block; width: 6rem; margin-top: 0.3rem; }
   .thumb img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px;
     box-shadow: 0 8px 18px -10px rgb(0 0 0 / 0.5); transition: transform 0.2s ease; }
   .thumb:hover img { transform: translateY(-2px); }
   @media (max-width: 30rem) { .thumb { width: 4.5rem; } }
 </style>
+
+<script>
+  // «Les mer» viser hele teksten på samme side; «Vis mindre» lukker og går tilbake til tittelen.
+  document.querySelectorAll<HTMLButtonElement>('[data-expand]').forEach((btn) => {
+    const panel = document.getElementById(btn.getAttribute('aria-controls')!)!;
+    const close = panel.querySelector<HTMLButtonElement>('[data-collapse]')!;
+    btn.addEventListener('click', () => {
+      panel.hidden = false;
+      btn.hidden = true;
+      btn.setAttribute('aria-expanded', 'true');
+    });
+    close.addEventListener('click', () => {
+      panel.hidden = true;
+      btn.hidden = false;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.closest('li')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      btn.focus({ preventScroll: true });
+    });
+  });
+</script>
