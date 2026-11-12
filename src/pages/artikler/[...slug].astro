@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 }
 const { entry } = Astro.props;
 const { Content } = await render(entry);
-const { title, description, date, updated, tags, draft } = entry.data;
+const { title, description, date, updated, tags, draft, linkedin } = entry.data;
 ---
 <Base title={title} description={description} type="article">
   <article class="wrap">
@@ -22,6 +22,7 @@ const { title, description, date, updated, tags, draft } = entry.data;
     <h1>{title}</h1>
     <p class="lead">{description}</p>
     <div class="prose"><Content /></div>
+    {linkedin && <p class="meta">Først publisert på <a href={linkedin} target="_blank" rel="noopener">LinkedIn</a>.</p>}
     {tags.length > 0 && <p class="tags">{tags.map((t) => <span class="tag">{t}</span>)}</p>}
     <NewsletterForm />
   </article>

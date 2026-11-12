@@ -10,6 +10,7 @@ const artikler = defineCollection({
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
+    linkedin: z.string().url().optional(), // lenke til originalinnlegget
     draft: z.boolean().default(false),
   }),
 });
