@@ -6,10 +6,10 @@ export const SITE = {
   lang: 'nb',
 };
 
-// Nyhetsbrev via Buttondown (https://buttondown.com).
-// Opprett en konto og skriv inn brukernavnet ditt her for å aktivere skjemaet.
+// Nyhetsbrev via Kit (https://kit.com).
+// Lag et skjema i Kit (Grow → Landing Pages & Forms) og skriv inn skjema-ID-en her.
 export const NEWSLETTER = {
-  buttondownUsername: '', // f.eks. 'runerosten'
+  kitFormId: '10182455',
 };
 
 // Leseliste fra Raindrop.io, samlingen «Leseliste».

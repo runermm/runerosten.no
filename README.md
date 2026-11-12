@@ -57,11 +57,12 @@ Anmeldelsen din her.
 
 ## Nyhetsbrev
 
-Skjemaet bruker [Buttondown](https://buttondown.com) (gratis opp til 100 abonnenter).
+Påmeldingsskjemaet bruker [Kit](https://kit.com) (gratis opp til 10 000 abonnenter).
 
-1. Opprett en konto på buttondown.com.
-2. Sett brukernavnet ditt i `src/config.ts` under `NEWSLETTER.buttondownUsername`.
-3. I Buttondown kan du koble til RSS-feeden `https://runerosten.no/rss.xml`, så kan nye innlegg sendes ut automatisk. Du kan også skrive nyhetsbrev direkte i Buttondown.
+1. I Kit: Grow → Landing Pages & Forms → Create new → Form → Inline.
+2. Skjema-ID-en står i adressen når du redigerer skjemaet (`.../forms/1234567/edit`).
+3. Sett den i `src/config.ts` under `NEWSLETTER.kitFormId`.
+4. Nyhetsbrev skrives og sendes fra Kit (Send → Broadcasts).
 
 ## Leseliste (Raindrop.io)
 

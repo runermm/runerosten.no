@@ -2,20 +2,21 @@
 import { NEWSLETTER } from '../config';
 interface Props { compact?: boolean }
 const { compact = false } = Astro.props;
-const user = NEWSLETTER.buttondownUsername;
-const action = `https://buttondown.com/api/emails/embed-subscribe/${user}`;
+const formId = NEWSLETTER.kitFormId;
+const action = `https://app.kit.com/forms/${formId}/subscriptions`;
 ---
 <section class:list={['newsletter', { compact }]}>
   <h2>Få nye tekster på e-post</h2>
   <p>Nyhetsbrev med nye artikler og bokanmeldelser. Ingen spam, og du kan melde deg av når som helst.</p>
-  {user ? (
-    <form action={action} method="post" target="_blank">
+  {formId ? (
+    <form action={action} method="post" data-kit-form>
       <label for="nl-email" class="sr-only">E-postadresse</label>
-      <input id="nl-email" type="email" name="email" required placeholder="din@epost.no" autocomplete="email" />
+      <input id="nl-email" type="email" name="email_address" required placeholder="din@epost.no" autocomplete="email" />
       <button type="submit">Meld meg på</button>
+      <p class="status" role="status" hidden></p>
     </form>
   ) : (
-    <p class="todo">Påmeldingen er ikke aktivert ennå. Sett <code>buttondownUsername</code> i <code>src/config.ts</code>.</p>
+    <p class="todo">Påmeldingen er ikke aktivert ennå. Sett <code>kitFormId</code> i <code>src/config.ts</code>.</p>
   )}
 </section>
 <style>
@@ -37,6 +38,42 @@ const action = `https://buttondown.com/api/emails/embed-subscribe/${user}`;
     background: var(--accent); color: var(--bg); cursor: pointer;
   }
   button:hover { filter: brightness(1.1); }
+  .status { flex-basis: 100%; margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.95rem; color: var(--text); }
   .todo { font-family: var(--sans); font-size: 0.9rem; margin: 0; }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 </style>
+
+<script>
+  // Sender påmeldingen i bakgrunnen, så leseren blir på siden.
+  document.querySelectorAll<HTMLFormElement>('form[data-kit-form]').forEach((form) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const status = form.querySelector<HTMLElement>('.status')!;
+      const button = form.querySelector('button')!;
+      button.disabled = true;
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' },
+        });
+        // Kit svarer 200 også ved feil; selve resultatet står i «status».
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || data.status !== 'success') {
+          status.textContent = 'Det gikk ikke. Sjekk at e-postadressen er riktig og prøv igjen.';
+          status.hidden = false;
+          button.disabled = false;
+          return;
+        }
+        form.reset();
+        status.textContent = 'Takk! Sjekk innboksen din og bekreft påmeldingen.';
+      } catch (err) {
+        // Blokkert av nettleseren (CORS): send skjemaet på vanlig måte til Kit i stedet.
+        if (err instanceof TypeError) return HTMLFormElement.prototype.submit.call(form);
+        status.textContent = 'Noe gikk galt. Prøv igjen litt senere.';
+        button.disabled = false;
+      }
+      status.hidden = false;
+    });
+  });
+</script>
