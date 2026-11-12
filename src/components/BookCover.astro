@@ -1,0 +1,28 @@
+---
+import type { Bok } from '../bokhylle';
+import { coverUrl } from '../bokhylle';
+interface Props { bok: Bok; width?: number }
+const { bok, width = 320 } = Astro.props;
+const hues = [14, 32, 152, 200, 262, 340];
+const hue = hues[[...bok.title].reduce((n, c) => n + c.charCodeAt(0), 0) % hues.length];
+const src = coverUrl(bok, width);
+---
+<span class="cover">
+  {src ? (
+    <img src={src} alt="" loading="lazy" decoding="async" />
+  ) : (
+    <span class="drawn" style={`--h:${hue}`}>
+      <span class="t">{bok.title}</span>
+      {bok.author && <span class="a">{bok.author}</span>}
+    </span>
+  )}
+</span>
+<style>
+  .cover { display: block; aspect-ratio: 2 / 3; border-radius: 3px 6px 6px 3px; overflow: hidden; background: var(--surface);
+    box-shadow: inset 4px 0 6px -3px rgb(0 0 0 / 0.35), 0 8px 18px -8px rgb(0 0 0 / 0.5); }
+  img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .drawn { height: 100%; display: flex; flex-direction: column; justify-content: space-between; padding: 0.7rem 0.6rem;
+    background: linear-gradient(160deg, hsl(var(--h) 45% 38%), hsl(var(--h) 50% 24%)); color: hsl(var(--h) 40% 94%); }
+  .t { font-size: 0.9rem; font-weight: 600; line-height: 1.2; }
+  .a { font-family: var(--sans); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.85; }
+</style>

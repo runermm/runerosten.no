@@ -23,6 +23,7 @@ export const LESELISTE = {
 export const NAV = [
   { href: '/artikler/', label: 'Artikler' },
   { href: '/anmeldelser/', label: 'Bokanmeldelser' },
+  { href: '/bokhylle/', label: 'Bokhylle' },
   { href: '/leseliste/', label: 'Leseliste' },
   { href: '/nyhetsbrev/', label: 'Nyhetsbrev' },
   { href: '/om/', label: 'Om' },

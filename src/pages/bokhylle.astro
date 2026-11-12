@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import BookCover from '../components/BookCover.astro';
+import { boker, STATUS_LABEL, type Status } from '../bokhylle';
+import { getAnmeldelser } from '../lib';
+
+const anmeldelser = await getAnmeldelser();
+const norm = (s: string) => s.toLowerCase().trim();
+const review = (title: string) => anmeldelser.find((a) => norm(a.data.title) === norm(title));
+
+const statuses: Status[] = ['leser', 'lest', 'skal-lese'];
+const count = (s: Status) => boker.filter((b) => b.status === s).length;
+const years = [...new Set(boker.map((b) => b.year).filter(Boolean) as number[])].sort((a, b) => b - a);
+---
+<Base title="Bokhylle" description={`${boker.length} bøker jeg har lest, leser og skal lese.`}>
+  <div class="wide">
+    <header class="intro">
+      <h1>Bokhylle</h1>
+      <p class="lead">{boker.length} bøker jeg har lest, leser og skal lese. Hentet fra min profil på <a href="https://bokelskere.no/profil/rune">bokelskere.no</a>.</p>
+    </header>
+
+    <div class="controls">
+      <div class="filters" role="group" aria-label="Filtrer på lesestatus">
+        <button type="button" data-status="alle" aria-pressed="true">Alle <span>{boker.length}</span></button>
+        {statuses.map((s) => (
+          <button type="button" data-status={s} aria-pressed="false">{STATUS_LABEL[s]} <span>{count(s)}</span></button>
+        ))}
+      </div>
+      <div class="row">
+        <label class="sr-only" for="sok">Søk i bokhyllen</label>
+        <input id="sok" type="search" placeholder="Søk etter tittel eller forfatter …" autocomplete="off" />
+        <label class="sr-only" for="ar">Leseår</label>
+        <select id="ar">
+          <option value="">Alle år</option>
+          {years.map((y) => <option value={y}>{y}</option>)}
+        </select>
+      </div>
+      <p class="meta" id="treff" aria-live="polite"></p>
+    </div>
+
+    <ul class="shelf">
+      {boker.map((b) => {
+        const r = review(b.title);
+        return (
+          <li data-status={b.status} data-year={b.year ?? ''} data-q={norm(`${b.title} ${b.author ?? ''}`)}>
+            <a href={r ? `/anmeldelser/${r.id}/` : undefined} class:list={['book', { reviewed: r }]}
+              title={`${b.title}${b.author ? ' – ' + b.author : ''}`}>
+              <BookCover bok={b} />
+              {b.favorite && <span class="badge fav" title="Favoritt">♥</span>}
+              {r && <span class="badge rev">Anmeldt</span>}
+              <span class="cap">
+                <span class="title">{b.title}</span>
+                {b.author && <span class="author">{b.author}</span>}
+              </span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</Base>
+
+<style>
+  .intro { max-width: var(--measure); }
+  .controls { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 1rem 0 0.5rem; margin: 0.5rem 0 1.5rem; border-bottom: 1px solid var(--border); }
+  .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .filters button { font-family: var(--sans); font-size: 0.9rem; cursor: pointer; padding: 0.4rem 0.95rem; border-radius: 999px;
+    border: 1px solid var(--border); background: transparent; color: var(--text); }
+  .filters button span { color: var(--muted); margin-left: 0.25rem; }
+  .filters button[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .filters button[aria-pressed='true'] span { color: inherit; opacity: 0.8; }
+  .row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+  input, select { font-family: var(--sans); font-size: 1rem; padding: 0.5rem 0.8rem; border: 1px solid var(--border);
+    border-radius: 6px; background: var(--surface); color: var(--text); }
+  input { flex: 1 1 16rem; }
+  #treff { margin: 0.5rem 0 0; }
+  .shelf { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.75rem 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(42%, 8.5rem), 1fr)); }
+  .shelf li[hidden] { display: none; }
+  .book { display: block; position: relative; color: var(--text); text-decoration: none; }
+  .book :global(.cover) { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .book:hover :global(.cover) { transform: translateY(-4px) rotate(-0.6deg); }
+  .reviewed { cursor: pointer; }
+  .cap { display: block; margin-top: 0.55rem; }
+  .title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    font-size: 0.92rem; font-weight: 600; line-height: 1.3; }
+  .author { display: block; font-family: var(--sans); font-size: 0.75rem; color: var(--muted); margin-top: 0.15rem;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .badge { position: absolute; top: 0.4rem; font-family: var(--sans); font-size: 0.68rem; font-weight: 600;
+    background: var(--accent); color: var(--bg); border-radius: 999px; padding: 0.1rem 0.5rem; }
+  .fav { left: 0.4rem; }
+  .rev { right: 0.4rem; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+</style>
+
+<script>
+  const items = [...document.querySelectorAll<HTMLLIElement>('.shelf li')];
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filters button');
+  const search = document.getElementById('sok') as HTMLInputElement;
+  const year = document.getElementById('ar') as HTMLSelectElement;
+  const treff = document.getElementById('treff')!;
+  let status = 'alle';
+  function apply() {
+    const q = search.value.toLowerCase().trim();
+    let n = 0;
+    for (const li of items) {
+      const show = (status === 'alle' || li.dataset.status === status) && (!year.value || li.dataset.year === year.value) && (!q || li.dataset.q!.includes(q));
+      li.hidden = !show;
+      if (show) n++;
+    }
+    treff.textContent = `${n} ${n === 1 ? 'bok' : 'bøker'}`;
+  }
+  buttons.forEach((b) => b.addEventListener('click', () => {
+    status = b.dataset.status!;
+    buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    apply();
+  }));
+  search.addEventListener('input', apply);
+  year.addEventListener('change', apply);
+  apply();
+</script>
