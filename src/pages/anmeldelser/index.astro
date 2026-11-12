@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PostList from '../../components/PostList.astro';
-import { getAnmeldelser, reviewListTitle } from '../../lib';
+import { getAnmeldelser, reviewListTitle, reviewImage } from '../../lib';
 const anmeldelser = await getAnmeldelser();
 ---
 <Base title="Bokanmeldelser" description="Bøker jeg har lest, med terningkast.">
@@ -9,7 +9,7 @@ const anmeldelser = await getAnmeldelser();
     <h1>Bokanmeldelser</h1>
     <p class="lead">Bøker jeg har lest, med terningkast fra 1 til 6.</p>
     <PostList items={anmeldelser.map((b) => ({
-      href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data),
+      href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data), image: reviewImage(b.data),
       description: b.data.description, date: b.data.date, rating: b.data.rating,
     }))} />
   </div>

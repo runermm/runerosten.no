@@ -6,7 +6,7 @@ import LeselisteCard from '../components/LeselisteCard.astro';
 import BookCover from '../components/BookCover.astro';
 import { leserNa } from '../bokhylle';
 import PaRepeat from '../components/PaRepeat.astro';
-import { getArtikler, getAnmeldelser, getLeseliste, reviewListTitle } from '../lib';
+import { getArtikler, getAnmeldelser, getLeseliste, reviewListTitle, reviewImage } from '../lib';
 
 const artikler = (await getArtikler()).slice(0, 5);
 const anmeldelser = (await getAnmeldelser()).slice(0, 5);
@@ -31,7 +31,7 @@ const naa = leserNa(6);
       <>
       <div class="section-head"><h2>Siste bokanmeldelser</h2><a href="/anmeldelser/">Alle anmeldelser →</a></div>
       <PostList items={anmeldelser.map((b) => ({
-        href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data),
+        href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data), image: reviewImage(b.data),
         description: b.data.description, date: b.data.date, rating: b.data.rating,
       }))} />
       </>

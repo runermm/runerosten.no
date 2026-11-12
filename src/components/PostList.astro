@@ -9,6 +9,7 @@ interface Item {
   date: Date;
   byline?: string;
   rating?: number;
+  image?: string; // lite bilde til høyre
 }
 interface Props { items: Item[] }
 const { items } = Astro.props;
@@ -18,14 +19,21 @@ const { items } = Astro.props;
 ) : (
   <ul class="list">
     {items.map((item) => (
-      <li>
-        <a href={item.href} class="title">{item.title}</a>
-        {item.byline && <span class="byline"> {item.byline}</span>}
-        <p class="desc">{item.description}</p>
-        <div class="meta row">
-          <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>
-          {item.rating && <Rating value={item.rating} size={20} />}
+      <li class:list={{ 'has-image': item.image }}>
+        <div class="text">
+          <a href={item.href} class="title">{item.title}</a>
+          {item.byline && <span class="byline"> {item.byline}</span>}
+          <p class="desc">{item.description}</p>
+          <div class="meta row">
+            <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>
+            {item.rating && <Rating value={item.rating} size={20} />}
+          </div>
         </div>
+        {item.image && (
+          <a href={item.href} class="thumb" tabindex="-1" aria-hidden="true">
+            <img src={item.image} alt="" loading="lazy" />
+          </a>
+        )}
       </li>
     ))}
   </ul>
@@ -34,9 +42,16 @@ const { items } = Astro.props;
   .list { list-style: none; padding: 0; margin: 0; }
   li { padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
   li:last-child { border-bottom: 0; }
+  li.has-image { display: grid; grid-template-columns: 1fr auto; gap: 1.25rem; align-items: start; }
+  .text { min-width: 0; }
   .title { font-size: 1.3rem; font-weight: 600; color: var(--text); text-decoration: none; }
   .title:hover { color: var(--accent); }
   .byline { color: var(--muted); font-style: italic; }
   .desc { margin: 0.3rem 0 0.4rem; }
   .row { display: flex; gap: 0.75rem; align-items: center; }
+  .thumb { display: block; width: 6rem; margin-top: 0.3rem; }
+  .thumb img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px;
+    box-shadow: 0 8px 18px -10px rgb(0 0 0 / 0.5); transition: transform 0.2s ease; }
+  .thumb:hover img { transform: translateY(-2px); }
+  @media (max-width: 30rem) { .thumb { width: 4.5rem; } }
 </style>

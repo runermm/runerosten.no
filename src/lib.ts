@@ -1,10 +1,18 @@
 import { getCollection } from 'astro:content';
+import { boker, coverUrl } from './bokhylle';
 
 // Overskrift og undertekst for en anmeldelse i lister.
 export const reviewListTitle = (d: { title: string; headline?: string; bookAuthor: string }) => ({
   title: d.headline ?? d.title,
   byline: d.headline ? `${d.title} av ${d.bookAuthor}` : `av ${d.bookAuthor}`,
 });
+
+// Lite bilde for en anmeldelse: eget bilde, ellers omslaget fra bokhyllen.
+export const reviewImage = (d: { title: string; image?: string }) => {
+  if (d.image) return d.image;
+  const bok = boker.find((b) => b.title.toLowerCase().trim() === d.title.toLowerCase().trim());
+  return bok ? coverUrl(bok, 240) : undefined;
+};
 
 export const formatDate = (d: Date) =>
   d.toLocaleDateString('nb-NO', { day: 'numeric', month: 'long', year: 'numeric' });
