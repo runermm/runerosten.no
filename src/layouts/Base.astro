@@ -65,7 +65,7 @@ const path = Astro.url.pathname;
     <footer class="site-footer">
       <div class="wide">
         <span>© {new Date().getFullYear()} {SITE.author}</span>
-        <span><a href="/rss.xml">RSS</a> · <a href="/nyhetsbrev/">Nyhetsbrev</a>{SITE.repo && <> · <a href={SITE.repo} rel="noopener">Kildekode på GitHub</a></>}</span>
+        <span><a href="/rss.xml">RSS</a> · <a href="/nyhetsbrev/">Nyhetsbrev</a>{SITE.repo && <> · <a href={SITE.repo} rel="noopener">Kildekode på GitHub</a> · <a href={`${SITE.repo}/blob/main/docs/LAG-DITT-EGET.md`} rel="noopener">Lag dette selv</a></>}</span>
       </div>
     </footer>
   </body>
