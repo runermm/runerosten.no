@@ -12,10 +12,10 @@ const statuses: Status[] = ['leser', 'lest', 'skal-lese'];
 const count = (s: Status) => boker.filter((b) => b.status === s).length;
 const years = [...new Set(boker.map((b) => b.year).filter(Boolean) as number[])].sort((a, b) => b - a);
 ---
-<Base title="Bokhylle" description={`${boker.length} bøker jeg har lest, leser og skal lese.`}>
+<Base title="Boksamling" description={`${boker.length} bøker jeg har lest, leser og skal lese.`}>
   <div class="wide">
     <header class="intro">
-      <h1>Bokhylle</h1>
+      <h1>Boksamling</h1>
       <p class="lead">{boker.length} bøker jeg har lest, leser og skal lese. Hentet fra min profil på <a href="https://bokelskere.no/profil/rune">bokelskere.no</a>.</p>
     </header>
 
@@ -27,7 +27,7 @@ const years = [...new Set(boker.map((b) => b.year).filter(Boolean) as number[])]
         ))}
       </div>
       <div class="row">
-        <label class="sr-only" for="sok">Søk i bokhyllen</label>
+        <label class="sr-only" for="sok">Søk i boksamlingen</label>
         <input id="sok" type="search" placeholder="Søk etter tittel eller forfatter …" autocomplete="off" />
         <label class="sr-only" for="ar">Leseår</label>
         <select id="ar">

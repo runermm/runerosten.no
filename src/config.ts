@@ -1,7 +1,7 @@
 // Grunninnstillinger for nettstedet. Endre her, så oppdateres hele siden.
 export const SITE = {
   title: 'Rune Røsten',
-  description: 'Artikler, bokanmeldelser og nyhetsbrev.',
+  description: 'Synspunkter, bokmeldinger og nyhetsbrev.',
   author: 'Rune Røsten',
   lang: 'nb',
 };
@@ -21,9 +21,9 @@ export const LESELISTE = {
 };
 
 export const NAV = [
-  { href: '/artikler/', label: 'Artikler' },
-  { href: '/anmeldelser/', label: 'Bokanmeldelser' },
-  { href: '/bokhylle/', label: 'Bokhylle' },
+  { href: '/artikler/', label: 'Synspunkt' },
+  { href: '/anmeldelser/', label: 'Bokmelding' },
+  { href: '/bokhylle/', label: 'Boksamling' },
   { href: '/leseliste/', label: 'Leseliste' },
   { href: '/nyhetsbrev/', label: 'Nyhetsbrev' },
   { href: '/om/', label: 'Om' },
