@@ -1,6 +1,7 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { leselisteLoader } from './leseliste';
+import { podkastLoader } from './podkaster';
 
 const artikler = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/artikler' }),
@@ -55,4 +56,17 @@ const leseliste = defineCollection({
   }),
 });
 
-export const collections = { artikler, anmeldelser, leseliste };
+const podkaster = defineCollection({
+  loader: podkastLoader(),
+  schema: z.object({
+    id: z.string(),
+    title: z.string(),
+    show: z.string().optional(),
+    url: z.string().url(),
+    cover: z.string().url().optional(),
+    note: z.string().optional(),
+    date: z.coerce.date(),
+  }),
+});
+
+export const collections = { artikler, anmeldelser, leseliste, podkaster };

@@ -1,11 +1,18 @@
 ---
 // «På øret og på repeat»: album fra Tidal og podkaster (src/data/musikk.json).
 // Album: klikk på omslaget for å spille av her. Podkaster: lenke til episoden eller serien.
+import { getCollection } from 'astro:content';
 import data from '../data/musikk.json';
 interface Item { id?: string; type?: 'album' | 'podcast'; title: string; artist: string; cover: string; url?: string; note?: string }
-interface Props { limit?: number }
-const { limit = 6 } = Astro.props;
-const albums = (data.albums as Item[]).slice(0, limit);
+interface Props { limit?: number; podcasts?: number }
+const { limit = 6, podcasts = 3 } = Astro.props;
+// Nyeste podkaster fra Raindrop («På øret») først, deretter album fra Tidal.
+const pods: Item[] = (await getCollection('podkaster'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, podcasts)
+  .filter((p) => p.data.cover)
+  .map((p) => ({ type: 'podcast', title: p.data.title, artist: p.data.show ?? '', cover: p.data.cover!, url: p.data.url, note: p.data.note }));
+const albums = [...pods, ...(data.albums as Item[])].slice(0, limit);
 ---
 <section class="repeat" data-repeat>
   <ul class="albums">

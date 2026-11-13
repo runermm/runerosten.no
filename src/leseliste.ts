@@ -19,7 +19,7 @@ export interface LeselisteItem {
 }
 
 // Feltene vi bruker fra Raindrop sitt API.
-interface Raindrop {
+export interface Raindrop {
   _id: number;
   title: string;
   link: string;
@@ -57,18 +57,24 @@ function toItem(r: Raindrop): LeselisteItem {
 }
 
 export async function fetchLeseliste(): Promise<LeselisteItem[] | null> {
+  const items = await fetchRaindrops(LESELISTE.collectionId);
+  return items && items.map(toItem);
+}
+
+// Henter alle bokmerker i en Raindrop-samling, nyeste først. null = ingen nøkkel.
+export async function fetchRaindrops(collectionId: number): Promise<Raindrop[] | null> {
   const token = process.env.RAINDROP_TOKEN ?? import.meta.env.RAINDROP_TOKEN;
   if (!token) return null;
   const items: Raindrop[] = [];
   for (let page = 0; page < 20; page++) {
-    const url = `https://api.raindrop.io/rest/v1/raindrops/${LESELISTE.collectionId}?perpage=50&page=${page}&sort=-created`;
+    const url = `https://api.raindrop.io/rest/v1/raindrops/${collectionId}?perpage=50&page=${page}&sort=-created`;
     const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
-    if (!res.ok) throw new Error(`Kunne ikke hente leselisten fra Raindrop (${res.status})`);
+    if (!res.ok) throw new Error(`Kunne ikke hente fra Raindrop (${res.status})`);
     const json = (await res.json()) as { items: Raindrop[] };
     items.push(...json.items);
     if (json.items.length < 50) break;
   }
-  return items.map(toItem);
+  return items;
 }
 
 export function leselisteLoader(): Loader {

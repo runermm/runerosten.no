@@ -20,6 +20,11 @@ export const LESELISTE = {
   bookTag: 'bok',
 };
 
+// Podkaster til «På øret og på repeat», fra en egen Raindrop-samling. 0 = av.
+export const PODKAST = {
+  collectionId: 0,
+};
+
 export const NAV = [
   { href: '/artikler/', label: 'Synspunkt' },
   { href: '/anmeldelser/', label: 'Bokmelding' },
