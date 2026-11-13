@@ -3,6 +3,9 @@ title: "Digital infrastruktur, sjølråderett og nasjonal sikkerhet"
 description: "Statsråd Torgeir Micaelsen tar nye positive grep. Digdep har nedsatt en ekspertgruppe som skal se på konsekvensene av KI for Norges sikkerhetsinteresser. Dette er veldig positivt i seg selv. Betydningen av å sikre og utvikle en norsk digital infrastruktur kan knapt overdrives og vi har svært mye ugjort."
 date: 2026-11-13
 tags: [ki]
+image: /bilder/artikler/digital-infrastruktur.jpg
+imageAlt: Gruppebilde av ni personer som står side om side i et lyst atrium.
+imageCredit: "Foto: Rune Røsten"
 linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7527047465263513600/"
 ---
 Ekstra gledelig er det å se at Digdep har gjort en veldig god jobb med å finne medlemmer til ekspertgruppen. Blant professorer, doktorgradsstudenter og akademikere er det også gjort plass til min tidligere kollega Mats Staugaard, som nå jobber i Boitano og skriver et utmerket nyhetsbrev.
