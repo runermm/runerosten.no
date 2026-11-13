@@ -5,35 +5,44 @@ import PostList from '../components/PostList.astro';
 import NewsletterForm from '../components/NewsletterForm.astro';
 import LeselisteCard from '../components/LeselisteCard.astro';
 import BookCover from '../components/BookCover.astro';
-import { leserNa } from '../bokhylle';
 import PaRepeat from '../components/PaRepeat.astro';
+import Oppmote from '../components/Oppmote.astro';
+import { leserNa } from '../bokhylle';
+import oppmote from '../data/oppmote.json';
 import { getArtikler, getAnmeldelser, getLeseliste, reviewListTitle, reviewImage } from '../lib';
 
-const artikler = (await getArtikler()).slice(0, 3);
-// Hele teksten til de tre nyeste, så «Les mer» kan utvide på forsiden.
-const innhold = await Promise.all(artikler.map((a) => render(a)));
-const anmeldelser = (await getAnmeldelser()).slice(0, 3);
-const anmInnhold = await Promise.all(anmeldelser.map((b) => render(b)));
+// Én felles, kronologisk feed med synspunkter (artikler) og bokmeldinger (anmeldelser).
+const SYNSPUNKT = { label: 'Synspunkt', href: '/artikler/' };
+const BOKMELDING = { label: 'Bokmelding', href: '/anmeldelser/' };
+const [artikler, anmeldelser] = await Promise.all([getArtikler(), getAnmeldelser()]);
+const innlegg = await Promise.all([
+  ...artikler.map(async (a) => ({
+    href: `/artikler/${a.id}/`, title: a.data.title, description: a.data.description, date: a.data.date,
+    tag: SYNSPUNKT, Content: (await render(a)).Content,
+  })),
+  ...anmeldelser.map(async (b) => ({
+    href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data), image: reviewImage(b.data),
+    description: b.data.description, date: b.data.date, rating: b.data.rating,
+    tag: BOKMELDING, Content: (await render(b)).Content,
+  })),
+]);
+innlegg.sort((a, b) => b.date.valueOf() - a.date.valueOf());
+
+// Feeden deles opp med faste seksjoner imellom: 3 innlegg, Leser nå, 3 innlegg, På øret …, 3 innlegg, Fra leselisten, resten.
+const del = [innlegg.slice(0, 3), innlegg.slice(3, 6), innlegg.slice(6, 9), innlegg.slice(9)];
 const leseliste = (await getLeseliste()).slice(0, 3);
 const naa = leserNa(6);
+const harOppmote = oppmote.events.length > 0;
 ---
 <Base>
   <div class="wrap">
     <h1>Hei, jeg er Rune.</h1>
-    <p class="lead">Her skriver jeg artikler og anmelder bøker jeg har lest. Meld deg på nyhetsbrevet, så får du nye tekster rett i innboksen.</p>
+    <p class="lead">Her skriver jeg synspunkter og bokmeldinger, og deler det jeg leser, hører på og går på. Meld deg på nyhetsbrevet, så får du nye tekster rett i innboksen.</p>
 
-    {artikler.length > 0 && (
-      <>
-      <div class="section-head"><h2>Siste artikler</h2><a href="/artikler/">Alle artikler →</a></div>
-      <PostList items={artikler.map((a, i) => ({
-        href: `/artikler/${a.id}/`, title: a.data.title, description: a.data.description, date: a.data.date,
-        Content: innhold[i].Content,
-      }))} />
-      </>
-    )}
+    <div class="feed"><PostList items={del[0]} /></div>
 
     {naa.length > 0 && (
-      <>
+      <section class="block">
         <div class="section-head"><h2>Leser nå</h2><a href="/bokhylle/">Hele bokhyllen →</a></div>
         <ul class="now">
           {naa.map((b) => (
@@ -43,35 +52,42 @@ const naa = leserNa(6);
             </li>
           ))}
         </ul>
-      </>
+      </section>
     )}
 
-    {anmeldelser.length > 0 && (
-      <>
-      <div class="section-head"><h2>Siste bokanmeldelser</h2><a href="/anmeldelser/">Alle anmeldelser →</a></div>
-      <PostList items={anmeldelser.map((b, i) => ({
-        href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data), image: reviewImage(b.data),
-        description: b.data.description, date: b.data.date, rating: b.data.rating,
-        Content: anmInnhold[i].Content,
-      }))} />
-      </>
+    {del[1].length > 0 && <div class="feed"><PostList items={del[1]} /></div>}
+
+    <section class="block">
+      <div class="section-head"><h2>På øret og på repeat</h2><span class="meta">Album og podkaster</span></div>
+      <PaRepeat />
+    </section>
+
+    {harOppmote && (
+      <section class="block">
+        <div class="section-head"><h2>Oppmøte</h2><span class="meta">Konserter, kino og andre arrangementer</span></div>
+        <Oppmote />
+      </section>
     )}
 
-    <div class="section-head"><h2>På repeat</h2><span class="meta">Hører på i Tidal</span></div>
-    <PaRepeat />
+    {del[2].length > 0 && <div class="feed"><PostList items={del[2]} /></div>}
 
     {leseliste.length > 0 && (
-      <>
+      <section class="block">
         <div class="section-head"><h2>Fra leselisten</h2><a href="/leseliste/">Hele leselisten →</a></div>
         <div class="stack">{leseliste.map((item) => <LeselisteCard item={item} />)}</div>
-      </>
+      </section>
     )}
+
+    {del[3].length > 0 && <div class="feed"><PostList items={del[3]} /></div>}
 
     <NewsletterForm />
   </div>
 </Base>
 
 <style>
+  .feed { margin-top: 1.5rem; border-top: 1px solid var(--border); }
+  .block { margin: 2.5rem 0 1rem; }
+  .block .section-head { margin-top: 0; }
   .stack { display: grid; gap: 1rem; margin-top: 1.25rem; }
   .now { list-style: none; padding: 0; margin: 1.25rem 0 0; display: grid; gap: 1rem; grid-template-columns: repeat(6, 1fr); }
   .now-t { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;

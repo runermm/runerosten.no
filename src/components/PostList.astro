@@ -11,6 +11,7 @@ interface Item {
   rating?: number;
   image?: string; // lite bilde til høyre
   Content?: any; // hele teksten; gir «Les mer» som utvider på samme side
+  tag?: { label: string; href: string }; // f.eks. Synspunkt eller Bokmelding
 }
 interface Props { items: Item[]; readMore?: boolean }
 const { items, readMore = false } = Astro.props;
@@ -28,6 +29,7 @@ const { items, readMore = false } = Astro.props;
           <div class="meta row">
             <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>
             {item.rating && <Rating value={item.rating} size={20} />}
+            {item.tag && <a href={item.tag.href} class="tag-link">{item.tag.label}</a>}
             {item.Content ? (
               <button type="button" class="more-btn" data-expand aria-expanded="false" aria-controls={`mer-${i}-${item.href}`}>
                 Les mer <span aria-hidden="true">↓</span>
@@ -70,6 +72,11 @@ const { items, readMore = false } = Astro.props;
     font-family: var(--sans); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
     color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: none;
   }
+  .tag-link {
+    font-family: var(--sans); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); text-decoration: none; border: 1px solid var(--border); border-radius: 999px; padding: 0.1rem 0.55rem;
+  }
+  .tag-link:hover { color: var(--accent); border-color: var(--accent); }
   .more-btn:hover { text-decoration: underline; text-underline-offset: 0.25em; }
   .expanded { margin-top: 1rem; padding-top: 0.25rem; border-top: 1px dashed var(--border); }
   .expanded :global(.prose) { font-size: 1.1rem; }
