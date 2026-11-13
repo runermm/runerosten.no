@@ -24,6 +24,9 @@ export const SITE = {
 // Lag et skjema i Kit (Grow → Landing Pages & Forms) og skriv inn skjema-ID-en her.
 export const NEWSLETTER = {
   kitFormId: '10182455',
+  // Vises øverst når leseren kommer tilbake fra bekreftelsen (sett «https://dittdomene/?confirm» som
+  // adressen etter bekreftelse i Kit).
+  confirmMessage: 'Takk for at du følger meg! Du får beskjed når det publiseres nytt innhold. Hold ut!',
 };
 
 // Leseliste fra Raindrop.io, samlingen «Leseliste».

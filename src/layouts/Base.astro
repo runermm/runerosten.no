@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { SITE, NAV } from '../config';
+import { SITE, NAV, NEWSLETTER } from '../config';
 
 interface Props {
   title?: string;
@@ -48,17 +48,23 @@ const path = Astro.url.pathname;
         </nav>
       </div>
     </header>
-    {tagline && (
-      <div class="tagline" data-tagline>
-        <p class="wide">«{tagline.quote}» <span>{tagline.source}</span></p>
-      </div>
-    )}
-    {tagline && (
-      <script is:inline>
-        // Sitatlinja glir bort etter 10 sekunder.
-        setTimeout(() => document.querySelector('[data-tagline]')?.classList.add('gone'), 10000);
-      </script>
-    )}
+    <div class="tagline" data-tagline hidden={!tagline}>
+      <p class="wide">{tagline && <>«{tagline.quote}» <span>{tagline.source}</span></>}</p>
+    </div>
+    <script is:inline define:vars={{ takk: NEWSLETTER.confirmMessage }}>
+      // Kommer leseren fra bekreftelsen i Kit (?confirm), vises takkemeldingen i stedet for sitatet.
+      const band = document.querySelector('[data-tagline]');
+      const url = new URL(location.href);
+      if (url.searchParams.has('confirm') && takk) {
+        band.querySelector('p').textContent = takk;
+        band.classList.add('notice');
+        band.hidden = false;
+        url.searchParams.delete('confirm');
+        history.replaceState(null, '', url.pathname + url.search + url.hash);
+      }
+      // Linja glir bort etter 10 sekunder.
+      if (!band.hidden) setTimeout(() => band.classList.add('gone'), 10000);
+    </script>
     <main>
       <slot />
     </main>
@@ -75,6 +81,8 @@ const path = Astro.url.pathname;
   .site-header { border-bottom: 1px solid var(--border); }
   .tagline { border-bottom: 1px solid var(--border); background: var(--surface); overflow: hidden; max-height: 8rem;
     transition: max-height 0.8s ease, opacity 0.6s ease, border-color 0.8s ease; }
+  .tagline.notice { background: var(--accent); border-bottom-color: var(--accent); }
+  .tagline.notice p { color: var(--bg); font-style: normal; font-family: var(--sans); font-weight: 600; }
   .tagline.gone { max-height: 0; opacity: 0; border-bottom-color: transparent; }
   @media (prefers-reduced-motion: reduce) { .tagline { transition: none; } }
   .tagline p { margin: 0; padding-block: 0.55rem; font-style: italic; font-size: 0.95rem; line-height: 1.45; color: var(--muted); text-align: center; }
