@@ -22,7 +22,7 @@ export const LESELISTE = {
 
 // Podkaster til «På øret og på repeat», fra en egen Raindrop-samling. 0 = av.
 export const PODKAST = {
-  collectionId: 0,
+  collectionId: 77181505, // samlingen «podcast»
 };
 
 export const NAV = [

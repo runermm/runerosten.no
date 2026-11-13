@@ -21,9 +21,27 @@ function splitTitle(raw: string): { title: string; show?: string } {
   return { title: t };
 }
 
-const toPodkast = (r: Raindrop): Podkast => {
+// Programnavn fra Apples offentlige katalog, ut fra id-en i lenken (…/podcast/navn/id1528594034?i=…).
+async function showNames(links: string[]): Promise<Map<string, string>> {
+  const ids = [...new Set(links.map((l) => l.match(/\/id(\d+)/)?.[1]).filter(Boolean) as string[])];
+  const names = new Map<string, string>();
+  if (!ids.length) return names;
+  try {
+    const res = await fetch(`https://itunes.apple.com/lookup?id=${ids.join(',')}`);
+    const json = (await res.json()) as { results: { collectionId: number; collectionName: string }[] };
+    for (const r of json.results) names.set(String(r.collectionId), r.collectionName);
+  } catch {
+    // Uten katalogen vises bare episodetittelen.
+  }
+  return names;
+}
+
+const toPodkast = (r: Raindrop, names: Map<string, string>): Podkast => {
   const { title, show } = splitTitle(r.title);
-  return { id: String(r._id), title, show, url: r.link, cover: r.cover || undefined, note: r.note?.trim() || undefined, date: r.created };
+  const id = r.link.match(/\/id(\d+)/)?.[1];
+  // Mindre omslag holder på forsiden (Apple-bilder kan skaleres i adressen).
+  const cover = r.cover?.replace(/\/\d+x\d+bf\./, '/400x400bf.') || undefined;
+  return { id: String(r._id), title, show: (id && names.get(id)) || show, url: r.link, cover, note: r.note?.trim() || undefined, date: r.created };
 };
 
 export function podkastLoader(): Loader {
@@ -40,7 +58,8 @@ export function podkastLoader(): Loader {
       }
       if (!items) return;
       store.clear();
-      for (const p of items.map(toPodkast)) store.set({ id: p.id, data: await parseData({ id: p.id, data: { ...p } }) });
+      const names = await showNames(items.map((r) => r.link));
+      for (const p of items.map((r) => toPodkast(r, names))) store.set({ id: p.id, data: await parseData({ id: p.id, data: { ...p } }) });
       logger.info(`Podkaster: ${items.length} fra Raindrop`);
     },
   };
