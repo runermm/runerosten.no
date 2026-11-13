@@ -23,8 +23,8 @@ const { items, readMore = false } = Astro.props;
   <ul class="list">
     {items.map((item, i) => (
       <li class:list={{ 'has-image': item.image }}>
+        <a href={item.href} class="title">{item.title}</a>
         <div class="text">
-          <a href={item.href} class="title">{item.title}</a>
           <p class="desc">{item.description}</p>
           {item.byline && <p class="byline">{item.byline}</p>}
           <div class="meta row">
@@ -39,20 +39,20 @@ const { items, readMore = false } = Astro.props;
               <a href={item.href} class="more-btn">Les mer <span aria-hidden="true">→</span></a>
             )}
           </div>
-          {item.Content && (
-            <div class="expanded" id={`mer-${i}-${item.href}`} hidden>
-              <div class="prose"><item.Content /></div>
-              <p class="meta row">
-                <button type="button" class="more-btn" data-collapse>Vis mindre <span aria-hidden="true">↑</span></button>
-                <a href={item.href}>Åpne som egen side →</a>
-              </p>
-            </div>
-          )}
         </div>
         {item.image && (
           <a href={item.href} class:list={["thumb", { wide: item.imageWide }]} tabindex="-1" aria-hidden="true">
             <img src={item.image} alt="" loading="lazy" />
           </a>
+        )}
+        {item.Content && (
+          <div class="expanded" id={`mer-${i}-${item.href}`} hidden>
+            <div class="prose"><item.Content /></div>
+            <p class="meta row">
+              <button type="button" class="more-btn" data-collapse>Vis mindre <span aria-hidden="true">↑</span></button>
+              <a href={item.href}>Åpne som egen side →</a>
+            </p>
+          </div>
         )}
       </li>
     ))}
@@ -62,7 +62,13 @@ const { items, readMore = false } = Astro.props;
   .list { list-style: none; padding: 0; margin: 0; }
   li { padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
   li:last-child { border-bottom: 0; }
-  li.has-image { display: grid; grid-template-columns: 1fr auto; gap: 1.25rem; align-items: start; }
+  /* Tittelen går over hele bredden; bildet står ved siden av ingressen under. */
+  li.has-image { display: grid; grid-template-columns: 1fr auto; grid-template-areas: 'title title' 'text thumb' 'more more'; column-gap: 1.25rem; align-items: start; }
+  li.has-image > .title { grid-area: title; }
+  li.has-image > .text { grid-area: text; }
+  li.has-image > .thumb { grid-area: thumb; }
+  li.has-image > .expanded { grid-area: more; }
+  .title { display: block; }
   .text { min-width: 0; }
   .title { font-size: 1.3rem; font-weight: 600; color: var(--text); text-decoration: none; }
   .title:hover { color: var(--accent); }
@@ -81,13 +87,13 @@ const { items, readMore = false } = Astro.props;
   .more-btn:hover { text-decoration: underline; text-underline-offset: 0.25em; }
   .expanded { margin-top: 1rem; padding-top: 0.25rem; border-top: 1px dashed var(--border); }
   .expanded :global(.prose) { font-size: 1.1rem; }
-  .thumb { display: block; width: 6rem; margin-top: 0.3rem; }
+  .thumb { display: block; width: 7.5rem; margin-top: 0.55rem; }
   .thumb img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px;
     box-shadow: 0 8px 18px -10px rgb(0 0 0 / 0.5); transition: transform 0.2s ease; }
-  .thumb.wide { width: 8rem; }
+  .thumb.wide { width: 11rem; }
   .thumb.wide img { aspect-ratio: 4 / 3; }
   .thumb:hover img { transform: translateY(-2px); }
-  @media (max-width: 30rem) { .thumb { width: 4.5rem; } .thumb.wide { width: 6rem; } }
+  @media (max-width: 30rem) { .thumb { width: 5rem; } .thumb.wide { width: 7rem; } }
 </style>
 
 <script>
