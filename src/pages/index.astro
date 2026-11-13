@@ -8,7 +8,10 @@ import BookCover from '../components/BookCover.astro';
 import PaRepeat from '../components/PaRepeat.astro';
 import Oppmote from '../components/Oppmote.astro';
 import { leserNa } from '../bokhylle';
+import { SITE } from '../config';
 import oppmote from '../data/oppmote.json';
+import musikk from '../data/musikk.json';
+import { PODKAST } from '../config';
 import { getArtikler, getAnmeldelser, getLeseliste, reviewListTitle, reviewImage } from '../lib';
 
 // Én felles, kronologisk feed med synspunkter (artikler) og bokmeldinger (anmeldelser).
@@ -34,8 +37,9 @@ const del = [innlegg.slice(0, 3), innlegg.slice(3, 6), innlegg.slice(6, 9), innl
 const leseliste = (await getLeseliste()).slice(0, 3);
 const naa = leserNa(6);
 const harOppmote = oppmote.events.length > 0;
+const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
 ---
-<Base tagline={{ quote: 'Yrkesveien til mannen som sitter foran meg er som en komprimert idéhistorie over internetts utvikling.', source: 'Morgenbladet' }}>
+<Base tagline={SITE.tagline ?? undefined}>
   <div class="wrap">
 
     <div class="feed"><PostList items={del[0]} /></div>
@@ -56,10 +60,12 @@ const harOppmote = oppmote.events.length > 0;
 
     {del[1].length > 0 && <div class="feed"><PostList items={del[1]} /></div>}
 
-    <section class="block">
-      <div class="section-head"><h2>På øret og på repeat</h2><span class="meta">Album og podkaster</span></div>
-      <PaRepeat />
-    </section>
+    {harMusikk && (
+      <section class="block">
+        <div class="section-head"><h2>På øret og på repeat</h2><span class="meta">Album og podkaster</span></div>
+        <PaRepeat />
+      </section>
+    )}
 
     {harOppmote && (
       <section class="block">

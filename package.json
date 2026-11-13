@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "import:linkedin": "node scripts/import-linkedin.mjs"
+    "import:linkedin": "node scripts/import-linkedin.mjs",
+    "nullstill": "node scripts/nullstill.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

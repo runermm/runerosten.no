@@ -57,6 +57,7 @@ function toItem(r: Raindrop): LeselisteItem {
 }
 
 export async function fetchLeseliste(): Promise<LeselisteItem[] | null> {
+  if (!LESELISTE.collectionId) return null;
   const items = await fetchRaindrops(LESELISTE.collectionId);
   return items && items.map(toItem);
 }

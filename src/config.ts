@@ -1,9 +1,23 @@
-// Grunninnstillinger for nettstedet. Endre her, så oppdateres hele siden.
+// ─────────────────────────────────────────────────────────────────────────────
+// ALT SOM ER PERSONLIG FOR DETTE NETTSTEDET STÅR I DENNE FILEN.
+// Lager du ditt eget nettsted fra denne malen, er det her du starter.
+// Se docs/LAG-DITT-EGET.md for hele oppskriften.
+// ─────────────────────────────────────────────────────────────────────────────
+
 export const SITE = {
-  title: 'Rune Røsten',
-  description: 'Synspunkter, bokmeldinger og nyhetsbrev.',
+  title: 'Rune Røsten', // navnet øverst til venstre og i nettleserfanen
   author: 'Rune Røsten',
+  description: 'Synspunkter, bokmeldinger og nyhetsbrev.',
+  url: 'https://runerosten.no', // domenet ditt (brukes til lenker, sitemap og GitHub Pages)
   lang: 'nb',
+  initial: 'R', // bokstaven i favikonet (ikonet i nettleserfanen)
+  // Tynn sitatlinje under menyen på forsiden. Sett til null for å skjule den.
+  tagline: {
+    quote: 'Yrkesveien til mannen som sitter foran meg er som en komprimert idéhistorie over internetts utvikling.',
+    source: 'Morgenbladet',
+  } as { quote: string; source: string } | null,
+  repo: 'https://github.com/runermm/runerosten.no' as string | null, // lenke til kildekoden i bunnen, eller null
+  bokelskere: 'https://bokelskere.no/profil/rune' as string | null, // profilen boksamlingen er hentet fra, eller null
 };
 
 // Nyhetsbrev via Kit (https://kit.com).

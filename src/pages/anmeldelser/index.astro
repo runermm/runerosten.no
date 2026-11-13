@@ -1,10 +1,11 @@
 ---
+import { SITE } from '../../config';
 import Base from '../../layouts/Base.astro';
 import PostList from '../../components/PostList.astro';
 import { getAnmeldelser, reviewListTitle, reviewImage } from '../../lib';
 const anmeldelser = await getAnmeldelser();
 ---
-<Base title="Bokmelding" description="Bokmeldinger av Rune Røsten.">
+<Base title="Bokmelding" description={`Bokmeldinger av ${SITE.author}.`}>
   <div class="wrap">
     <h1>Bokmelding</h1>
     <p class="lead">Bøker jeg har lest, med terningkast fra 1 til 6.</p>

@@ -1,5 +1,7 @@
 # runerosten.no
 
+> **Vil du ha et nettsted som dette?** Trykk **Use this template** på GitHub og følg [Lag ditt eget nettsted](docs/LAG-DITT-EGET.md). Alt personlig står i `src/config.ts`, og `npm run nullstill -- --ja` gir deg blanke ark. Koden er MIT-lisensiert, innholdet er ikke.
+
 Personlig nettsted med artikler, bokanmeldelser og nyhetsbrev. Bygget med [Astro](https://astro.build).
 
 ## Kom i gang

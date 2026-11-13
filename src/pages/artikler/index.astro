@@ -1,10 +1,11 @@
 ---
+import { SITE } from '../../config';
 import Base from '../../layouts/Base.astro';
 import PostList from '../../components/PostList.astro';
 import { getArtikler } from '../../lib';
 const artikler = await getArtikler();
 ---
-<Base title="Synspunkt" description="Synspunkter av Rune Røsten.">
+<Base title="Synspunkt" description={`Synspunkter av ${SITE.author}.`}>
   <div class="wrap">
     <h1>Synspunkt</h1>
     <PostList items={artikler.map((a) => ({

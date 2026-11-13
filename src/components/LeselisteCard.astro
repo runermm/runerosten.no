@@ -36,7 +36,7 @@ const hue = hues[[...item.title].reduce((n, c) => n + c.charCodeAt(0), 0) % hues
     </p>
     {item.note ? (
       <>
-        <!-- Runes kommentar er overskriften; artikkelens/bokens tittel blir ingressen. -->
+        <!-- Kommentaren din er overskriften; artikkelens/bokens tittel blir ingressen. -->
         <h3><a href={item.url} target="_blank" rel="noopener">{item.note}</a></h3>
         <p class="source-title">{item.title}{item.author && <span class="author"> – {item.author}</span>}</p>
       </>

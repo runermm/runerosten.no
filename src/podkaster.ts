@@ -9,7 +9,7 @@ export interface Podkast {
   show?: string; // programmet
   url: string;
   cover?: string;
-  note?: string; // Runes kommentar
+  note?: string; // kommentaren din
   date: string;
 }
 

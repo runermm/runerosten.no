@@ -1,8 +1,9 @@
 ---
+import { SITE } from '../config';
 import Base from '../layouts/Base.astro';
 import NewsletterForm from '../components/NewsletterForm.astro';
 ---
-<Base title="Nyhetsbrev" description="Meld deg på nyhetsbrevet til Rune Røsten.">
+<Base title="Nyhetsbrev" description={`Meld deg på nyhetsbrevet til ${SITE.author}.`}>
   <div class="wrap">
     <h1>Nyhetsbrev</h1>
     <p class="lead">Jeg sender ut nyhetsbrev når jeg har skrevet noe nytt: artikler, bokanmeldelser og ting jeg har lest og tenkt på.</p>

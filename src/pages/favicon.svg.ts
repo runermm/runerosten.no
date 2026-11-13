@@ -1,0 +1,8 @@
+import { SITE } from '../config';
+
+// Favikon med forbokstaven fra config.ts.
+export const GET = () =>
+  new Response(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#7a2e1f"/><text x="32" y="44" font-family="Georgia,serif" font-size="34" text-anchor="middle" fill="#fbf8f3">${SITE.initial}</text></svg>`,
+    { headers: { 'Content-Type': 'image/svg+xml' } },
+  );

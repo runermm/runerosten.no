@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import BookCover from '../components/BookCover.astro';
 import { boker, STATUS_LABEL, type Status } from '../bokhylle';
 import { getAnmeldelser } from '../lib';
+import { SITE } from '../config';
 
 const anmeldelser = await getAnmeldelser();
 const norm = (s: string) => s.toLowerCase().trim();
@@ -16,7 +17,7 @@ const years = [...new Set(boker.map((b) => b.year).filter(Boolean) as number[])]
   <div class="wide">
     <header class="intro">
       <h1>Boksamling</h1>
-      <p class="lead">{boker.length} bøker jeg har lest, leser og skal lese. Hentet fra min profil på <a href="https://bokelskere.no/profil/rune">bokelskere.no</a>.</p>
+      <p class="lead">{boker.length} bøker jeg har lest, leser og skal lese. {SITE.bokelskere && <>Hentet fra min profil på <a href={SITE.bokelskere}>bokelskere.no</a>.</>}</p>
     </header>
 
     <div class="controls">
