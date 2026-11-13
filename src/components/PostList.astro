@@ -48,7 +48,13 @@ const { items, readMore = false } = Astro.props;
         {item.Content && (
           <div class="expanded" id={`mer-${i}-${item.href}`} hidden>
             <div class="prose"><item.Content /></div>
+            <!-- Samme oppsett som linja med «Les mer», så «Vis mindre» havner rett under den. -->
             <p class="meta row">
+              <span class="ghost" aria-hidden="true">
+                <time>{formatDate(item.date)}</time>
+                {item.rating && <Rating value={item.rating} size={20} />}
+                {item.tag && <span class="tag-link">{item.tag.label}</span>}
+              </span>
               <button type="button" class="more-btn" data-collapse>Vis mindre <span aria-hidden="true">↑</span></button>
               <a href={item.href}>Åpne som egen side →</a>
             </p>
@@ -83,6 +89,7 @@ const { items, readMore = false } = Astro.props;
   }
   .tag-link:hover { color: var(--accent); border-color: var(--accent); }
   .more-btn:hover { text-decoration: underline; text-underline-offset: 0.25em; }
+  .ghost { visibility: hidden; display: inline-flex; gap: 0.4rem 1rem; align-items: center; }
   .expanded { margin-top: 1rem; padding-top: 0.25rem; border-top: 1px dashed var(--border); }
   .expanded :global(.prose) { font-size: 1.1rem; }
   .thumb { float: right; display: block; width: 7.5rem; margin: 0.55rem 0 0.5rem 1.25rem; }
