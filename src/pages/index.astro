@@ -70,6 +70,8 @@ const harOppmote = oppmote.events.length > 0;
 
     {del[2].length > 0 && <div class="feed"><PostList items={del[2]} /></div>}
 
+    <NewsletterForm />
+
     {leseliste.length > 0 && (
       <section class="block">
         <div class="section-head"><h2>Fra leselisten</h2><a href="/leseliste/">Hele leselisten →</a></div>
@@ -77,9 +79,12 @@ const harOppmote = oppmote.events.length > 0;
       </section>
     )}
 
-    {del[3].length > 0 && <div class="feed"><PostList items={del[3]} /></div>}
-
-    <NewsletterForm />
+    {del[3].length > 0 && (
+      <section class="block">
+        <div class="section-head"><h2>Fra arkivet</h2></div>
+        <div class="feed archive"><PostList items={del[3]} /></div>
+      </section>
+    )}
   </div>
 </Base>
 
@@ -88,6 +93,7 @@ const harOppmote = oppmote.events.length > 0;
   .feed:first-child { margin-top: 0; border-top: 0; }
   .block { margin: 2.5rem 0 1rem; }
   .block .section-head { margin-top: 0; }
+  .feed.archive { margin-top: 0; border-top: 0; }
   .stack { display: grid; gap: 1rem; margin-top: 1.25rem; }
   .now { list-style: none; padding: 0; margin: 1.25rem 0 0; display: grid; gap: 1rem; grid-template-columns: repeat(6, 1fr); }
   .now-t { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
