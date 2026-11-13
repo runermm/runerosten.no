@@ -34,10 +34,8 @@ const leseliste = (await getLeseliste()).slice(0, 3);
 const naa = leserNa(6);
 const harOppmote = oppmote.events.length > 0;
 ---
-<Base>
+<Base tagline={{ quote: 'Yrkesveien til mannen som sitter foran meg er som en komprimert idéhistorie over internetts utvikling.', source: 'Morgenbladet' }}>
   <div class="wrap">
-    <h1>Hei, jeg er Rune.</h1>
-    <p class="lead">Her skriver jeg synspunkter og bokmeldinger, og deler det jeg leser, hører på og går på. Meld deg på nyhetsbrevet, så får du nye tekster rett i innboksen.</p>
 
     <div class="feed"><PostList items={del[0]} /></div>
 
@@ -86,6 +84,7 @@ const harOppmote = oppmote.events.length > 0;
 
 <style>
   .feed { margin-top: 1.5rem; border-top: 1px solid var(--border); }
+  .feed:first-child { margin-top: 0; border-top: 0; }
   .block { margin: 2.5rem 0 1rem; }
   .block .section-head { margin-top: 0; }
   .stack { display: grid; gap: 1rem; margin-top: 1.25rem; }

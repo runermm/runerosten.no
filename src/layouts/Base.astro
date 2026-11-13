@@ -7,8 +7,9 @@ interface Props {
   description?: string;
   type?: 'website' | 'article';
   image?: string; // bilde ved deling i sosiale medier
+  tagline?: { quote: string; source: string }; // tynn sitatlinje under menyen
 }
-const { title, description = SITE.description, type = 'website', image } = Astro.props;
+const { title, description = SITE.description, type = 'website', image, tagline } = Astro.props;
 const ogImage = image ? new URL(image, Astro.site) : undefined;
 const fullTitle = title ? `${title} – ${SITE.title}` : SITE.title;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -47,6 +48,11 @@ const path = Astro.url.pathname;
         </nav>
       </div>
     </header>
+    {tagline && (
+      <div class="tagline">
+        <p class="wide">«{tagline.quote}» <span>{tagline.source}</span></p>
+      </div>
+    )}
     <main>
       <slot />
     </main>
@@ -61,6 +67,9 @@ const path = Astro.url.pathname;
 
 <style>
   .site-header { border-bottom: 1px solid var(--border); }
+  .tagline { border-bottom: 1px solid var(--border); background: var(--surface); }
+  .tagline p { margin: 0; padding-block: 0.55rem; font-style: italic; font-size: 0.95rem; line-height: 1.45; color: var(--muted); text-align: center; }
+  .tagline span { font-style: normal; font-family: var(--sans); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; margin-left: 0.35rem; }
   .bar {
     display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem;
     align-items: center; justify-content: space-between; padding-block: 1.1rem;
