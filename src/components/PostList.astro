@@ -24,6 +24,11 @@ const { items, readMore = false } = Astro.props;
     {items.map((item, i) => (
       <li class:list={{ 'has-image': item.image }}>
         <a href={item.href} class="title">{item.title}</a>
+        {item.image && (
+          <a href={item.href} class:list={["thumb", { wide: item.imageWide }]} tabindex="-1" aria-hidden="true">
+            <img src={item.image} alt="" loading="lazy" />
+          </a>
+        )}
         <div class="text">
           <p class="desc">{item.description}</p>
           {item.byline && <p class="byline">{item.byline}</p>}
@@ -40,11 +45,6 @@ const { items, readMore = false } = Astro.props;
             )}
           </div>
         </div>
-        {item.image && (
-          <a href={item.href} class:list={["thumb", { wide: item.imageWide }]} tabindex="-1" aria-hidden="true">
-            <img src={item.image} alt="" loading="lazy" />
-          </a>
-        )}
         {item.Content && (
           <div class="expanded" id={`mer-${i}-${item.href}`} hidden>
             <div class="prose"><item.Content /></div>
@@ -62,14 +62,12 @@ const { items, readMore = false } = Astro.props;
   .list { list-style: none; padding: 0; margin: 0; }
   li { padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
   li:last-child { border-bottom: 0; }
-  /* Tittelen går over hele bredden; bildet står ved siden av ingressen under. */
-  li.has-image { display: grid; grid-template-columns: 1fr auto; grid-template-areas: 'title title' 'text thumb' 'more more'; column-gap: 1.25rem; align-items: start; }
-  li.has-image > .title { grid-area: title; }
-  li.has-image > .text { grid-area: text; }
-  li.has-image > .thumb { grid-area: thumb; }
-  li.has-image > .expanded { grid-area: more; }
+  /* Tittelen går over hele bredden; ingressen flyter rundt bildet til høyre. */
+  li::after { content: ''; display: block; clear: both; }
   .title { display: block; }
+  .expanded { clear: both; }
   .text { min-width: 0; }
+  .text .row { clear: none; }
   .title { font-size: 1.3rem; font-weight: 600; color: var(--text); text-decoration: none; }
   .title:hover { color: var(--accent); }
   .byline { margin: 0 0 0.25rem; color: var(--muted); font-style: italic; font-size: 1rem; }
@@ -87,7 +85,7 @@ const { items, readMore = false } = Astro.props;
   .more-btn:hover { text-decoration: underline; text-underline-offset: 0.25em; }
   .expanded { margin-top: 1rem; padding-top: 0.25rem; border-top: 1px dashed var(--border); }
   .expanded :global(.prose) { font-size: 1.1rem; }
-  .thumb { display: block; width: 7.5rem; margin-top: 0.55rem; }
+  .thumb { float: right; display: block; width: 7.5rem; margin: 0.55rem 0 0.5rem 1.25rem; }
   /* Bildene vises i egne proporsjoner, uten beskjæring. */
   .thumb img { display: block; width: 100%; height: auto; border-radius: 6px;
     box-shadow: 0 8px 18px -10px rgb(0 0 0 / 0.5); transition: transform 0.2s ease; }
