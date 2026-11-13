@@ -18,6 +18,7 @@ const [artikler, anmeldelser] = await Promise.all([getArtikler(), getAnmeldelser
 const innlegg = await Promise.all([
   ...artikler.map(async (a) => ({
     href: `/artikler/${a.id}/`, title: a.data.title, description: a.data.description, date: a.data.date,
+    image: a.data.image, imageWide: true,
     tag: SYNSPUNKT, Content: (await render(a)).Content,
   })),
   ...anmeldelser.map(async (b) => ({

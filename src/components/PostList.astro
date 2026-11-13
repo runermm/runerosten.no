@@ -10,6 +10,7 @@ interface Item {
   byline?: string;
   rating?: number;
   image?: string; // lite bilde til høyre
+  imageWide?: boolean; // liggende bilde (artikler) i stedet for stående (bøker)
   Content?: any; // hele teksten; gir «Les mer» som utvider på samme side
   tag?: { label: string; href: string }; // f.eks. Synspunkt eller Bokmelding
 }
@@ -49,7 +50,7 @@ const { items, readMore = false } = Astro.props;
           )}
         </div>
         {item.image && (
-          <a href={item.href} class="thumb" tabindex="-1" aria-hidden="true">
+          <a href={item.href} class:list={["thumb", { wide: item.imageWide }]} tabindex="-1" aria-hidden="true">
             <img src={item.image} alt="" loading="lazy" />
           </a>
         )}
@@ -83,8 +84,10 @@ const { items, readMore = false } = Astro.props;
   .thumb { display: block; width: 6rem; margin-top: 0.3rem; }
   .thumb img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px;
     box-shadow: 0 8px 18px -10px rgb(0 0 0 / 0.5); transition: transform 0.2s ease; }
+  .thumb.wide { width: 8rem; }
+  .thumb.wide img { aspect-ratio: 4 / 3; }
   .thumb:hover img { transform: translateY(-2px); }
-  @media (max-width: 30rem) { .thumb { width: 4.5rem; } }
+  @media (max-width: 30rem) { .thumb { width: 4.5rem; } .thumb.wide { width: 6rem; } }
 </style>
 
 <script>
