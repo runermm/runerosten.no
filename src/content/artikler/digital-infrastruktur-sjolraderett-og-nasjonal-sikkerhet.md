@@ -5,7 +5,7 @@ date: 2026-11-13
 tags: [ki]
 image: /bilder/artikler/digital-infrastruktur.jpg
 imageAlt: Gruppebilde av ni personer som står side om side i et lyst atrium.
-imageCredit: "Foto: Rune Røsten"
+imageCredit: "Foto: DFD"
 linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7527047465263513600/"
 ---
 Ekstra gledelig er det å se at Digdep har gjort en veldig god jobb med å finne medlemmer til ekspertgruppen. Blant professorer, doktorgradsstudenter og akademikere er det også gjort plass til min tidligere kollega Mats Staugaard, som nå jobber i Boitano og skriver et utmerket nyhetsbrev.
