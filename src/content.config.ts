@@ -15,6 +15,7 @@ const artikler = defineCollection({
     image: z.string().optional(), // bilde øverst, f.eks. /bilder/artikler/navn.png
     imageAlt: z.string().optional(),
     imageCredit: z.string().optional(),
+    imagePortrait: z.boolean().optional(), // stående bilde
     draft: z.boolean().default(false),
   }),
 });

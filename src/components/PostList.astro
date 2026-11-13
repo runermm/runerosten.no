@@ -88,10 +88,10 @@ const { items, readMore = false } = Astro.props;
   .expanded { margin-top: 1rem; padding-top: 0.25rem; border-top: 1px dashed var(--border); }
   .expanded :global(.prose) { font-size: 1.1rem; }
   .thumb { display: block; width: 7.5rem; margin-top: 0.55rem; }
-  .thumb img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px;
+  /* Bildene vises i egne proporsjoner, uten beskjæring. */
+  .thumb img { display: block; width: 100%; height: auto; border-radius: 6px;
     box-shadow: 0 8px 18px -10px rgb(0 0 0 / 0.5); transition: transform 0.2s ease; }
   .thumb.wide { width: 11rem; }
-  .thumb.wide img { aspect-ratio: 4 / 3; }
   .thumb:hover img { transform: translateY(-2px); }
   @media (max-width: 30rem) { .thumb { width: 5rem; } .thumb.wide { width: 7rem; } }
 </style>

@@ -2,6 +2,10 @@
 title: "Nasjonal strateg i emning?"
 description: "Torgeir Micaelsen brukte under to måneder i statsrådstolen for å komme på bedre tanker enn sin forgjenger. Uten å ha finlest detaljene synes jeg retningen for det videre arbeidet er lovende. Konsesjon, kontroll og kapasitet reservert til forskning og allmennyttige formål resonnerer godt hos meg. Ideelt sett kunne han vært enda raskere, men dette ser ut til å være et godt politisk håndverk."
 date: 2026-11-09
+image: /bilder/artikler/nasjonal-strateg.jpg
+imagePortrait: true
+imageAlt: Rune Slagstads bok «De nasjonale strateger» med en mobil oppå som viser VG-saken om de nye statsrådene.
+imageCredit: "Foto: Rune Røsten"
 tags: []
 linkedin: "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525645390646329344"
 ---
