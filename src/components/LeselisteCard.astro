@@ -34,9 +34,18 @@ const hue = hues[[...item.title].reduce((n, c) => n + c.charCodeAt(0), 0) % hues
       <span class="badge">{isBook ? 'Bok' : 'Artikkel'}</span>
       {!isBook && <span>{item.source}</span>}
     </p>
-    <h3><a href={item.url} target="_blank" rel="noopener">{item.title}</a></h3>
-    {item.author && <p class="author">{item.author}</p>}
-    {item.note && <p class="note">{item.note}</p>}
+    {item.note ? (
+      <>
+        <!-- Runes kommentar er overskriften; artikkelens/bokens tittel blir ingressen. -->
+        <h3><a href={item.url} target="_blank" rel="noopener">{item.note}</a></h3>
+        <p class="source-title">{item.title}{item.author && <span class="author"> – {item.author}</span>}</p>
+      </>
+    ) : (
+      <>
+        <h3><a href={item.url} target="_blank" rel="noopener">{item.title}</a></h3>
+        {item.author && <p class="author">{item.author}</p>}
+      </>
+    )}
     <p class="foot">
       <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>
       {item.review && (
@@ -81,6 +90,8 @@ const hue = hues[[...item.title].reduce((n, c) => n + c.charCodeAt(0), 0) % hues
   h3 a { color: var(--text); text-decoration: none; }
   h3 a:hover { color: var(--accent); }
   .author { margin: 0.15rem 0 0; font-style: italic; color: var(--muted); }
+  .source-title { margin: 0.45rem 0 0; font-size: 1rem; line-height: 1.5; color: var(--muted); }
+  .source-title .author { font-style: italic; }
   .note { margin: 0.7rem 0 0; font-size: 1rem; line-height: 1.55; }
   .foot {
     margin: auto 0 0; padding-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; align-items: center;
