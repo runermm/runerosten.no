@@ -37,7 +37,8 @@ innlegg.filter((p) => p.forsideplass).sort((a, b) => a.forsideplass! - b.forside
   innlegg.splice(p.forsideplass! - 1, 0, p);
 });
 
-// Feeden deles opp med faste seksjoner imellom: 3 innlegg, Leser nå, 3 innlegg, På øret …, 3 innlegg, Fra leselisten, resten.
+// Feeden deles opp med faste seksjoner imellom: 3 innlegg, Leser nå, 3 innlegg, På øret …, nyhetsbrev,
+// 3 innlegg, Fra leselisten, Fra arkivet, og Oppmøte helt nederst.
 const del = [innlegg.slice(0, 3), innlegg.slice(3, 6), innlegg.slice(6, 9), innlegg.slice(9)];
 const leseliste = (await getLeseliste()).slice(0, 3);
 const naa = leserNa(6);
@@ -72,16 +73,9 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
       </section>
     )}
 
-    {harOppmote && (
-      <section class="block">
-        <div class="section-head"><h2>Oppmøte ute og inne</h2><a href="/oppmote/">Alt oppmøte →</a></div>
-        <Oppmote />
-      </section>
-    )}
+    <NewsletterForm />
 
     {del[2].length > 0 && <div class="feed"><PostList items={del[2]} /></div>}
-
-    <NewsletterForm />
 
     {leseliste.length > 0 && (
       <section class="block">
@@ -94,6 +88,13 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
       <section class="block">
         <div class="section-head"><h2>Fra arkivet</h2></div>
         <div class="feed archive"><PostList items={del[3]} /></div>
+      </section>
+    )}
+
+    {harOppmote && (
+      <section class="block">
+        <div class="section-head"><h2>Oppmøte ute og inne</h2><a href="/oppmote/">Alt oppmøte →</a></div>
+        <Oppmote />
       </section>
     )}
   </div>
