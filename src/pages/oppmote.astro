@@ -1,0 +1,57 @@
+---
+import Base from '../layouts/Base.astro';
+import Oppmote from '../components/Oppmote.astro';
+import data from '../data/oppmote.json';
+import { STRAVA } from '../config';
+
+const antall = data.events.length;
+---
+<Base title="Oppmøte ute og inne" description="Ute på tur og inne på arrangementer.">
+  <div class="wide">
+    <header class="intro">
+      <h1>Oppmøte ute og inne</h1>
+      <p class="lead">Ute på tur, inne på konserter, kino og andre arrangementer.</p>
+    </header>
+
+    {STRAVA.profileEmbed && (
+      <section class="strava">
+        <h2>Siste økter på Strava</h2>
+        <div class="strava-card" set:html={STRAVA.profileEmbed} />
+      </section>
+    )}
+
+    {antall > 0 ? (
+      <>
+        <div class="filters" role="group" aria-label="Filtrer oppmøte">
+          <button type="button" data-filter="alle" aria-pressed="true">Alle</button>
+          <button type="button" data-filter="ute" aria-pressed="false">Ute</button>
+          <button type="button" data-filter="inne" aria-pressed="false">Inne</button>
+        </div>
+        <Oppmote limit={0} />
+      </>
+    ) : (
+      !STRAVA.profileEmbed && <p class="meta">Ingenting her ennå.</p>
+    )}
+  </div>
+</Base>
+
+<style>
+  .intro { max-width: var(--measure); }
+  .strava { margin: 1.5rem 0 2.5rem; }
+  .strava h2 { font-size: 1.2rem; margin: 0 0 0.75rem; }
+  .strava-card :global(iframe) { max-width: 100%; border: 0; }
+  .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 0; }
+  .filters button { font-family: var(--sans); font-size: 0.9rem; cursor: pointer; padding: 0.4rem 0.95rem; border-radius: 999px;
+    border: 1px solid var(--border); background: transparent; color: var(--text); }
+  .filters button[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  :global(.events [hidden]) { display: none !important; }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filters button');
+  const items = document.querySelectorAll<HTMLElement>('.events [data-side]');
+  buttons.forEach((b) => b.addEventListener('click', () => {
+    buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    items.forEach((li) => (li.hidden = b.dataset.filter !== 'alle' && li.dataset.side !== b.dataset.filter));
+  }));
+</script>

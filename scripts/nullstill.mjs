@@ -98,6 +98,7 @@ set(/repo: '[^']*' as/, 'repo: null as');
 set(/bokelskere: '[^']*' as/, 'bokelskere: null as');
 set(/email: '[^']*' as/, 'email: null as');
 set(/linkedin: '[^']*' as/, 'linkedin: null as');
+set(/profileEmbed: `[^`]*`/, 'profileEmbed: ``');
 set(/kitFormId: '[^']*'/, "kitFormId: ''");
 set(/(LESELISTE = \{\s*collectionId: )\d+/, '$10');
 set(/(PODKAST = \{\s*collectionId: )\d+/, '$10');

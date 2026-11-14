@@ -44,6 +44,12 @@ export const PODKAST = {
   collectionId: 77181505, // samlingen «podcast»
 };
 
+// Strava: innbyggingskoden for profilkortet («Share your Activities» på profilen på strava.com).
+// Lim inn hele koden mellom backtickene, eller la den stå tom for å skjule kortet.
+export const STRAVA = {
+  profileEmbed: ``,
+};
+
 export const NAV = [
   { href: '/artikler/', label: 'Synspunkt' },
   { href: '/anmeldelser/', label: 'Bokmelding' },

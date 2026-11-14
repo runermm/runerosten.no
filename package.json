@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "import:linkedin": "node scripts/import-linkedin.mjs",
-    "nullstill": "node scripts/nullstill.mjs"
+    "nullstill": "node scripts/nullstill.mjs",
+    "import:strava": "node scripts/import-strava.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

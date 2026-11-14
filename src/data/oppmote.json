@@ -1,4 +1,1769 @@
 {
-  "_info": "Oppmøte: konserter, kino og andre arrangementer. Nyeste først. type: konsert | kino | teater | foredrag | annet. Tom liste = seksjonen skjules.",
-  "events": []
+  "_info": "Oppmøte ute og inne. Ute (Strava): type sykkel | løping | tur | ski | svømming | trening, url = lenke til økta. Inne: konsert | kino | teater | foredrag | annet. Felter: title, date (ÅÅÅÅ-MM-DD), detail (kort), image, url, note, venue, city. Vises kronologisk. Tom liste = seksjonen skjules.",
+  "events": [
+    {
+      "type": "tur",
+      "title": "Dogwalking",
+      "date": "2026-11-08",
+      "detail": "5 km",
+      "image": "/bilder/oppmote/20910255410.jpg",
+      "url": "https://www.strava.com/activities/20910255410",
+      "stravaId": "20910255410"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stimoro, potetsuppe og gresskarkake. Ikke en tørr flekk, men godt grep og fin temp",
+      "date": "2026-11-01",
+      "detail": "25 km",
+      "image": "/bilder/oppmote/20818433981.jpg",
+      "url": "https://www.strava.com/activities/20818433981",
+      "stravaId": "20818433981"
+    },
+    {
+      "type": "sykkel",
+      "title": "Fredag fem 👍",
+      "date": "2026-10-30",
+      "detail": "52 km",
+      "image": "/bilder/oppmote/20793054336.jpg",
+      "url": "https://www.strava.com/activities/20793054336",
+      "stravaId": "20793054336"
+    },
+    {
+      "type": "sykkel",
+      "title": "Bilhenting og TT-test",
+      "date": "2026-10-20",
+      "detail": "40 km",
+      "image": "/bilder/oppmote/20664398658.jpg",
+      "url": "https://www.strava.com/activities/20664398658",
+      "stravaId": "20664398658"
+    },
+    {
+      "type": "sykkel",
+      "title": "Follo Megamix med Motrøen 🌞👌",
+      "date": "2026-10-17",
+      "detail": "100 km",
+      "image": "/bilder/oppmote/20621200062.jpg",
+      "url": "https://www.strava.com/activities/20621200062",
+      "stravaId": "20621200062"
+    },
+    {
+      "type": "sykkel",
+      "title": "Dagsfersk asfalt til Grefsenkollen 🎉🍾😘",
+      "date": "2026-10-12",
+      "detail": "43 km",
+      "image": "/bilder/oppmote/20556755164.jpg",
+      "url": "https://www.strava.com/activities/20556755164",
+      "stravaId": "20556755164"
+    },
+    {
+      "type": "sykkel",
+      "title": "Blåstiene 100 år 🎉",
+      "date": "2026-10-06",
+      "detail": "52 km",
+      "image": "/bilder/oppmote/20479380025.jpg",
+      "url": "https://www.strava.com/activities/20479380025",
+      "stravaId": "20479380025"
+    },
+    {
+      "type": "sykkel",
+      "title": "Otta Enduro med litt innlagt hundesøk",
+      "date": "2026-10-03",
+      "detail": "17 km",
+      "image": "/bilder/oppmote/20433294336.jpg",
+      "url": "https://www.strava.com/activities/20433294336",
+      "stravaId": "20433294336"
+    },
+    {
+      "type": "sykkel",
+      "title": "Loftet GF 🤩",
+      "date": "2026-09-26",
+      "detail": "156 km",
+      "image": "/bilder/oppmote/20338015790.jpg",
+      "url": "https://www.strava.com/activities/20338015790",
+      "stravaId": "20338015790"
+    },
+    {
+      "type": "sykkel",
+      "title": "Flott føre, men bråmørkt gitt",
+      "date": "2026-09-22",
+      "detail": "7 km",
+      "image": "/bilder/oppmote/20285211512.jpg",
+      "url": "https://www.strava.com/activities/20285211512",
+      "stravaId": "20285211512"
+    },
+    {
+      "type": "sykkel",
+      "title": "Svartskog",
+      "date": "2026-09-20",
+      "detail": "44 km",
+      "image": "/bilder/oppmote/20263376902.jpg",
+      "url": "https://www.strava.com/activities/20263376902",
+      "stravaId": "20263376902"
+    },
+    {
+      "type": "sykkel",
+      "title": "Svartskog",
+      "date": "2026-09-20",
+      "detail": "44 km",
+      "image": "/bilder/oppmote/20255887811.jpg",
+      "url": "https://www.strava.com/activities/20255887811",
+      "stravaId": "20255887811"
+    },
+    {
+      "type": "sykkel",
+      "title": "Magiske Mary 👌",
+      "date": "2026-09-19",
+      "detail": "15 km",
+      "image": "/bilder/oppmote/20244301993.jpg",
+      "url": "https://www.strava.com/activities/20244301993",
+      "stravaId": "20244301993"
+    },
+    {
+      "type": "sykkel",
+      "title": "Nordmarka - en sjøreise",
+      "date": "2026-09-13",
+      "detail": "96 km",
+      "image": "/bilder/oppmote/20158122448.jpg",
+      "url": "https://www.strava.com/activities/20158122448",
+      "stravaId": "20158122448"
+    },
+    {
+      "type": "sykkel",
+      "title": "Fine veier og variert kulturlandskap vest for fjorden også",
+      "date": "2026-09-06",
+      "detail": "150 km",
+      "image": "/bilder/oppmote/20063707435.jpg",
+      "url": "https://www.strava.com/activities/20063707435",
+      "stravaId": "20063707435"
+    },
+    {
+      "type": "sykkel",
+      "title": "Kråkstad Gravel Mix",
+      "date": "2026-09-03",
+      "detail": "65 km",
+      "image": "/bilder/oppmote/20021027783.jpg",
+      "url": "https://www.strava.com/activities/20021027783",
+      "stravaId": "20021027783"
+    },
+    {
+      "type": "sykkel",
+      "title": "Tacotirsdag @ Mariholtet",
+      "date": "2026-09-01",
+      "detail": "38 km",
+      "image": "/bilder/oppmote/19994824909.jpg",
+      "url": "https://www.strava.com/activities/19994824909",
+      "stravaId": "19994824909"
+    },
+    {
+      "type": "sykkel",
+      "title": "Gravelekspedisjon i motvinden",
+      "date": "2026-08-30",
+      "detail": "90 km",
+      "image": "/bilder/oppmote/19964539885.jpg",
+      "url": "https://www.strava.com/activities/19964539885",
+      "stravaId": "19964539885"
+    },
+    {
+      "type": "sykkel",
+      "title": "Elvåga rundt",
+      "date": "2026-08-26",
+      "detail": "24 km",
+      "image": "/bilder/oppmote/19907816467.jpg",
+      "url": "https://www.strava.com/activities/19907816467",
+      "stravaId": "19907816467"
+    },
+    {
+      "type": "sykkel",
+      "title": "Follo Gravel Mix",
+      "date": "2026-08-23",
+      "detail": "103 km",
+      "image": "/bilder/oppmote/19863126451.jpg",
+      "url": "https://www.strava.com/activities/19863126451",
+      "stravaId": "19863126451"
+    },
+    {
+      "type": "sykkel",
+      "title": "Loketur i småregn",
+      "date": "2026-08-18",
+      "detail": "16 km",
+      "image": "/bilder/oppmote/19797917376.jpg",
+      "url": "https://www.strava.com/activities/19797917376",
+      "stravaId": "19797917376"
+    },
+    {
+      "type": "tur",
+      "title": "Dog walking",
+      "date": "2026-08-17",
+      "detail": "5 km",
+      "image": "/bilder/oppmote/19783912761.jpg",
+      "url": "https://www.strava.com/activities/19783912761",
+      "stravaId": "19783912761"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stasjonstrill",
+      "date": "2026-08-16",
+      "detail": "81 km",
+      "image": "/bilder/oppmote/19768592129.jpg",
+      "url": "https://www.strava.com/activities/19768592129",
+      "stravaId": "19768592129"
+    },
+    {
+      "type": "sykkel",
+      "title": "Sesongåpning Sandbakken 👌🍋‍🟩🥧",
+      "date": "2026-08-15",
+      "detail": "27 km",
+      "image": "/bilder/oppmote/19751999358.jpg",
+      "url": "https://www.strava.com/activities/19751999358",
+      "stravaId": "19751999358"
+    },
+    {
+      "type": "sykkel",
+      "title": "Radaren",
+      "date": "2026-08-12",
+      "detail": "18 km",
+      "image": "/bilder/oppmote/19711475194.jpg",
+      "url": "https://www.strava.com/activities/19711475194",
+      "stravaId": "19711475194"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stasjonsbolle med Patrick 👌",
+      "date": "2026-08-09",
+      "detail": "71 km",
+      "image": "/bilder/oppmote/19667430960.jpg",
+      "url": "https://www.strava.com/activities/19667430960",
+      "stravaId": "19667430960"
+    },
+    {
+      "type": "sykkel",
+      "title": "Østfolds kulturlandskap i fineste skrud og  med det beste selskap",
+      "date": "2026-08-06",
+      "detail": "111 km",
+      "image": "/bilder/oppmote/19628555484.jpg",
+      "url": "https://www.strava.com/activities/19628555484",
+      "stravaId": "19628555484"
+    },
+    {
+      "type": "sykkel",
+      "title": "Jordbær- og bringebærtur til Stasjon",
+      "date": "2026-08-02",
+      "detail": "49 km",
+      "image": "/bilder/oppmote/19570793935.jpg",
+      "url": "https://www.strava.com/activities/19570793935",
+      "stravaId": "19570793935"
+    },
+    {
+      "type": "sykkel",
+      "title": "OV i Østmarka",
+      "date": "2026-08-01",
+      "detail": "55 km",
+      "image": "/bilder/oppmote/19557760939.jpg",
+      "url": "https://www.strava.com/activities/19557760939",
+      "stravaId": "19557760939"
+    },
+    {
+      "type": "sykkel",
+      "title": "Nytt gull og gamle klassikere i Østmarka",
+      "date": "2026-07-30",
+      "detail": "24 km",
+      "image": "/bilder/oppmote/19527975748.jpg",
+      "url": "https://www.strava.com/activities/19527975748",
+      "stravaId": "19527975748"
+    },
+    {
+      "type": "sykkel",
+      "title": "Jaget av sportsdirektøren (sett på 🎧)",
+      "date": "2026-07-27",
+      "detail": "72 km",
+      "image": "/bilder/oppmote/19484834395.jpg",
+      "url": "https://www.strava.com/activities/19484834395",
+      "stravaId": "19484834395"
+    },
+    {
+      "type": "sykkel",
+      "title": "Heidal ysteri og bakeri og JT sykkel",
+      "date": "2026-07-23",
+      "detail": "57 km",
+      "image": "/bilder/oppmote/19433876144.jpg",
+      "url": "https://www.strava.com/activities/19433876144",
+      "stravaId": "19433876144"
+    },
+    {
+      "type": "sykkel",
+      "title": "Drogasæter enduro 👌",
+      "date": "2026-07-21",
+      "detail": "30 km",
+      "image": "/bilder/oppmote/19403489041.jpg",
+      "url": "https://www.strava.com/activities/19403489041",
+      "stravaId": "19403489041"
+    },
+    {
+      "type": "sykkel",
+      "title": "Nye klimavaner det er mulig å venne seg til",
+      "date": "2026-07-17",
+      "detail": "37 km",
+      "image": "/bilder/oppmote/19354009085.jpg",
+      "url": "https://www.strava.com/activities/19354009085",
+      "stravaId": "19354009085"
+    },
+    {
+      "type": "sykkel",
+      "title": "Søren klype!",
+      "date": "2026-07-15",
+      "detail": "134 km",
+      "image": "/bilder/oppmote/19325023656.jpg",
+      "url": "https://www.strava.com/activities/19325023656",
+      "stravaId": "19325023656"
+    },
+    {
+      "type": "sykkel",
+      "title": "Hjulemos - tungt fordøyelig",
+      "date": "2026-07-14",
+      "detail": "13 km",
+      "image": "/bilder/oppmote/19313977504.jpg",
+      "url": "https://www.strava.com/activities/19313977504",
+      "stravaId": "19313977504"
+    },
+    {
+      "type": "sykkel",
+      "title": "Ring 4B med T",
+      "date": "2026-07-13",
+      "detail": "58 km",
+      "image": "/bilder/oppmote/19295584362.jpg",
+      "url": "https://www.strava.com/activities/19295584362",
+      "stravaId": "19295584362"
+    },
+    {
+      "type": "sykkel",
+      "title": "Savalen alpinklubb på tokt i Follo 😍",
+      "date": "2026-07-11",
+      "detail": "94 km",
+      "image": "/bilder/oppmote/19267999765.jpg",
+      "url": "https://www.strava.com/activities/19267999765",
+      "stravaId": "19267999765"
+    },
+    {
+      "type": "sykkel",
+      "title": "Kulturhistorisk oppdagelsesferd og Kjekstadmarka DH Experience signert Vidar",
+      "date": "2026-07-09",
+      "detail": "15 km",
+      "image": "/bilder/oppmote/19243412308.jpg",
+      "url": "https://www.strava.com/activities/19243412308",
+      "stravaId": "19243412308"
+    },
+    {
+      "type": "sykkel",
+      "title": "Baneveien, Paradisbakkene og Café Døla ⭐️⭐️⭐️",
+      "date": "2026-07-08",
+      "detail": "138 km",
+      "image": "/bilder/oppmote/19230372119.jpg",
+      "url": "https://www.strava.com/activities/19230372119",
+      "stravaId": "19230372119"
+    },
+    {
+      "type": "sykkel",
+      "title": "Romerriket ☀️👌",
+      "date": "2026-07-06",
+      "detail": "12 km",
+      "image": "/bilder/oppmote/19203180146.jpg",
+      "url": "https://www.strava.com/activities/19203180146",
+      "stravaId": "19203180146"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stasjonsrunde 1/2 tempo 2/2 easy spin i vekslende vær! ☀️🌦️⛈️🌬️",
+      "date": "2026-07-03",
+      "detail": "70 km",
+      "image": "/bilder/oppmote/19164610595.jpg",
+      "url": "https://www.strava.com/activities/19164610595",
+      "stravaId": "19164610595"
+    },
+    {
+      "type": "sykkel",
+      "title": "Høgevarde dobbel med GA - jævlig gøy 🤸‍♀️",
+      "date": "2026-07-01",
+      "detail": "47 km",
+      "image": "/bilder/oppmote/19138313565.jpg",
+      "url": "https://www.strava.com/activities/19138313565",
+      "stravaId": "19138313565"
+    },
+    {
+      "type": "sykkel",
+      "title": "MD down country 😍",
+      "date": "2026-06-30",
+      "detail": "24 km",
+      "image": "/bilder/oppmote/19124512325.jpg",
+      "url": "https://www.strava.com/activities/19124512325",
+      "stravaId": "19124512325"
+    },
+    {
+      "type": "sykkel",
+      "title": "Sommermagi i Østmarka",
+      "date": "2026-06-27",
+      "detail": "34 km",
+      "image": "/bilder/oppmote/19087224917.jpg",
+      "url": "https://www.strava.com/activities/19087224917",
+      "stravaId": "19087224917"
+    },
+    {
+      "type": "sykkel",
+      "title": "Jotunheimen Rundt 2026 - blir ikke lettere med åra, men det går fortere 😉",
+      "date": "2026-06-19",
+      "detail": "428 km",
+      "image": "/bilder/oppmote/18996326247.jpg",
+      "url": "https://www.strava.com/activities/18996326247",
+      "stravaId": "18996326247"
+    },
+    {
+      "type": "sykkel",
+      "title": "JR neste, pakker med regnjakke!",
+      "date": "2026-06-17",
+      "detail": "9 km",
+      "image": "/bilder/oppmote/18959534530.jpg",
+      "url": "https://www.strava.com/activities/18959534530",
+      "stravaId": "18959534530"
+    },
+    {
+      "type": "sykkel",
+      "title": "GK sweet spot",
+      "date": "2026-06-11",
+      "detail": "28 km",
+      "image": "/bilder/oppmote/18882387138.jpg",
+      "url": "https://www.strava.com/activities/18882387138",
+      "stravaId": "18882387138"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stileik på litt lumsk føre",
+      "date": "2026-06-06",
+      "detail": "23 km",
+      "image": "/bilder/oppmote/18809916448.jpg",
+      "url": "https://www.strava.com/activities/18809916448",
+      "stravaId": "18809916448"
+    },
+    {
+      "type": "sykkel",
+      "title": "Portal of Pain",
+      "date": "2026-06-05",
+      "detail": "41 km",
+      "image": "/bilder/oppmote/18797754343.jpg",
+      "url": "https://www.strava.com/activities/18797754343",
+      "stravaId": "18797754343"
+    },
+    {
+      "type": "sykkel",
+      "title": "Hellerudfemmer",
+      "date": "2026-06-02",
+      "detail": "17 km",
+      "image": "/bilder/oppmote/18757431471.jpg",
+      "url": "https://www.strava.com/activities/18757431471",
+      "stravaId": "18757431471"
+    },
+    {
+      "type": "sykkel",
+      "title": "South of the River",
+      "date": "2026-05-31",
+      "detail": "148 km",
+      "image": "/bilder/oppmote/18730178979.jpg",
+      "url": "https://www.strava.com/activities/18730178979",
+      "stravaId": "18730178979"
+    },
+    {
+      "type": "sykkel",
+      "title": "Bedriftsbesøk",
+      "date": "2026-05-26",
+      "detail": "188 km",
+      "image": "/bilder/oppmote/18663008501.jpg",
+      "url": "https://www.strava.com/activities/18663008501",
+      "stravaId": "18663008501"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stiryddetur med Vidar",
+      "date": "2026-05-24",
+      "detail": "20 km",
+      "image": "/bilder/oppmote/18638871502.jpg",
+      "url": "https://www.strava.com/activities/18638871502",
+      "stravaId": "18638871502"
+    },
+    {
+      "type": "sykkel",
+      "title": "Peer Gynt dobbel",
+      "date": "2026-05-22",
+      "detail": "168 km",
+      "image": "/bilder/oppmote/18610836777.jpg",
+      "url": "https://www.strava.com/activities/18610836777",
+      "stravaId": "18610836777"
+    },
+    {
+      "type": "sykkel",
+      "title": "Vassumrunde",
+      "date": "2026-05-20",
+      "detail": "68 km",
+      "image": "/bilder/oppmote/18582475670.jpg",
+      "url": "https://www.strava.com/activities/18582475670",
+      "stravaId": "18582475670"
+    },
+    {
+      "type": "sykkel",
+      "title": "GK kort/kort",
+      "date": "2026-05-19",
+      "detail": "36 km",
+      "image": "/bilder/oppmote/18571561973.jpg",
+      "url": "https://www.strava.com/activities/18571561973",
+      "stravaId": "18571561973"
+    },
+    {
+      "type": "sykkel",
+      "title": "Godrunden stedvis amputert av vindfall",
+      "date": "2026-05-18",
+      "detail": "14 km",
+      "image": "/bilder/oppmote/18558610942.jpg",
+      "url": "https://www.strava.com/activities/18558610942",
+      "stravaId": "18558610942"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stasjonsrunde i ruskevær",
+      "date": "2026-05-15",
+      "detail": "66 km",
+      "image": "/bilder/oppmote/18515007794.jpg",
+      "url": "https://www.strava.com/activities/18515007794",
+      "stravaId": "18515007794"
+    },
+    {
+      "type": "sykkel",
+      "title": "GK igjen. Kaldt, vått og seigt",
+      "date": "2026-05-12",
+      "detail": "30 km",
+      "image": "/bilder/oppmote/18481629160.jpg",
+      "url": "https://www.strava.com/activities/18481629160",
+      "stravaId": "18481629160"
+    },
+    {
+      "type": "sykkel",
+      "title": "Villa Wellhaven 👌",
+      "date": "2026-05-09",
+      "detail": "138 km",
+      "image": "/bilder/oppmote/18440130294.jpg",
+      "url": "https://www.strava.com/activities/18440130294",
+      "stravaId": "18440130294"
+    },
+    {
+      "type": "sykkel",
+      "title": "GK-dagen",
+      "date": "2026-05-06",
+      "detail": "29 km",
+      "image": "/bilder/oppmote/18399928828.jpg",
+      "url": "https://www.strava.com/activities/18399928828",
+      "stravaId": "18399928828"
+    },
+    {
+      "type": "sykkel",
+      "title": "Utrolig hvilken sykkelvei man kan få for en håndfull milliarder",
+      "date": "2026-05-03",
+      "detail": "133 km",
+      "image": "/bilder/oppmote/18361228365.jpg",
+      "url": "https://www.strava.com/activities/18361228365",
+      "stravaId": "18361228365"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stasjonsrunde",
+      "date": "2026-05-02",
+      "detail": "32 km",
+      "image": "/bilder/oppmote/18345095178.jpg",
+      "url": "https://www.strava.com/activities/18345095178",
+      "stravaId": "18345095178"
+    },
+    {
+      "type": "sykkel",
+      "title": "Romerriket",
+      "date": "2026-05-01",
+      "detail": "38 km",
+      "image": "/bilder/oppmote/18334081307.jpg",
+      "url": "https://www.strava.com/activities/18334081307",
+      "stravaId": "18334081307"
+    },
+    {
+      "type": "sykkel",
+      "title": "GK SB forsøk",
+      "date": "2026-04-28",
+      "detail": "29 km",
+      "image": "/bilder/oppmote/18292768066.jpg",
+      "url": "https://www.strava.com/activities/18292768066",
+      "stravaId": "18292768066"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stasjonskafeen dobbel",
+      "date": "2026-04-26",
+      "detail": "120 km",
+      "image": "/bilder/oppmote/18266672321.jpg",
+      "url": "https://www.strava.com/activities/18266672321",
+      "stravaId": "18266672321"
+    },
+    {
+      "type": "sykkel",
+      "title": "Sandbakken over Spinneren 😍",
+      "date": "2026-04-25",
+      "detail": "28 km",
+      "image": "/bilder/oppmote/18253526860.jpg",
+      "url": "https://www.strava.com/activities/18253526860",
+      "stravaId": "18253526860"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stimoro med Lillolosen Ådne",
+      "date": "2026-04-23",
+      "detail": "13 km",
+      "image": "/bilder/oppmote/18226358013.jpg",
+      "url": "https://www.strava.com/activities/18226358013",
+      "stravaId": "18226358013"
+    },
+    {
+      "type": "sykkel",
+      "title": "GK med Sørensenbein 🫣",
+      "date": "2026-04-22",
+      "detail": "29 km",
+      "image": "/bilder/oppmote/18215275327.jpg",
+      "url": "https://www.strava.com/activities/18215275327",
+      "stravaId": "18215275327"
+    },
+    {
+      "type": "sykkel",
+      "title": "Sikkert vårtegn: Lett urytmisk korpsmusikk i Sørensens sløife",
+      "date": "2026-04-21",
+      "detail": "35 km",
+      "image": "/bilder/oppmote/18201949307.jpg",
+      "url": "https://www.strava.com/activities/18201949307",
+      "stravaId": "18201949307"
+    },
+    {
+      "type": "sykkel",
+      "title": "Zinober-runden",
+      "date": "2026-04-20",
+      "detail": "51 km",
+      "image": "/bilder/oppmote/18188029447.jpg",
+      "url": "https://www.strava.com/activities/18188029447",
+      "stravaId": "18188029447"
+    },
+    {
+      "type": "ski",
+      "title": "Blåbretinden 1.442",
+      "date": "2026-04-18",
+      "detail": "4:15 t",
+      "image": "/bilder/oppmote/18156736889.jpg",
+      "url": "https://www.strava.com/activities/18156736889",
+      "stravaId": "18156736889"
+    },
+    {
+      "type": "ski",
+      "title": "Skårasalen 1.542",
+      "date": "2026-04-17",
+      "detail": "4:49 t",
+      "image": "/bilder/oppmote/18145347765.jpg",
+      "url": "https://www.strava.com/activities/18145347765",
+      "stravaId": "18145347765"
+    },
+    {
+      "type": "sykkel",
+      "title": "Follo gravel mix med noe motstand",
+      "date": "2026-04-11",
+      "detail": "99 km",
+      "image": "/bilder/oppmote/18067951565.jpg",
+      "url": "https://www.strava.com/activities/18067951565",
+      "stravaId": "18067951565"
+    },
+    {
+      "type": "sykkel",
+      "title": "Nomiobein 🤸‍♀️",
+      "date": "2026-04-09",
+      "detail": "29 km",
+      "image": "/bilder/oppmote/18044203113.jpg",
+      "url": "https://www.strava.com/activities/18044203113",
+      "stravaId": "18044203113"
+    },
+    {
+      "type": "sykkel",
+      "title": "Hølenrunden i med- og motvind",
+      "date": "2026-04-06",
+      "detail": "136 km",
+      "image": "/bilder/oppmote/18001392821.jpg",
+      "url": "https://www.strava.com/activities/18001392821",
+      "stravaId": "18001392821"
+    },
+    {
+      "type": "ski",
+      "title": "God påske! 🐣🐥☀️",
+      "date": "2026-04-02",
+      "detail": "5:47 t",
+      "image": "/bilder/oppmote/17950485218.jpg",
+      "url": "https://www.strava.com/activities/17950485218",
+      "stravaId": "17950485218"
+    },
+    {
+      "type": "sykkel",
+      "title": "To korte og en lang, da var påska i gang 🐣",
+      "date": "2026-03-30",
+      "detail": "29 km",
+      "image": "/bilder/oppmote/17915167000.jpg",
+      "url": "https://www.strava.com/activities/17915167000",
+      "stravaId": "17915167000"
+    },
+    {
+      "type": "sykkel",
+      "title": "Motvind GF",
+      "date": "2026-03-28",
+      "detail": "93 km",
+      "image": "/bilder/oppmote/17889512093.jpg",
+      "url": "https://www.strava.com/activities/17889512093",
+      "stravaId": "17889512093"
+    },
+    {
+      "type": "sykkel",
+      "title": "Østmarka open for business 🐥",
+      "date": "2026-03-21",
+      "detail": "28 km",
+      "image": "/bilder/oppmote/17805320302.jpg",
+      "url": "https://www.strava.com/activities/17805320302",
+      "stravaId": "17805320302"
+    },
+    {
+      "type": "sykkel",
+      "title": "Umulig å ikke sykle på en slik dag",
+      "date": "2026-03-19",
+      "detail": "108 km",
+      "image": "/bilder/oppmote/17781139930.jpg",
+      "url": "https://www.strava.com/activities/17781139930",
+      "stravaId": "17781139930"
+    },
+    {
+      "type": "ski",
+      "title": "Snellingen 🤩",
+      "date": "2026-03-15",
+      "detail": "1:44 t",
+      "image": "/bilder/oppmote/17730488541.jpg",
+      "url": "https://www.strava.com/activities/17730488541",
+      "stravaId": "17730488541"
+    },
+    {
+      "type": "sykkel",
+      "title": "Herlig sesongåpning 🥳",
+      "date": "2026-03-14",
+      "detail": "72 km",
+      "image": "/bilder/oppmote/17720900899.jpg",
+      "url": "https://www.strava.com/activities/17720900899",
+      "stravaId": "17720900899"
+    },
+    {
+      "type": "ski",
+      "title": "Oppkuven",
+      "date": "2026-03-08",
+      "detail": "2:45 t",
+      "image": "/bilder/oppmote/17647858122.jpg",
+      "url": "https://www.strava.com/activities/17647858122",
+      "stravaId": "17647858122"
+    },
+    {
+      "type": "ski",
+      "title": "Nordmarkas indrefilet er jaggu meg kupert 😫😉",
+      "date": "2026-03-05",
+      "detail": "4:47 t",
+      "image": "/bilder/oppmote/17613166264.jpg",
+      "url": "https://www.strava.com/activities/17613166264",
+      "stravaId": "17613166264"
+    },
+    {
+      "type": "ski",
+      "title": "Langtur fra Grua",
+      "date": "2026-02-28",
+      "detail": "7:57 t",
+      "image": "/bilder/oppmote/17554769314.jpg",
+      "url": "https://www.strava.com/activities/17554769314",
+      "stravaId": "17554769314"
+    },
+    {
+      "type": "ski",
+      "title": "Ja da, lite som slår ⛷️ før frokost",
+      "date": "2026-02-25",
+      "detail": "43 min",
+      "image": "/bilder/oppmote/17514489434.jpg",
+      "url": "https://www.strava.com/activities/17514489434",
+      "stravaId": "17514489434"
+    },
+    {
+      "type": "ski",
+      "title": "Stensakerdagen",
+      "date": "2026-02-24",
+      "detail": "4:34 t",
+      "image": "/bilder/oppmote/17506480234.jpg",
+      "url": "https://www.strava.com/activities/17506480234",
+      "stravaId": "17506480234"
+    },
+    {
+      "type": "ski",
+      "title": "Wyller med H",
+      "date": "2026-02-22",
+      "detail": "1:41 t",
+      "image": "/bilder/oppmote/17481309437.jpg",
+      "url": "https://www.strava.com/activities/17481309437",
+      "stravaId": "17481309437"
+    },
+    {
+      "type": "ski",
+      "title": "Topptur til Gyrihaugen via Otertjern",
+      "date": "2026-02-18",
+      "detail": "6:57 t",
+      "image": "/bilder/oppmote/17440925308.jpg",
+      "url": "https://www.strava.com/activities/17440925308",
+      "stravaId": "17440925308"
+    },
+    {
+      "type": "ski",
+      "title": "Nordmarkas beste 🚂⛷️👌",
+      "date": "2026-02-14",
+      "detail": "7:15 t",
+      "image": "/bilder/oppmote/17396083303.jpg",
+      "url": "https://www.strava.com/activities/17396083303",
+      "stravaId": "17396083303"
+    },
+    {
+      "type": "ski",
+      "title": "Suverent føre og Stereo skidemo. Deilige FIS SL-ski, signert K A Aamodt 👌",
+      "date": "2026-02-04",
+      "detail": "50 min",
+      "image": "/bilder/oppmote/17280303186.jpg",
+      "url": "https://www.strava.com/activities/17280303186",
+      "stravaId": "17280303186"
+    },
+    {
+      "type": "ski",
+      "title": "Oppkuven",
+      "date": "2026-02-01",
+      "detail": "3:54 t",
+      "image": "/bilder/oppmote/17251702461.jpg",
+      "url": "https://www.strava.com/activities/17251702461",
+      "stravaId": "17251702461"
+    },
+    {
+      "type": "sykkel",
+      "title": "Kongeforhold 🤩🚴🧊",
+      "date": "2026-01-31",
+      "detail": "14 km",
+      "image": "/bilder/oppmote/17238282523.jpg",
+      "url": "https://www.strava.com/activities/17238282523",
+      "stravaId": "17238282523"
+    },
+    {
+      "type": "ski",
+      "title": "Oslos beste utested",
+      "date": "2026-01-28",
+      "detail": "43 min",
+      "image": "/bilder/oppmote/17202076304.jpg",
+      "url": "https://www.strava.com/activities/17202076304",
+      "stravaId": "17202076304"
+    },
+    {
+      "type": "ski",
+      "title": "Snøplogen",
+      "date": "2026-01-24",
+      "detail": "4:01 t",
+      "image": "/bilder/oppmote/17160918074.jpg",
+      "url": "https://www.strava.com/activities/17160918074",
+      "stravaId": "17160918074"
+    },
+    {
+      "type": "ski",
+      "title": "Alpinmorgen",
+      "date": "2026-01-21",
+      "detail": "39 min",
+      "image": "/bilder/oppmote/17124882602.jpg",
+      "url": "https://www.strava.com/activities/17124882602",
+      "stravaId": "17124882602"
+    },
+    {
+      "type": "ski",
+      "title": "Mariholtet t/r",
+      "date": "2026-01-14",
+      "detail": "1:05 t",
+      "image": "/bilder/oppmote/17050730630.jpg",
+      "url": "https://www.strava.com/activities/17050730630",
+      "stravaId": "17050730630"
+    },
+    {
+      "type": "ski",
+      "title": "Kaldt, trått og nydelig 🌲❄️🥶☀️",
+      "date": "2026-01-10",
+      "detail": "3:02 t",
+      "image": "/bilder/oppmote/17002800695.jpg",
+      "url": "https://www.strava.com/activities/17002800695",
+      "stravaId": "17002800695"
+    },
+    {
+      "type": "sykkel",
+      "title": "Snøprøve",
+      "date": "2026-01-03",
+      "detail": "14 km",
+      "image": "/bilder/oppmote/16924069023.jpg",
+      "url": "https://www.strava.com/activities/16924069023",
+      "stravaId": "16924069023"
+    },
+    {
+      "type": "trening",
+      "title": "Godt nytt år!",
+      "date": "2025-12-31",
+      "detail": "9 km",
+      "image": "/bilder/oppmote/16894549670.jpg",
+      "url": "https://www.strava.com/activities/16894549670",
+      "stravaId": "16894549670"
+    },
+    {
+      "type": "sykkel",
+      "title": "Romjulsmagi i Nordmarka",
+      "date": "2025-12-29",
+      "detail": "77 km",
+      "image": "/bilder/oppmote/16874092497.jpg",
+      "url": "https://www.strava.com/activities/16874092497",
+      "stravaId": "16874092497"
+    },
+    {
+      "type": "sykkel",
+      "title": "Romhjul 🧊🌲🎄",
+      "date": "2025-12-27",
+      "detail": "20 km",
+      "image": "/bilder/oppmote/16854897027.jpg",
+      "url": "https://www.strava.com/activities/16854897027",
+      "stravaId": "16854897027"
+    },
+    {
+      "type": "løping",
+      "title": "Gyrihaugen",
+      "date": "2025-12-26",
+      "detail": "11 km",
+      "image": "/bilder/oppmote/16845403614.jpg",
+      "url": "https://www.strava.com/activities/16845403614",
+      "stravaId": "16845403614"
+    },
+    {
+      "type": "sykkel",
+      "title": "God hjul! 🎄🎅",
+      "date": "2025-12-24",
+      "detail": "10 km",
+      "image": "/bilder/oppmote/16829286599.jpg",
+      "url": "https://www.strava.com/activities/16829286599",
+      "stravaId": "16829286599"
+    },
+    {
+      "type": "sykkel",
+      "title": "Gran Fondo Natale",
+      "date": "2025-12-20",
+      "detail": "113 km",
+      "image": "/bilder/oppmote/16794373881.jpg",
+      "url": "https://www.strava.com/activities/16794373881",
+      "stravaId": "16794373881"
+    },
+    {
+      "type": "sykkel",
+      "title": "Solsnu GF",
+      "date": "2025-12-14",
+      "detail": "86 km",
+      "image": "/bilder/oppmote/16741689993.jpg",
+      "url": "https://www.strava.com/activities/16741689993",
+      "stravaId": "16741689993"
+    },
+    {
+      "type": "sykkel",
+      "title": "Barfrost grand fondo ☀️🧊",
+      "date": "2025-11-16",
+      "detail": "103 km",
+      "image": "/bilder/oppmote/16476158581.jpg",
+      "url": "https://www.strava.com/activities/16476158581",
+      "stravaId": "16476158581"
+    },
+    {
+      "type": "sykkel",
+      "title": "Farsdagsgaver 🎉",
+      "date": "2025-11-09",
+      "detail": "127 km",
+      "image": "/bilder/oppmote/16405439828.jpg",
+      "url": "https://www.strava.com/activities/16405439828",
+      "stravaId": "16405439828"
+    },
+    {
+      "type": "sykkel",
+      "title": "Follo i novemberdrakt",
+      "date": "2025-11-02",
+      "detail": "93 km",
+      "image": "/bilder/oppmote/16332667765.jpg",
+      "url": "https://www.strava.com/activities/16332667765",
+      "stravaId": "16332667765"
+    },
+    {
+      "type": "sykkel",
+      "title": "Alvento Gran Fondo",
+      "date": "2025-10-26",
+      "detail": "74 km",
+      "image": "/bilder/oppmote/16262906425.jpg",
+      "url": "https://www.strava.com/activities/16262906425",
+      "stravaId": "16262906425"
+    },
+    {
+      "type": "sykkel",
+      "title": "Løland for President! UX ➡️ WT 💪",
+      "date": "2025-10-19",
+      "detail": "52 km",
+      "image": "/bilder/oppmote/16192909047.jpg",
+      "url": "https://www.strava.com/activities/16192909047",
+      "stravaId": "16192909047"
+    },
+    {
+      "type": "sykkel",
+      "title": "Oktober bliss med Vidar 🌞👌",
+      "date": "2025-10-18",
+      "detail": "90 km",
+      "image": "/bilder/oppmote/16181098674.jpg",
+      "url": "https://www.strava.com/activities/16181098674",
+      "stravaId": "16181098674"
+    },
+    {
+      "type": "sykkel",
+      "title": "Follo byr opp til oktoberfest ☀️",
+      "date": "2025-10-12",
+      "detail": "130 km",
+      "image": "/bilder/oppmote/16117413482.jpg",
+      "url": "https://www.strava.com/activities/16117413482",
+      "stravaId": "16117413482"
+    },
+    {
+      "type": "sykkel",
+      "title": "Brunkollen måneskinnstur",
+      "date": "2025-10-08",
+      "detail": "57 km",
+      "image": "/bilder/oppmote/16077836488.jpg",
+      "url": "https://www.strava.com/activities/16077836488",
+      "stravaId": "16077836488"
+    },
+    {
+      "type": "sykkel",
+      "title": "Sykkel- og leseferie i mot- og medvind",
+      "date": "2025-10-02",
+      "detail": "69 km",
+      "image": "/bilder/oppmote/16010493402.jpg",
+      "url": "https://www.strava.com/activities/16010493402",
+      "stravaId": "16010493402"
+    },
+    {
+      "type": "sykkel",
+      "title": "Skogsoppsuppe og VM på øret",
+      "date": "2025-09-28",
+      "detail": "31 km",
+      "image": "/bilder/oppmote/15965310670.jpg",
+      "url": "https://www.strava.com/activities/15965310670",
+      "stravaId": "15965310670"
+    },
+    {
+      "type": "sykkel",
+      "title": "Fra en sol til en annen",
+      "date": "2025-09-23",
+      "detail": "55 km",
+      "image": "/bilder/oppmote/15913016509.jpg",
+      "url": "https://www.strava.com/activities/15913016509",
+      "stravaId": "15913016509"
+    },
+    {
+      "type": "sykkel",
+      "title": "Vått, glatt og moro",
+      "date": "2025-09-20",
+      "detail": "13 km",
+      "image": "/bilder/oppmote/15877244429.jpg",
+      "url": "https://www.strava.com/activities/15877244429",
+      "stravaId": "15877244429"
+    },
+    {
+      "type": "sykkel",
+      "title": "Høstmarka 😍",
+      "date": "2025-09-10",
+      "detail": "22 km",
+      "image": "/bilder/oppmote/15767226319.jpg",
+      "url": "https://www.strava.com/activities/15767226319",
+      "stravaId": "15767226319"
+    },
+    {
+      "type": "sykkel",
+      "title": "Loftstur med uforrettet sak",
+      "date": "2025-09-07",
+      "detail": "159 km",
+      "image": "/bilder/oppmote/15732895585.jpg",
+      "url": "https://www.strava.com/activities/15732895585",
+      "stravaId": "15732895585"
+    },
+    {
+      "type": "sykkel",
+      "title": "Loam lørdag",
+      "date": "2025-09-06",
+      "detail": "14 km",
+      "image": "/bilder/oppmote/15719251032.jpg",
+      "url": "https://www.strava.com/activities/15719251032",
+      "stravaId": "15719251032"
+    },
+    {
+      "type": "sykkel",
+      "title": "Follo Champagnegrus",
+      "date": "2025-08-30",
+      "detail": "95 km",
+      "image": "/bilder/oppmote/15638028328.jpg",
+      "url": "https://www.strava.com/activities/15638028328",
+      "stravaId": "15638028328"
+    },
+    {
+      "type": "sykkel",
+      "title": "GK - siste høysommertur? ☀️",
+      "date": "2025-08-26",
+      "detail": "22 km",
+      "image": "/bilder/oppmote/15595930381.jpg",
+      "url": "https://www.strava.com/activities/15595930381",
+      "stravaId": "15595930381"
+    },
+    {
+      "type": "sykkel",
+      "title": "Gammelt folk prøver nye triks",
+      "date": "2025-08-24",
+      "detail": "54 km",
+      "image": "/bilder/oppmote/15571483901.jpg",
+      "url": "https://www.strava.com/activities/15571483901",
+      "stravaId": "15571483901"
+    },
+    {
+      "type": "sykkel",
+      "title": "Wyller'n",
+      "date": "2025-08-21",
+      "detail": "46 km",
+      "image": "/bilder/oppmote/15539358116.jpg",
+      "url": "https://www.strava.com/activities/15539358116",
+      "stravaId": "15539358116"
+    },
+    {
+      "type": "sykkel",
+      "title": "Lufte ræser’n",
+      "date": "2025-08-19",
+      "detail": "40 km",
+      "image": "/bilder/oppmote/15516270316.jpg",
+      "url": "https://www.strava.com/activities/15516270316",
+      "stravaId": "15516270316"
+    },
+    {
+      "type": "sykkel",
+      "title": "Sandbakken 🌞",
+      "date": "2025-08-17",
+      "detail": "30 km",
+      "image": "/bilder/oppmote/15491616505.jpg",
+      "url": "https://www.strava.com/activities/15491616505",
+      "stravaId": "15491616505"
+    },
+    {
+      "type": "sykkel",
+      "title": "Sesongåpning Sandbakken",
+      "date": "2025-08-16",
+      "detail": "14 km",
+      "image": "/bilder/oppmote/15478207528.jpg",
+      "url": "https://www.strava.com/activities/15478207528",
+      "stravaId": "15478207528"
+    },
+    {
+      "type": "sykkel",
+      "title": "Svartfjell og Dynjefjell",
+      "date": "2025-08-10",
+      "detail": "20 km",
+      "image": "/bilder/oppmote/15411547970.jpg",
+      "url": "https://www.strava.com/activities/15411547970",
+      "stravaId": "15411547970"
+    },
+    {
+      "type": "sykkel",
+      "title": "Sykkelviku dag 3",
+      "date": "2025-08-10",
+      "detail": "13 km",
+      "image": "/bilder/oppmote/15409082626.jpg",
+      "url": "https://www.strava.com/activities/15409082626",
+      "stravaId": "15409082626"
+    },
+    {
+      "type": "sykkel",
+      "title": "Sykkelviku dag 2 Baksia, Høgåsråket og Høstadliaxpressen",
+      "date": "2025-08-09",
+      "detail": "64 km",
+      "image": "/bilder/oppmote/15400304264.jpg",
+      "url": "https://www.strava.com/activities/15400304264",
+      "stravaId": "15400304264"
+    },
+    {
+      "type": "sykkel",
+      "title": "Blir ikke sommer uten Fjorden rundt ☀️👍",
+      "date": "2025-08-03",
+      "detail": "222 km",
+      "image": "/bilder/oppmote/15332132318.jpg",
+      "url": "https://www.strava.com/activities/15332132318",
+      "stravaId": "15332132318"
+    },
+    {
+      "type": "sykkel",
+      "title": "Ravndalen 👌",
+      "date": "2025-08-01",
+      "detail": "12 km",
+      "image": "/bilder/oppmote/15311368328.jpg",
+      "url": "https://www.strava.com/activities/15311368328",
+      "stravaId": "15311368328"
+    },
+    {
+      "type": "sykkel",
+      "title": "Godrunde før styggværet 👌",
+      "date": "2025-07-29",
+      "detail": "17 km",
+      "image": "/bilder/oppmote/15272815663.jpg",
+      "url": "https://www.strava.com/activities/15272815663",
+      "stravaId": "15272815663"
+    },
+    {
+      "type": "sykkel",
+      "title": "På hjul med Kjekstadsmarkas stifinner og -legger 👌",
+      "date": "2025-07-27",
+      "detail": "27 km",
+      "image": "/bilder/oppmote/15255058614.jpg",
+      "url": "https://www.strava.com/activities/15255058614",
+      "stravaId": "15255058614"
+    },
+    {
+      "type": "sykkel",
+      "title": "Otta Enduro",
+      "date": "2025-07-24",
+      "detail": "30 km",
+      "image": "/bilder/oppmote/15222011471.jpg",
+      "url": "https://www.strava.com/activities/15222011471",
+      "stravaId": "15222011471"
+    },
+    {
+      "type": "sykkel",
+      "title": "Furusjøen rundt + Nåsåberget og Krøkla",
+      "date": "2025-07-20",
+      "detail": "63 km",
+      "image": "/bilder/oppmote/15180733717.jpg",
+      "url": "https://www.strava.com/activities/15180733717",
+      "stravaId": "15180733717"
+    },
+    {
+      "type": "sykkel",
+      "title": "Tour de Heidal innom Norges triveligste sykkelmekaniker med optimalt turfølge",
+      "date": "2025-07-19",
+      "detail": "58 km",
+      "image": "/bilder/oppmote/15166281528.jpg",
+      "url": "https://www.strava.com/activities/15166281528",
+      "stravaId": "15166281528"
+    },
+    {
+      "type": "sykkel",
+      "title": "Varmetrening i Østmarka ☀️☀️☀️",
+      "date": "2025-07-17",
+      "detail": "45 km",
+      "image": "/bilder/oppmote/15145997873.jpg",
+      "url": "https://www.strava.com/activities/15145997873",
+      "stravaId": "15145997873"
+    },
+    {
+      "type": "sykkel",
+      "title": "Norsk veikunst anno 1938 😮",
+      "date": "2025-07-13",
+      "detail": "121 km",
+      "image": "/bilder/oppmote/15102416578.jpg",
+      "url": "https://www.strava.com/activities/15102416578",
+      "stravaId": "15102416578"
+    },
+    {
+      "type": "sykkel",
+      "title": "Lustrafjorden rundt 😍",
+      "date": "2025-07-12",
+      "detail": "77 km",
+      "image": "/bilder/oppmote/15090351610.jpg",
+      "url": "https://www.strava.com/activities/15090351610",
+      "stravaId": "15090351610"
+    },
+    {
+      "type": "sykkel",
+      "title": "Nasjonalromantisk sykkelepos i fire akter og ei magisk klatring 🚴🇳🇴😍",
+      "date": "2025-07-11",
+      "detail": "175 km",
+      "image": "/bilder/oppmote/15080143604.jpg",
+      "url": "https://www.strava.com/activities/15080143604",
+      "stravaId": "15080143604"
+    },
+    {
+      "type": "sykkel",
+      "title": "Maridalen dobbel 2/2 med Ståle",
+      "date": "2025-07-09",
+      "detail": "13 km",
+      "image": "/bilder/oppmote/15059131154.jpg",
+      "url": "https://www.strava.com/activities/15059131154",
+      "stravaId": "15059131154"
+    },
+    {
+      "type": "sykkel",
+      "title": "Maridalen dobbel 1/2",
+      "date": "2025-07-09",
+      "detail": "42 km",
+      "image": "/bilder/oppmote/15056966458.jpg",
+      "url": "https://www.strava.com/activities/15056966458",
+      "stravaId": "15056966458"
+    },
+    {
+      "type": "sykkel",
+      "title": "Restitusjonstur 🤷💨☀️🍀",
+      "date": "2025-07-04",
+      "detail": "79 km",
+      "image": "/bilder/oppmote/15006294879.jpg",
+      "url": "https://www.strava.com/activities/15006294879",
+      "stravaId": "15006294879"
+    },
+    {
+      "type": "sykkel",
+      "title": "Byrunde",
+      "date": "2025-06-22",
+      "detail": "31 km",
+      "image": "/bilder/oppmote/14882440826.jpg",
+      "url": "https://www.strava.com/activities/14882440826",
+      "stravaId": "14882440826"
+    },
+    {
+      "type": "sykkel",
+      "title": "Midtsommerdags drøm",
+      "date": "2025-06-21",
+      "detail": "204 km",
+      "image": "/bilder/oppmote/14873184845.jpg",
+      "url": "https://www.strava.com/activities/14873184845",
+      "stravaId": "14873184845"
+    },
+    {
+      "type": "sykkel",
+      "title": "OverOslo -1",
+      "date": "2025-06-17",
+      "detail": "21 km",
+      "image": "/bilder/oppmote/14830971380.jpg",
+      "url": "https://www.strava.com/activities/14830971380",
+      "stravaId": "14830971380"
+    },
+    {
+      "type": "sykkel",
+      "title": "Villa Wellhaven om Mørk 👌☀️🍀🚴❤️",
+      "date": "2025-06-14",
+      "detail": "170 km",
+      "image": "/bilder/oppmote/14797071270.jpg",
+      "url": "https://www.strava.com/activities/14797071270",
+      "stravaId": "14797071270"
+    },
+    {
+      "type": "sykkel",
+      "title": "Fin tur fram til reserveslangen viste seg å ha  for kort ventil 😢 Henta av Ragnhild 🙏",
+      "date": "2025-06-12",
+      "detail": "62 km",
+      "image": "/bilder/oppmote/14780560768.jpg",
+      "url": "https://www.strava.com/activities/14780560768",
+      "stravaId": "14780560768"
+    },
+    {
+      "type": "sykkel",
+      "title": "Smak av sommer",
+      "date": "2025-06-11",
+      "detail": "46 km",
+      "image": "/bilder/oppmote/14769235549.jpg",
+      "url": "https://www.strava.com/activities/14769235549",
+      "stravaId": "14769235549"
+    },
+    {
+      "type": "sykkel",
+      "title": "Believe the hype!",
+      "date": "2025-06-04",
+      "detail": "49 km",
+      "image": "/bilder/oppmote/14697550475.jpg",
+      "url": "https://www.strava.com/activities/14697550475",
+      "stravaId": "14697550475"
+    },
+    {
+      "type": "sykkel",
+      "title": "Stijakt Fagervann",
+      "date": "2025-05-31",
+      "detail": "6 km",
+      "image": "/bilder/oppmote/14651762109.jpg",
+      "url": "https://www.strava.com/activities/14651762109",
+      "stravaId": "14651762109"
+    },
+    {
+      "type": "sykkel",
+      "title": "Ute i det grønne ☀️🌿☘️🚴❤️",
+      "date": "2025-05-30",
+      "detail": "122 km",
+      "image": "/bilder/oppmote/14642280817.jpg",
+      "url": "https://www.strava.com/activities/14642280817",
+      "stravaId": "14642280817"
+    },
+    {
+      "type": "sykkel",
+      "title": "En ferjereisende vender hjem - 3 min for sent 😅",
+      "date": "2025-05-26",
+      "detail": "84 km",
+      "image": "/bilder/oppmote/14604323225.jpg",
+      "url": "https://www.strava.com/activities/14604323225",
+      "stravaId": "14604323225"
+    },
+    {
+      "type": "sykkel",
+      "title": "Ute i blæsten",
+      "date": "2025-05-24",
+      "detail": "47 km",
+      "image": "/bilder/oppmote/14582374621.jpg",
+      "url": "https://www.strava.com/activities/14582374621",
+      "stravaId": "14582374621"
+    },
+    {
+      "type": "sykkel",
+      "title": "Gode, gamle Sørensen 🎗️",
+      "date": "2025-05-20",
+      "detail": "34 km",
+      "image": "/bilder/oppmote/14542733033.jpg",
+      "url": "https://www.strava.com/activities/14542733033",
+      "stravaId": "14542733033"
+    },
+    {
+      "type": "sykkel",
+      "title": "Double Down Country",
+      "date": "2025-05-19",
+      "detail": "19 km",
+      "image": "/bilder/oppmote/14532846716.jpg",
+      "url": "https://www.strava.com/activities/14532846716",
+      "stravaId": "14532846716"
+    },
+    {
+      "type": "sykkel",
+      "title": "En lang og to halve",
+      "date": "2025-05-15",
+      "detail": "29 km",
+      "image": "/bilder/oppmote/14491729710.jpg",
+      "url": "https://www.strava.com/activities/14491729710",
+      "stravaId": "14491729710"
+    },
+    {
+      "type": "sykkel",
+      "title": "Gjøken under to / er du ko-ko?!",
+      "date": "2025-05-12",
+      "detail": "45 km",
+      "image": "/bilder/oppmote/14459427272.jpg",
+      "url": "https://www.strava.com/activities/14459427272",
+      "stravaId": "14459427272"
+    },
+    {
+      "type": "sykkel",
+      "title": "Wyllergamping",
+      "date": "2025-05-05",
+      "detail": "45 km",
+      "image": "/bilder/oppmote/14387861206.jpg",
+      "url": "https://www.strava.com/activities/14387861206",
+      "stravaId": "14387861206"
+    },
+    {
+      "type": "sykkel",
+      "title": "Kråkstad kaffeslabras",
+      "date": "2025-05-03",
+      "detail": "48 km",
+      "image": "/bilder/oppmote/14364304421.jpg",
+      "url": "https://www.strava.com/activities/14364304421",
+      "stravaId": "14364304421"
+    },
+    {
+      "type": "sykkel",
+      "title": "Øyeren gravel mix",
+      "date": "2025-05-01",
+      "detail": "138 km",
+      "image": "/bilder/oppmote/14344807165.jpg",
+      "url": "https://www.strava.com/activities/14344807165",
+      "stravaId": "14344807165"
+    },
+    {
+      "type": "sykkel",
+      "title": "1,5 GK etter Mur de Huy",
+      "date": "2025-04-23",
+      "detail": "26 km",
+      "image": "/bilder/oppmote/14265190151.jpg",
+      "url": "https://www.strava.com/activities/14265190151",
+      "stravaId": "14265190151"
+    },
+    {
+      "type": "sykkel",
+      "title": "Gravel mix til Hølen og tempo hjem",
+      "date": "2025-04-21",
+      "detail": "122 km",
+      "image": "/bilder/oppmote/14242283070.jpg",
+      "url": "https://www.strava.com/activities/14242283070",
+      "stravaId": "14242283070"
+    },
+    {
+      "type": "sykkel",
+      "title": "1,5 GK før Cauberg",
+      "date": "2025-04-20",
+      "detail": "25 km",
+      "image": "/bilder/oppmote/14233320490.jpg",
+      "url": "https://www.strava.com/activities/14233320490",
+      "stravaId": "14233320490"
+    },
+    {
+      "type": "ski",
+      "title": "Fine forhold, lite folk @ Lemonsjøen",
+      "date": "2025-04-15",
+      "detail": "3:29 t",
+      "image": "/bilder/oppmote/14184366616.jpg",
+      "url": "https://www.strava.com/activities/14184366616",
+      "stravaId": "14184366616"
+    },
+    {
+      "type": "sykkel",
+      "title": "Easy spin med Roubaix på øret",
+      "date": "2025-04-13",
+      "detail": "56 km",
+      "image": "/bilder/oppmote/14166040275.jpg",
+      "url": "https://www.strava.com/activities/14166040275",
+      "stravaId": "14166040275"
+    },
+    {
+      "type": "sykkel",
+      "title": "Nordvest i dag 💨",
+      "date": "2025-04-12",
+      "detail": "119 km",
+      "image": "/bilder/oppmote/14155416430.jpg",
+      "url": "https://www.strava.com/activities/14155416430",
+      "stravaId": "14155416430"
+    },
+    {
+      "type": "sykkel",
+      "title": "Villatyven ute på prøve",
+      "date": "2025-04-10",
+      "detail": "41 km",
+      "image": "/bilder/oppmote/14139793574.jpg",
+      "url": "https://www.strava.com/activities/14139793574",
+      "stravaId": "14139793574"
+    },
+    {
+      "type": "sykkel",
+      "title": "Follo i nordavinden 💨🌬️",
+      "date": "2025-04-05",
+      "detail": "104 km",
+      "image": "/bilder/oppmote/14086171513.jpg",
+      "url": "https://www.strava.com/activities/14086171513",
+      "stravaId": "14086171513"
+    },
+    {
+      "type": "sykkel",
+      "title": "Mars Gran Fondo 🚴❤️",
+      "date": "2025-03-29",
+      "detail": "140 km",
+      "image": "/bilder/oppmote/14020707756.jpg",
+      "url": "https://www.strava.com/activities/14020707756",
+      "stravaId": "14020707756"
+    },
+    {
+      "type": "sykkel",
+      "title": "Gode gamle og nye",
+      "date": "2025-03-26",
+      "detail": "44 km",
+      "image": "/bilder/oppmote/13995505950.jpg",
+      "url": "https://www.strava.com/activities/13995505950",
+      "stravaId": "13995505950"
+    },
+    {
+      "type": "sykkel",
+      "title": "GK 🥵",
+      "date": "2025-03-24",
+      "detail": "21 km",
+      "image": "/bilder/oppmote/13975016503.jpg",
+      "url": "https://www.strava.com/activities/13975016503",
+      "stravaId": "13975016503"
+    },
+    {
+      "type": "ski",
+      "title": "EtterUld",
+      "date": "2025-03-22",
+      "detail": "2:46 t",
+      "image": "/bilder/oppmote/13955308783.jpg",
+      "url": "https://www.strava.com/activities/13955308783",
+      "stravaId": "13955308783"
+    },
+    {
+      "type": "ski",
+      "title": "LLM, ski og taco",
+      "date": "2025-03-20",
+      "detail": "1:53 t",
+      "image": "/bilder/oppmote/13938199883.jpg",
+      "url": "https://www.strava.com/activities/13938199883",
+      "stravaId": "13938199883"
+    },
+    {
+      "type": "ski",
+      "title": "Snellingen ❤️",
+      "date": "2025-03-15",
+      "detail": "2:42 t",
+      "image": "/bilder/oppmote/13889466415.jpg",
+      "url": "https://www.strava.com/activities/13889466415",
+      "stravaId": "13889466415"
+    },
+    {
+      "type": "ski",
+      "title": "Oppkuven - Løvlia",
+      "date": "2025-03-14",
+      "detail": "3:51 t",
+      "image": "/bilder/oppmote/13880786886.jpg",
+      "url": "https://www.strava.com/activities/13880786886",
+      "stravaId": "13880786886"
+    },
+    {
+      "type": "sykkel",
+      "title": "Spring break",
+      "date": "2025-03-04",
+      "detail": "39 km",
+      "image": "/bilder/oppmote/13789064637.jpg",
+      "url": "https://www.strava.com/activities/13789064637",
+      "stravaId": "13789064637"
+    },
+    {
+      "type": "ski",
+      "title": "Bislingflaka og tilliggende herligheter",
+      "date": "2025-02-23",
+      "detail": "2:19 t",
+      "image": "/bilder/oppmote/13704633332.jpg",
+      "url": "https://www.strava.com/activities/13704633332",
+      "stravaId": "13704633332"
+    },
+    {
+      "type": "ski",
+      "title": "Grua - Kjelsås over Romeriksåsen og Nordmarka",
+      "date": "2025-02-19",
+      "detail": "7:48 t",
+      "image": "/bilder/oppmote/13671226701.jpg",
+      "url": "https://www.strava.com/activities/13671226701",
+      "stravaId": "13671226701"
+    },
+    {
+      "type": "ski",
+      "title": "Hvilken  Oslovinter ☀️",
+      "date": "2025-02-16",
+      "detail": "4:27 t",
+      "image": "/bilder/oppmote/13643630784.jpg",
+      "url": "https://www.strava.com/activities/13643630784",
+      "stravaId": "13643630784"
+    },
+    {
+      "type": "ski",
+      "title": "Kjelsås Masters ⛷️❤️❤️❤️",
+      "date": "2025-02-11",
+      "detail": "2:04 t",
+      "image": "/bilder/oppmote/13602351463.jpg",
+      "url": "https://www.strava.com/activities/13602351463",
+      "stravaId": "13602351463"
+    },
+    {
+      "type": "ski",
+      "title": "Krokskogen 😍",
+      "date": "2025-02-09",
+      "detail": "4:04 t",
+      "image": "/bilder/oppmote/13582420802.jpg",
+      "url": "https://www.strava.com/activities/13582420802",
+      "stravaId": "13582420802"
+    },
+    {
+      "type": "ski",
+      "title": "Kjelsås Masters!  Jævlig gøy 👍❤️⛷️",
+      "date": "2025-02-04",
+      "detail": "1:53 t",
+      "image": "/bilder/oppmote/13540275980.jpg",
+      "url": "https://www.strava.com/activities/13540275980",
+      "stravaId": "13540275980"
+    },
+    {
+      "type": "ski",
+      "title": "Strykende føre, masse 🧇 og mer enn nok med bakker",
+      "date": "2025-02-02",
+      "detail": "6:17 t",
+      "image": "/bilder/oppmote/13519825551.jpg",
+      "url": "https://www.strava.com/activities/13519825551",
+      "stravaId": "13519825551"
+    },
+    {
+      "type": "ski",
+      "title": "Wyllermania",
+      "date": "2025-02-01",
+      "detail": "2:25 t",
+      "image": "/bilder/oppmote/13507868366.jpg",
+      "url": "https://www.strava.com/activities/13507868366",
+      "stravaId": "13507868366"
+    },
+    {
+      "type": "ski",
+      "title": "Nordmarkas fineste",
+      "date": "2025-01-25",
+      "detail": "4:50 t",
+      "image": "/bilder/oppmote/13449516399.jpg",
+      "url": "https://www.strava.com/activities/13449516399",
+      "stravaId": "13449516399"
+    },
+    {
+      "type": "ski",
+      "title": "GSing into the weekend",
+      "date": "2025-01-18",
+      "detail": "1:15 t",
+      "image": "/bilder/oppmote/13385327813.jpg",
+      "url": "https://www.strava.com/activities/13385327813",
+      "stravaId": "13385327813"
+    },
+    {
+      "type": "ski",
+      "title": "Mariholtet 😍",
+      "date": "2025-01-08",
+      "detail": "1:34 t",
+      "image": "/bilder/oppmote/13302275030.jpg",
+      "url": "https://www.strava.com/activities/13302275030",
+      "stravaId": "13302275030"
+    },
+    {
+      "type": "ski",
+      "title": "Grei start på dagen",
+      "date": "2025-01-08",
+      "detail": "35 min",
+      "image": "/bilder/oppmote/13296729770.jpg",
+      "url": "https://www.strava.com/activities/13296729770",
+      "stravaId": "13296729770"
+    },
+    {
+      "type": "ski",
+      "title": "Plogen rundt innom Rajebråtan 👌",
+      "date": "2025-01-05",
+      "detail": "2:48 t",
+      "image": "/bilder/oppmote/13272870135.jpg",
+      "url": "https://www.strava.com/activities/13272870135",
+      "stravaId": "13272870135"
+    },
+    {
+      "type": "ski",
+      "title": "Wyller med Vidar",
+      "date": "2025-01-04",
+      "detail": "1:25 t",
+      "image": "/bilder/oppmote/13261554461.jpg",
+      "url": "https://www.strava.com/activities/13261554461",
+      "stravaId": "13261554461"
+    },
+    {
+      "type": "ski",
+      "title": "Langtur fra Stryken til Skansebakken ☀️",
+      "date": "2025-01-02",
+      "detail": "7:01 t",
+      "image": "/bilder/oppmote/13248478566.jpg",
+      "url": "https://www.strava.com/activities/13248478566",
+      "stravaId": "13248478566"
+    }
+  ]
 }
