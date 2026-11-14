@@ -1,7 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+// E-postadressen settes sammen i nettleseren, så den er vanskeligere for spamroboter å høste.
+const [mailUser, mailDomain] = (SITE.email ?? '').split('@');
 
 const karriere = [
+  { år: '2026–', rolle: 'Prosjektleder, KI-Laben', sted: 'Cappelen Damm', tekst: 'Utforsker bruk av kunstig intelligens i forlagshuset.' },
   { år: '2023–2026', rolle: 'Strategidirektør', sted: 'Aschehoug', tekst: 'Strategi, forretningsutvikling og digital transformasjon, med vekt på kunstig intelligens. Styremedlem i Allvit og Bokbasen, styreleder i Fabel.' },
   { år: '2011–2023', rolle: 'Leder, Schibsted Ventures Norge', sted: 'Schibsted', tekst: 'Var med på å etablere og ledet et av landets fremste corporate venture-miljøer. Investerte i Tibber, Firi, Dintero, Homely, FundingPartner og mange flere.' },
   { år: '2007–2010', rolle: 'Daglig leder', sted: 'Nettby', tekst: 'Norges største sosiale nettverk, med nær en million medlemmer – før Facebook tok over.' },
@@ -17,9 +21,9 @@ const karriere = [
     <div class="prose">
       <blockquote>«Yrkesveien til mannen som sitter foran meg er som en komprimert idéhistorie over internetts utvikling.»<br /><span class="meta">— Morgenbladet</span></blockquote>
 
-      <p>Karrieren min startet på Origo og Sol.no i internettets første år. Siden har jeg ledet Dagbladet.no og Nettby, bygget opp Schibsted Ventures i Norge, og de siste årene vært strategidirektør i Aschehoug, med ansvar for hvordan et av landets eldste forlagshus skal møte kunstig intelligens.</p>
+      <p>Karrieren min startet på Origo og Sol.no i internettets første år. Siden har jeg ledet Dagbladet.no og Nettby, bygget opp Schibsted Ventures i Norge, og de siste årene vært strategidirektør i Aschehoug, med ansvar for hvordan et av landets eldste forlagshus skal møte kunstig intelligens. Nå er jeg engasjert som prosjektleder for KI-Laben i Cappelen Damm.</p>
 
-      <p>Bakgrunnen min er medievitenskap og filosofi fra NTNU og Universitetet i Oslo. Den kombinasjonen preger nok mye av det jeg skriver: Jeg er opptatt av hvordan teknologien virker, men like mye av hva den gjør med oss.</p>
+      <p>Bakgrunnen min er medievitenskap, filosofi og data for humanister fra NTNU og Universitetet i Oslo. Jeg er opptatt av hvordan teknologien virker og hva den gjør med oss.</p>
 
       <h2>Kort om veien hit</h2>
     </div>
@@ -39,8 +43,29 @@ const karriere = [
     <div class="prose">
       <p>Jeg holder jevnlig foredrag om kunstig intelligens, gründerskap og teknologiens kulturelle konsekvenser, senest på NHH Executive. Når jeg ikke leser eller skriver, er jeg ofte å finne på sykkelen, både i skogen og på landeveien.</p>
 
-      <p>Jeg er åpen for lederroller, styreverv og rådgivningsoppdrag, særlig der kapital, teknologiskift og gründerskap står øverst på agendaen.</p>
+      {(SITE.email || SITE.linkedin) && (
+        <>
+          <h2>Kontakt</h2>
+          <p>Vil du ta kontakt, for et foredrag, et samarbeid eller bare en prat, er du velkommen til å skrive.</p>
+          <ul class="contact">
+            {SITE.email && (
+              <li><span class="label">E-post</span> <a class="mail" data-u={mailUser} data-d={mailDomain} href="#">{mailUser} (at) {mailDomain}</a></li>
+            )}
+            {SITE.linkedin && (
+              <li><span class="label">LinkedIn</span> <a href={SITE.linkedin} rel="me noopener">{SITE.linkedin.replace(/^https?:\/\/(www\.)?/, '')}</a></li>
+            )}
+          </ul>
+        </>
+      )}
     </div>
+
+    <script>
+      document.querySelectorAll<HTMLAnchorElement>('a.mail').forEach((a) => {
+        const addr = `${a.dataset.u}@${a.dataset.d}`;
+        a.href = `mailto:${addr}`;
+        a.textContent = addr;
+      });
+    </script>
   </article>
 </Base>
 
@@ -52,5 +77,8 @@ const karriere = [
   .year { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); padding-top: 0.2rem; }
   .where { color: var(--muted); }
   .timeline p { margin: 0.2rem 0 0; font-size: 1rem; line-height: 1.55; }
+  .contact { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+  .contact li { margin: 0.35rem 0; }
+  .contact .label { display: inline-block; min-width: 5.5rem; font-family: var(--sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
   @media (max-width: 30rem) { .timeline li { grid-template-columns: 1fr; gap: 0.1rem; } }
 </style>

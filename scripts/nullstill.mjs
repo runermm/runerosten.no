@@ -96,6 +96,8 @@ set(/initial: '[^']*'/, "initial: 'D'");
 set(/tagline: \{[\s\S]*?\} as/, 'tagline: null as');
 set(/repo: '[^']*' as/, 'repo: null as');
 set(/bokelskere: '[^']*' as/, 'bokelskere: null as');
+set(/email: '[^']*' as/, 'email: null as');
+set(/linkedin: '[^']*' as/, 'linkedin: null as');
 set(/kitFormId: '[^']*'/, "kitFormId: ''");
 set(/(LESELISTE = \{\s*collectionId: )\d+/, '$10');
 set(/(PODKAST = \{\s*collectionId: )\d+/, '$10');

@@ -18,6 +18,8 @@ export const SITE = {
   } as { quote: string; source: string } | null,
   repo: 'https://github.com/runermm/runerosten.no' as string | null, // lenke til kildekoden i bunnen, eller null
   bokelskere: 'https://bokelskere.no/profil/rune' as string | null, // profilen boksamlingen er hentet fra, eller null
+  email: 'kontakt@runerosten.no' as string | null, // kontaktadresse på Om-siden, eller null
+  linkedin: 'https://www.linkedin.com/in/runerosten' as string | null, // LinkedIn-profil, eller null
 };
 
 // Nyhetsbrev via Kit (https://kit.com).
