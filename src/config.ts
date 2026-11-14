@@ -28,7 +28,7 @@ export const NEWSLETTER = {
   kitFormId: '10182455',
   // Vises øverst når leseren kommer tilbake fra bekreftelsen (sett «https://dittdomene/?confirm» som
   // adressen etter bekreftelse i Kit).
-  confirmMessage: 'Takk for at du følger meg! Du får beskjed når det publiseres nytt innhold. Hold ut!',
+  confirmMessage: 'Takk for at du følger meg! Nyhetsbrevet kommer hver fredag morgen. Hold ut!',
 };
 
 // Leseliste fra Raindrop.io, samlingen «Leseliste».
