@@ -5,6 +5,7 @@ bookAuthor: Kevin Roose
 genre: Sakprosa
 description: En velskrevet, pedagogisk og innsiktsfull bok om kunstig intelligens, skrevet av en dreven journalist tett på miljøet. En bok selv ikke den fremste språkmodellen kunne skrevet bedre. Det er hva Kevin Roose leverer med The AGI Chronicles.
 date: 2026-11-03
+forsideplass: 2
 tags: [ki, teknologi]
 bokelskere: https://bokelskere.no/bokomtaler/400192
 image: /bilder/anmeldelser/the-agi-chronicles.jpg

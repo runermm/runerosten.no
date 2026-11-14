@@ -16,6 +16,7 @@ const artikler = defineCollection({
     imageAlt: z.string().optional(),
     imageCredit: z.string().optional(),
     imagePortrait: z.boolean().optional(), // stående bilde
+    forsideplass: z.number().int().min(1).optional(), // fest innlegget på denne plassen i forsidefeeden
     draft: z.boolean().default(false),
   }),
 });
@@ -37,6 +38,7 @@ const anmeldelser = defineCollection({
     bokelskere: z.string().url().optional(), // lenke til omtalen på bokelskere.no
     linkedin: z.string().url().optional(), // lenke til originalinnlegget på LinkedIn
     tags: z.array(z.string()).default([]),
+    forsideplass: z.number().int().min(1).optional(), // fest innlegget på denne plassen i forsidefeeden
     draft: z.boolean().default(false),
   }),
 });
