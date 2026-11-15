@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import BookCover from '../components/BookCover.astro';
-import { boker, STATUS_LABEL, type Status } from '../bokhylle';
+import { boker } from '../bokhylle';
 import { getAnmeldelser } from '../lib';
 import { SITE } from '../config';
 
@@ -9,8 +9,6 @@ const anmeldelser = await getAnmeldelser();
 const norm = (s: string) => s.toLowerCase().trim();
 const review = (title: string) => anmeldelser.find((a) => norm(a.data.title) === norm(title));
 
-const statuses: Status[] = ['leser', 'lest', 'skal-lese'];
-const count = (s: Status) => boker.filter((b) => b.status === s).length;
 const years = [...new Set(boker.map((b) => b.year).filter(Boolean) as number[])].sort((a, b) => b - a);
 ---
 <Base title="Boksamling" description={`${boker.length} bøker jeg har lest, leser og skal lese.`}>
@@ -21,12 +19,6 @@ const years = [...new Set(boker.map((b) => b.year).filter(Boolean) as number[])]
     </header>
 
     <div class="controls">
-      <div class="filters" role="group" aria-label="Filtrer på lesestatus">
-        <button type="button" data-status="alle" aria-pressed="true">Alle <span>{boker.length}</span></button>
-        {statuses.map((s) => (
-          <button type="button" data-status={s} aria-pressed="false">{STATUS_LABEL[s]} <span>{count(s)}</span></button>
-        ))}
-      </div>
       <div class="row">
         <label class="sr-only" for="sok">Søk i boksamlingen</label>
         <input id="sok" type="search" placeholder="Søk etter tittel eller forfatter …" autocomplete="off" />
@@ -43,7 +35,7 @@ const years = [...new Set(boker.map((b) => b.year).filter(Boolean) as number[])]
       {boker.map((b) => {
         const r = review(b.title);
         return (
-          <li data-status={b.status} data-year={b.year ?? ''} data-q={norm(`${b.title} ${b.author ?? ''}`)}>
+          <li data-year={b.year ?? ''} data-q={norm(`${b.title} ${b.author ?? ''}`)}>
             <a href={r ? `/anmeldelser/${r.id}/` : undefined} class:list={['book', { reviewed: r }]}
               title={`${b.title}${b.author ? ' – ' + b.author : ''}`}>
               <BookCover bok={b} />
@@ -64,13 +56,7 @@ const years = [...new Set(boker.map((b) => b.year).filter(Boolean) as number[])]
 <style>
   .intro { max-width: var(--measure); }
   .controls { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 1rem 0 0.5rem; margin: 0.5rem 0 1.5rem; border-bottom: 1px solid var(--border); }
-  .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .filters button { font-family: var(--sans); font-size: 0.9rem; cursor: pointer; padding: 0.4rem 0.95rem; border-radius: 999px;
-    border: 1px solid var(--border); background: transparent; color: var(--text); }
-  .filters button span { color: var(--muted); margin-left: 0.25rem; }
-  .filters button[aria-pressed='true'] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
-  .filters button[aria-pressed='true'] span { color: inherit; opacity: 0.8; }
-  .row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+  .row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
   input, select { font-family: var(--sans); font-size: 1rem; padding: 0.5rem 0.8rem; border: 1px solid var(--border);
     border-radius: 6px; background: var(--surface); color: var(--text); }
   input { flex: 1 1 16rem; }
@@ -96,26 +82,19 @@ const years = [...new Set(boker.map((b) => b.year).filter(Boolean) as number[])]
 
 <script>
   const items = [...document.querySelectorAll<HTMLLIElement>('.shelf li')];
-  const buttons = document.querySelectorAll<HTMLButtonElement>('.filters button');
   const search = document.getElementById('sok') as HTMLInputElement;
   const year = document.getElementById('ar') as HTMLSelectElement;
   const treff = document.getElementById('treff')!;
-  let status = 'alle';
   function apply() {
     const q = search.value.toLowerCase().trim();
     let n = 0;
     for (const li of items) {
-      const show = (status === 'alle' || li.dataset.status === status) && (!year.value || li.dataset.year === year.value) && (!q || li.dataset.q!.includes(q));
+      const show = (!year.value || li.dataset.year === year.value) && (!q || li.dataset.q!.includes(q));
       li.hidden = !show;
       if (show) n++;
     }
     treff.textContent = `${n} ${n === 1 ? 'bok' : 'bøker'}`;
   }
-  buttons.forEach((b) => b.addEventListener('click', () => {
-    status = b.dataset.status!;
-    buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-    apply();
-  }));
   search.addEventListener('input', apply);
   year.addEventListener('change', apply);
   apply();

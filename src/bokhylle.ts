@@ -1,7 +1,7 @@
 // Boksamlingen fra bokelskere.no (src/data/bokhylle.json).
 import data from './data/bokhylle.json';
 
-export type Status = 'leser' | 'lest' | 'skal-lese' | 'oppslagsverk';
+export type Status = 'leser' | 'lest' | 'skal-lese' | 'oppslagsverk' | 'avbrutt' | 'samling';
 export interface Bok {
   title: string;
   author?: string;
@@ -17,6 +17,8 @@ export const STATUS_LABEL: Record<Status, string> = {
   lest: 'Lest',
   'skal-lese': 'Skal lese',
   oppslagsverk: 'Oppslagsverk',
+  avbrutt: 'Avbrøt',
+  samling: 'I samlingen', // bøker uten lesestatus på bokelskere
 };
 
 export const boker = (data.books as Bok[]).slice().sort((a, b) => a.order - b.order);
