@@ -41,13 +41,38 @@ const path = Astro.url.pathname;
     <header class="site-header">
       <div class="wide bar">
         <a href="/" class="brand">{SITE.title}</a>
-        <nav aria-label="Hovedmeny">
+        <nav class="nav-pc" aria-label="Hovedmeny">
           {NAV.map((item) => (
             <a href={item.href} aria-current={path.startsWith(item.href) ? 'page' : undefined}>{item.label}</a>
           ))}
         </nav>
+        <details class="nav-mob">
+          <summary aria-label="Meny"><span>Meny</span><i aria-hidden="true"></i></summary>
+          <nav aria-label="Hovedmeny">
+            {NAV.map((item) => (
+              <a href={item.href} aria-current={path.startsWith(item.href) ? 'page' : undefined}>{item.label}</a>
+            ))}
+          </nav>
+        </details>
       </div>
     </header>
+    <script is:inline>
+      // Vis hele menyen hvis den får plass ved siden av navnet, ellers hamburgermeny.
+      (() => {
+        const h = document.querySelector('.site-header');
+        const bar = h.querySelector('.bar'), brand = h.querySelector('.brand'), nav = h.querySelector('.nav-pc');
+        const fit = () => {
+          h.dataset.meny = 'inline';
+          const cs = getComputedStyle(bar);
+          const plass = bar.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+          const trengs = brand.offsetWidth + parseFloat(cs.columnGap || 24) + nav.scrollWidth;
+          h.dataset.meny = trengs <= plass ? 'inline' : 'burger';
+        };
+        fit();
+        addEventListener('resize', fit);
+        document.fonts?.ready.then(fit);
+      })();
+    </script>
     <div class="tagline" data-tagline hidden={!tagline}>
       <p class="wide">{tagline && <>«{tagline.quote}» <span>{tagline.source}</span></>}</p>
     </div>
@@ -87,14 +112,38 @@ const path = Astro.url.pathname;
   @media (prefers-reduced-motion: reduce) { .tagline { transition: none; } }
   .tagline p { margin: 0; padding-block: 0.55rem; font-style: italic; font-size: 0.95rem; line-height: 1.45; color: var(--muted); text-align: center; }
   .tagline span { font-style: normal; font-family: var(--sans); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; margin-left: 0.35rem; }
-  .bar {
-    display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem;
-    align-items: center; justify-content: space-between; padding-block: 1.1rem;
+  /* Slank meny: én linje. PC: små versaler til høyre. Mobil: «Meny» som folder ut en liste. */
+  .site-header { position: relative; }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 0.8rem; }
+  .brand { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em; color: var(--text); text-decoration: none; white-space: nowrap; }
+  .nav-pc { display: flex; gap: 1.6rem; font-family: var(--sans); font-size: 0.72rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.1em; }
+  .nav-pc a { color: var(--muted); text-decoration: none; padding-block: 0.3rem; border-bottom: 1px solid transparent;
+    transition: color 0.15s, border-color 0.15s; }
+  .nav-pc a:hover { color: var(--text); }
+  .nav-pc a[aria-current='page'] { color: var(--text); border-bottom-color: var(--accent); }
+  /* Får menyen plass på én linje, vises den. Hvis ikke: hamburgermeny. Skriptet under måler og setter data-meny. */
+  .nav-mob { display: none; }
+  .site-header[data-meny='burger'] .nav-pc { display: none; }
+  .site-header[data-meny='burger'] .nav-mob { display: block; }
+  @media (max-width: 40rem) {
+    .site-header:not([data-meny]) .nav-pc { display: none; }
+    .site-header:not([data-meny]) .nav-mob { display: block; }
   }
-  .brand { font-size: 1.35rem; font-weight: 600; color: var(--text); text-decoration: none; }
-  nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.1rem; font-family: var(--sans); font-size: 0.95rem; }
-  nav a { color: var(--muted); text-decoration: none; }
-  nav a:hover, nav a[aria-current='page'] { color: var(--accent); }
+  .nav-pc { white-space: nowrap; }
+    .nav-mob summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+    .nav-mob summary::-webkit-details-marker { display: none; }
+    .nav-mob summary i { position: relative; width: 14px; height: 8px; border-block: 1.5px solid currentColor; transition: transform 0.2s; }
+    .nav-mob[open] summary { color: var(--text); }
+    .nav-mob[open] summary i { transform: rotate(90deg); }
+    .nav-mob nav { position: absolute; left: 0; right: 0; top: 100%; z-index: 10; background: var(--bg);
+      border-bottom: 1px solid var(--border); box-shadow: 0 8px 16px rgb(0 0 0 / 0.06);
+      display: flex; flex-direction: column; padding: 0.25rem var(--gutter, 1rem) 0.75rem; }
+    .nav-mob nav a { font-family: var(--serif, inherit); font-size: 1.15rem; color: var(--text); text-decoration: none;
+      padding: 0.6rem 0; border-top: 1px solid var(--border); }
+    .nav-mob nav a:first-child { border-top: 0; }
+    .nav-mob nav a[aria-current='page'] { color: var(--accent); }
   main { padding-block: 2.5rem 4rem; }
   .site-footer { border-top: 1px solid var(--border); padding-block: 1.5rem; }
   .site-footer .wide {
