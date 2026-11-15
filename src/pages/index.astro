@@ -48,7 +48,11 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
 <Base tagline={SITE.tagline ?? undefined}>
   <div class="wrap">
 
-    <div class="feed"><PostList items={del[0]} /></div>
+    <NewsletterForm kort="mobil" />
+
+    <div class="feed forst"><PostList items={del[0]} /></div>
+
+    <NewsletterForm kort="pc" />
 
     {naa.length > 0 && (
       <section class="block">
@@ -102,7 +106,7 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
 
 <style>
   .feed { margin-top: 1.5rem; border-top: 1px solid var(--border); }
-  .feed:first-child { margin-top: 0; border-top: 0; }
+  .feed:first-child, :global(.kort-mobil) ~ .feed.forst { margin-top: 0; border-top: 0; }
   .block { margin: 2.5rem 0 1rem; }
   .block .section-head { margin-top: 0; }
   .feed.archive { margin-top: 0; border-top: 0; }

@@ -12,10 +12,8 @@ export const SITE = {
   lang: 'nb',
   initial: 'R', // bokstaven i favikonet (ikonet i nettleserfanen)
   // Tynn sitatlinje under menyen på forsiden. Sett til null for å skjule den.
-  tagline: {
-    quote: 'Yrkesveien til mannen som sitter foran meg er som en komprimert idéhistorie over internetts utvikling.',
-    source: 'Morgenbladet',
-  } as { quote: string; source: string } | null,
+  // Eksempel: { quote: 'Yrkesveien til mannen som sitter foran meg er …', source: 'Morgenbladet' }
+  tagline: null as { quote: string; source: string } | null,
   repo: 'https://github.com/runermm/runerosten.no' as string | null, // lenke til kildekoden i bunnen, eller null
   bokelskere: 'https://bokelskere.no/profil/rune' as string | null, // profilen boksamlingen er hentet fra, eller null
   email: 'kontakt@runerosten.no' as string | null, // kontaktadresse på Om-siden, eller null

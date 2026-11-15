@@ -2,6 +2,15 @@
   "_info": "Oppmøte ute og inne. Ute (Strava): type sykkel | løping | tur | ski | svømming | trening, url = lenke til økta. Inne: konsert | kino | teater | foredrag | annet. Felter: title, date (ÅÅÅÅ-MM-DD), detail (kort), image, url, note, venue, city. Vises kronologisk. Tom liste = seksjonen skjules.",
   "events": [
     {
+      "type": "ski",
+      "title": "Sesongåpning 🍾",
+      "date": "2026-11-15",
+      "detail": "2:23 t",
+      "image": "/bilder/oppmote/20997559107.jpg",
+      "url": "https://www.strava.com/activities/20997559107",
+      "stravaId": "20997559107"
+    },
+    {
       "type": "tur",
       "title": "Dogwalking",
       "date": "2026-11-08",
