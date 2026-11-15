@@ -63,7 +63,7 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
     {leseliste.length > 0 && (
       <section class="block">
         <div class="section-head"><h2>Fra leselisten</h2><a href="/leseliste/">Hele leselisten →</a></div>
-        <div class="stack">{leseliste.map((item) => <LeselisteCard item={item} />)}</div>
+        <div class="stack">{leseliste.map((item) => <LeselisteCard item={item} kompakt />)}</div>
       </section>
     )}
 
