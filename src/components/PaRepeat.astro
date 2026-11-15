@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 import data from '../data/musikk.json';
 interface Item { id?: string; type?: 'album' | 'podcast'; title: string; artist: string; cover: string; url?: string; note?: string }
 interface Props { limit?: number; podcasts?: number }
-const { limit = 6, podcasts = 3 } = Astro.props;
+const { limit = 4, podcasts = 3 } = Astro.props;
 // Nyeste podkaster fra Raindrop («På øret») først, deretter album fra Tidal.
 const pods: Item[] = (await getCollection('podkaster'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -49,10 +49,7 @@ const albums = (data.albums as Item[]).slice(0, limit);
 </section>
 
 <style>
-  .albums { list-style: none; padding: 0; margin: 1.25rem 0 0; display: grid; gap: 1.1rem; grid-template-columns: repeat(3, 1fr); }
-  @media (min-width: 40rem) { .albums { grid-template-columns: repeat(6, 1fr); } }
-  /* På smal skjerm: bare én rad med album, så seksjonen ikke blir for lang. */
-  @media (max-width: 39.99rem) { .albums li:nth-child(n+4) { display: none; } }
+  .albums { list-style: none; padding: 0; margin: 1.25rem 0 0; display: grid; gap: 1.1rem; grid-template-columns: repeat(4, 1fr); }
   .album { position: relative; display: block; width: 100%; padding: 0; border: 0; cursor: pointer; background: none;
     border-radius: 6px; overflow: hidden; box-shadow: 0 10px 22px -12px rgb(0 0 0 / 0.55); }
   .album img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; transition: transform 0.25s ease; }

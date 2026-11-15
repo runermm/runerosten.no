@@ -17,7 +17,7 @@ import { getFeed } from '../feed';
 const innlegg = await getFeed();
 
 // Feeden deles opp med faste seksjoner imellom: 3 innlegg, Leser nå, 3 innlegg, På øret …, 3 innlegg,
-// Oppmøte, Fra leselisten, noen få fra arkivet (med lenke til hele arkivet) og nyhetsbrevet nederst.
+// Fra leselisten, Oppmøte, noen få fra arkivet (med lenke til hele arkivet) og nyhetsbrevet nederst.
 const ARKIV_PA_FORSIDEN = 4;
 const del = [innlegg.slice(0, 3), innlegg.slice(3, 6), innlegg.slice(6, 9), innlegg.slice(9, 9 + ARKIV_PA_FORSIDEN)];
 const leseliste = (await getLeseliste()).slice(0, 3);
@@ -59,17 +59,18 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
 
     {del[2].length > 0 && <div class="feed"><PostList items={del[2]} /></div>}
 
-    {harOppmote && (
-      <section class="block">
-        <div class="section-head"><h2>Oppmøte ute og inne</h2></div>
-        <Oppmote />
-      </section>
-    )}
 
     {leseliste.length > 0 && (
       <section class="block">
         <div class="section-head"><h2>Fra leselisten</h2><a href="/leseliste/">Hele leselisten →</a></div>
         <div class="stack">{leseliste.map((item) => <LeselisteCard item={item} />)}</div>
+      </section>
+    )}
+
+    {harOppmote && (
+      <section class="block">
+        <div class="section-head"><h2>Oppmøte ute og inne</h2></div>
+        <Oppmote />
       </section>
     )}
 
