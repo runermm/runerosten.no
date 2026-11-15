@@ -1,0 +1,21 @@
+---
+// Arkivet: alle synspunkter og bokmeldinger, nyeste først, gruppert på år.
+import Base from '../layouts/Base.astro';
+import PostList from '../components/PostList.astro';
+import { getFeed } from '../feed';
+
+const innlegg = await getFeed({ festet: false });
+const ar = [...new Set(innlegg.map((p) => p.date.getFullYear()))].sort((a, b) => b - a);
+---
+<Base title="Arkiv" description="Alle synspunkter og bokmeldinger.">
+  <div class="wrap">
+    <h1>Arkiv</h1>
+    <p class="lead">{innlegg.length} synspunkter og bokmeldinger, nyeste først.</p>
+    {ar.map((y) => (
+      <section>
+        <div class="section-head"><h2>{y}</h2></div>
+        <PostList items={innlegg.filter((p) => p.date.getFullYear() === y)} />
+      </section>
+    ))}
+  </div>
+</Base>

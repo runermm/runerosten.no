@@ -1,5 +1,4 @@
 ---
-import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import PostList from '../components/PostList.astro';
 import NewsletterForm from '../components/NewsletterForm.astro';
@@ -12,34 +11,15 @@ import { SITE } from '../config';
 import oppmote from '../data/oppmote.json';
 import musikk from '../data/musikk.json';
 import { PODKAST } from '../config';
-import { getArtikler, getAnmeldelser, getLeseliste, reviewListTitle, reviewImage } from '../lib';
+import { getLeseliste } from '../lib';
+import { getFeed } from '../feed';
 
-// Én felles, kronologisk feed med synspunkter (artikler) og bokmeldinger (anmeldelser).
-const SYNSPUNKT = { label: 'Synspunkt', href: '/artikler/' };
-const BOKMELDING = { label: 'Bokmelding', href: '/anmeldelser/' };
-const [artikler, anmeldelser] = await Promise.all([getArtikler(), getAnmeldelser()]);
-const innlegg = await Promise.all([
-  ...artikler.map(async (a) => ({
-    href: `/artikler/${a.id}/`, title: a.data.title, description: a.data.description, date: a.data.date, forsideplass: a.data.forsideplass,
-    image: a.data.image, imageWide: !a.data.imagePortrait,
-    tag: SYNSPUNKT, Content: (await render(a)).Content,
-  })),
-  ...anmeldelser.map(async (b) => ({
-    href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data), image: reviewImage(b.data),
-    description: b.data.description, date: b.data.date, rating: b.data.rating, forsideplass: b.data.forsideplass,
-    tag: BOKMELDING, Content: (await render(b)).Content,
-  })),
-]);
-innlegg.sort((a, b) => b.date.valueOf() - a.date.valueOf());
-// Innlegg med «forsideplass» i frontmatter festes på den plassen (1 = øverst).
-innlegg.filter((p) => p.forsideplass).sort((a, b) => a.forsideplass! - b.forsideplass!).forEach((p) => {
-  innlegg.splice(innlegg.indexOf(p), 1);
-  innlegg.splice(p.forsideplass! - 1, 0, p);
-});
+const innlegg = await getFeed();
 
-// Feeden deles opp med faste seksjoner imellom: 3 innlegg, Leser nå, 3 innlegg, På øret …, nyhetsbrev,
-// 3 innlegg, Fra leselisten, Fra arkivet, og Oppmøte helt nederst.
-const del = [innlegg.slice(0, 3), innlegg.slice(3, 6), innlegg.slice(6, 9), innlegg.slice(9)];
+// Feeden deles opp med faste seksjoner imellom: 3 innlegg, Leser nå, 3 innlegg, På øret …, 3 innlegg,
+// Oppmøte, Fra leselisten, noen få fra arkivet (med lenke til hele arkivet) og nyhetsbrevet nederst.
+const ARKIV_PA_FORSIDEN = 4;
+const del = [innlegg.slice(0, 3), innlegg.slice(3, 6), innlegg.slice(6, 9), innlegg.slice(9, 9 + ARKIV_PA_FORSIDEN)];
 const leseliste = (await getLeseliste()).slice(0, 3);
 const naa = leserNa(6);
 const harOppmote = oppmote.events.length > 0;
@@ -77,9 +57,14 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
       </section>
     )}
 
-    <NewsletterForm />
-
     {del[2].length > 0 && <div class="feed"><PostList items={del[2]} /></div>}
+
+    {harOppmote && (
+      <section class="block">
+        <div class="section-head"><h2>Oppmøte ute og inne</h2></div>
+        <Oppmote />
+      </section>
+    )}
 
     {leseliste.length > 0 && (
       <section class="block">
@@ -90,17 +75,13 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
 
     {del[3].length > 0 && (
       <section class="block">
-        <div class="section-head"><h2>Fra arkivet</h2></div>
+        <div class="section-head"><h2>Fra arkivet</h2><a href="/arkiv/">Hele arkivet →</a></div>
         <div class="feed archive"><PostList items={del[3]} /></div>
       </section>
     )}
 
-    {harOppmote && (
-      <section class="block">
-        <div class="section-head"><h2>Oppmøte ute og inne</h2></div>
-        <Oppmote />
-      </section>
-    )}
+    <NewsletterForm />
+
   </div>
 </Base>
 
