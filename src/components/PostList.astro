@@ -38,7 +38,8 @@ const { items, readMore = false } = Astro.props;
             {item.tag && <a href={item.tag.href} class="tag-link">{item.tag.label}</a>}
             {item.Content ? (
               <button type="button" class="more-btn" data-expand aria-expanded="false" aria-controls={`mer-${i}-${item.href}`}>
-                Les mer <span aria-hidden="true">↓</span>
+                <span class="lukket">Les mer <span aria-hidden="true">↓</span></span>
+                <span class="apen">Vis mindre <span aria-hidden="true">↑</span></span>
               </button>
             ) : readMore && (
               <a href={item.href} class="more-btn">Les mer <span aria-hidden="true">→</span></a>
@@ -89,6 +90,8 @@ const { items, readMore = false } = Astro.props;
   }
   .tag-link:hover { color: var(--accent); border-color: var(--accent); }
   .more-btn:hover { text-decoration: underline; text-underline-offset: 0.25em; }
+  .more-btn .apen, .more-btn[aria-expanded='true'] .lukket { display: none; }
+  .more-btn[aria-expanded='true'] .apen { display: inline; }
   .ghost { visibility: hidden; display: inline-flex; gap: 0.4rem 1rem; align-items: center; }
   .expanded { margin-top: 1rem; padding-top: 0.25rem; border-top: 1px dashed var(--border); }
   .expanded :global(.prose) { font-size: 1.1rem; }
@@ -102,19 +105,18 @@ const { items, readMore = false } = Astro.props;
 </style>
 
 <script>
-  // «Les mer» viser hele teksten på samme side; «Vis mindre» lukker og går tilbake til tittelen.
+  // «Les mer» viser hele teksten på samme side og blir til «Vis mindre», så man raskt kan ombestemme seg.
+  // Nederst i teksten er det også en «Vis mindre», som lukker og går tilbake til tittelen.
   document.querySelectorAll<HTMLButtonElement>('[data-expand]').forEach((btn) => {
     const panel = document.getElementById(btn.getAttribute('aria-controls')!)!;
     const close = panel.querySelector<HTMLButtonElement>('[data-collapse]')!;
-    btn.addEventListener('click', () => {
-      panel.hidden = false;
-      btn.hidden = true;
-      btn.setAttribute('aria-expanded', 'true');
-    });
+    const sett = (apen: boolean) => {
+      panel.hidden = !apen;
+      btn.setAttribute('aria-expanded', String(apen));
+    };
+    btn.addEventListener('click', () => sett(btn.getAttribute('aria-expanded') !== 'true'));
     close.addEventListener('click', () => {
-      panel.hidden = true;
-      btn.hidden = false;
-      btn.setAttribute('aria-expanded', 'false');
+      sett(false);
       btn.closest('li')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       btn.focus({ preventScroll: true });
     });
