@@ -8,11 +8,11 @@ import PaRepeat from '../components/PaRepeat.astro';
 import Oppmote from '../components/Oppmote.astro';
 import { leserNa } from '../bokhylle';
 import { SITE } from '../config';
-import oppmote from '../data/oppmote.json';
 import musikk from '../data/musikk.json';
 import { PODKAST } from '../config';
 import { getLeseliste } from '../lib';
 import { getFeed } from '../feed';
+import { getOppmote } from '../oppmote';
 
 const innlegg = await getFeed();
 
@@ -22,7 +22,7 @@ const ARKIV_PA_FORSIDEN = 4;
 const del = [innlegg.slice(0, 3), innlegg.slice(3, 6), innlegg.slice(6, 9), innlegg.slice(9, 9 + ARKIV_PA_FORSIDEN)];
 const leseliste = (await getLeseliste()).slice(0, 3);
 const naa = leserNa(6);
-const harOppmote = oppmote.events.length > 0;
+const harOppmote = (await getOppmote()).length > 0;
 const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
 ---
 <Base tagline={SITE.tagline ?? undefined}>

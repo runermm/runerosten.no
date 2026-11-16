@@ -1,26 +1,11 @@
 ---
-// «Oppmøte ute og inne»: økter fra Strava (ute) og arrangementer som konserter og kino (inne),
-// vist kronologisk om hverandre (src/data/oppmote.json).
-import data from '../data/oppmote.json';
+// «Oppmøte ute og inne»: økter fra Strava (ute) og arrangementer fra Raindrop (inne), kronologisk (se src/oppmote.ts).
+import { getOppmote, UTE, type Event } from '../oppmote';
 import { formatDate } from '../lib';
 
-type Ute = 'sykkel' | 'løping' | 'tur' | 'ski' | 'svømming' | 'trening';
-type Inne = 'konsert' | 'kino' | 'teater' | 'foredrag' | 'annet';
-export interface Event {
-  type: Ute | Inne;
-  detail?: string; // kort og gjerne kryptisk, f.eks. «87 km» eller «4:12 t»
-  title: string; // f.eks. artist, film eller forestilling
-  venue?: string; // sted
-  city?: string;
-  date: string; // ÅÅÅÅ-MM-DD
-  note?: string; // en setning fra deg
-  image?: string;
-  url?: string;
-}
 interface Props { limit?: number }
 const { limit = 4 } = Astro.props;
-const events = (data.events as Event[]).slice().sort((a, b) => b.date.localeCompare(a.date)).slice(0, limit || undefined);
-const UTE = ['sykkel', 'løping', 'tur', 'ski', 'svømming', 'trening'];
+const events = (await getOppmote()).slice(0, limit || undefined);
 const LABEL: Record<Event['type'], string> = {
   sykkel: 'Sykkel', løping: 'Løping', tur: 'Tur', ski: 'Ski', svømming: 'Svømming', trening: 'Trening',
   konsert: 'Konsert', kino: 'Kino', teater: 'Teater', foredrag: 'Foredrag', annet: 'Arrangement',

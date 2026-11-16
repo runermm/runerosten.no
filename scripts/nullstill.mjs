@@ -102,6 +102,7 @@ set(/profileEmbed: `[^`]*`/, 'profileEmbed: ``');
 set(/kitFormId: '[^']*'/, "kitFormId: ''");
 set(/(LESELISTE = \{\s*collectionId: )\d+/, '$10');
 set(/(PODKAST = \{\s*collectionId: )\d+/, '$10');
+set(/(OPPMOTE = \{\s*inneCollectionId: )\d+/, '$10');
 fs.writeFileSync(cfgPath, cfg);
 
 // Videresendinger for sider som ikke lenger finnes

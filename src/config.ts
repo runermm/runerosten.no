@@ -42,6 +42,12 @@ export const PODKAST = {
   collectionId: 77181505, // samlingen «podcast»
 };
 
+// Oppmøte «inne» (konserter, kino, foredrag …) fra en egen Raindrop-samling. 0 = av.
+// Typen settes med en tagg i Raindrop (konsert, kino, teater, foredrag), ellers «Arrangement».
+export const OPPMOTE = {
+  inneCollectionId: 77274653, // samlingen «Oppmøte inne»
+};
+
 // Strava: innbyggingskoden for profilkortet («Share your Activities» på profilen på strava.com).
 // Lim inn hele koden mellom backtickene, eller la den stå tom for å skjule kortet.
 export const STRAVA = {

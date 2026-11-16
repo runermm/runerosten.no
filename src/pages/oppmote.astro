@@ -1,10 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
 import Oppmote from '../components/Oppmote.astro';
-import data from '../data/oppmote.json';
+import { getOppmote } from '../oppmote';
 import { STRAVA } from '../config';
 
-const antall = data.events.length;
+const antall = (await getOppmote()).length;
 ---
 <Base title="Oppmøte ute og inne" description="Ute på tur og inne på arrangementer.">
   <div class="wide">
