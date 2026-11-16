@@ -12,13 +12,13 @@ const inputId = kort ? `nl-email-${kort}` : 'nl-email';
   {!kort && (
     <>
       <h2>Få nye tekster på e-post</h2>
-      <p>En gang i måneden: nye synspunkter, bokmeldinger og det jeg har lest og hørt på. Ingen spam, og du kan melde deg av når som helst.</p>
+      <p>Hver fredag morgen: nye synspunkter, bokmeldinger og det jeg har lest og hørt på. Ingen spam, og du kan melde deg av når som helst.</p>
     </>
   )}
   {formId && kort ? (
     <form action={action} method="post" data-kit-form>
       <div class="pille">
-        <label for={inputId} class="kort-t">Månedlig nyhetsbrev</label>
+        <label for={inputId} class="kort-t">Ukentlig nyhetsbrev</label>
         <input id={inputId} type="email" name="email_address" required placeholder="din e-post" autocomplete="email" />
         <button type="submit" aria-label="Meld meg på">Meld på</button>
       </div>
