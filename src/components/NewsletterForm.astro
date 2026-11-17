@@ -1,7 +1,7 @@
 ---
 import { NEWSLETTER } from '../config';
-// kort = kompakt variant: «mobil» eller «pc» (forsiden, vises bare på den skjermtypen), «tekst» (inne i en artikkel)
-interface Props { compact?: boolean; kort?: 'mobil' | 'pc' | 'tekst' }
+// kort = kompakt variant: «topp» (øverst på forsiden), «mobil» eller «pc» (vises bare på den skjermtypen), «tekst» (inne i en artikkel)
+interface Props { compact?: boolean; kort?: 'topp' | 'mobil' | 'pc' | 'tekst' }
 const { compact = false, kort } = Astro.props;
 const formId = NEWSLETTER.kitFormId;
 const action = `https://app.kit.com/forms/${formId}/subscriptions`;
