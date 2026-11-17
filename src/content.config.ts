@@ -73,4 +73,17 @@ const podkaster = defineCollection({
   }),
 });
 
-export const collections = { artikler, anmeldelser, leseliste, podkaster };
+// Nyhetsbrevet: hver utgave som egen side på /nyhetsbrev/<dato>/ (filnavn: ÅÅÅÅ-MM-DD.md, utsendelsesdatoen).
+const nyhetsbrev = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/nyhetsbrev' }),
+  schema: z.object({
+    nr: z.number().int().min(1), // utgavenummer: 1, 2, 3 …
+    title: z.string(), // tittelen; emnefelt og overskrift blir «Rune #<nr>: <title>»
+    description: z.string().optional(), // forhåndstekst / kort ingress
+    date: z.coerce.date(), // utsendelsesdato
+    image: z.string().optional(), // bilde ved deling
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { artikler, anmeldelser, leseliste, podkaster, nyhetsbrev };

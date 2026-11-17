@@ -1,0 +1,39 @@
+---
+// Én utgave av nyhetsbrevet som nettside, med påmelding nederst og lenker til forrige/neste utgave.
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
+import { getNyhetsbrev, formatDate, utgaveNavn } from '../../lib';
+
+export async function getStaticPaths() {
+  const utgaver = await getNyhetsbrev();
+  return utgaver.map((entry, i) => ({
+    params: { slug: entry.id },
+    props: { entry, nyere: utgaver[i - 1], eldre: utgaver[i + 1] },
+  }));
+}
+const { entry, nyere, eldre } = Astro.props;
+const { Content } = await render(entry);
+const { nr, title, description, date, image, draft } = entry.data;
+---
+<Base title={utgaveNavn(nr, title)} description={description ?? title} type="article" image={image}>
+  <article class="wrap">
+    <p class="meta">
+      <a href="/nyhetsbrev/">Nyhetsbrev</a> · <time datetime={date.toISOString()}>{formatDate(date)}</time>
+      {draft && <> · <strong>UTKAST</strong></>}
+    </p>
+    <h1>{utgaveNavn(nr, title)}</h1>
+    {description && <p class="lead">{description}</p>}
+    <div class="prose"><Content /></div>
+    <NewsletterForm />
+    <nav class="meta naboer" aria-label="Andre utgaver">
+      {eldre ? <a href={`/nyhetsbrev/${eldre.id}/`}>← Rune #{eldre.data.nr}</a> : <span></span>}
+      <a href="/nyhetsbrev/">Alle utgaver</a>
+      {nyere ? <a href={`/nyhetsbrev/${nyere.id}/`}>Rune #{nyere.data.nr} →</a> : <span></span>}
+    </nav>
+  </article>
+</Base>
+
+<style>
+  .naboer { display: flex; justify-content: space-between; gap: 1rem; margin-top: 1rem; }
+</style>

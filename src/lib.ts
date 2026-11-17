@@ -20,6 +20,13 @@ export const formatDate = (d: Date) =>
 // Utkast vises når du kjører lokalt, men publiseres ikke.
 const visible = ({ data }: { data: { draft: boolean } }) => import.meta.env.DEV || !data.draft;
 
+// Navnet på en utgave: «Rune #1: Tittel» (brukes både som emnefelt i e-posten og på nettsiden).
+export const utgaveNavn = (nr: number, title: string) => `Rune #${nr}: ${title}`;
+
+export async function getNyhetsbrev() {
+  return (await getCollection('nyhetsbrev', visible)).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+}
+
 export async function getArtikler() {
   return (await getCollection('artikler', visible)).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),

@@ -1,0 +1,40 @@
+---
+// Nyhetsbrevet: påmelding øverst, tidligere utgaver under.
+import { SITE } from '../../config';
+import Base from '../../layouts/Base.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
+import { getNyhetsbrev, formatDate, utgaveNavn } from '../../lib';
+
+const utgaver = await getNyhetsbrev();
+---
+<Base title="Nyhetsbrev" description={`Meld deg på nyhetsbrevet til ${SITE.author}.`}>
+  <div class="wrap">
+    <h1>Nyhetsbrev</h1>
+    <p class="lead">Nyhetsbrevet kommer hver fredag morgen, med nye synspunkter, bokmeldinger og det jeg har lest, hørt på og tenkt på i uka som gikk.</p>
+    <NewsletterForm />
+
+    <div class="section-head"><h2>Tidligere utgaver</h2></div>
+    {utgaver.length > 0 ? (
+      <ul class="utgaver">
+        {utgaver.map((u) => (
+          <li>
+            <p class="meta"><time datetime={u.data.date.toISOString()}>{formatDate(u.data.date)}</time>{u.data.draft && <> · <strong>UTKAST</strong></>}</p>
+            <a href={`/nyhetsbrev/${u.id}/`} class="t">{utgaveNavn(u.data.nr, u.data.title)}</a>
+            {u.data.description && <p class="d">{u.data.description}</p>}
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p class="meta">Den første utgaven kommer snart. Meld deg på, så får du den først.</p>
+    )}
+  </div>
+</Base>
+
+<style>
+  .utgaver { list-style: none; padding: 0; margin: 0; }
+  .utgaver li { padding: 1.1rem 0; border-bottom: 1px solid var(--border); }
+  .utgaver .meta { margin: 0 0 0.2rem; }
+  .t { font-size: 1.25rem; font-weight: 600; color: var(--text); text-decoration: none; }
+  .t:hover { color: var(--accent); }
+  .d { margin: 0.3rem 0 0; color: var(--muted); }
+</style>
