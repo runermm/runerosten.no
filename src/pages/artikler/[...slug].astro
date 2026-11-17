@@ -30,7 +30,7 @@ const { title, description, date, updated, tags, draft, linkedin, image, imageAl
     <div class="prose"><Content /></div>
     {linkedin && <p class="meta">Først publisert på <a href={linkedin} target="_blank" rel="noopener">LinkedIn</a>.</p>}
     {tags.length > 0 && <p class="tags">{tags.map((t) => <span class="tag">{t}</span>)}</p>}
-    <NewsletterForm />
+    {!entry.data.utenPamelding && <NewsletterForm />}
   </article>
 </Base>
 <style>

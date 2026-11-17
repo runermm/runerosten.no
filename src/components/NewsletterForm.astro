@@ -1,7 +1,7 @@
 ---
 import { NEWSLETTER } from '../config';
-// kort = kompakt variant på forsiden, vist bare på «mobil» eller bare på «pc»
-interface Props { compact?: boolean; kort?: 'mobil' | 'pc' }
+// kort = kompakt variant: «mobil» eller «pc» (forsiden, vises bare på den skjermtypen), «tekst» (inne i en artikkel)
+interface Props { compact?: boolean; kort?: 'mobil' | 'pc' | 'tekst' }
 const { compact = false, kort } = Astro.props;
 const formId = NEWSLETTER.kitFormId;
 const action = `https://app.kit.com/forms/${formId}/subscriptions`;
@@ -69,6 +69,7 @@ const inputId = kort ? `nl-email-${kort}` : 'nl-email';
   .kort button { flex: none; border-radius: 999px; padding: 0.4rem 0.9rem; font-size: 0.9rem; white-space: nowrap; }
   .kort .status { margin: 0.4rem 0 0 0.9rem; font-size: 0.9rem; }
   .kort-pc { margin: 2rem 0 0; max-width: 32rem; }
+  .kort-tekst { margin: 1.25rem 0; max-width: 32rem; font-size: 1rem; }
   @media (min-width: 34.01rem) { .kort-mobil { display: none; } }
   @media (max-width: 34rem) { .kort-pc { display: none; } }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }

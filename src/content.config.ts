@@ -4,7 +4,7 @@ import { leselisteLoader } from './leseliste';
 import { podkastLoader } from './podkaster';
 
 const artikler = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/artikler' }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/artikler' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -17,6 +17,7 @@ const artikler = defineCollection({
     imageCredit: z.string().optional(),
     imagePortrait: z.boolean().optional(), // stående bilde
     forsideplass: z.number().int().min(1).optional(), // fest innlegget på denne plassen i forsidefeeden
+    utenPamelding: z.boolean().optional(), // skjul påmeldingsboksen nederst (f.eks. når den står inne i teksten)
     draft: z.boolean().default(false),
   }),
 });
