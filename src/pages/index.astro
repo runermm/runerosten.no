@@ -16,8 +16,8 @@ import { getOppmote } from '../oppmote';
 
 const innlegg = await getFeed();
 
-// Feeden deles opp med faste seksjoner imellom: 3 innlegg, Leser nå, 3 innlegg, På øret …, 3 innlegg,
-// Fra leselisten, Oppmøte, noen få fra arkivet (med lenke til hele arkivet) og nyhetsbrevet nederst.
+// Feeden deles opp med faste seksjoner imellom: 3 innlegg, Fra leselisten, 3 innlegg, På øret …, 3 innlegg,
+// Leser nå, Oppmøte, noen få fra arkivet (med lenke til hele arkivet) og nyhetsbrevet nederst.
 const ARKIV_PA_FORSIDEN = 4;
 const del = [innlegg.slice(0, 3), innlegg.slice(3, 6), innlegg.slice(6, 9), innlegg.slice(9, 9 + ARKIV_PA_FORSIDEN)];
 const leseliste = (await getLeseliste()).slice(0, 3);
@@ -32,17 +32,10 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
 
     <div class="feed forst"><PostList items={del[0]} /></div>
 
-    {naa.length > 0 && (
+    {leseliste.length > 0 && (
       <section class="block">
-        <div class="section-head"><h2>Leser nå</h2><a href="/bokhylle/">Hele boksamlingen →</a></div>
-        <ul class="now">
-          {naa.map((b) => (
-            <li title={`${b.title}${b.author ? ' – ' + b.author : ''}`}>
-              <BookCover bok={b} width={240} />
-              <span class="now-t">{b.title}</span>
-            </li>
-          ))}
-        </ul>
+        <div class="section-head"><h2>Fra leselisten</h2><a href="/leseliste/">Hele leselisten →</a></div>
+        <div class="stack">{leseliste.map((item) => <LeselisteCard item={item} kompakt />)}</div>
       </section>
     )}
 
@@ -57,11 +50,17 @@ const harMusikk = musikk.albums.length > 0 || PODKAST.collectionId > 0;
 
     {del[2].length > 0 && <div class="feed"><PostList items={del[2]} /></div>}
 
-
-    {leseliste.length > 0 && (
+    {naa.length > 0 && (
       <section class="block">
-        <div class="section-head"><h2>Fra leselisten</h2><a href="/leseliste/">Hele leselisten →</a></div>
-        <div class="stack">{leseliste.map((item) => <LeselisteCard item={item} kompakt />)}</div>
+        <div class="section-head"><h2>Leser nå</h2><a href="/bokhylle/">Hele boksamlingen →</a></div>
+        <ul class="now">
+          {naa.map((b) => (
+            <li title={`${b.title}${b.author ? ' – ' + b.author : ''}`}>
+              <BookCover bok={b} width={240} />
+              <span class="now-t">{b.title}</span>
+            </li>
+          ))}
+        </ul>
       </section>
     )}
 
