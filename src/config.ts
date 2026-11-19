@@ -48,6 +48,12 @@ export const OPPMOTE = {
   inneCollectionId: 77274653, // samlingen «Oppmøte inne»
 };
 
+// Lyspære under tekstene: leserne trykker når en tekst fikk dem til å tenke, og tallet telles opp.
+// Telleren er en gratis Cloudflare Worker (se cloudflare/lyspaere/README.md). Tom adresse = skjult.
+export const LYSPAERE = {
+  endpoint: 'https://lyspaere.lyspaere.workers.dev', // f.eks. 'https://lyspaere.dittnavn.workers.dev'
+};
+
 // Strava: innbyggingskoden for profilkortet («Share your Activities» på profilen på strava.com).
 // Lim inn hele koden mellom backtickene, eller la den stå tom for å skjule kortet.
 export const STRAVA = {

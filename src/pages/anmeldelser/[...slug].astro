@@ -3,6 +3,7 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Rating from '../../components/Rating.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
+import Lyspaere from '../../components/Lyspaere.astro';
 import BookCover from '../../components/BookCover.astro';
 import { boker } from '../../bokhylle';
 import { getAnmeldelser, formatDate } from '../../lib';
@@ -46,6 +47,7 @@ const bok = boker.find((b) => norm(b.title) === norm(d.title));
     </div>
 
     <div class="prose"><Content /></div>
+    <Lyspaere href={`/anmeldelser/${entry.id}/`} />
     {d.linkedin && <p class="meta">Først publisert på <a href={d.linkedin} target="_blank" rel="noopener">LinkedIn</a>.</p>}
     {d.bokelskere && <p class="meta">Også publisert på <a href={d.bokelskere} target="_blank" rel="noopener">bokelskere.no</a>.</p>}
     <NewsletterForm />

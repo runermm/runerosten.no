@@ -1,0 +1,16 @@
+# Lyspære-telleren for runerosten.no. Kjører gratis som en Cloudflare Worker med en D1-database.
+# Oppsett: se README.md i denne mappen.
+name = "lyspaere"
+main = "worker.js"
+compatibility_date = "2026-06-01"
+workers_dev = true
+preview_urls = false
+
+[vars]
+# Nettsteder som får bruke telleren (kommaseparert).
+TILLATT = "https://runerosten.no,https://www.runerosten.no,http://localhost:4321"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lyspaere"
+database_id = "2e855145-8a63-425f-a666-a7c498d8719d"

@@ -103,6 +103,7 @@ set(/kitFormId: '[^']*'/, "kitFormId: ''");
 set(/(LESELISTE = \{\s*collectionId: )\d+/, '$10');
 set(/(PODKAST = \{\s*collectionId: )\d+/, '$10');
 set(/(OPPMOTE = \{\s*inneCollectionId: )\d+/, '$10');
+set(/(LYSPAERE = \{\s*endpoint: )'[^']*'/, "$1''");
 fs.writeFileSync(cfgPath, cfg);
 
 // Videresendinger for sider som ikke lenger finnes

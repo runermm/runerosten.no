@@ -2,6 +2,7 @@
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
+import Lyspaere from '../../components/Lyspaere.astro';
 import { getArtikler, formatDate } from '../../lib';
 
 export async function getStaticPaths() {
@@ -28,6 +29,7 @@ const { title, description, date, updated, tags, draft, linkedin, image, imageAl
       </figure>
     )}
     <div class="prose"><Content /></div>
+    <Lyspaere href={`/artikler/${entry.id}/`} />
     {linkedin && <p class="meta">Først publisert på <a href={linkedin} target="_blank" rel="noopener">LinkedIn</a>.</p>}
     {tags.length > 0 && <p class="tags">{tags.map((t) => <span class="tag">{t}</span>)}</p>}
     {!entry.data.utenPamelding && <NewsletterForm />}

@@ -1,0 +1,98 @@
+---
+// Lyspære under en tekst: leseren trykker når teksten fikk dem til å tenke, og tallet telles opp.
+// Tallene hentes fra telleren i LYSPAERE.endpoint (cloudflare/lyspaere). Nettleseren husker hva du har tent,
+// så hver leser teller én gang per tekst; et nytt trykk angrer.
+import { LYSPAERE } from '../config';
+
+// inline = uten egen linje, f.eks. ved siden av «Vis mindre» i feeden
+interface Props { href: string; inline?: boolean } // href f.eks. /artikler/warfare-software/
+const { href, inline = false } = Astro.props;
+const id = href.replace(/^\/|\/$/g, '');
+const endpoint = import.meta.env.PUBLIC_LYSPAERE_URL || LYSPAERE.endpoint;
+---
+{endpoint && (
+  <div class:list={["lys-rad", { inline }]}>
+    <button type="button" class="lys" data-lys={id} data-endpoint={endpoint} aria-pressed="false"
+      title="Fikk denne teksten deg til å tenke? Tenn en lyspære.">
+      <svg class="pare" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <path class="glass" d="M12 2.75a6.75 6.75 0 0 0-4.05 12.15c.7.53 1.05 1.2 1.05 1.85v.5h6v-.5c0-.65.35-1.32 1.05-1.85A6.75 6.75 0 0 0 12 2.75Z" />
+        <path class="sokkel" d="M9.25 19.25h5.5M10 21.5h4" />
+        <path class="trad" d="M10.5 13.5 12 10.5l1.5 3" />
+      </svg>
+      <span class="n" aria-hidden="true"></span>
+      <span class="sr">Tenn en lyspære</span>
+    </button>
+  </div>
+)}
+
+<style>
+  .lys-rad { margin: 1.5rem 0 0.5rem; }
+  .lys-rad.inline { display: inline-flex; margin: 0; }
+  .lys {
+    display: inline-flex; align-items: center; gap: 0.45rem; cursor: pointer;
+    font-family: var(--sans); font-size: 0.85rem; font-weight: 600; color: var(--muted);
+    background: none; border: 1px solid var(--border); border-radius: 999px; padding: 0.3rem 0.85rem 0.3rem 0.6rem;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+  }
+  .lys:hover { color: var(--text); border-color: var(--muted); }
+  .pare { overflow: visible; }
+  .pare path { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .lys[aria-pressed='true'] { color: var(--text); border-color: #e0b43a; background: rgb(246 205 92 / 0.14); }
+  .lys[aria-pressed='true'] .glass { fill: #f6cd5c; stroke: #c9971f; filter: drop-shadow(0 0 5px rgb(246 205 92 / 0.8)); }
+  .lys[aria-pressed='true'] .trad { stroke: #8a6410; }
+  .lys.tent .pare { animation: tenn 0.45s ease-out; }
+  @keyframes tenn { 40% { transform: scale(1.25) rotate(-8deg); } 100% { transform: none; } }
+  .n:empty { display: none; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  @media (prefers-reduced-motion: reduce) { .lys.tent .pare { animation: none; } }
+</style>
+
+<script>
+  // Én henting for alle lyspærene på siden, så trykk med «optimistisk» oppdatering.
+  const knapper = [...document.querySelectorAll<HTMLButtonElement>('button[data-lys]')];
+  const husk = (id: string) => { try { return localStorage.getItem(`lys:${id}`) === '1'; } catch { return false; } };
+  const lagre = (id: string, på: boolean) => {
+    try { på ? localStorage.setItem(`lys:${id}`, '1') : localStorage.removeItem(`lys:${id}`); } catch {}
+  };
+  const vis = (id: string, n: number, på: boolean) => {
+    for (const k of knapper.filter((b) => b.dataset.lys === id)) {
+      k.setAttribute('aria-pressed', String(på));
+      k.dataset.n = String(n);
+      k.querySelector('.n')!.textContent = n > 0 ? String(n) : '';
+      k.querySelector('.sr')!.textContent = `${på ? 'Du har tent en lyspære' : 'Tenn en lyspære'}${n > 0 ? `, ${n} totalt` : ''}`;
+    }
+  };
+
+  if (knapper.length) {
+    const endpoint = knapper[0].dataset.endpoint!;
+    const ids = [...new Set(knapper.map((k) => k.dataset.lys!))];
+    ids.forEach((id) => vis(id, 0, husk(id)));
+    fetch(`${endpoint}/?ids=${ids.map(encodeURIComponent).join(',')}`)
+      .then((r) => r.json())
+      .then((tall: Record<string, number>) => ids.forEach((id) => vis(id, tall[id] ?? 0, husk(id))))
+      .catch(() => {});
+
+    for (const k of knapper) {
+      k.addEventListener('click', async () => {
+        const id = k.dataset.lys!;
+        const på = !husk(id);
+        const før = Number(k.dataset.n ?? 0);
+        lagre(id, på);
+        vis(id, Math.max(før + (på ? 1 : -1), 0), på);
+        if (på) { k.classList.remove('tent'); void k.offsetWidth; k.classList.add('tent'); }
+        try {
+          const r = await fetch(`${endpoint}/`, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id, retning: på ? 1 : -1 }),
+          });
+          if (!r.ok) throw new Error();
+          const { n } = await r.json();
+          vis(id, n, på);
+        } catch {
+          lagre(id, !på);
+          vis(id, før, !på);
+        }
+      });
+    }
+  }
+</script>
