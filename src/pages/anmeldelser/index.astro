@@ -8,7 +8,7 @@ const anmeldelser = await getAnmeldelser();
 <Base title="Bokmelding" description={`Bokmeldinger av ${SITE.author}.`}>
   <div class="wrap">
     <h1>Bokmelding</h1>
-    <p class="lead">Bøker jeg har lest, med terningkast fra 1 til 6.</p>
+    <p class="lead">Bøker jeg har lest.</p>
     <PostList items={anmeldelser.map((b) => ({
       href: `/anmeldelser/${b.id}/`, ...reviewListTitle(b.data), image: reviewImage(b.data),
       description: b.data.description, date: b.data.date, rating: b.data.rating,
