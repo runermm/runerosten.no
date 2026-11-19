@@ -16,6 +16,9 @@ export const reviewImage = (d: { title: string; image?: string }) => {
 
 export const formatDate = (d: Date) =>
   d.toLocaleDateString('nb-NO', { day: 'numeric', month: 'long', year: 'numeric' });
+// Kort utgave («19. nov. 2026») der det er trangt, f.eks. i feeden på mobil.
+export const formatDateKort = (d: Date) =>
+  d.toLocaleDateString('nb-NO', { day: 'numeric', month: 'short', year: 'numeric' });
 
 // Utkast vises når du kjører lokalt, men publiseres ikke.
 const visible = ({ data }: { data: { draft: boolean } }) => import.meta.env.DEV || !data.draft;

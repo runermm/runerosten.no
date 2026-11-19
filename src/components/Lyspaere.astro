@@ -28,6 +28,9 @@ const endpoint = import.meta.env.PUBLIC_LYSPAERE_URL || LYSPAERE.endpoint;
 <style>
   .lys-rad { margin: 1.5rem 0 0.5rem; }
   .lys-rad.inline { display: inline-flex; margin: 0; }
+  /* Mindre utgave på linja med dato og «Les mer» i feeden. */
+  .inline .lys { gap: 0.3rem; font-size: 0.78rem; padding: 0.1rem 0.55rem 0.1rem 0.4rem; }
+  .inline .pare { width: 17px; height: 17px; }
   .lys {
     display: inline-flex; align-items: center; gap: 0.45rem; cursor: pointer;
     font-family: var(--sans); font-size: 0.85rem; font-weight: 600; color: var(--muted);

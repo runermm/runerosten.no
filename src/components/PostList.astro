@@ -1,5 +1,5 @@
 ---
-import { formatDate } from '../lib';
+import { formatDate, formatDateKort } from '../lib';
 import Rating from './Rating.astro';
 import Lyspaere from './Lyspaere.astro';
 
@@ -34,9 +34,10 @@ const { items, readMore = false } = Astro.props;
           <p class="desc">{item.description}</p>
           {item.byline && <p class="byline">{item.byline}</p>}
           <div class="meta row">
-            <time datetime={item.date.toISOString()}>{formatDate(item.date)}</time>
+            <time datetime={item.date.toISOString()}><span class="dato-lang">{formatDate(item.date)}</span><span class="dato-kort">{formatDateKort(item.date)}</span></time>
             {item.rating && <Rating value={item.rating} size={20} />}
             {item.tag && <a href={item.tag.href} class="tag-link">{item.tag.label}</a>}
+            {item.Content && <Lyspaere href={item.href} inline />}
             {item.Content ? (
               <button type="button" class="more-btn" data-expand aria-expanded="false" aria-controls={`mer-${i}-${item.href}`}>
                 <span class="lukket">Les mer <span aria-hidden="true">↓</span></span>
@@ -77,6 +78,8 @@ const { items, readMore = false } = Astro.props;
   .byline { margin: 0 0 0.25rem; color: var(--muted); font-style: italic; font-size: 1rem; }
   .desc { margin: 0.3rem 0 0.4rem; }
   .row { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; align-items: center; }
+  .dato-kort { display: none; }
+  @media (max-width: 34rem) { .row { column-gap: 0.7rem; } .dato-lang { display: none; } .dato-kort { display: inline; } }
   .more-btn {
     font-family: var(--sans); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
     color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: none;
