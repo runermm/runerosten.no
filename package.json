@@ -11,7 +11,8 @@
     "import:linkedin": "node scripts/import-linkedin.mjs",
     "nullstill": "node scripts/nullstill.mjs",
     "import:strava": "node scripts/import-strava.mjs",
-    "abonnenter": "node scripts/abonnenter.mjs"
+    "abonnenter": "node scripts/abonnenter.mjs",
+    "nyhetsbrev-tall": "node scripts/nyhetsbrev-tall.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.10",

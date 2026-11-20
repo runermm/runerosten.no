@@ -93,6 +93,26 @@ Kommentaren du skriver i Raindrop blir overskriften. Bøker i leselisten får ta
 **Gmail-fella:** Videresender adressen til Gmail, og du tester fra samme Gmail, vises e-posten bare i «Sendt».
 Test fra en annen adresse.
 
+### Skrive og sende et nyhetsbrev
+
+1. **Nøkkel:** Lag en API-nøkkel i Kit (Settings → Developer → API keys, v4) og legg den i `.env` som
+   `KIT_API_KEY=`. Lim den aldri inn i chatten.
+2. **Mal i Kit:** Lag en egen e-postmal (Send → Email templates → New → Import code) med full bredde og
+   Georgia, og gjør den til standard. Kits egne maler gir en hvit kant på mobil.
+3. **Utkast:** La Claude lage et utkast fra det som er nytt på nettstedet (f.eks. som fast oppgave hver torsdag).
+   Du skriver selve teksten, Claude leser korrektur og lager to filer i `drafts/nyhetsbrev/` (utelatt fra git):
+   en `.md` som blir nettversjonen og en `.html` som limes inn i en HTML-blokk i Kit.
+4. **Æ, ø og å:** Kopier HTML-en som HTML-entiteter, ellers blir tegnene feil i Kit. Be Claude legge den på
+   utklippstavla.
+5. **Publiser:** Nettversjonen legges i `src/content/nyhetsbrev/<dato>.md`. Planlegg utsendelsen i Kit.
+
+**Tall:** `npm run abonnenter` viser antall abonnenter. `npm run nyhetsbrev-tall` viser åpninger, klikk per lenke
+og avmeldinger for siste utsendelse, uten e-postadresser. Claude kan kjøre den som fast oppgave og gi deg en
+oppsummering, f.eks. fredag ettermiddag.
+
+**Idébank:** Samle ideer ett sted, f.eks. i et Claude-dokument med hyllene Nå, Gror, Evig, Fra leserne og Brukt,
+og lagre lenker i Raindrop med taggen `idé`. Utkastoppgaven kan da foreslå ukas bolker fra begge.
+
 ## Lisens
 
 Koden er MIT-lisensiert. Innholdet (tekster, bilder, data) i originalen tilhører Rune Røsten og følger ikke
