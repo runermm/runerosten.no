@@ -3,6 +3,15 @@
   "events": [
     {
       "type": "ski",
+      "title": "Grua leverer 🌞",
+      "date": "2026-11-21",
+      "detail": "2:05 t",
+      "image": "/bilder/oppmote/21069848406.jpg",
+      "url": "https://www.strava.com/activities/21069848406",
+      "stravaId": "21069848406"
+    },
+    {
+      "type": "ski",
       "title": "Sesongåpning 🍾",
       "date": "2026-11-15",
       "detail": "2:23 t",
