@@ -2,6 +2,15 @@
   "_info": "Oppmøte ute og inne. Ute (Strava): type sykkel | løping | tur | ski | svømming | trening, url = lenke til økta. Inne: konsert | kino | teater | foredrag | annet. Felter: title, date (ÅÅÅÅ-MM-DD), detail (kort), image, url, note, venue, city. Vises kronologisk. Tom liste = seksjonen skjules.",
   "events": [
     {
+      "type": "sykkel",
+      "title": "Topp runde med Arve i spiss",
+      "date": "2026-11-22",
+      "detail": "11 km",
+      "image": "/bilder/oppmote/21082509855.jpg",
+      "url": "https://www.strava.com/activities/21082509855",
+      "stravaId": "21082509855"
+    },
+    {
       "type": "ski",
       "title": "Grua leverer 🌞",
       "date": "2026-11-21",
