@@ -15,6 +15,7 @@ const { title, description, date, updated, tags, draft, linkedin, image, imageAl
 ---
 <Base title={title} description={description} type="article" image={image}>
   <article class="wrap">
+    {!entry.data.utenPamelding && <NewsletterForm kort="topp" />}
     <p class="meta">
       <time datetime={date.toISOString()}>{formatDate(date)}</time>
       {updated && <> · oppdatert {formatDate(updated)}</>}

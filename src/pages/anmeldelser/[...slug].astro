@@ -21,6 +21,7 @@ const bok = boker.find((b) => norm(b.title) === norm(d.title));
 ---
 <Base title={d.headline ? `${d.headline} – ${d.title} av ${d.bookAuthor}` : `${d.title} av ${d.bookAuthor}`} description={d.description} type="article" image={d.image ?? bok?.cover}>
   <article class="wrap">
+    <NewsletterForm kort="topp" />
     <p class="meta">
       Bokanmeldelse · <time datetime={d.date.toISOString()}>{formatDate(d.date)}</time>
       {d.draft && <> · <strong>UTKAST</strong></>}
