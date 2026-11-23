@@ -100,11 +100,9 @@ set(/email: '[^']*' as/, 'email: null as');
 set(/linkedin: '[^']*' as/, 'linkedin: null as');
 set(/profileEmbed: `[^`]*`/, 'profileEmbed: ``');
 set(/kitFormId: '[^']*'/, "kitFormId: ''");
-set(/(LESELISTE = \{\s*collectionId: )\d+/, '$10');
-set(/(PODKAST = \{\s*collectionId: )\d+/, '$10');
-set(/(OPPMOTE = \{\s*inneCollectionId: )\d+/, '$10');
 set(/(LYSPAERE = \{\s*endpoint: )'[^']*'/, "$1''");
 fs.writeFileSync(cfgPath, cfg);
+write('src/data/readwise-datoer.json', JSON.stringify({ _info: 'Opprinnelige datoer og bilder for ting flyttet til Readwise.', datoer: {}, bilder: {} }, null, 2) + '\n');
 
 // Videresendinger for sider som ikke lenger finnes
 const astroCfg = p('astro.config.ts');
@@ -116,5 +114,5 @@ Ferdig. Innholdet er fjernet, og src/config.ts har plassholdere.
 Neste steg:
   1. Åpne src/config.ts og fyll inn navn, domene og resten.
   2. Kjør npm run dev og se på siden på http://localhost:4321
-  3. Følg docs/LAG-DITT-EGET.md for Raindrop, Kit, domene og publisering.
+  3. Følg docs/LAG-DITT-EGET.md for Readwise, Kit, domene og publisering.
 `);

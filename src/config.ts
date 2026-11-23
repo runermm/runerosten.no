@@ -29,23 +29,23 @@ export const NEWSLETTER = {
   confirmMessage: 'Takk for at du følger meg! Nyhetsbrevet kommer hver fredag morgen. Hold ut!',
 };
 
-// Leseliste fra Raindrop.io, samlingen «Leseliste».
-// Nøkkelen settes som RAINDROP_TOKEN i .env (se README). Uten nøkkel vises eksempler.
+// Leseliste fra Readwise Reader: alt med taggen under.
+// Nøkkelen settes som READWISE_TOKEN i .env (se README). Uten nøkkel vises eksempler.
 // Ting med taggen «bok» vises som bøker, alt annet som artikler.
 export const LESELISTE = {
-  collectionId: 77118163,
+  tag: 'leseliste',
   bookTag: 'bok',
 };
 
-// Podkaster til «På øret og på repeat», fra en egen Raindrop-samling. 0 = av.
+// Podkaster til «På øret og på repeat», fra Readwise-taggen under. Tom = av.
 export const PODKAST = {
-  collectionId: 77181505, // samlingen «podcast»
+  tag: 'podcast',
 };
 
-// Oppmøte «inne» (konserter, kino, foredrag …) fra en egen Raindrop-samling. 0 = av.
-// Typen settes med en tagg i Raindrop (konsert, kino, teater, foredrag), ellers «Arrangement».
+// Oppmøte «inne» (konserter, kino, foredrag …) fra Readwise-taggen under. Tom = av.
+// Typen settes med en ekstra tagg i Readwise (konsert, kino, teater, foredrag), ellers «Arrangement».
 export const OPPMOTE = {
-  inneCollectionId: 77274653, // samlingen «Oppmøte inne»
+  inneTag: 'oppmøte inne',
 };
 
 // Lyspære under tekstene: leserne trykker når en tekst fikk dem til å tenke, og tallet telles opp.

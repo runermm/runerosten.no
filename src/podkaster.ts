@@ -1,7 +1,7 @@
-// Podkaster fra Raindrop-samlingen «På øret» (se PODKAST i config.ts).
+// Podkaster fra Readwise, med taggen PODKAST.tag (se config.ts).
 import type { Loader } from 'astro/loaders';
 import { PODKAST } from './config';
-import { fetchRaindrops, type Raindrop } from './leseliste';
+import { fetchBokmerker, type Bokmerke } from './readwise';
 
 export interface Podkast {
   id: string;
@@ -36,22 +36,22 @@ async function showNames(links: string[]): Promise<Map<string, string>> {
   return names;
 }
 
-const toPodkast = (r: Raindrop, names: Map<string, string>): Podkast => {
+const toPodkast = (r: Bokmerke, names: Map<string, string>): Podkast => {
   const { title, show } = splitTitle(r.title);
   const id = r.link.match(/\/id(\d+)/)?.[1];
   // Mindre omslag holder på forsiden (Apple-bilder kan skaleres i adressen).
   const cover = r.cover?.replace(/\/\d+x\d+bf\./, '/400x400bf.') || undefined;
-  return { id: String(r._id), title, show: (id && names.get(id)) || show, url: r.link, cover, note: r.note?.trim() || undefined, date: r.created };
+  return { id: r.id, title, show: (id && names.get(id)) || show, url: r.link, cover, note: r.note, date: r.created };
 };
 
 export function podkastLoader(): Loader {
   return {
     name: 'podkaster',
     load: async ({ store, logger, parseData }) => {
-      if (!PODKAST.collectionId) { store.clear(); return; }
-      let items: Raindrop[] | null;
+      if (!PODKAST.tag) { store.clear(); return; }
+      let items: Bokmerke[] | null;
       try {
-        items = await fetchRaindrops(PODKAST.collectionId);
+        items = await fetchBokmerker(PODKAST.tag);
       } catch (err) {
         logger.warn(`${(err as Error).message}. Podkastene er ikke oppdatert.`);
         return;
@@ -60,7 +60,7 @@ export function podkastLoader(): Loader {
       store.clear();
       const names = await showNames(items.map((r) => r.link));
       for (const p of items.map((r) => toPodkast(r, names))) store.set({ id: p.id, data: await parseData({ id: p.id, data: { ...p } }) });
-      logger.info(`Podkaster: ${items.length} fra Raindrop`);
+      logger.info(`Podkaster: ${items.length} fra Readwise`);
     },
   };
 }

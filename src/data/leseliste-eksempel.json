@@ -5,7 +5,7 @@
     "title": "Eksempel: En lang artikkel som er verdt tiden din",
     "url": "https://example.com/artikkel-1",
     "source": "eksempel.no",
-    "note": "Her skriver du én eller to setninger om hvorfor artikkelen er verdt å lese. Notatet fra Raindrop havner her.",
+    "note": "Her skriver du én eller to setninger om hvorfor artikkelen er verdt å lese. Notatet fra Readwise havner her.",
     "date": "2026-11-11T09:00:00.000Z",
     "tags": ["ledelse"]
   },
@@ -16,7 +16,7 @@
     "author": "Knut Hamsun",
     "url": "https://bokelskere.no/",
     "source": "bokelskere.no",
-    "note": "Eksempel på en bok i leselisten. Lagre bokens side i Raindrop med taggen «bok».",
+    "note": "Eksempel på en bok i leselisten. Lagre bokens side i Readwise med taggene «leseliste» og «bok».",
     "date": "2026-11-10T09:00:00.000Z",
     "tags": ["klassiker"]
   },

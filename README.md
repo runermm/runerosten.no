@@ -66,14 +66,15 @@ Påmeldingsskjemaet bruker [Kit](https://kit.com) (gratis opp til 10 000 abonnen
 3. Sett den i `src/config.ts` under `NEWSLETTER.kitFormId`.
 4. Nyhetsbrev skrives og sendes fra Kit (Send → Broadcasts).
 
-## Leseliste (Raindrop.io)
+## Leseliste, podkaster og arrangementer (Readwise Reader)
 
-Leselisten på /leseliste/ hentes fra Raindrop-samlingen «Leseliste» hver gang siden bygges.
+Innholdet hentes fra Readwise Reader etter tagg hver gang siden bygges. Taggene står i `src/config.ts`.
 
-- Lagre artikler i samlingen «Leseliste» og skriv et notat. Notatet blir kommentaren din.
-- Bøker: lagre bokens side (f.eks. på bokelskere.no) med taggen `bok`.
-- Nøkkel: Raindrop → Innstillinger → Integrasjoner → For utviklere → Opprett ny app → Opprett testtoken.
-  Lim den inn i `.env` som `RAINDROP_TOKEN=...`. Hos hostingtjenesten legges den inn som miljøvariabel med samme navn.
+- `leseliste`: artikler til /leseliste/. Notatet på dokumentet blir kommentaren din.
+- `leseliste` + `bok`: bøker, f.eks. bokens side på bokelskere.no.
+- `podcast`: episoder til «På øret og på repeat».
+- `oppmøte inne`: arrangementer. Legg gjerne til `konsert`, `kino`, `teater` eller `foredrag`.
+- Nøkkel: hent den på readwise.io/access_token og legg den i `.env` som `READWISE_TOKEN=...`.
 - Uten nøkkel vises eksemplene i `src/data/leseliste-eksempel.json`.
 
 ## Publisere
@@ -81,7 +82,8 @@ Leselisten på /leseliste/ hentes fra Raindrop-samlingen «Leseliste» hver gang
 Nettstedet publiseres på GitHub Pages med GitHub Actions (`.github/workflows/publiser.yml`):
 
 - Hver opplasting til `main` bygger og publiserer siden.
-- Hver morgen bygges den på nytt, så leselisten fra Raindrop holdes oppdatert.
-- Raindrop-nøkkelen ligger som hemmelighet i repoet: Settings → Secrets and variables → Actions → `RAINDROP_TOKEN`.
+- Hver morgen bygges den på nytt, så innholdet fra Readwise holdes oppdatert.
+- Readwise-nøkkelen ligger som hemmelighet i repoet: Settings → Secrets and variables → Actions → `READWISE_TOKEN`.
+  Mangler den, stopper publiseringen og siden står urørt.
 - Domenet: `public/CNAME` inneholder `runerosten.no`. Hos Domeneshop peker runerosten.no (A-pekere) til GitHub Pages
   (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153) og www (CNAME) til `runermm.github.io`.

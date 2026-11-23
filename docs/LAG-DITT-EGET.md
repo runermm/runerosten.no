@@ -14,7 +14,7 @@ og eventuelt e-post på eget domene (ca. 29 kr i måneden).
 | [GitHub](https://github.com)-konto | Lagrer koden og publiserer nettstedet (GitHub Pages) | Gratis |
 | [Node.js](https://nodejs.org) (LTS) på maskinen | For å se siden mens du jobber med den | Gratis |
 | Et domene, f.eks. hos [Domeneshop](https://domene.shop) | Adressen til nettstedet | ca. 150 kr/år |
-| [Raindrop.io](https://raindrop.io) (valgfritt) | Leseliste og podkaster du lagrer fra mobilen | Gratis |
+| [Readwise Reader](https://readwise.io/read) (valgfritt) | Leseliste og podkaster du lagrer fra mobilen | Betalt |
 | [Kit](https://kit.com) (valgfritt) | Påmelding og utsending av nyhetsbrev | Gratis til 10 000 |
 | E-post på eget domene (valgfritt) | Kit krever en avsenderadresse på domenet ditt | ca. 29 kr/mnd hos Domeneshop |
 
@@ -35,7 +35,7 @@ npm run dev
 
 ## 2. Gjør den til din
 
-Alt personlig står i **`src/config.ts`**: navn, domene, sitatlinje, lenker, menyen, Kit og Raindrop.
+Alt personlig står i **`src/config.ts`**: navn, domene, sitatlinje, lenker, menyen, Kit og Readwise-tagger.
 Fyll inn det, og skriv så:
 
 - **Om-siden:** `src/pages/om.astro`
@@ -70,15 +70,15 @@ Hos domeneleverandøren, under DNS:
 Etter litt tid lager GitHub et https-sertifikat. Står det fast i mer enn en time, fjern domenet under
 Settings → Pages og legg det inn igjen.
 
-## 5. Leseliste og podkaster (Raindrop)
+## 5. Leseliste og podkaster (Readwise)
 
-1. Lag to samlinger i Raindrop, f.eks. **Leseliste** og **Podkast**.
-2. Lag en nøkkel: Raindrop → Innstillinger → Integrasjoner → For utviklere → Opprett ny app → Opprett testtoken.
-3. Lokalt: legg den i en fil `.env` som `RAINDROP_TOKEN=...`. På GitHub: **Settings → Secrets and variables →
-   Actions → New repository secret**, navn `RAINDROP_TOKEN`.
-4. Samlingenes ID-er står i adressen når du åpner dem i Raindrop. Legg dem inn i `src/config.ts`.
+1. Lagre ting i Readwise Reader med taggene **leseliste**, **podcast** eller **oppmøte inne**. Bøker får `leseliste` og `bok`.
+2. Hent nøkkelen på [readwise.io/access_token](https://readwise.io/access_token).
+3. Lokalt: legg den i en fil `.env` som `READWISE_TOKEN=...`. På GitHub: **Settings → Secrets and variables →
+   Actions → New repository secret**, navn `READWISE_TOKEN`.
+4. Vil du bruke andre taggnavn, endrer du dem i `src/config.ts`.
 
-Kommentaren du skriver i Raindrop blir overskriften. Bøker i leselisten får taggen `bok`.
+Notatet du skriver på dokumentet i Readwise blir overskriften.
 
 ## 6. Nyhetsbrev (Kit)
 
@@ -111,7 +111,7 @@ og avmeldinger for siste utsendelse, uten e-postadresser. Claude kan kjøre den 
 oppsummering, f.eks. fredag ettermiddag.
 
 **Idébank:** Samle ideer ett sted, f.eks. i et Claude-dokument med hyllene Nå, Gror, Evig, Fra leserne og Brukt,
-og lagre lenker i Raindrop med taggen `idé`. Utkastoppgaven kan da foreslå ukas bolker fra begge.
+og lagre lenker i Readwise med taggen `idé`. Utkastoppgaven kan da foreslå ukas bolker fra begge.
 
 ## Lisens
 

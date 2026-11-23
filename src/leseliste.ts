@@ -1,8 +1,9 @@
-// Henter leselisten fra Raindrop.io når nettstedet bygges.
-// Nøkkelen (RAINDROP_TOKEN) ligger i .env lokalt, og som miljøvariabel hos hostingtjenesten.
+// Henter leselisten fra Readwise Reader (taggen LESELISTE.tag) når nettstedet bygges.
+// Nøkkelen (READWISE_TOKEN) ligger i .env lokalt og som hemmelighet på GitHub.
 // Uten nøkkel brukes eksempeldata fra src/data/leseliste-eksempel.json.
 import type { Loader } from 'astro/loaders';
 import { LESELISTE } from './config';
+import { fetchBokmerker, type Bokmerke } from './readwise';
 import eksempel from './data/leseliste-eksempel.json';
 
 export interface LeselisteItem {
@@ -18,18 +19,6 @@ export interface LeselisteItem {
   tags: string[];
 }
 
-// Feltene vi bruker fra Raindrop sitt API.
-export interface Raindrop {
-  _id: number;
-  title: string;
-  link: string;
-  domain?: string;
-  note?: string;
-  cover?: string;
-  tags?: string[];
-  created: string;
-}
-
 // «Sult av Knut Hamsun | Bokelskere.no» → tittel «Sult», forfatter «Knut Hamsun»
 function splitBookTitle(raw: string): { title: string; author?: string } {
   const clean = raw.replace(/\s+[|–—-]\s+[^|–—-]+$/, '').trim();
@@ -37,45 +26,28 @@ function splitBookTitle(raw: string): { title: string; author?: string } {
   return m ? { title: m[1].trim(), author: m[2].trim() } : { title: clean };
 }
 
-function toItem(r: Raindrop): LeselisteItem {
+function toItem(r: Bokmerke): LeselisteItem {
   const bookTag = LESELISTE.bookTag.toLowerCase();
-  const tags = (r.tags ?? []).map((t) => t.toLowerCase());
-  const isBook = tags.includes(bookTag);
+  const isBook = r.tags.includes(bookTag);
   const { title, author } = isBook ? splitBookTitle(r.title) : { title: r.title.trim(), author: undefined };
   return {
-    id: String(r._id),
+    id: r.id,
     type: isBook ? 'bok' : 'artikkel',
     title,
     author,
     url: r.link,
-    source: (r.domain ?? new URL(r.link).hostname).replace(/^www\./, ''),
-    note: r.note?.trim() || undefined,
-    image: r.cover || undefined,
+    source: r.domain,
+    note: r.note,
+    image: r.cover,
     date: r.created,
-    tags: tags.filter((t) => t !== bookTag),
+    tags: r.tags.filter((t) => t !== bookTag && t !== LESELISTE.tag.toLowerCase()),
   };
 }
 
 export async function fetchLeseliste(): Promise<LeselisteItem[] | null> {
-  if (!LESELISTE.collectionId) return null;
-  const items = await fetchRaindrops(LESELISTE.collectionId);
+  if (!LESELISTE.tag) return null;
+  const items = await fetchBokmerker(LESELISTE.tag);
   return items && items.map(toItem);
-}
-
-// Henter alle bokmerker i en Raindrop-samling, nyeste først. null = ingen nøkkel.
-export async function fetchRaindrops(collectionId: number): Promise<Raindrop[] | null> {
-  const token = process.env.RAINDROP_TOKEN ?? import.meta.env.RAINDROP_TOKEN;
-  if (!token) return null;
-  const items: Raindrop[] = [];
-  for (let page = 0; page < 20; page++) {
-    const url = `https://api.raindrop.io/rest/v1/raindrops/${collectionId}?perpage=50&page=${page}&sort=-created`;
-    const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
-    if (!res.ok) throw new Error(`Kunne ikke hente fra Raindrop (${res.status})`);
-    const json = (await res.json()) as { items: Raindrop[] };
-    items.push(...json.items);
-    if (json.items.length < 50) break;
-  }
-  return items;
 }
 
 export function leselisteLoader(): Loader {
@@ -86,17 +58,17 @@ export function leselisteLoader(): Loader {
       try {
         items = await fetchLeseliste();
       } catch (err) {
-        // Raindrop nede eller ugyldig nøkkel: behold det vi har fra før, og bygg videre.
+        // Readwise nede eller ugyldig nøkkel: behold det vi har fra før, og bygg videre.
         logger.warn(`${(err as Error).message}. Leselisten er ikke oppdatert.`);
         return;
       }
-      const fromRaindrop = items !== null;
+      const fraReadwise = items !== null;
       items ??= eksempel as LeselisteItem[];
       store.clear();
       for (const item of items) {
         store.set({ id: item.id, data: await parseData({ id: item.id, data: { ...item } }) });
       }
-      logger.info(`Leseliste: ${items.length} ting ${fromRaindrop ? 'fra Raindrop' : '(eksempler – RAINDROP_TOKEN mangler)'}`);
+      logger.info(`Leseliste: ${items.length} ting ${fraReadwise ? 'fra Readwise' : '(eksempler – READWISE_TOKEN mangler)'}`);
     },
   };
 }

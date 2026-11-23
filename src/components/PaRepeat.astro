@@ -6,7 +6,7 @@ import data from '../data/musikk.json';
 interface Item { id?: string; type?: 'album' | 'podcast'; title: string; artist: string; cover: string; url?: string; note?: string }
 interface Props { limit?: number; podcasts?: number }
 const { limit = 4, podcasts = 3 } = Astro.props;
-// Nyeste podkaster fra Raindrop («På øret») først, deretter album fra Tidal.
+// Nyeste podkaster fra Readwise (taggen «podcast») først, deretter album fra Tidal.
 const pods: Item[] = (await getCollection('podkaster'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, podcasts)
