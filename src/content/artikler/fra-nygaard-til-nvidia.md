@@ -1,6 +1,6 @@
 ---
 title: "Fra Nygaard til Nvidia"
-description: "Norsk litteratur ble norsk da forlagene flyttet hjem fra København. Nå må vi gjøre det samme med kunstig intelligens, og vi har råd til det."
+description: "«Norske forfattere på norske forlag» var Nygaards parole. Nå må vi gjøre det samme med kunstig intelligens, og vi har råd til det."
 date: 2026-11-24
 tags: [ki]
 ---
@@ -15,7 +15,7 @@ Boktrykkerkunsten kom sent til Norge. På 1800-tallet fikk norske forfattere bø
 
 Samtidig var Norge en nasjon på vei opp. Det nye universitetet fra 1811 og unionsoppløsningen med Danmark i 1814 etablerte nye forventninger til norske bøker og norsk språk.
 
-«Norske forfattere på norske forlag» ble parolen, formulert av forleggeren i Aschehoug, William Nygaard, som kjøpte seg inn i virksomheten med svigerfarens penger i 1888. Han fulgte opp sitt eget program, noe som viste seg å bli umåtelig vellykket. En av de første og største suksessene var Fridtjof Nansens *Paa ski over Grønland* (1890). Etterdønningene kan fremdeles merkes i norsk sakprosa og litteraturhistorie. (Thor Gotaas gir i år ut [skiteknikkens historie](https://www.ark.no/produkt/ingen-gar-sa-pent-som-harviken-9788205626911).)
+«Norske forfattere på norske forlag» ble parolen, formulert av forleggeren i Aschehoug, William Nygaard, som kjøpte seg inn i virksomheten med svigerfarens penger i 1888. Han fulgte opp sitt eget program, noe som viste seg å bli umåtelig vellykket. En av de første og største suksessene var Fridtjof Nansens *Paa ski over Grønland* (1890). Etterdønningene kan fremdeles merkes i norsk sakprosa og litteraturhistorie. Thor Gotaas gir i år ut [skiteknikkens historie](https://www.ark.no/produkt/ingen-gar-sa-pent-som-harviken-9788205626911).
 
 Avgjørende for at det lyktes, var at forleggerne nå satt i Norge og kunne avgjøre hvem som skulle utgis, på hvilket språk og til hvilke vilkår.
 
