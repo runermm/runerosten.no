@@ -7,6 +7,7 @@ imagePortrait: true
 imageAlt: Tittelbladet til Fridtjof Nansens Paa ski over Grønland, utgitt av H. Aschehoug & Co.s Forlag i Kristiania i 1890.
 imageCredit: "Tittelbladet til Paa ski over Grønland (1890). Kilde: Wikimedia Commons, fri bruk."
 tags: [ki]
+draft: true # sendt til Klassekampen
 ---
 
 Det siste året er det blitt tydeligere og tydeligere at Claude Code og lignende verktøy innebærer at koding og programvareutvikling blir allemannseie og er noe alle kan få til. Selv laget jeg mitt eget nettsted på tre kvelder og er godt i gang med å lage en app som fjernstyrer TV-en. Når min datter på 18 år er 25, hvor mye programvare har hun laget selv og hvilken rolle spiller den i hverdagen hennes?
