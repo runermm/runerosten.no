@@ -1,6 +1,6 @@
 ---
 title: "Fra Nygaard til Nvidia"
-description: "«Norske forfattere på norske forlag» var Nygaards parole. Nå må vi gjøre det samme med kunstig intelligens, og vi har råd til det."
+description: "«Norske forfattere på norske forlag» var William Nygaards parole. Nå må vi gjøre det samme med kunstig intelligens, og vi har råd til det."
 date: 2026-11-24
 tags: [ki]
 ---
