@@ -16,11 +16,11 @@ Den japanske professoren i engelsk Shigehiko Toyama ga i 1983 ut ei bok, som ikk
 
 Svaret hans begynner med et slående bilde fra luftfarten. Seilflyene er attraktive og elegante. De er stille, kan gjøre vidunderlige manøvre og seiler av gårde nesten uten friksjon. De har dog en kjedelig ulempe: De kommer seg ikke opp av bakken for egen maskin. Da trengs et motorfly som drar dem opp. Motorflyene bråker og buldrer, men de har egen løfteevne.
 
-Utdanningssystemet legger dessverre altfor stor vekt på seilfly og for lite på motorfly, mener Toyama, og dette blir særlig utfordret av datamaskinens inntog.
+Utdanningssystemet legger dessverre altfor stor vekt på seilfly og for lite på motorfly, mener Toyama, og dette blir særlig akutt etter inntoget av datamaskinene og kunstig intelligens.
 
-En annen metafor han benytter, er skillet mellom en lagerbygning og en fabrikk. Lageret kan være stort og effektivt, men det produserer ikke noe nytt. Da trengs det en fabrikk, understreker Toyama. Som lager slår datamaskinen oss uansett. Det vi har igjen, er fabrikken. Nå utfordres også fabrikken, og det lå utenfor Toyamas forestillingsevne.
+En annen metafor han benytter, er skillet mellom en lagerbygning og en fabrikk. Lageret kan være stort og effektivt, men det produserer ikke noe nytt. Da trengs det en fabrikk, understreker Toyama. Som lager slår datamaskinen oss uansett.
 
-Men Toyama har mange gode råd om hvordan vi kan og bør tenke for å motstå språkmodellenes umiddelbare magnetisme.
+Det vi har igjen, er fabrikken. Med generativ kunstig intelligens utfordres også fabrikken, og det lå nok utenfor Toyamas forestillingsevne. Men han har mange gode råd om hvordan vi kan og bør tenke for å motstå språkmodellenes umiddelbare magnetisme.
 
 Han mener at tenkning er som ølbrygging: Tankene må gjære for at det skal bli trykk og futt. Har du en god idé, må du ikke ødelegge den ved å fortelle den med en gang. La den bygge seg opp og godgjøre seg og ikke vær redd for å glemme den. Er den riktig god, kommer den tilbake, bare enda sterkere og mest sannsynlig om morgenen.
 
@@ -30,7 +30,7 @@ Og igjen, ikke vær redd for å glemme. Tvert om, arbeid aktivt med å glemme. S
 
 For å tilegne deg ny innsikt vil han at du skal bruke et ganske innfløkt system av dagbøker, notatbøker og metanotater. Det er kanskje en god oppskrift, men neppe en realistisk tilnærming i dag. Les den likevel, og bli inspirert til å lage din egen, mest sannsynlig digitale, versjon. Selv bruker jeg en kombinasjon av notater, bokmerker og agenter, og prøver hele tiden å utvikle og forbedre mine metoder.
 
-Poenget er å bearbeide stoffet på flere ulike måter, gjentatte ganger. Når du tenker, er det best å se på deg selv som en katalysator, slik platina er når den tilføres et kammer med oksygen og svoveldioksid. Gassene reagerer og danner en syre, mens platinaen forblir uforandret, skriver Toyama og henviser til T. S. Eliot. I god tenkning er du uforandret, men du har likevel startet en kraftig reaksjon.
+Poenget er å bearbeide stoffet på flere ulike måter, gjentatte ganger. Når du tenker, er det best å se på deg selv som en katalysator. Når du legger platina i et kammer med oksygen og svoveldioksid vil gassene reagere og danner en syre, mens platinaen forblir uforandret, skriver Toyama og henviser til T. S. Eliot. I god tenkning er du uforandret, men du har likevel startet en kraftig reaksjon.
 
 En språkmodell kan være en slik katalysator, så lenge det er du som tenker. Å gjengi hva en språkmodell har fortalt deg, gir verken deg eller andre noe av verdi. Du må stå i det, oppleve motstanden, ta deg tid og gjerne sove på det. Ikke søk umiddelbar tilfredsstillelse.
 
