@@ -62,7 +62,8 @@ function tilBokmerke(d: Dokument): Bokmerke {
     link,
     domain: new URL(link).hostname.replace(/^www\./, ''),
     note: d.notes?.trim() || undefined,
-    cover: gyldigUrl(d.image_url) ?? (flyttet.bilder as Record<string, string>)[nokkel],
+    // Bilder hentes alltid over https, ellers advarer nettlesere og sikkerhetsfiltre om blandet innhold.
+    cover: (gyldigUrl(d.image_url) ?? (flyttet.bilder as Record<string, string>)[nokkel])?.replace(/^http:\/\//, 'https://'),
     tags: taggnavn(d.tags),
     created: (flyttet.datoer as Record<string, string>)[nokkel] ?? d.saved_at ?? d.created_at,
   };
