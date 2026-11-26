@@ -1,5 +1,5 @@
 ---
-title: "Fra Nygaard til Nvidia"
+title: "Fra Nygaard og Nansen til Jensen og Nvidia"
 description: "«Norske forfattere på norske forlag» var William Nygaards parole. Nå må vi gjøre det samme med kunstig intelligens, og vi har råd til det."
 date: 2026-11-26
 image: /bilder/artikler/paa-ski-over-gronland-tittelblad.jpg
