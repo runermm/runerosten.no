@@ -10,6 +10,7 @@ const artikler = await getArtikler();
     <h1>Synspunkt</h1>
     <PostList items={artikler.map((a) => ({
       href: `/artikler/${a.id}/`, title: a.data.title, description: a.data.description, date: a.data.date,
+      image: a.data.image, imageWide: !a.data.imagePortrait,
     }))} />
   </div>
 </Base>
